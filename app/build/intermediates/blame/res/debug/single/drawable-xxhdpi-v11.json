@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v11/ic_stat_aware_accessibility.png",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable-xxhdpi-v11/ic_stat_aware_accessibility.png"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v11/ic_stat_aware_sync.png",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable-xxhdpi-v11/ic_stat_aware_sync.png"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v11/ic_stat_allow.png",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable-xxhdpi-v11/ic_stat_allow.png"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v11/ic_stat_deny.png",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable-xxhdpi-v11/ic_stat_deny.png"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v11/ic_stat_aware_update.png",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable-xxhdpi-v11/ic_stat_aware_update.png"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v11/ic_stat_aware_plugin_dependency.png",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable-xxhdpi-v11/ic_stat_aware_plugin_dependency.png"
+    }
+]
