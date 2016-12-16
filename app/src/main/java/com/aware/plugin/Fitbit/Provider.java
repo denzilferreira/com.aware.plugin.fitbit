@@ -24,11 +24,11 @@ import java.util.HashMap;
  */
 public class Provider extends ContentProvider {
 
-    public static String AUTHORITY = "com.aware.plugin.Fitbit.provider.xxx"; //change to package.provider.your_plugin_name
+    public static String AUTHORITY = "com.aware.plugin.Fitbit.provider.Fitbit"; //change to package.provider.your_plugin_name
     public static final int DATABASE_VERSION = 1; //increase this if you make changes to the database structure, i.e., rename columns, etc.
 
-    public static Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY);
-    public static final String DATABASE_NAME = "plugin_template.db"; //the database filename, use plugin_xxx for plugins.
+    public static Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/table_one");
+    public static final String DATABASE_NAME = "Fitbit.db"; //the database filename, use plugin_xxx for plugins.
 
     //Add here your database table names, as many as you need
     public static final String DB_TBL_TEMPLATE = "table_one";
@@ -105,7 +105,10 @@ public class Provider extends ContentProvider {
     @Override
     public boolean onCreate() {
         //This is a hack to allow providers to be reusable in any application/plugin by making the authority dynamic using the package name of the parent app
-        AUTHORITY = getContext().getPackageName() + ".provider.xxx"; //make sure xxx matches the first string in this class
+        AUTHORITY = getContext().getPackageName() + ".provider.Fitbit"; //make sure xxx matches the first string in this class
+
+        Log.d("WTF", Uri.withAppendedPath(Provider.CONTENT_URI, DB_TBL_TEMPLATE).toString());
+
 
         sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
@@ -178,6 +181,7 @@ public class Provider extends ContentProvider {
     @Nullable
     @Override
     public Uri insert(Uri uri, ContentValues new_values) {
+        Log.d("called", "called");
         if (!initializeDB()) {
             Log.w("", "Database unavailable...");
             return null;

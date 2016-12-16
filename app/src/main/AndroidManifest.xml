@@ -37,7 +37,7 @@
 
         <provider
             android:name="com.aware.plugin.Fitbit.Provider"
-            android:authorities="${applicationId}.provider.xxx"
+            android:authorities="${applicationId}.provider.Fitbit"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />

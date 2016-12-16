@@ -94,7 +94,7 @@ ADDED from /Users/researcher/Documents/Android/aware-fitbit/app/src/main/Android
 	android:readPermission
 		ADDED from /Users/researcher/Documents/Android/aware-fitbit/app/src/main/AndroidManifest.xml:42:13-65
 	android:authorities
-		ADDED from /Users/researcher/Documents/Android/aware-fitbit/app/src/main/AndroidManifest.xml:40:13-64
+		ADDED from /Users/researcher/Documents/Android/aware-fitbit/app/src/main/AndroidManifest.xml:40:13-67
 		INJECTED from /Users/researcher/Documents/Android/aware-fitbit/app/src/main/AndroidManifest.xml
 	android:exported
 		ADDED from /Users/researcher/Documents/Android/aware-fitbit/app/src/main/AndroidManifest.xml:41:13-36

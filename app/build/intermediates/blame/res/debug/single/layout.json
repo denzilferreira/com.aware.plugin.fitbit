@@ -60,12 +60,12 @@
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/notification_template_big_media_custom.xml"
     },
     {
-        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",

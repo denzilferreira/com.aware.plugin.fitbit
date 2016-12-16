@@ -1,5 +1,6 @@
 package com.aware.plugin.Fitbit;
 
+import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,7 +12,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import com.aware.plugin.Fitbit.Provider;
 
+import com.aware.Aware;
+import com.aware.Aware_Preferences;
 import com.aware.providers.Bluetooth_Provider;
 import com.github.scribejava.core.builder.ServiceBuilder;
 import com.github.scribejava.core.model.OAuth2AccessToken;
@@ -34,7 +38,7 @@ public class Fitbit extends AppCompatActivity {
     // Retrieved from Developer Fitbit
     final String api_Key = "227YG3";
     final String api_Secret = "033ed2a3710c0cde04343d073c09e378";
-    final String auth_scope = "profile";
+    final String auth_scope = "heartrate";
     final String response = "token";
     final String redirect_URI = "Fitbit://logincallback";
 
@@ -78,6 +82,7 @@ public class Fitbit extends AppCompatActivity {
             button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 getData();
                 Log.d("HAHA", "schade");
             }
@@ -135,35 +140,48 @@ public class Fitbit extends AppCompatActivity {
     public void getData() {
         new Thread(new Runnable() {
             public void run() {
-                final OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/profile.json", OA2_Service);
+                //final OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/profile.json", OA2_Service);
+                //request.addHeader("Authorization", " " + token_Type + " " + access_Token);
+                //OA2_Service.signRequest(OA2_Access_Token, request);
+                //final Response response = request.send();
+
+                final OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/activities/heart/date/2016-12-13/1d.json", OA2_Service);
                 request.addHeader("Authorization", " " + token_Type + " " + access_Token);
                 OA2_Service.signRequest(OA2_Access_Token, request);
                 final Response response = request.send();
 
-
                 try {
                     responseString = response.getBody().toString();
                     // Add check for remaining cases.
-                    if(responseString.indexOf("expired_token") > 0) {
+                    if(responseString.indexOf("expired_token") > 0 || responseString.indexOf("insufficient_scope") > 0) {
                         AuthenticateClient();
                         getData();
                     }
                     else {
                         Log.d("Response", responseString);
+                        /*
                         reader = new JSONObject(responseString);
                         JSONObject user  = reader.getJSONObject("user");
+
                         ContentValues rowData = new ContentValues();
-                        rowData.put("User", user.toString());
+                        //rowData.put(Provider.TableOne_Data._ID, "123");
+                        rowData.put(Provider.TableOne_Data.TIMESTAMP, System.currentTimeMillis());
+                        rowData.put(Provider.TableOne_Data.DEVICE_ID, "2dca4920-8a8f-48ad-b1fd-a8c5a4668128");
+                        rowData.put(Provider.TableOne_Data.NAME, user.toString());
+                        rowData.put(Provider.TableOne_Data.BIG_NUMBER, "123");
+                        rowData.put(Provider.TableOne_Data.PICTURE, "123");
+
                         //getContentResolver().insert(Bluetooth_Data.CONTENT_URI);
-                        Provider fitbitProvider = new Provider();
-                        fitbitProvider.initializeDB();
-                        fitbitProvider.insert(Provider.CONTENT_URI, rowData);
+                        getContentResolver().insert(Provider.CONTENT_URI, rowData);*/
+                        //Provider fitbitProvider = new Provider();
+                        //fitbitProvider.initializeDB();
+                        //fitbitProvider.insert(Provider.CONTENT_URI, rowData);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
-                } catch (JSONException e) {
+                } /*catch (JSONException e) {
                     e.printStackTrace();
-                }
+                }*/
             }
         }).start();
     }
