@@ -132,12 +132,12 @@
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable/ic_action_proximity_active.png"
     },
     {
-        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
-        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_bg.xml"
-    },
-    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_battery.png",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable/ic_action_battery.png"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_screen.png",
@@ -156,20 +156,20 @@
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable/ic_action_applications.png"
     },
     {
-        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_seekbar_tick_mark_material.xml"
-    },
-    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_locations.png",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable/ic_action_locations.png"
     },
     {
-        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_ic_search_api_material.xml"
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_ic_search_api_material.xml"
     },
     {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_processor_active.png",
@@ -216,20 +216,20 @@
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable/ic_action_telephony.png"
     },
     {
-        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_processor.png",
-        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable/ic_action_processor.png"
-    },
-    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_vector_test.xml"
     },
     {
-        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_cab_background_top_material.xml"
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_processor.png",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable/ic_action_processor.png"
     },
     {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_cab_background_top_material.xml"
     },
     {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_timezone_active.png",
@@ -284,12 +284,12 @@
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable/ic_action_qrcode.png"
     },
     {
-        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_battery_active.png",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.awareframework/aware-core/4.0.655/res/drawable/ic_action_battery_active.png"
+    },
+    {
+        "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_gravity.png",

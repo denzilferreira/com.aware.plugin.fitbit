@@ -1,7 +1,5 @@
 package com.aware.plugin.Fitbit;
 
-import android.content.ContentProvider;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -11,12 +9,11 @@ import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import com.aware.plugin.Fitbit.Provider;
+import android.widget.Spinner;
 
-import com.aware.Aware;
-import com.aware.Aware_Preferences;
-import com.aware.providers.Bluetooth_Provider;
 import com.github.scribejava.core.builder.ServiceBuilder;
 import com.github.scribejava.core.model.OAuth2AccessToken;
 import com.github.scribejava.core.model.OAuthRequest;
@@ -24,10 +21,8 @@ import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
 import com.github.scribejava.core.oauth.OAuth20Service;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
+
 
 /**
  * Created by sklakegg on 13/12/16.
@@ -38,7 +33,7 @@ public class Fitbit extends AppCompatActivity {
     // Retrieved from Developer Fitbit
     final String api_Key = "227YG3";
     final String api_Secret = "033ed2a3710c0cde04343d073c09e378";
-    final String auth_scope = "heartrate";
+    final String auth_scope = "activity";
     final String response = "token";
     final String redirect_URI = "Fitbit://logincallback";
 
@@ -49,49 +44,87 @@ public class Fitbit extends AppCompatActivity {
     String token_Type;
     int expires_In;
 
+    /// Misc
     final private String Fitbit_Preference = "Fitbit_Preference";
-    JSONObject reader;
     String responseString;
     OAuth20Service OA2_Service;
     OAuth2AccessToken OA2_Access_Token;
     SharedPreferences prefs;
     Button button;
-
-    // Retrieved from JSON object.
-    String fullName;
+    Spinner languageSpinner;
+    Spinner unitSpinner;
+    String languageSelected;
+    String unitSelected;
+    ArrayAdapter<CharSequence> language_Adapter;
+    ArrayAdapter<CharSequence> unit_Adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.card);
 
-        // Retrieved from JSON object.
-        String fullName;
+        // Get access token and preferences.
+        prefs = getSharedPreferences(Fitbit_Preference, MODE_PRIVATE);
+        access_Token = prefs.getString("OA2_Access_Token", null);
+        languageSelected = prefs.getString("languageSelected", null);
+        unitSelected = prefs.getString("unitSelected", null);
 
+        // Select preferences.
+        languageSpinner = (Spinner) findViewById(R.id.spinner_Language);
+        unitSpinner = (Spinner) findViewById(R.id.spinner_Unit);
 
-        // Build service.
-        OA2_Service = new ServiceBuilder()
-                .apiKey(api_Key)
-                .scope(auth_scope)
-                .responseType(response)
-                .callback(redirect_URI)
-                .apiSecret(api_Secret)
-                .build(FitbitAPI.instance());
-
-        button = (Button) findViewById(R.id.button);
-            button.setOnClickListener(new View.OnClickListener() {
+        language_Adapter = ArrayAdapter.createFromResource(this, R.array.spinner_Language, android.R.layout.simple_spinner_item);
+        language_Adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        languageSpinner.setAdapter(language_Adapter);
+        // Set up spinner
+        if (languageSelected != null) { languageSpinner.setSelection(language_Adapter.getPosition(languageSelected)); }
+        else { languageSpinner.setSelection(language_Adapter.getPosition("United States")); }
+        Log.d("NIGGAH", "lolol");
+        languageSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.d("NIGGAH", "NIGGAH");
+                languageSelected = adapterView.getItemAtPosition(i).toString();
+                SharedPreferences.Editor editor = getSharedPreferences(Fitbit_Preference, MODE_PRIVATE).edit();
+                editor.putString("languageSelected", languageSelected);
+                editor.commit();
+            }
 
-                getData();
-                Log.d("HAHA", "schade");
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
 
+        // Inflate spinner and get selections.
+        unit_Adapter = ArrayAdapter.createFromResource(this, R.array.spinner_Units, android.R.layout.simple_spinner_item);
+        unit_Adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        unitSpinner.setAdapter(unit_Adapter);
+        // Set up spinner
+        if (unitSelected != null) { unitSpinner.setSelection(unit_Adapter.getPosition(unitSelected)); }
+        else { unitSpinner.setSelection(unit_Adapter.getPosition("Metric")); }
+        Log.d("NIGGAH", "lolol");
+        unitSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.d("NIGGAH", "NIGGAH");
+                unitSelected = adapterView.getItemAtPosition(i).toString();
+                SharedPreferences.Editor editor = getSharedPreferences(Fitbit_Preference, MODE_PRIVATE).edit();
+                editor.putString("unitSelected", unitSelected);
+                editor.commit();
+            }
 
-        prefs = getSharedPreferences(Fitbit_Preference, MODE_PRIVATE);
-        access_Token = prefs.getString("OA2_Access_Token", null);
-        //Log.d("OA2_Access_Token", access_Token);
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+            }
+        });
+
+        button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getData();
+            }
+        });
 
         if (access_Token == null) {
             AuthenticateClient();
@@ -102,6 +135,15 @@ public class Fitbit extends AppCompatActivity {
             data_scope = prefs.getString("Data Scope", null);
             OA2_Access_Token = new OAuth2AccessToken(access_Token, token_Type, expires_In, "null", data_scope, "null");
         }
+
+        // Build service.
+        OA2_Service = new ServiceBuilder()
+                .apiKey(api_Key)
+                .scope(auth_scope)
+                .responseType(response)
+                .callback(redirect_URI)
+                .apiSecret(api_Secret)
+                .build(FitbitAPI.instance());
     }
 
     private void AuthenticateClient() {
@@ -145,8 +187,15 @@ public class Fitbit extends AppCompatActivity {
                 //OA2_Service.signRequest(OA2_Access_Token, request);
                 //final Response response = request.send();
 
-                final OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/activities/heart/date/2016-12-13/1d.json", OA2_Service);
+                final OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/activities/date/2016-12-13.json", OA2_Service);
                 request.addHeader("Authorization", " " + token_Type + " " + access_Token);
+                if (languageSelected != null) { request.addHeader("Accept-Locale",  languageSelected);
+                    Log.d("NIGGAH", languageSelected);
+                }
+                if (unitSelected != null) { request.addHeader("Accept-Language",  unitSelected);
+                    Log.d("NIGGAH", unitSelected);
+                }
+
                 OA2_Service.signRequest(OA2_Access_Token, request);
                 final Response response = request.send();
 
@@ -154,8 +203,9 @@ public class Fitbit extends AppCompatActivity {
                     responseString = response.getBody().toString();
                     // Add check for remaining cases.
                     if(responseString.indexOf("expired_token") > 0 || responseString.indexOf("insufficient_scope") > 0) {
-                        AuthenticateClient();
-                        getData();
+                        //AuthenticateClient();
+                        //getData();
+                        Log.d("Response", responseString);
                     }
                     else {
                         Log.d("Response", responseString);

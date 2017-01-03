@@ -1,18 +1,15 @@
 package com.aware.plugin.Fitbit;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
-
 import com.aware.utils.IContextCard;
-
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class ContextCard implements IContextCard {
+public class ContextCard implements IContextCard{
 
     //DEMO: we are demo'ing a counter incrementing in real-time
     int counter = 0;
@@ -36,9 +33,6 @@ public class ContextCard implements IContextCard {
         //Load card information to memory
         LayoutInflater sInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View card = sInflater.inflate(R.layout.card, null);
-
-        //Initialize UI elements from the card
-        counter_txt = (TextView) card.findViewById(R.id.counter);
 
         //Return the card to AWARE/apps
         return card;
