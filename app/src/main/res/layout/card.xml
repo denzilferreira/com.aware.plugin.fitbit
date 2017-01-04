@@ -11,12 +11,6 @@
         android:id="@+id/counter"
         android:textColor="#000"/>
 
-    <Button
-        android:text="Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button" />
-
     <TextView
         android:text="Data"
         android:layout_width="match_parent"
@@ -60,5 +54,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinner_Unit"/>
+
+    <Button
+        android:text="AUTH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2" />
+
+    <Button
+        android:text="GET DATA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
 
 </LinearLayout>
