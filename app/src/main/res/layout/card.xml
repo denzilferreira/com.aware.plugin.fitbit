@@ -46,21 +46,6 @@
         android:id="@+id/check_Sleep" />
 
     <TextView
-        android:text="Language"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:paddingTop="20dp"
-        android:paddingLeft="10dp"
-        android:paddingBottom="5dp" />
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner_Language" />
-
-    <TextView
         android:text="Units"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

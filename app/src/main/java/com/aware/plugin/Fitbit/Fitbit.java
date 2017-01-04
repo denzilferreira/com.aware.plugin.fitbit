@@ -23,7 +23,6 @@ import com.github.scribejava.core.oauth.OAuth20Service;
 
 import java.io.IOException;
 
-
 /**
  * Created by sklakegg on 13/12/16.
  */
@@ -44,18 +43,19 @@ public class Fitbit extends AppCompatActivity {
     String token_Type;
     int expires_In;
 
-    /// Misc
+    // Misc
     final private String Fitbit_Preference = "Fitbit_Preference";
     String responseString;
     OAuth20Service OA2_Service;
     OAuth2AccessToken OA2_Access_Token;
     SharedPreferences prefs;
     Button button;
-    Spinner languageSpinner;
+    //Spinner languageSpinner;
     Spinner unitSpinner;
     String languageSelected;
     String unitSelected;
-    ArrayAdapter<CharSequence> language_Adapter;
+    String unit_Array [] = {"en_US", "en_GB", "Metric"};
+    //ArrayAdapter<CharSequence> language_Adapter;
     ArrayAdapter<CharSequence> unit_Adapter;
 
     @Override
@@ -70,20 +70,20 @@ public class Fitbit extends AppCompatActivity {
         unitSelected = prefs.getString("unitSelected", null);
 
         // Select preferences.
-        languageSpinner = (Spinner) findViewById(R.id.spinner_Language);
+
+        // Language not yet supported by Fitbit.
+        //languageSpinner = (Spinner) findViewById(R.id.spinner_Language);
         unitSpinner = (Spinner) findViewById(R.id.spinner_Unit);
 
-        language_Adapter = ArrayAdapter.createFromResource(this, R.array.spinner_Language, android.R.layout.simple_spinner_item);
-        language_Adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        languageSpinner.setAdapter(language_Adapter);
-        // Set up spinner
+        //language_Adapter = ArrayAdapter.createFromResource(this, R.array.spinner_Language, android.R.layout.simple_spinner_item);
+        //language_Adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //languageSpinner.setAdapter(language_Adapter);
+        /* Set up spinner
         if (languageSelected != null) { languageSpinner.setSelection(language_Adapter.getPosition(languageSelected)); }
         else { languageSpinner.setSelection(language_Adapter.getPosition("United States")); }
-        Log.d("NIGGAH", "lolol");
         languageSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Log.d("NIGGAH", "NIGGAH");
                 languageSelected = adapterView.getItemAtPosition(i).toString();
                 SharedPreferences.Editor editor = getSharedPreferences(Fitbit_Preference, MODE_PRIVATE).edit();
                 editor.putString("languageSelected", languageSelected);
@@ -94,6 +94,7 @@ public class Fitbit extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
+        */
 
         // Inflate spinner and get selections.
         unit_Adapter = ArrayAdapter.createFromResource(this, R.array.spinner_Units, android.R.layout.simple_spinner_item);
@@ -102,14 +103,12 @@ public class Fitbit extends AppCompatActivity {
         // Set up spinner
         if (unitSelected != null) { unitSpinner.setSelection(unit_Adapter.getPosition(unitSelected)); }
         else { unitSpinner.setSelection(unit_Adapter.getPosition("Metric")); }
-        Log.d("NIGGAH", "lolol");
         unitSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Log.d("NIGGAH", "NIGGAH");
-                unitSelected = adapterView.getItemAtPosition(i).toString();
+                unitSelected = String.valueOf(i);
                 SharedPreferences.Editor editor = getSharedPreferences(Fitbit_Preference, MODE_PRIVATE).edit();
-                editor.putString("unitSelected", unitSelected);
+                editor.putString("unitSelected", String.valueOf(i));
                 editor.commit();
             }
 
@@ -182,18 +181,16 @@ public class Fitbit extends AppCompatActivity {
     public void getData() {
         new Thread(new Runnable() {
             public void run() {
-                //final OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/profile.json", OA2_Service);
-                //request.addHeader("Authorization", " " + token_Type + " " + access_Token);
-                //OA2_Service.signRequest(OA2_Access_Token, request);
-                //final Response response = request.send();
 
                 final OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/activities/date/2016-12-13.json", OA2_Service);
                 request.addHeader("Authorization", " " + token_Type + " " + access_Token);
-                if (languageSelected != null) { request.addHeader("Accept-Locale",  languageSelected);
-                    Log.d("NIGGAH", languageSelected);
-                }
-                if (unitSelected != null) { request.addHeader("Accept-Language",  unitSelected);
-                    Log.d("NIGGAH", unitSelected);
+
+                // Language not yet supported by Fitbit.
+                //request.addHeader("Accept-Locale",  "en_US");
+
+                // Select unit type.
+                if (unit_Array[Integer.parseInt(unitSelected)] != null) {
+                    request.addHeader("Accept-Language",  unit_Array[Integer.parseInt(unitSelected)]);
                 }
 
                 OA2_Service.signRequest(OA2_Access_Token, request);
