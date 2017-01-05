@@ -25,6 +25,7 @@ import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
 import com.github.scribejava.core.oauth.OAuth20Service;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -264,26 +265,46 @@ public class Fitbit extends AppCompatActivity {
                         prefs.getString("Token_Data_Scope", null),
                         "null");
 
-                Log.d("ABC", OA2_Access_Token.toString());
+
 
                 // Send request for data.
                 if (prefs.getBoolean("access_Token_Activity", false)) {
                     //string_Activity = requestSend("https://api.fitbit.com/1/user/-/activities/date/2016-12-13.json");
-                    string_Activity = requestSend("https://api.fitbit.com/1/user/-/activities/distance/date/2016-12-13/1d/15min.json");
-                    Log.d("ABC", string_Activity);
+                    string_Activity = requestSend("https://api.fitbit.com/1/user/-/activities/steps/date/2017-01-05/1d/15min.json");
+
+                    try {
+                        JSONObject obj = new JSONObject(string_Activity);
+                        JSONArray businessObject = obj.getJSONArray("activities-steps");
+                        Log.d("ABC1", businessObject.toString());
+
+
+                        JSONObject lol = businessObject.getJSONObject(0);
+                        String ok = lol.getString("value");
+                        Log.d("ABC1", ok);
+
+
+                        String nameValue = businessObject.getString(0);
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    // string_Activity = requestSend("https://api.fitbit.com/1/user/-/activities/steps/date/today/1d/15min.json");
+
+                    Log.d("ABC2", string_Activity);
                     //storeData(string_Activity, "Activity");
                 }
 
                 if (prefs.getBoolean("access_Token_HR", false)) {
                     //string_HR = requestSend("https://api.fitbit.com/1/user/-/activities/heart/date/today/1d.json");
-                    string_HR = requestSend("https://api.fitbit.com//1/user/-/activities/calories/date/2016-12-13/1d/1min/time/12:30/12:45.json");
-                    Log.d("ABC", string_Activity);
+                    string_HR = requestSend("https://api.fitbit.com/1/user/-/activities/heart/date/today/1d/1min.json");
+
+                    Log.d("ABC", string_HR);
                     //storeData(string_Activity, "HR");
                 }
 
                 if (prefs.getBoolean("access_Token_Sleep", false)) {
                     string_Sleep = requestSend("https://api.fitbit.com/1/user/-/sleep/date/2016-12-13.json");
-                    storeData(string_Activity, "Sleep");
+                    storeData(string_Sleep, "Sleep");
                 }
             }
         }).start();
