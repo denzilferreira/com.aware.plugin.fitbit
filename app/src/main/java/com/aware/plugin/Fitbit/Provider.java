@@ -59,9 +59,8 @@ public class Provider extends ContentProvider {
         public static final String CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE + "/vnd.com.aware.plugin.Fitbit.provider.table_one"; //modify me
 
         //Note: integers and strings don't need a type prefix_
-        public static final String NAME = "name";
-        public static final String BIG_NUMBER = "double_big_number"; //a double_ prefix makes a MySQL DOUBLE column
-        public static final String PICTURE = "blob_picture"; //a blob_ prefix makes a MySQL BLOB column
+        public static final String FITBIT_JSON = "fitbit_data";
+        public static final String DATA_TYPE = "fitbit_data_type"; //a double_ prefix makes a MySQL DOUBLE column
     }
 
     //Define each database table fields
@@ -69,9 +68,8 @@ public class Provider extends ContentProvider {
         TableOne_Data._ID + " integer primary key autoincrement," +
         TableOne_Data.TIMESTAMP + " real default 0," +
         TableOne_Data.DEVICE_ID + " text default ''," +
-        TableOne_Data.NAME + " text default ''," +
-        TableOne_Data.BIG_NUMBER + " real default 0," +
-        TableOne_Data.PICTURE + " blob default null";
+        TableOne_Data.DATA_TYPE + " real default 0," +
+        TableOne_Data.FITBIT_JSON + " text default ''";
 
     /**
      * Share the fields with AWARE so we can replicate the table schema on the server
@@ -121,9 +119,8 @@ public class Provider extends ContentProvider {
         tableOneHash.put(TableOne_Data._ID, TableOne_Data._ID);
         tableOneHash.put(TableOne_Data.TIMESTAMP, TableOne_Data.TIMESTAMP);
         tableOneHash.put(TableOne_Data.DEVICE_ID, TableOne_Data.DEVICE_ID);
-        tableOneHash.put(TableOne_Data.NAME, TableOne_Data.NAME);
-        tableOneHash.put(TableOne_Data.BIG_NUMBER, TableOne_Data.BIG_NUMBER);
-        tableOneHash.put(TableOne_Data.PICTURE, TableOne_Data.PICTURE);
+        tableOneHash.put(TableOne_Data.FITBIT_JSON, TableOne_Data.FITBIT_JSON);
+        tableOneHash.put(TableOne_Data.DATA_TYPE, TableOne_Data.DATA_TYPE);
 
         return true;
     }
@@ -181,7 +178,6 @@ public class Provider extends ContentProvider {
     @Nullable
     @Override
     public Uri insert(Uri uri, ContentValues new_values) {
-        Log.d("called", "called");
         if (!initializeDB()) {
             Log.w("", "Database unavailable...");
             return null;
