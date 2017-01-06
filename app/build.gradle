@@ -77,4 +77,5 @@ dependencies {
     compile "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2"
     compile 'com.android.support:customtabs:25.0.1'
     compile 'com.github.scribejava:scribejava-apis:3.3.0'
+    compile 'net.danlew:android.joda:2.9.5.1'
 }

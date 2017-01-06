@@ -1,17 +1,416 @@
 [
     {
-        "outputFile": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
+        "outputFile": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 119,
-                    "endOffset": 170
+                    "startOffset": 105,
+                    "endLine": 5,
+                    "endColumn": 14,
+                    "endOffset": 360
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 105,
+                        "endLine": 5,
+                        "endColumn": 14,
+                        "endOffset": 360
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 365,
+                    "endLine": 9,
+                    "endColumn": 14,
+                    "endOffset": 628
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 365,
+                        "endLine": 9,
+                        "endColumn": 14,
+                        "endOffset": 628
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 633,
+                    "endLine": 13,
+                    "endColumn": 14,
+                    "endOffset": 893
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 633,
+                        "endLine": 13,
+                        "endColumn": 14,
+                        "endOffset": 893
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 898,
+                    "endLine": 17,
+                    "endColumn": 14,
+                    "endOffset": 1146
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 898,
+                        "endLine": 17,
+                        "endColumn": 14,
+                        "endOffset": 1146
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1151,
+                    "endLine": 21,
+                    "endColumn": 14,
+                    "endOffset": 1407
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1151,
+                        "endLine": 21,
+                        "endColumn": 14,
+                        "endOffset": 1407
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1412,
+                    "endLine": 25,
+                    "endColumn": 14,
+                    "endOffset": 1680
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1412,
+                        "endLine": 25,
+                        "endColumn": 14,
+                        "endOffset": 1680
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1685,
+                    "endLine": 29,
+                    "endColumn": 14,
+                    "endOffset": 1941
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1685,
+                        "endLine": 29,
+                        "endColumn": 14,
+                        "endOffset": 1941
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1946,
+                    "endLine": 33,
+                    "endColumn": 14,
+                    "endOffset": 2206
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1946,
+                        "endLine": 33,
+                        "endColumn": 14,
+                        "endOffset": 2206
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2211,
+                    "endLine": 37,
+                    "endColumn": 14,
+                    "endOffset": 2449
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 2211,
+                        "endLine": 37,
+                        "endColumn": 14,
+                        "endOffset": 2449
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2454,
+                    "endLine": 41,
+                    "endColumn": 14,
+                    "endOffset": 2693
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 2454,
+                        "endLine": 41,
+                        "endColumn": 14,
+                        "endOffset": 2693
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2698,
+                    "endLine": 45,
+                    "endColumn": 14,
+                    "endOffset": 2933
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 2698,
+                        "endLine": 45,
+                        "endColumn": 14,
+                        "endOffset": 2933
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 2938,
+                    "endLine": 49,
+                    "endColumn": 14,
+                    "endOffset": 3186
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 2938,
+                        "endLine": 49,
+                        "endColumn": 14,
+                        "endOffset": 3186
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 3191,
+                    "endLine": 53,
+                    "endColumn": 14,
+                    "endOffset": 3446
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 3191,
+                        "endLine": 53,
+                        "endColumn": 14,
+                        "endOffset": 3446
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 3451,
+                    "endLine": 57,
+                    "endColumn": 14,
+                    "endOffset": 3709
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 3451,
+                        "endLine": 57,
+                        "endColumn": 14,
+                        "endOffset": 3709
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 3714,
+                    "endLine": 61,
+                    "endColumn": 14,
+                    "endOffset": 3974
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 3714,
+                        "endLine": 61,
+                        "endColumn": 14,
+                        "endOffset": 3974
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 3979,
+                    "endLine": 65,
+                    "endColumn": 14,
+                    "endOffset": 4227
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 3979,
+                        "endLine": 65,
+                        "endColumn": 14,
+                        "endOffset": 4227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 4232,
+                    "endLine": 69,
+                    "endColumn": 14,
+                    "endOffset": 4493
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 4232,
+                        "endLine": 69,
+                        "endColumn": 14,
+                        "endOffset": 4493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 4498,
+                    "endLine": 73,
+                    "endColumn": 14,
+                    "endOffset": 4761
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 4498,
+                        "endLine": 73,
+                        "endColumn": 14,
+                        "endOffset": 4761
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 4766,
+                    "endLine": 77,
+                    "endColumn": 14,
+                    "endOffset": 5031
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 4766,
+                        "endLine": 77,
+                        "endColumn": 14,
+                        "endOffset": 5031
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 5036,
+                    "endColumn": 119,
+                    "endOffset": 5151
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -23,14 +422,14 @@
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 175,
+                    "startOffset": 5156,
                     "endColumn": 107,
-                    "endOffset": 278
+                    "endOffset": 5259
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -42,14 +441,14 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 283,
+                    "startOffset": 5264,
                     "endColumn": 122,
-                    "endOffset": 401
+                    "endOffset": 5382
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -61,14 +460,14 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 406,
+                    "startOffset": 5387,
                     "endColumn": 107,
-                    "endOffset": 509
+                    "endOffset": 5490
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -80,14 +479,14 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 514,
+                    "startOffset": 5495,
                     "endColumn": 108,
-                    "endOffset": 618
+                    "endOffset": 5599
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -99,14 +498,14 @@
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 623,
+                    "startOffset": 5604,
                     "endColumn": 85,
-                    "endOffset": 704
+                    "endOffset": 5685
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -118,14 +517,14 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 709,
+                    "startOffset": 5690,
                     "endColumn": 103,
-                    "endOffset": 808
+                    "endOffset": 5789
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -137,14 +536,14 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 813,
+                    "startOffset": 5794,
                     "endColumn": 121,
-                    "endOffset": 930
+                    "endOffset": 5911
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -156,14 +555,14 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 935,
+                    "startOffset": 5916,
                     "endColumn": 81,
-                    "endOffset": 1012
+                    "endOffset": 5993
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -175,14 +574,14 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 1017,
+                    "startOffset": 5998,
                     "endColumn": 81,
-                    "endOffset": 1094
+                    "endOffset": 6075
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -194,14 +593,14 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 1099,
+                    "startOffset": 6080,
                     "endColumn": 84,
-                    "endOffset": 1179
+                    "endOffset": 6160
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -213,14 +612,14 @@
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 1184,
+                    "startOffset": 6165,
                     "endColumn": 108,
-                    "endOffset": 1288
+                    "endOffset": 6269
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -232,14 +631,14 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 1293,
+                    "startOffset": 6274,
                     "endColumn": 111,
-                    "endOffset": 1400
+                    "endOffset": 6381
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -251,14 +650,14 @@
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 1405,
+                    "startOffset": 6386,
                     "endColumn": 98,
-                    "endOffset": 1499
+                    "endOffset": 6480
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -270,14 +669,14 @@
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 1504,
+                    "startOffset": 6485,
                     "endColumn": 110,
-                    "endOffset": 1610
+                    "endOffset": 6591
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -289,14 +688,14 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 1615,
+                    "startOffset": 6596,
                     "endColumn": 108,
-                    "endOffset": 1719
+                    "endOffset": 6700
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -308,14 +707,14 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 1724,
+                    "startOffset": 6705,
                     "endColumn": 104,
-                    "endOffset": 1824
+                    "endOffset": 6805
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -327,14 +726,14 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 1829,
+                    "startOffset": 6810,
                     "endColumn": 118,
-                    "endOffset": 1943
+                    "endOffset": 6924
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -346,14 +745,14 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 1948,
+                    "startOffset": 6929,
                     "endColumn": 98,
-                    "endOffset": 2042
+                    "endOffset": 7023
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -365,14 +764,90 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 2047,
-                    "endColumn": 81,
-                    "endOffset": 2124
+                    "startOffset": 7028,
+                    "endColumn": 65,
+                    "endOffset": 7089
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 4,
+                        "startOffset": 5036,
+                        "endColumn": 65,
+                        "endOffset": 5097
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 7094,
+                    "endColumn": 137,
+                    "endOffset": 7227
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 4,
+                        "startOffset": 5102,
+                        "endColumn": 137,
+                        "endOffset": 5235
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 7232,
+                    "endColumn": 131,
+                    "endOffset": 7359
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 4,
+                        "startOffset": 5240,
+                        "endColumn": 131,
+                        "endOffset": 5367
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 7364,
+                    "endColumn": 150,
+                    "endOffset": 7510
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-lv/values-lv.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 5372,
+                        "endColumn": 150,
+                        "endOffset": 5518
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 7515,
+                    "endColumn": 81,
+                    "endOffset": 7592
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -384,14 +859,14 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 2129,
+                    "startOffset": 7597,
                     "endColumn": 100,
-                    "endOffset": 2225
+                    "endOffset": 7693
                 },
                 "from": {
-                    "file": "C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-lv/values-lv.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -404,7 +879,7 @@
         ]
     },
     {
-        "outputFile": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
+        "outputFile": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
         "map": [
             {
                 "to": {
@@ -415,7 +890,7 @@
                     "endOffset": 170
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -434,7 +909,7 @@
                     "endOffset": 278
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -453,7 +928,7 @@
                     "endOffset": 401
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -472,7 +947,7 @@
                     "endOffset": 509
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -491,7 +966,7 @@
                     "endOffset": 618
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -510,7 +985,7 @@
                     "endOffset": 704
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -529,7 +1004,7 @@
                     "endOffset": 808
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -548,7 +1023,7 @@
                     "endOffset": 930
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -567,7 +1042,7 @@
                     "endOffset": 1012
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -586,7 +1061,7 @@
                     "endOffset": 1094
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -605,7 +1080,7 @@
                     "endOffset": 1179
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -624,7 +1099,7 @@
                     "endOffset": 1288
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -643,7 +1118,7 @@
                     "endOffset": 1400
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -662,7 +1137,7 @@
                     "endOffset": 1499
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -681,7 +1156,7 @@
                     "endOffset": 1610
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -700,7 +1175,7 @@
                     "endOffset": 1719
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -719,7 +1194,7 @@
                     "endOffset": 1824
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -738,7 +1213,7 @@
                     "endOffset": 1943
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -757,7 +1232,7 @@
                     "endOffset": 2042
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -776,7 +1251,7 @@
                     "endOffset": 2124
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -795,7 +1270,411 @@
                     "endOffset": 2225
                 },
                 "from": {
-                    "file": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2129,
+                        "endColumn": 100,
+                        "endOffset": 2225
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 119,
+                    "endOffset": 170
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 119,
+                        "endOffset": 170
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 175,
+                    "endColumn": 107,
+                    "endOffset": 278
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 175,
+                        "endColumn": 107,
+                        "endOffset": 278
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 283,
+                    "endColumn": 122,
+                    "endOffset": 401
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 283,
+                        "endColumn": 122,
+                        "endOffset": 401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 406,
+                    "endColumn": 107,
+                    "endOffset": 509
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 406,
+                        "endColumn": 107,
+                        "endOffset": 509
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 514,
+                    "endColumn": 108,
+                    "endOffset": 618
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 514,
+                        "endColumn": 108,
+                        "endOffset": 618
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 623,
+                    "endColumn": 85,
+                    "endOffset": 704
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 623,
+                        "endColumn": 85,
+                        "endOffset": 704
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 709,
+                    "endColumn": 103,
+                    "endOffset": 808
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 709,
+                        "endColumn": 103,
+                        "endOffset": 808
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 813,
+                    "endColumn": 121,
+                    "endOffset": 930
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 813,
+                        "endColumn": 121,
+                        "endOffset": 930
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 935,
+                    "endColumn": 81,
+                    "endOffset": 1012
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 935,
+                        "endColumn": 81,
+                        "endOffset": 1012
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1017,
+                    "endColumn": 81,
+                    "endOffset": 1094
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1017,
+                        "endColumn": 81,
+                        "endOffset": 1094
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1099,
+                    "endColumn": 84,
+                    "endOffset": 1179
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1099,
+                        "endColumn": 84,
+                        "endOffset": 1179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1184,
+                    "endColumn": 108,
+                    "endOffset": 1288
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1184,
+                        "endColumn": 108,
+                        "endOffset": 1288
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1293,
+                    "endColumn": 111,
+                    "endOffset": 1400
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1293,
+                        "endColumn": 111,
+                        "endOffset": 1400
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1405,
+                    "endColumn": 98,
+                    "endOffset": 1499
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1405,
+                        "endColumn": 98,
+                        "endOffset": 1499
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1504,
+                    "endColumn": 110,
+                    "endOffset": 1610
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1504,
+                        "endColumn": 110,
+                        "endOffset": 1610
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1615,
+                    "endColumn": 108,
+                    "endOffset": 1719
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1615,
+                        "endColumn": 108,
+                        "endOffset": 1719
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1724,
+                    "endColumn": 104,
+                    "endOffset": 1824
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1724,
+                        "endColumn": 104,
+                        "endOffset": 1824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1829,
+                    "endColumn": 118,
+                    "endOffset": 1943
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1829,
+                        "endColumn": 118,
+                        "endOffset": 1943
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1948,
+                    "endColumn": 98,
+                    "endOffset": 2042
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1948,
+                        "endColumn": 98,
+                        "endOffset": 2042
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2047,
+                    "endColumn": 81,
+                    "endOffset": 2124
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2047,
+                        "endColumn": 81,
+                        "endOffset": 2124
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2129,
+                    "endColumn": 100,
+                    "endOffset": 2225
+                },
+                "from": {
+                    "file": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
