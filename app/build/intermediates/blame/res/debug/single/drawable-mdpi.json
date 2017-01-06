@@ -1,14 +1,6 @@
 [
     {
-        "merged": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
-        "source": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/src/main/res/drawable-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
-        "source": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\researcher\\Documents\\Android\\aware-fitbit\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     }
 ]

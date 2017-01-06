@@ -4,14 +4,6 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Counter: "
-        android:id="@+id/counter"
-        android:textColor="#000"/>
-
-    <TextView
         android:text="Data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,5 +58,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button2" />
+
+    <Button
+        android:text="GET STEPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3" />
+
+    <TextView
+        android:text="Stepcount Last 3 Hours:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
 
 </LinearLayout>

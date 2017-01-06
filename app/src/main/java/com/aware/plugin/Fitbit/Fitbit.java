@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.customtabs.CustomTabsIntent;
@@ -17,6 +18,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.github.scribejava.core.builder.ServiceBuilder;
 import com.github.scribejava.core.model.OAuth2AccessToken;
@@ -54,6 +56,7 @@ public class Fitbit extends AppCompatActivity {
     String string_Sleep;
     String lastSynced;
     String lastSynced_MinusH;
+    String stepsLastHours = "";
 
     // Defined by the redirect URI fragment
     String access_Token;
@@ -73,11 +76,13 @@ public class Fitbit extends AppCompatActivity {
     // UI.
     Button button1;
     Button button2;
+    Button button3;
     Spinner unitSpinner;
     CheckBox checkbox_Activity;
     CheckBox checkbox_HR;
     CheckBox checkbox_Sleep;
-    String languageSelected;
+    TextView stepsLast3Hours;
+    TextView stepsLast5Hours;
     int unitSelected;
     String unit_Array [] = {"en_US", "en_GB", "Metric"};
     ArrayAdapter<CharSequence> unit_Adapter;
@@ -94,6 +99,9 @@ public class Fitbit extends AppCompatActivity {
         checkbox_Sleep = (CheckBox) findViewById(R.id.check_Sleep);
         button1 = (Button) findViewById(R.id.button);
         button2 = (Button) findViewById(R.id.button2);
+        button3 = (Button) findViewById(R.id.button3);
+        stepsLast3Hours = (TextView) findViewById(R.id.textView);
+        stepsLast5Hours = (TextView) findViewById(R.id.textView4);
 
         prefs = getSharedPreferences(Fitbit_Preference, MODE_PRIVATE);
         access_Token = prefs.getString("OA2_Access_Token", null);
@@ -176,6 +184,31 @@ public class Fitbit extends AppCompatActivity {
                 if(checkAuthorization() && prefs.getString("OA2_Access_Token", null) != null) { getFitbitData(); }
             }
         });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(
+                    prefs.getBoolean("Activity_Checked", false) == prefs.getBoolean("access_Token_Activity", false) &&
+                    prefs.getBoolean("Activity_Checked", false) &&
+                    prefs.getBoolean("access_Token_Activity", false) &&
+                    prefs.getBoolean("access_Token_Settings", false) &&
+                    prefs.getString("OA2_Access_Token", null) != null)
+                {
+                    button3.setBackgroundColor(Color.GREEN);
+                    //hours = 3;
+                    //String lol = stepCounterLastHours(5);
+                    //Log.d("ABC 3" , lol);
+                    //l/ol = stepCounterLastHours(3);
+                    //Log.d("ABC 5" , "HAHAHA");
+                    new LongOperation().execute("3");
+                    new LongOperation().execute("5");
+
+//                    Log.d("ABC 5" , lol);
+                }
+                else { button3.setBackgroundColor(Color.RED); }
+            }
+        });
     }
 
     // Check if the user's requested scope equals the scope of the access token.
@@ -248,6 +281,11 @@ public class Fitbit extends AppCompatActivity {
             }
             else { editor.putBoolean("access_Token_Sleep", false); }
 
+            if(data_scope.toLowerCase().contains("settings".toLowerCase())) {
+                editor.putBoolean("access_Token_Settings", true);
+            }
+            else { editor.putBoolean("access_Token_Settings", false); }
+
             editor.putString("OA2_Access_Token", access_Token);
             editor.putString("Token_Data_Scope", data_scope);
             editor.putString("Token Type", token_Type);
@@ -284,100 +322,140 @@ public class Fitbit extends AppCompatActivity {
 
                 // Send request for data.
                 if (prefs.getBoolean("access_Token_Activity", false)) {
-                    //string_Activity = requestSend("https://api.fitbit.com/1/user/-/activities/date/2016-12-13.json");
+
                     string_Activity = requestSend("https://api.fitbit.com/1/user/-/activities/steps/date/today/1d/15min.json");
-
-                    try {
-                        JSONObject obj = new JSONObject(string_Activity);
-                        JSONArray businessObject = obj.getJSONArray("activities-steps");
-                        Log.d("ABC1", businessObject.toString());
-
-
-                        JSONObject lol = businessObject.getJSONObject(0);
-                        String ok = lol.getString("value");
-                        Log.d("ABC1", ok);
-
-
-                        String nameValue = businessObject.getString(0);
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                    // string_Activity = requestSend("https://api.fitbit.com/1/user/-/activities/steps/date/today/1d/15min.json");
-
-                    Log.d("ABC2", string_Activity);
+                    //Log.d("Activity", string_Activity);
                     //storeData(string_Activity, "Activity");
                 }
 
                 if (prefs.getBoolean("access_Token_HR", false)) {
-                    //string_HR = requestSend("https://api.fitbit.com/1/user/-/activities/heart/date/today/1d.json");
-                    //string_HR = requestSend("https://api.fitbit.com/1/user/-/activities/heart/date/today/1d/1min.json");
-                    string_HR = requestSend("https://api.fitbit.com/1/user/-/devices.json");
-
-                    try {
-                        JSONArray obj = new JSONArray(string_HR);
-                        JSONObject lol = obj.getJSONObject(0);
-                        String doo = lol.getString("lastSyncTime");
-                        Log.d("ABC", doo);
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-
-                    Log.d("ABC", string_HR);
-                    //storeData(string_Activity, "HR");
+                    string_HR = requestSend("https://api.fitbit.com/1/user/-/activities/heart/date/today/1d/1min.json");
+                    //Log.d("HR", string_HR);
+                    //storeData(string_HR, "HR");
                 }
 
                 if (prefs.getBoolean("access_Token_Sleep", false)) {
                     string_Sleep = requestSend("https://api.fitbit.com/1/user/-/sleep/date/2016-12-13.json");
-                    storeData(string_Sleep, "Sleep");
+                    //Log.d("Sleep", string_Sleep);
+                    //storeData(string_Sleep, "Sleep");
                 }
             }
         }).start();
     }
 
+    private class LongOperation extends AsyncTask<String, Void, String> {
+
+        int hours;
+
+        @Override
+        protected String doInBackground(String... params) {
+            String myString = params[0];
+            hours = Integer.parseInt(myString);
+            OA2_Access_Token = createOAuth2AccessToken();
+            lastSynced = requestSend("https://api.fitbit.com/1/user/-/devices.json");
+
+            try {
+                // Retrieve the time and date of when the user last synced data.
+                JSONArray lastSynced_JSONArr = new JSONArray(lastSynced);
+                JSONObject lastSynced_JSONObj = lastSynced_JSONArr.getJSONObject(0);
+                lastSynced = lastSynced_JSONObj.getString("lastSyncTime");
+                String[] parts = lastSynced.split("T");
+                String lastSynced_Date = parts[0];
+                String lastSynced_Time = parts[1];
+                lastSynced_Time = lastSynced_Time.substring(0, lastSynced_Time.lastIndexOf(":"));
+                DateTime lastSynced_DateTime = DateTime.parse(lastSynced);
+
+                // Retrieve the time and date X hours before the user last synced data.
+                DateTime lastSynced_DateTime_MinusH = lastSynced_DateTime.minusHours(hours);
+                lastSynced_MinusH = lastSynced_DateTime_MinusH.toString();
+                lastSynced_MinusH = lastSynced_MinusH.substring(0, lastSynced_MinusH.lastIndexOf("+"));
+                parts = lastSynced_MinusH.split("T");
+                String lastSynced_MinusH_Date = parts[0];
+                String lastSynced_MinusH_Time = parts[1];
+                lastSynced_MinusH_Time = lastSynced_MinusH_Time.substring(0, lastSynced_MinusH_Time.lastIndexOf(":"));
+
+                // Request data in this time period.
+                stepsLastHours = requestSend(
+                        "https://api.fitbit.com/1/user/-/activities/steps/date/"
+                                + lastSynced_MinusH_Date + "/" + lastSynced_Date + "/15min/time/"
+                                + lastSynced_MinusH_Time + "/" + lastSynced_Time + ".json");
+
+                // Parse JSON and return string.
+                JSONObject obj = new JSONObject(stepsLastHours);
+                JSONArray stepsArray = obj.getJSONArray("activities-steps");
+                JSONObject stepsObject = stepsArray.getJSONObject(0);
+                stepsLastHours = stepsObject.getString("value");
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            return stepsLastHours;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            //TextView txt = (TextView) findViewById(R.id.output);
+            //txt.setText("Executed"); // txt.setText(result);
+            // might want to change "executed" for the returned string passed
+            // into onPostExecute() but that is upto you
+            Log.d("ABC 1111", stepsLastHours);
+            if(hours == 3) {stepsLast3Hours.setText(stepsLastHours);}
+            if(hours == 5) {stepsLast5Hours.setText(stepsLastHours);}
+        }
+    }
+
+
     // Request step count in last x hours.
     // OBS - CAN NOT BE GREATER THEN 24 HOURS!
-    public String stepCounterLastHours(int hours) {
+    String stepCounterLastHours(int hours) {
+        class stepCounterLastHoursClass implements Runnable {
+            int hours;
+            stepCounterLastHoursClass(int hours) {
+                this.hours = hours;
+            }
+            public void run() {
+                OA2_Access_Token = createOAuth2AccessToken();
+                lastSynced = requestSend("https://api.fitbit.com/1/user/-/devices.json");
 
-        OA2_Access_Token = createOAuth2AccessToken();
-        lastSynced = requestSend("https://api.fitbit.com/1/user/-/devices.json");
-        String stepsLastHours = "";
+                try {
+                    // Retrieve the time and date of when the user last synced data.
+                    JSONArray lastSynced_JSONArr = new JSONArray(lastSynced);
+                    JSONObject lastSynced_JSONObj = lastSynced_JSONArr.getJSONObject(0);
+                    lastSynced = lastSynced_JSONObj.getString("lastSyncTime");
+                    String[] parts = lastSynced.split("T");
+                    String lastSynced_Date = parts[0];
+                    String lastSynced_Time = parts[1];
+                    lastSynced_Time = lastSynced_Time.substring(0, lastSynced_Time.lastIndexOf(":"));
+                    DateTime lastSynced_DateTime = DateTime.parse(lastSynced);
 
-        try {
-            // Retrieve the time and date of when the user last synced data.
-            JSONArray lastSynced_JSONArr = new JSONArray(lastSynced);
-            JSONObject lastSynced_JSONObj = lastSynced_JSONArr.getJSONObject(0);
-            lastSynced = lastSynced_JSONObj.getString("lastSyncTime");
-            String[] parts = lastSynced.split("T");
-            String lastSynced_Date = parts[0];
-            String lastSynced_Time = parts[1];
-            lastSynced_Time = lastSynced_Time.substring(0, lastSynced_Time.lastIndexOf(":"));
-            DateTime lastSynced_DateTime = DateTime.parse(lastSynced);
+                    // Retrieve the time and date X hours before the user last synced data.
+                    DateTime lastSynced_DateTime_MinusH = lastSynced_DateTime.minusHours(hours);
+                    lastSynced_MinusH = lastSynced_DateTime_MinusH.toString();
+                    lastSynced_MinusH = lastSynced_MinusH.substring(0, lastSynced_MinusH.lastIndexOf("+"));
+                    parts = lastSynced_MinusH.split("T");
+                    String lastSynced_MinusH_Date = parts[0];
+                    String lastSynced_MinusH_Time = parts[1];
+                    lastSynced_MinusH_Time = lastSynced_MinusH_Time.substring(0, lastSynced_MinusH_Time.lastIndexOf(":"));
 
-            // Retrieve the time and date X hours before the user last synced data.
-            DateTime lastSynced_DateTime_MinusH = lastSynced_DateTime.minusHours(hours);
-            lastSynced_MinusH = lastSynced_DateTime_MinusH.toString();
-            lastSynced_MinusH = lastSynced_MinusH.substring(0, lastSynced_MinusH.lastIndexOf("+"));
-            parts = lastSynced_MinusH.split("T");
-            String lastSynced_MinusH_Date = parts[0];
-            String lastSynced_MinusH_Time = parts[1];
-            lastSynced_MinusH_Time = lastSynced_MinusH_Time.substring(0, lastSynced_MinusH_Time.lastIndexOf(":"));
+                    // Request data in this time period.
+                    stepsLastHours = requestSend(
+                            "https://api.fitbit.com/1/user/-/activities/steps/date/"
+                                    + lastSynced_MinusH_Date + "/" + lastSynced_Date + "/15min/time/"
+                                    + lastSynced_MinusH_Time + "/" + lastSynced_Time + ".json");
 
-            // Request data in this time period.
-            stepsLastHours = requestSend(
-                    "https://api.fitbit.com/1/user/-/activities/steps/date/"
-                    + lastSynced_MinusH_Date + "/" + lastSynced_Date + "/15min/time/"
-                    + lastSynced_MinusH_Time + "/" + lastSynced_Time + ".json");
+                    // Parse JSON and return string.
+                    JSONObject obj = new JSONObject(stepsLastHours);
+                    JSONArray stepsArray = obj.getJSONArray("activities-steps");
+                    JSONObject stepsObject = stepsArray.getJSONObject(0);
+                    stepsLastHours = stepsObject.getString("value");
 
-            // Parse JSON and return string.
-            JSONObject obj = new JSONObject(stepsLastHours);
-            JSONArray stepsArray = obj.getJSONArray("activities-steps");
-            JSONObject stepsObject = stepsArray.getJSONObject(0);
-            stepsLastHours = stepsObject.getString("value");
-        } catch (JSONException e) {
-            e.printStackTrace();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }            }
         }
+        Thread t = new Thread(new stepCounterLastHoursClass(hours));
+        t.start();
         return stepsLastHours;
     }
 
