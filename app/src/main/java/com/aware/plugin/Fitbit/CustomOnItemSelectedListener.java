@@ -1,4 +1,4 @@
-package com.aware.plugin.Fitbit;
+package com.aware.plugin.fitbit;
 
 /**
  * Created by sklakegg on 03/01/17.
@@ -6,7 +6,6 @@ package com.aware.plugin.Fitbit;
 
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Toast;
 
 public class CustomOnItemSelectedListener {

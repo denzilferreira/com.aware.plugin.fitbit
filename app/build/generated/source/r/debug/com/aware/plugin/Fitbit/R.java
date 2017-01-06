@@ -5,42 +5,48 @@
  * should not be modified by hand.
  */
 
-package com.aware.plugin.Fitbit;
+package com.aware.plugin.fitbit;
 
 public final class R {
     public static final class anim {
-        public static final int abc_fade_in=0x7f040000;
-        public static final int abc_fade_out=0x7f040001;
-        public static final int abc_grow_fade_in_from_bottom=0x7f040002;
-        public static final int abc_popup_enter=0x7f040003;
-        public static final int abc_popup_exit=0x7f040004;
-        public static final int abc_shrink_fade_out_from_bottom=0x7f040005;
-        public static final int abc_slide_in_bottom=0x7f040006;
-        public static final int abc_slide_in_top=0x7f040007;
-        public static final int abc_slide_out_bottom=0x7f040008;
-        public static final int abc_slide_out_top=0x7f040009;
+        public static final int abc_fade_in=0x7f050000;
+        public static final int abc_fade_out=0x7f050001;
+        public static final int abc_grow_fade_in_from_bottom=0x7f050002;
+        public static final int abc_popup_enter=0x7f050003;
+        public static final int abc_popup_exit=0x7f050004;
+        public static final int abc_shrink_fade_out_from_bottom=0x7f050005;
+        public static final int abc_slide_in_bottom=0x7f050006;
+        public static final int abc_slide_in_top=0x7f050007;
+        public static final int abc_slide_out_bottom=0x7f050008;
+        public static final int abc_slide_out_top=0x7f050009;
+        public static final int design_appbar_state_list_animator=0x7f05000a;
+        public static final int design_bottom_sheet_slide_in=0x7f05000b;
+        public static final int design_bottom_sheet_slide_out=0x7f05000c;
+        public static final int design_fab_in=0x7f05000d;
+        public static final int design_fab_out=0x7f05000e;
+        public static final int design_snackbar_in=0x7f05000f;
+        public static final int design_snackbar_out=0x7f050010;
     }
     public static final class array {
-        public static final int clean_old_data_readable=0x7f0d0000;
-        public static final int clean_old_data_values=0x7f0d0001;
-        public static final int frequency_readable=0x7f0d0002;
-        public static final int frequency_values=0x7f0d0003;
-        public static final int spinner_Language=0x7f0d0004;
-        public static final int spinner_Units=0x7f0d0005;
+        public static final int clean_old_data_readable=0x7f0f0000;
+        public static final int clean_old_data_values=0x7f0f0001;
+        public static final int frequency_readable=0x7f0f0002;
+        public static final int frequency_values=0x7f0f0003;
+        public static final int spinner_units=0x7f0f0004;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarDivider=0x7f010040;
+        public static final int actionBarDivider=0x7f010046;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarItemBackground=0x7f010041;
+        public static final int actionBarItemBackground=0x7f010047;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarPopupTheme=0x7f01003a;
+        public static final int actionBarPopupTheme=0x7f010040;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -58,117 +64,117 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
          */
-        public static final int actionBarSize=0x7f01003f;
+        public static final int actionBarSize=0x7f010045;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarSplitStyle=0x7f01003c;
+        public static final int actionBarSplitStyle=0x7f010042;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarStyle=0x7f01003b;
+        public static final int actionBarStyle=0x7f010041;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarTabBarStyle=0x7f010036;
+        public static final int actionBarTabBarStyle=0x7f01003c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarTabStyle=0x7f010035;
+        public static final int actionBarTabStyle=0x7f01003b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarTabTextStyle=0x7f010037;
+        public static final int actionBarTabTextStyle=0x7f01003d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarTheme=0x7f01003d;
+        public static final int actionBarTheme=0x7f010043;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionBarWidgetTheme=0x7f01003e;
+        public static final int actionBarWidgetTheme=0x7f010044;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionButtonStyle=0x7f01005b;
+        public static final int actionButtonStyle=0x7f010061;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionDropDownStyle=0x7f010057;
+        public static final int actionDropDownStyle=0x7f01005d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionLayout=0x7f0100ac;
+        public static final int actionLayout=0x7f0100e3;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionMenuTextAppearance=0x7f010042;
+        public static final int actionMenuTextAppearance=0x7f010048;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int actionMenuTextColor=0x7f010043;
+        public static final int actionMenuTextColor=0x7f010049;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeBackground=0x7f010046;
+        public static final int actionModeBackground=0x7f01004c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeCloseButtonStyle=0x7f010045;
+        public static final int actionModeCloseButtonStyle=0x7f01004b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeCloseDrawable=0x7f010048;
+        public static final int actionModeCloseDrawable=0x7f01004e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeCopyDrawable=0x7f01004a;
+        public static final int actionModeCopyDrawable=0x7f010050;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeCutDrawable=0x7f010049;
+        public static final int actionModeCutDrawable=0x7f01004f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeFindDrawable=0x7f01004e;
+        public static final int actionModeFindDrawable=0x7f010054;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModePasteDrawable=0x7f01004b;
+        public static final int actionModePasteDrawable=0x7f010051;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModePopupWindowStyle=0x7f010050;
+        public static final int actionModePopupWindowStyle=0x7f010056;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeSelectAllDrawable=0x7f01004c;
+        public static final int actionModeSelectAllDrawable=0x7f010052;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeShareDrawable=0x7f01004d;
+        public static final int actionModeShareDrawable=0x7f010053;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeSplitBackground=0x7f010047;
+        public static final int actionModeSplitBackground=0x7f01004d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeStyle=0x7f010044;
+        public static final int actionModeStyle=0x7f01004a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionModeWebSearchDrawable=0x7f01004f;
+        public static final int actionModeWebSearchDrawable=0x7f010055;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionOverflowButtonStyle=0x7f010038;
+        public static final int actionOverflowButtonStyle=0x7f01003e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionOverflowMenuStyle=0x7f010039;
+        public static final int actionOverflowMenuStyle=0x7f01003f;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -176,7 +182,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int actionProviderClass=0x7f0100ae;
+        public static final int actionProviderClass=0x7f0100e5;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -184,15 +190,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int actionViewClass=0x7f0100ad;
+        public static final int actionViewClass=0x7f0100e4;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int activityChooserViewStyle=0x7f010063;
+        public static final int activityChooserViewStyle=0x7f010069;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int alertDialogButtonGroupStyle=0x7f010087;
+        public static final int alertDialogButtonGroupStyle=0x7f01008d;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -200,15 +206,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int alertDialogCenterButtons=0x7f010088;
+        public static final int alertDialogCenterButtons=0x7f01008e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int alertDialogStyle=0x7f010086;
+        public static final int alertDialogStyle=0x7f01008c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int alertDialogTheme=0x7f010089;
+        public static final int alertDialogTheme=0x7f01008f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -216,7 +222,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int allowStacking=0x7f01009c;
+        public static final int allowStacking=0x7f0100a5;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -224,7 +230,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int alpha=0x7f01009d;
+        public static final int alpha=0x7f0100c2;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -234,7 +240,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int arrowHeadLength=0x7f0100a4;
+        public static final int arrowHeadLength=0x7f0100d4;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -244,11 +250,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int arrowShaftLength=0x7f0100a5;
+        public static final int arrowShaftLength=0x7f0100d5;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int autoCompleteTextViewStyle=0x7f01008e;
+        public static final int autoCompleteTextViewStyle=0x7f010094;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -273,7 +279,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int backgroundTint=0x7f0100df;
+        public static final int backgroundTint=0x7f010143;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -287,7 +293,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
          */
-        public static final int backgroundTintMode=0x7f0100e0;
+        public static final int backgroundTintMode=0x7f010144;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -297,31 +303,101 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int barLength=0x7f0100a6;
+        public static final int barLength=0x7f0100d6;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behavior_autoHide=0x7f0100dd;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behavior_hideable=0x7f0100a3;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behavior_overlapTop=0x7f0100f7;
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>auto</code></td><td>-1</td><td></td></tr>
+</table>
+         */
+        public static final int behavior_peekHeight=0x7f0100a2;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behavior_skipCollapsed=0x7f0100a4;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int borderWidth=0x7f0100db;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int borderlessButtonStyle=0x7f010060;
+        public static final int borderlessButtonStyle=0x7f010066;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int buttonBarButtonStyle=0x7f01005d;
+        public static final int bottomSheetDialogTheme=0x7f0100cd;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int buttonBarNegativeButtonStyle=0x7f01008c;
+        public static final int bottomSheetStyle=0x7f0100ce;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int buttonBarNeutralButtonStyle=0x7f01008d;
+        public static final int buttonBarButtonStyle=0x7f010063;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int buttonBarPositiveButtonStyle=0x7f01008b;
+        public static final int buttonBarNegativeButtonStyle=0x7f010092;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int buttonBarStyle=0x7f01005c;
+        public static final int buttonBarNeutralButtonStyle=0x7f010093;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarPositiveButtonStyle=0x7f010091;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonBarStyle=0x7f010062;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -332,7 +408,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
 </table>
          */
-        public static final int buttonGravity=0x7f0100d4;
+        public static final int buttonGravity=0x7f010138;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -340,11 +416,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int buttonStyle=0x7f01008f;
+        public static final int buttonStyle=0x7f010095;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int buttonStyleSmall=0x7f010090;
+        public static final int buttonStyleSmall=0x7f010096;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -353,7 +429,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int buttonTint=0x7f01009e;
+        public static final int buttonTint=0x7f0100c3;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -367,19 +443,74 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
          */
-        public static final int buttonTintMode=0x7f01009f;
+        public static final int buttonTintMode=0x7f0100c4;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardBackgroundColor=0x7f0100a6;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardCornerRadius=0x7f0100a7;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardElevation=0x7f0100a8;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardMaxElevation=0x7f0100a9;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardPreventCornerOverlap=0x7f0100ab;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cardUseCompatPadding=0x7f0100aa;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int checkboxStyle=0x7f010091;
+        public static final int checkboxStyle=0x7f010097;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int checkedTextViewStyle=0x7f010092;
+        public static final int checkedTextViewStyle=0x7f010098;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int closeIcon=0x7f0100b7;
+        public static final int closeIcon=0x7f0100fc;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -391,105 +522,128 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int collapseContentDescription=0x7f0100d6;
+        public static final int collapseContentDescription=0x7f01013a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int collapseIcon=0x7f0100d5;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
+        public static final int collapseIcon=0x7f010139;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
          */
-        public static final int color=0x7f0100a0;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int colorAccent=0x7f01007e;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int colorBackgroundFloating=0x7f010085;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int colorButtonNormal=0x7f010082;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int colorControlActivated=0x7f010080;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int colorControlHighlight=0x7f010081;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int colorControlNormal=0x7f01007f;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int colorPrimary=0x7f01007c;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int colorPrimaryDark=0x7f01007d;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int colorSwitchThumbNormal=0x7f010083;
+        public static final int collapsedTitleGravity=0x7f0100bd;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int commitIcon=0x7f0100bc;
+        public static final int collapsedTitleTextAppearance=0x7f0100b7;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color=0x7f0100d0;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorAccent=0x7f010084;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorBackgroundFloating=0x7f01008b;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorButtonNormal=0x7f010088;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorControlActivated=0x7f010086;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorControlHighlight=0x7f010087;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorControlNormal=0x7f010085;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorPrimary=0x7f010082;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorPrimaryDark=0x7f010083;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colorSwitchThumbNormal=0x7f010089;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int commitIcon=0x7f010101;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -550,10 +704,93 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentInsetStartWithNavigation=0x7f01001a;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPadding=0x7f0100ac;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingBottom=0x7f0100b0;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingLeft=0x7f0100ad;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingRight=0x7f0100ae;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentPaddingTop=0x7f0100af;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentScrim=0x7f0100b8;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int controlBackground=0x7f010084;
+        public static final int controlBackground=0x7f01008a;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int counterEnabled=0x7f010125;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int counterMaxLength=0x7f010126;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int counterOverflowTextAppearance=0x7f010128;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int counterTextAppearance=0x7f010127;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -565,7 +802,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int defaultQueryHint=0x7f0100b6;
+        public static final int defaultQueryHint=0x7f0100fb;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -575,11 +812,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int dialogPreferredPadding=0x7f010055;
+        public static final int dialogPreferredPadding=0x7f01005b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int dialogTheme=0x7f010054;
+        public static final int dialogTheme=0x7f01005a;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -603,7 +840,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int dividerHorizontal=0x7f010062;
+        public static final int dividerHorizontal=0x7f010068;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -613,11 +850,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int dividerPadding=0x7f0100aa;
+        public static final int dividerPadding=0x7f0100e1;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int dividerVertical=0x7f010061;
+        public static final int dividerVertical=0x7f010067;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -627,7 +864,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int drawableSize=0x7f0100a2;
+        public static final int drawableSize=0x7f0100d2;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -635,7 +872,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int dropDownListViewStyle=0x7f010074;
+        public static final int dropDownListViewStyle=0x7f01007a;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -645,21 +882,21 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int dropdownListPreferredItemHeight=0x7f010058;
+        public static final int dropdownListPreferredItemHeight=0x7f01005e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int editTextBackground=0x7f010069;
+        public static final int editTextBackground=0x7f01006f;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int editTextColor=0x7f010068;
+        public static final int editTextColor=0x7f01006e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int editTextStyle=0x7f010093;
+        public static final int editTextStyle=0x7f010099;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -670,10 +907,49 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int elevation=0x7f01001c;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int errorEnabled=0x7f010123;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int errorTextAppearance=0x7f010124;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int expandActivityOverflowButtonDrawable=0x7f010020;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expanded=0x7f010027;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+         */
+        public static final int expandedTitleGravity=0x7f0100be;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -683,11 +959,89 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int gapBetweenBars=0x7f0100a3;
+        public static final int expandedTitleMargin=0x7f0100b1;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expandedTitleMarginBottom=0x7f0100b5;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expandedTitleMarginEnd=0x7f0100b4;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expandedTitleMarginStart=0x7f0100b2;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expandedTitleMarginTop=0x7f0100b3;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int goIcon=0x7f0100b8;
+        public static final int expandedTitleTextAppearance=0x7f0100b6;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>auto</code></td><td>-1</td><td></td></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>mini</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int fabSize=0x7f0100d9;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int foregroundInsidePadding=0x7f0100de;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int gapBetweenBars=0x7f0100d3;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int goIcon=0x7f0100fd;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int headerLayout=0x7f0100ed;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -706,10 +1060,30 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int hideOnContentScroll=0x7f010015;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int hintAnimationEnabled=0x7f010129;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int hintEnabled=0x7f010122;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int homeAsUpIndicator=0x7f01005a;
+        public static final int hintTextAppearance=0x7f010121;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int homeAsUpIndicator=0x7f010060;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -725,11 +1099,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int iconifiedByDefault=0x7f0100b4;
+        public static final int iconifiedByDefault=0x7f0100f9;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int imageButtonStyle=0x7f01006a;
+        public static final int imageButtonStyle=0x7f010070;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -742,6 +1116,12 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int initialActivityCount=0x7f01001f;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int insetForeground=0x7f0100f6;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -750,6 +1130,19 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int isLightTheme=0x7f010002;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int itemBackground=0x7f0100eb;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int itemIconTint=0x7f0100e9;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -763,15 +1156,154 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int layout=0x7f0100b3;
+        public static final int itemTextAppearance=0x7f0100ec;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int itemTextColor=0x7f0100ea;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int listChoiceBackgroundIndicator=0x7f01007b;
+        public static final int keylines=0x7f0100c5;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int listDividerAlertDialog=0x7f010056;
+        public static final int layout=0x7f0100f8;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layoutManager=0x7f0100f2;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int layout_anchor=0x7f0100c8;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+         */
+        public static final int layout_anchorGravity=0x7f0100ca;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_behavior=0x7f0100c7;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>pin</code></td><td>1</td><td></td></tr>
+<tr><td><code>parallax</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int layout_collapseMode=0x7f0100c0;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_collapseParallaxMultiplier=0x7f0100c1;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+<tr><td><code>all</code></td><td>0x77</td><td></td></tr>
+</table>
+         */
+        public static final int layout_dodgeInsetEdges=0x7f0100cc;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+         */
+        public static final int layout_insetEdge=0x7f0100cb;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_keyline=0x7f0100c9;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>scroll</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>exitUntilCollapsed</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>enterAlways</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
+</table>
+         */
+        public static final int layout_scrollFlags=0x7f01002a;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int layout_scrollInterpolator=0x7f01002b;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int listChoiceBackgroundIndicator=0x7f010081;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int listDividerAlertDialog=0x7f01005c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -783,11 +1315,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int listMenuViewStyle=0x7f01009b;
+        public static final int listMenuViewStyle=0x7f0100a1;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int listPopupWindowStyle=0x7f010075;
+        public static final int listPopupWindowStyle=0x7f01007b;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -797,7 +1329,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemHeight=0x7f01006f;
+        public static final int listPreferredItemHeight=0x7f010075;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -807,7 +1339,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemHeightLarge=0x7f010071;
+        public static final int listPreferredItemHeightLarge=0x7f010077;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -817,7 +1349,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemHeightSmall=0x7f010070;
+        public static final int listPreferredItemHeightSmall=0x7f010076;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -827,7 +1359,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemPaddingLeft=0x7f010072;
+        public static final int listPreferredItemPaddingLeft=0x7f010078;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -837,7 +1369,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int listPreferredItemPaddingRight=0x7f010073;
+        public static final int listPreferredItemPaddingRight=0x7f010079;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -849,7 +1381,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int logoDescription=0x7f0100d9;
+        public static final int logoDescription=0x7f01013d;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -859,7 +1391,17 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maxButtonHeight=0x7f0100d3;
+        public static final int maxActionInlineWidth=0x7f010105;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int maxButtonHeight=0x7f010137;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -867,7 +1409,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int measureWithLargestChild=0x7f0100a8;
+        public static final int measureWithLargestChild=0x7f0100df;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int menu=0x7f0100e8;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -879,11 +1425,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int navigationContentDescription=0x7f0100d8;
+        public static final int navigationContentDescription=0x7f01013c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int navigationIcon=0x7f0100d7;
+        public static final int navigationIcon=0x7f01013b;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -903,7 +1449,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int overlapAnchor=0x7f0100b1;
+        public static final int overlapAnchor=0x7f0100ee;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -913,7 +1459,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int paddingEnd=0x7f0100dd;
+        public static final int paddingBottomNoButtons=0x7f0100f0;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -923,15 +1469,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int paddingStart=0x7f0100dc;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int panelBackground=0x7f010078;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int panelMenuListTheme=0x7f01007a;
+        public static final int paddingEnd=0x7f010141;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -941,19 +1479,47 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int panelMenuListWidth=0x7f010079;
+        public static final int paddingStart=0x7f010140;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int paddingTopNoTitle=0x7f0100f1;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int popupMenuStyle=0x7f010066;
+        public static final int panelBackground=0x7f01007e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int popupTheme=0x7f01001d;
+        public static final int panelMenuListTheme=0x7f010080;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int panelMenuListWidth=0x7f01007f;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int passwordToggleContentDescription=0x7f01012c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int popupWindowStyle=0x7f010067;
+        public static final int passwordToggleDrawable=0x7f01012b;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -961,7 +1527,60 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int preserveIconSpacing=0x7f0100af;
+        public static final int passwordToggleEnabled=0x7f01012a;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int passwordToggleTint=0x7f01012d;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>src_over</code></td><td>3</td><td></td></tr>
+<tr><td><code>src_in</code></td><td>5</td><td></td></tr>
+<tr><td><code>src_atop</code></td><td>9</td><td></td></tr>
+<tr><td><code>multiply</code></td><td>14</td><td></td></tr>
+<tr><td><code>screen</code></td><td>15</td><td></td></tr>
+</table>
+         */
+        public static final int passwordToggleTintMode=0x7f01012e;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int popupMenuStyle=0x7f01006c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int popupTheme=0x7f01001d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int popupWindowStyle=0x7f01006d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int preserveIconSpacing=0x7f0100e6;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pressedTranslationZ=0x7f0100da;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -979,7 +1598,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int queryBackground=0x7f0100be;
+        public static final int queryBackground=0x7f010103;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -987,47 +1606,82 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int queryHint=0x7f0100b5;
+        public static final int queryHint=0x7f0100fa;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int radioButtonStyle=0x7f010094;
+        public static final int radioButtonStyle=0x7f01009a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int ratingBarStyle=0x7f010095;
+        public static final int ratingBarStyle=0x7f01009b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int ratingBarStyleIndicator=0x7f010096;
+        public static final int ratingBarStyleIndicator=0x7f01009c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int ratingBarStyleSmall=0x7f010097;
+        public static final int ratingBarStyleSmall=0x7f01009d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int reverseLayout=0x7f0100f4;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rippleColor=0x7f0100d8;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scrimAnimationDuration=0x7f0100bc;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scrimVisibleHeightTrigger=0x7f0100bb;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int searchHintIcon=0x7f0100ba;
+        public static final int searchHintIcon=0x7f0100ff;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int searchIcon=0x7f0100b9;
+        public static final int searchIcon=0x7f0100fe;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int searchViewStyle=0x7f01006e;
+        public static final int searchViewStyle=0x7f010074;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int seekBarStyle=0x7f010098;
+        public static final int seekBarStyle=0x7f01009e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int selectableItemBackground=0x7f01005e;
+        public static final int selectableItemBackground=0x7f010064;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int selectableItemBackgroundBorderless=0x7f01005f;
+        public static final int selectableItemBackgroundBorderless=0x7f010065;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1041,7 +1695,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
          */
-        public static final int showAsAction=0x7f0100ab;
+        public static final int showAsAction=0x7f0100e2;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1054,7 +1708,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int showDividers=0x7f0100a9;
+        public static final int showDividers=0x7f0100e0;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1062,11 +1716,27 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int showText=0x7f0100ca;
+        public static final int showText=0x7f010110;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int showTitle=0x7f010026;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int singleChoiceItemLayout=0x7f010024;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spanCount=0x7f0100f3;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1074,15 +1744,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int spinBars=0x7f0100a1;
+        public static final int spinBars=0x7f0100d1;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int spinnerDropDownItemStyle=0x7f010059;
+        public static final int spinnerDropDownItemStyle=0x7f01005f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int spinnerStyle=0x7f010099;
+        public static final int spinnerStyle=0x7f01009f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1090,11 +1760,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int splitTrack=0x7f0100c9;
+        public static final int splitTrack=0x7f01010f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int srcCompat=0x7f010026;
+        public static final int srcCompat=0x7f01002c;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1102,15 +1772,52 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int state_above_anchor=0x7f0100b2;
+        public static final int stackFromEnd=0x7f0100f5;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_above_anchor=0x7f0100ef;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_collapsed=0x7f010028;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_collapsible=0x7f010029;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int subMenuArrow=0x7f0100b0;
+        public static final int statusBarBackground=0x7f0100c6;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int statusBarScrim=0x7f0100b9;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int submitBackground=0x7f0100bf;
+        public static final int subMenuArrow=0x7f0100e7;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int submitBackground=0x7f010104;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1122,7 +1829,7 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int subtitleTextAppearance=0x7f0100cc;
+        public static final int subtitleTextAppearance=0x7f010130;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -1131,7 +1838,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int subtitleTextColor=0x7f0100db;
+        public static final int subtitleTextColor=0x7f01013f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1139,7 +1846,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int suggestionRowLayout=0x7f0100bd;
+        public static final int suggestionRowLayout=0x7f010102;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1149,7 +1856,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int switchMinWidth=0x7f0100c7;
+        public static final int switchMinWidth=0x7f01010d;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1159,84 +1866,201 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int switchPadding=0x7f0100c8;
+        public static final int switchPadding=0x7f01010e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int switchStyle=0x7f01009a;
+        public static final int switchStyle=0x7f0100a0;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int switchTextAppearance=0x7f0100c6;
+        public static final int switchTextAppearance=0x7f01010c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int tabBackground=0x7f010114;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabContentStart=0x7f010113;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fill</code></td><td>0</td><td></td></tr>
+<tr><td><code>center</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int tabGravity=0x7f010116;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabIndicatorColor=0x7f010111;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabIndicatorHeight=0x7f010112;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabMaxWidth=0x7f010118;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabMinWidth=0x7f010117;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
+<tr><td><code>fixed</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int tabMode=0x7f010115;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPadding=0x7f010120;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPaddingBottom=0x7f01011f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPaddingEnd=0x7f01011e;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPaddingStart=0x7f01011c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPaddingTop=0x7f01011d;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabSelectedTextColor=0x7f01011b;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int tabTextAppearance=0x7f010119;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabTextColor=0x7f01011a;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
          */
-        public static final int textAllCaps=0x7f01002a;
+        public static final int textAllCaps=0x7f010030;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceLargePopupMenu=0x7f010051;
+        public static final int textAppearanceLargePopupMenu=0x7f010057;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceListItem=0x7f010076;
+        public static final int textAppearanceListItem=0x7f01007c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceListItemSmall=0x7f010077;
+        public static final int textAppearanceListItemSmall=0x7f01007d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearancePopupMenuHeader=0x7f010053;
+        public static final int textAppearancePopupMenuHeader=0x7f010059;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceSearchResultSubtitle=0x7f01006c;
+        public static final int textAppearanceSearchResultSubtitle=0x7f010072;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceSearchResultTitle=0x7f01006b;
+        public static final int textAppearanceSearchResultTitle=0x7f010071;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int textAppearanceSmallPopupMenu=0x7f010052;
+        public static final int textAppearanceSmallPopupMenu=0x7f010058;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int textColorAlertDialogListItem=0x7f01008a;
-        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         */
-        public static final int textColorSearchUrl=0x7f01006d;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int theme=0x7f0100de;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int thickness=0x7f0100a7;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int thumbTextPadding=0x7f0100c5;
+        public static final int textColorAlertDialogListItem=0x7f010090;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -1245,7 +2069,46 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int thumbTint=0x7f0100c0;
+        public static final int textColorError=0x7f0100cf;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int textColorSearchUrl=0x7f010073;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int theme=0x7f010142;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int thickness=0x7f0100d7;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int thumbTextPadding=0x7f01010b;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int thumbTint=0x7f010106;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1260,11 +2123,11 @@ containing a value of this type.
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
          */
-        public static final int thumbTintMode=0x7f0100c1;
+        public static final int thumbTintMode=0x7f010107;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int tickMark=0x7f010027;
+        public static final int tickMark=0x7f01002d;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -1273,7 +2136,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int tickMarkTint=0x7f010028;
+        public static final int tickMarkTint=0x7f01002e;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1288,7 +2151,7 @@ containing a value of this type.
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
          */
-        public static final int tickMarkTintMode=0x7f010029;
+        public static final int tickMarkTintMode=0x7f01002f;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1297,6 +2160,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int title=0x7f010003;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleEnabled=0x7f0100bf;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1306,7 +2177,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMargin=0x7f0100cd;
+        public static final int titleMargin=0x7f010131;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1316,7 +2187,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginBottom=0x7f0100d1;
+        public static final int titleMarginBottom=0x7f010135;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1326,7 +2197,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginEnd=0x7f0100cf;
+        public static final int titleMarginEnd=0x7f010133;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1336,7 +2207,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginStart=0x7f0100ce;
+        public static final int titleMarginStart=0x7f010132;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1346,7 +2217,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMarginTop=0x7f0100d0;
+        public static final int titleMarginTop=0x7f010134;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1356,11 +2227,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleMargins=0x7f0100d2;
+        public static final int titleMargins=0x7f010136;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int titleTextAppearance=0x7f0100cb;
+        public static final int titleTextAppearance=0x7f01012f;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -1369,7 +2240,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titleTextColor=0x7f0100da;
+        public static final int titleTextColor=0x7f01013e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1377,15 +2248,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int toolbarNavigationButtonStyle=0x7f010065;
+        public static final int toolbarId=0x7f0100ba;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int toolbarStyle=0x7f010064;
+        public static final int toolbarNavigationButtonStyle=0x7f01006b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int track=0x7f0100c2;
+        public static final int toolbarStyle=0x7f01006a;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int track=0x7f010108;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -1394,7 +2269,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int trackTint=0x7f0100c3;
+        public static final int trackTint=0x7f010109;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1409,11 +2284,19 @@ containing a value of this type.
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
          */
-        public static final int trackTintMode=0x7f0100c4;
+        public static final int trackTintMode=0x7f01010a;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int useCompatPadding=0x7f0100dc;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int voiceIcon=0x7f0100bb;
+        public static final int voiceIcon=0x7f010100;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1421,7 +2304,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowActionBar=0x7f01002b;
+        public static final int windowActionBar=0x7f010031;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1429,7 +2312,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowActionBarOverlay=0x7f01002d;
+        public static final int windowActionBarOverlay=0x7f010033;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1437,7 +2320,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowActionModeOverlay=0x7f01002e;
+        public static final int windowActionModeOverlay=0x7f010034;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1450,7 +2333,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowFixedHeightMajor=0x7f010032;
+        public static final int windowFixedHeightMajor=0x7f010038;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1463,7 +2346,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowFixedHeightMinor=0x7f010030;
+        public static final int windowFixedHeightMinor=0x7f010036;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1476,7 +2359,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowFixedWidthMajor=0x7f01002f;
+        public static final int windowFixedWidthMajor=0x7f010035;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1489,7 +2372,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowFixedWidthMinor=0x7f010031;
+        public static final int windowFixedWidthMinor=0x7f010037;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1502,7 +2385,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowMinWidthMajor=0x7f010033;
+        public static final int windowMinWidthMajor=0x7f010039;
         /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1515,7 +2398,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowMinWidthMinor=0x7f010034;
+        public static final int windowMinWidthMinor=0x7f01003a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1523,197 +2406,261 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int windowNoTitle=0x7f01002c;
+        public static final int windowNoTitle=0x7f010032;
     }
     public static final class bool {
-        public static final int abc_action_bar_embed_tabs=0x7f0b0000;
-        public static final int abc_allow_stacked_button_bar=0x7f0b0001;
-        public static final int abc_config_actionMenuItemAllCaps=0x7f0b0002;
-        public static final int abc_config_closeDialogWhenTouchOutside=0x7f0b0003;
-        public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0b0004;
-        public static final int accessibility_access=0x7f0b0005;
-        public static final int standalone=0x7f0b0006;
+        public static final int abc_action_bar_embed_tabs=0x7f0c0000;
+        public static final int abc_allow_stacked_button_bar=0x7f0c0001;
+        public static final int abc_config_actionMenuItemAllCaps=0x7f0c0002;
+        public static final int abc_config_closeDialogWhenTouchOutside=0x7f0c0003;
+        public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0c0004;
+        public static final int accessibility_access=0x7f0c0005;
+        public static final int standalone=0x7f0c0006;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f0c003b;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f0c003c;
-        public static final int abc_btn_colored_borderless_text_material=0x7f0c003d;
-        public static final int abc_color_highlight_material=0x7f0c003e;
-        public static final int abc_hint_foreground_material_dark=0x7f0c003f;
-        public static final int abc_hint_foreground_material_light=0x7f0c0040;
-        public static final int abc_input_method_navigation_guard=0x7f0c0001;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f0c0041;
-        public static final int abc_primary_text_disable_only_material_light=0x7f0c0042;
-        public static final int abc_primary_text_material_dark=0x7f0c0043;
-        public static final int abc_primary_text_material_light=0x7f0c0044;
-        public static final int abc_search_url_text=0x7f0c0045;
-        public static final int abc_search_url_text_normal=0x7f0c0002;
-        public static final int abc_search_url_text_pressed=0x7f0c0003;
-        public static final int abc_search_url_text_selected=0x7f0c0004;
-        public static final int abc_secondary_text_material_dark=0x7f0c0046;
-        public static final int abc_secondary_text_material_light=0x7f0c0047;
-        public static final int abc_tint_btn_checkable=0x7f0c0048;
-        public static final int abc_tint_default=0x7f0c0049;
-        public static final int abc_tint_edittext=0x7f0c004a;
-        public static final int abc_tint_seek_thumb=0x7f0c004b;
-        public static final int abc_tint_spinner=0x7f0c004c;
-        public static final int abc_tint_switch_thumb=0x7f0c004d;
-        public static final int abc_tint_switch_track=0x7f0c004e;
-        public static final int accent_material_dark=0x7f0c0005;
-        public static final int accent_material_light=0x7f0c0006;
-        public static final int background_floating_material_dark=0x7f0c0007;
-        public static final int background_floating_material_light=0x7f0c0008;
-        public static final int background_material_dark=0x7f0c0009;
-        public static final int background_material_light=0x7f0c000a;
-        public static final int bright_foreground_disabled_material_dark=0x7f0c000b;
-        public static final int bright_foreground_disabled_material_light=0x7f0c000c;
-        public static final int bright_foreground_inverse_material_dark=0x7f0c000d;
-        public static final int bright_foreground_inverse_material_light=0x7f0c000e;
-        public static final int bright_foreground_material_dark=0x7f0c000f;
-        public static final int bright_foreground_material_light=0x7f0c0010;
-        public static final int button_material_dark=0x7f0c0011;
-        public static final int button_material_light=0x7f0c0012;
-        public static final int dim_foreground_disabled_material_dark=0x7f0c0013;
-        public static final int dim_foreground_disabled_material_light=0x7f0c0014;
-        public static final int dim_foreground_material_dark=0x7f0c0015;
-        public static final int dim_foreground_material_light=0x7f0c0016;
-        public static final int foreground_material_dark=0x7f0c0017;
-        public static final int foreground_material_light=0x7f0c0018;
-        public static final int highlighted_text_material_dark=0x7f0c0019;
-        public static final int highlighted_text_material_light=0x7f0c001a;
-        public static final int material_blue_grey_800=0x7f0c001b;
-        public static final int material_blue_grey_900=0x7f0c001c;
-        public static final int material_blue_grey_950=0x7f0c001d;
-        public static final int material_deep_teal_200=0x7f0c001e;
-        public static final int material_deep_teal_500=0x7f0c001f;
-        public static final int material_grey_100=0x7f0c0020;
-        public static final int material_grey_300=0x7f0c0021;
-        public static final int material_grey_50=0x7f0c0022;
-        public static final int material_grey_600=0x7f0c0023;
-        public static final int material_grey_800=0x7f0c0024;
-        public static final int material_grey_850=0x7f0c0025;
-        public static final int material_grey_900=0x7f0c0026;
-        public static final int notification_action_color_filter=0x7f0c0000;
-        public static final int notification_icon_bg_color=0x7f0c0027;
-        public static final int notification_material_background_media_default_color=0x7f0c0028;
-        public static final int primary_dark_material_dark=0x7f0c0029;
-        public static final int primary_dark_material_light=0x7f0c002a;
-        public static final int primary_material_dark=0x7f0c002b;
-        public static final int primary_material_light=0x7f0c002c;
-        public static final int primary_text_default_material_dark=0x7f0c002d;
-        public static final int primary_text_default_material_light=0x7f0c002e;
-        public static final int primary_text_disabled_material_dark=0x7f0c002f;
-        public static final int primary_text_disabled_material_light=0x7f0c0030;
-        public static final int ripple_material_dark=0x7f0c0031;
-        public static final int ripple_material_light=0x7f0c0032;
-        public static final int secondary_text_default_material_dark=0x7f0c0033;
-        public static final int secondary_text_default_material_light=0x7f0c0034;
-        public static final int secondary_text_disabled_material_dark=0x7f0c0035;
-        public static final int secondary_text_disabled_material_light=0x7f0c0036;
-        public static final int switch_thumb_disabled_material_dark=0x7f0c0037;
-        public static final int switch_thumb_disabled_material_light=0x7f0c0038;
-        public static final int switch_thumb_material_dark=0x7f0c004f;
-        public static final int switch_thumb_material_light=0x7f0c0050;
-        public static final int switch_thumb_normal_material_dark=0x7f0c0039;
-        public static final int switch_thumb_normal_material_light=0x7f0c003a;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f0e004a;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f0e004b;
+        public static final int abc_btn_colored_borderless_text_material=0x7f0e004c;
+        public static final int abc_btn_colored_text_material=0x7f0e004d;
+        public static final int abc_color_highlight_material=0x7f0e004e;
+        public static final int abc_hint_foreground_material_dark=0x7f0e004f;
+        public static final int abc_hint_foreground_material_light=0x7f0e0050;
+        public static final int abc_input_method_navigation_guard=0x7f0e0001;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f0e0051;
+        public static final int abc_primary_text_disable_only_material_light=0x7f0e0052;
+        public static final int abc_primary_text_material_dark=0x7f0e0053;
+        public static final int abc_primary_text_material_light=0x7f0e0054;
+        public static final int abc_search_url_text=0x7f0e0055;
+        public static final int abc_search_url_text_normal=0x7f0e0002;
+        public static final int abc_search_url_text_pressed=0x7f0e0003;
+        public static final int abc_search_url_text_selected=0x7f0e0004;
+        public static final int abc_secondary_text_material_dark=0x7f0e0056;
+        public static final int abc_secondary_text_material_light=0x7f0e0057;
+        public static final int abc_tint_btn_checkable=0x7f0e0058;
+        public static final int abc_tint_default=0x7f0e0059;
+        public static final int abc_tint_edittext=0x7f0e005a;
+        public static final int abc_tint_seek_thumb=0x7f0e005b;
+        public static final int abc_tint_spinner=0x7f0e005c;
+        public static final int abc_tint_switch_thumb=0x7f0e005d;
+        public static final int abc_tint_switch_track=0x7f0e005e;
+        public static final int accent_material_dark=0x7f0e0005;
+        public static final int accent_material_light=0x7f0e0006;
+        public static final int background_floating_material_dark=0x7f0e0007;
+        public static final int background_floating_material_light=0x7f0e0008;
+        public static final int background_material_dark=0x7f0e0009;
+        public static final int background_material_light=0x7f0e000a;
+        public static final int bright_foreground_disabled_material_dark=0x7f0e000b;
+        public static final int bright_foreground_disabled_material_light=0x7f0e000c;
+        public static final int bright_foreground_inverse_material_dark=0x7f0e000d;
+        public static final int bright_foreground_inverse_material_light=0x7f0e000e;
+        public static final int bright_foreground_material_dark=0x7f0e000f;
+        public static final int bright_foreground_material_light=0x7f0e0010;
+        public static final int button_material_dark=0x7f0e0011;
+        public static final int button_material_light=0x7f0e0012;
+        public static final int cardview_dark_background=0x7f0e0013;
+        public static final int cardview_light_background=0x7f0e0014;
+        public static final int cardview_shadow_end_color=0x7f0e0015;
+        public static final int cardview_shadow_start_color=0x7f0e0016;
+        public static final int design_bottom_navigation_shadow_color=0x7f0e0017;
+        public static final int design_error=0x7f0e005f;
+        public static final int design_fab_shadow_end_color=0x7f0e0018;
+        public static final int design_fab_shadow_mid_color=0x7f0e0019;
+        public static final int design_fab_shadow_start_color=0x7f0e001a;
+        public static final int design_fab_stroke_end_inner_color=0x7f0e001b;
+        public static final int design_fab_stroke_end_outer_color=0x7f0e001c;
+        public static final int design_fab_stroke_top_inner_color=0x7f0e001d;
+        public static final int design_fab_stroke_top_outer_color=0x7f0e001e;
+        public static final int design_snackbar_background_color=0x7f0e001f;
+        public static final int design_textinput_error_color_dark=0x7f0e0020;
+        public static final int design_textinput_error_color_light=0x7f0e0021;
+        public static final int design_tint_password_toggle=0x7f0e0060;
+        public static final int dim_foreground_disabled_material_dark=0x7f0e0022;
+        public static final int dim_foreground_disabled_material_light=0x7f0e0023;
+        public static final int dim_foreground_material_dark=0x7f0e0024;
+        public static final int dim_foreground_material_light=0x7f0e0025;
+        public static final int foreground_material_dark=0x7f0e0026;
+        public static final int foreground_material_light=0x7f0e0027;
+        public static final int highlighted_text_material_dark=0x7f0e0028;
+        public static final int highlighted_text_material_light=0x7f0e0029;
+        public static final int material_blue_grey_800=0x7f0e002a;
+        public static final int material_blue_grey_900=0x7f0e002b;
+        public static final int material_blue_grey_950=0x7f0e002c;
+        public static final int material_deep_teal_200=0x7f0e002d;
+        public static final int material_deep_teal_500=0x7f0e002e;
+        public static final int material_grey_100=0x7f0e002f;
+        public static final int material_grey_300=0x7f0e0030;
+        public static final int material_grey_50=0x7f0e0031;
+        public static final int material_grey_600=0x7f0e0032;
+        public static final int material_grey_800=0x7f0e0033;
+        public static final int material_grey_850=0x7f0e0034;
+        public static final int material_grey_900=0x7f0e0035;
+        public static final int notification_action_color_filter=0x7f0e0000;
+        public static final int notification_icon_bg_color=0x7f0e0036;
+        public static final int notification_material_background_media_default_color=0x7f0e0037;
+        public static final int primary_dark_material_dark=0x7f0e0038;
+        public static final int primary_dark_material_light=0x7f0e0039;
+        public static final int primary_material_dark=0x7f0e003a;
+        public static final int primary_material_light=0x7f0e003b;
+        public static final int primary_text_default_material_dark=0x7f0e003c;
+        public static final int primary_text_default_material_light=0x7f0e003d;
+        public static final int primary_text_disabled_material_dark=0x7f0e003e;
+        public static final int primary_text_disabled_material_light=0x7f0e003f;
+        public static final int ripple_material_dark=0x7f0e0040;
+        public static final int ripple_material_light=0x7f0e0041;
+        public static final int secondary_text_default_material_dark=0x7f0e0042;
+        public static final int secondary_text_default_material_light=0x7f0e0043;
+        public static final int secondary_text_disabled_material_dark=0x7f0e0044;
+        public static final int secondary_text_disabled_material_light=0x7f0e0045;
+        public static final int switch_thumb_disabled_material_dark=0x7f0e0046;
+        public static final int switch_thumb_disabled_material_light=0x7f0e0047;
+        public static final int switch_thumb_material_dark=0x7f0e0061;
+        public static final int switch_thumb_material_light=0x7f0e0062;
+        public static final int switch_thumb_normal_material_dark=0x7f0e0048;
+        public static final int switch_thumb_normal_material_light=0x7f0e0049;
     }
     public static final class dimen {
-        public static final int abc_action_bar_content_inset_material=0x7f09000c;
-        public static final int abc_action_bar_content_inset_with_nav=0x7f09000d;
-        public static final int abc_action_bar_default_height_material=0x7f090001;
-        public static final int abc_action_bar_default_padding_end_material=0x7f09000e;
-        public static final int abc_action_bar_default_padding_start_material=0x7f09000f;
-        public static final int abc_action_bar_elevation_material=0x7f090015;
-        public static final int abc_action_bar_icon_vertical_padding_material=0x7f090016;
-        public static final int abc_action_bar_overflow_padding_end_material=0x7f090017;
-        public static final int abc_action_bar_overflow_padding_start_material=0x7f090018;
-        public static final int abc_action_bar_progress_bar_size=0x7f090002;
-        public static final int abc_action_bar_stacked_max_height=0x7f090019;
-        public static final int abc_action_bar_stacked_tab_max_width=0x7f09001a;
-        public static final int abc_action_bar_subtitle_bottom_margin_material=0x7f09001b;
-        public static final int abc_action_bar_subtitle_top_margin_material=0x7f09001c;
-        public static final int abc_action_button_min_height_material=0x7f09001d;
-        public static final int abc_action_button_min_width_material=0x7f09001e;
-        public static final int abc_action_button_min_width_overflow_material=0x7f09001f;
-        public static final int abc_alert_dialog_button_bar_height=0x7f090000;
-        public static final int abc_button_inset_horizontal_material=0x7f090020;
-        public static final int abc_button_inset_vertical_material=0x7f090021;
-        public static final int abc_button_padding_horizontal_material=0x7f090022;
-        public static final int abc_button_padding_vertical_material=0x7f090023;
-        public static final int abc_cascading_menus_min_smallest_width=0x7f090024;
-        public static final int abc_config_prefDialogWidth=0x7f090005;
-        public static final int abc_control_corner_material=0x7f090025;
-        public static final int abc_control_inset_material=0x7f090026;
-        public static final int abc_control_padding_material=0x7f090027;
-        public static final int abc_dialog_fixed_height_major=0x7f090006;
-        public static final int abc_dialog_fixed_height_minor=0x7f090007;
-        public static final int abc_dialog_fixed_width_major=0x7f090008;
-        public static final int abc_dialog_fixed_width_minor=0x7f090009;
-        public static final int abc_dialog_list_padding_vertical_material=0x7f090028;
-        public static final int abc_dialog_min_width_major=0x7f09000a;
-        public static final int abc_dialog_min_width_minor=0x7f09000b;
-        public static final int abc_dialog_padding_material=0x7f090029;
-        public static final int abc_dialog_padding_top_material=0x7f09002a;
-        public static final int abc_disabled_alpha_material_dark=0x7f09002b;
-        public static final int abc_disabled_alpha_material_light=0x7f09002c;
-        public static final int abc_dropdownitem_icon_width=0x7f09002d;
-        public static final int abc_dropdownitem_text_padding_left=0x7f09002e;
-        public static final int abc_dropdownitem_text_padding_right=0x7f09002f;
-        public static final int abc_edit_text_inset_bottom_material=0x7f090030;
-        public static final int abc_edit_text_inset_horizontal_material=0x7f090031;
-        public static final int abc_edit_text_inset_top_material=0x7f090032;
-        public static final int abc_floating_window_z=0x7f090033;
-        public static final int abc_list_item_padding_horizontal_material=0x7f090034;
-        public static final int abc_panel_menu_list_width=0x7f090035;
-        public static final int abc_progress_bar_height_material=0x7f090036;
-        public static final int abc_search_view_preferred_height=0x7f090037;
-        public static final int abc_search_view_preferred_width=0x7f090038;
-        public static final int abc_seekbar_track_background_height_material=0x7f090039;
-        public static final int abc_seekbar_track_progress_height_material=0x7f09003a;
-        public static final int abc_select_dialog_padding_start_material=0x7f09003b;
-        public static final int abc_switch_padding=0x7f090011;
-        public static final int abc_text_size_body_1_material=0x7f09003c;
-        public static final int abc_text_size_body_2_material=0x7f09003d;
-        public static final int abc_text_size_button_material=0x7f09003e;
-        public static final int abc_text_size_caption_material=0x7f09003f;
-        public static final int abc_text_size_display_1_material=0x7f090040;
-        public static final int abc_text_size_display_2_material=0x7f090041;
-        public static final int abc_text_size_display_3_material=0x7f090042;
-        public static final int abc_text_size_display_4_material=0x7f090043;
-        public static final int abc_text_size_headline_material=0x7f090044;
-        public static final int abc_text_size_large_material=0x7f090045;
-        public static final int abc_text_size_medium_material=0x7f090046;
-        public static final int abc_text_size_menu_header_material=0x7f090047;
-        public static final int abc_text_size_menu_material=0x7f090048;
-        public static final int abc_text_size_small_material=0x7f090049;
-        public static final int abc_text_size_subhead_material=0x7f09004a;
-        public static final int abc_text_size_subtitle_material_toolbar=0x7f090003;
-        public static final int abc_text_size_title_material=0x7f09004b;
-        public static final int abc_text_size_title_material_toolbar=0x7f090004;
-        public static final int disabled_alpha_material_dark=0x7f09004c;
-        public static final int disabled_alpha_material_light=0x7f09004d;
-        public static final int highlight_alpha_material_colored=0x7f09004e;
-        public static final int highlight_alpha_material_dark=0x7f09004f;
-        public static final int highlight_alpha_material_light=0x7f090050;
-        public static final int hint_alpha_material_dark=0x7f090051;
-        public static final int hint_alpha_material_light=0x7f090052;
-        public static final int hint_pressed_alpha_material_dark=0x7f090053;
-        public static final int hint_pressed_alpha_material_light=0x7f090054;
-        public static final int notification_action_icon_size=0x7f090055;
-        public static final int notification_action_text_size=0x7f090056;
-        public static final int notification_big_circle_margin=0x7f090057;
-        public static final int notification_content_margin_start=0x7f090012;
-        public static final int notification_large_icon_height=0x7f090058;
-        public static final int notification_large_icon_width=0x7f090059;
-        public static final int notification_main_column_padding_top=0x7f090013;
-        public static final int notification_media_narrow_margin=0x7f090014;
-        public static final int notification_right_icon_size=0x7f09005a;
-        public static final int notification_right_side_padding_top=0x7f090010;
-        public static final int notification_small_icon_background_padding=0x7f09005b;
-        public static final int notification_small_icon_size_as_large=0x7f09005c;
-        public static final int notification_subtext_size=0x7f09005d;
-        public static final int notification_top_pad=0x7f09005e;
-        public static final int notification_top_pad_large_text=0x7f09005f;
+        public static final int abc_action_bar_content_inset_material=0x7f0a000c;
+        public static final int abc_action_bar_content_inset_with_nav=0x7f0a000d;
+        public static final int abc_action_bar_default_height_material=0x7f0a0001;
+        public static final int abc_action_bar_default_padding_end_material=0x7f0a000e;
+        public static final int abc_action_bar_default_padding_start_material=0x7f0a000f;
+        public static final int abc_action_bar_elevation_material=0x7f0a001d;
+        public static final int abc_action_bar_icon_vertical_padding_material=0x7f0a001e;
+        public static final int abc_action_bar_overflow_padding_end_material=0x7f0a001f;
+        public static final int abc_action_bar_overflow_padding_start_material=0x7f0a0020;
+        public static final int abc_action_bar_progress_bar_size=0x7f0a0002;
+        public static final int abc_action_bar_stacked_max_height=0x7f0a0021;
+        public static final int abc_action_bar_stacked_tab_max_width=0x7f0a0022;
+        public static final int abc_action_bar_subtitle_bottom_margin_material=0x7f0a0023;
+        public static final int abc_action_bar_subtitle_top_margin_material=0x7f0a0024;
+        public static final int abc_action_button_min_height_material=0x7f0a0025;
+        public static final int abc_action_button_min_width_material=0x7f0a0026;
+        public static final int abc_action_button_min_width_overflow_material=0x7f0a0027;
+        public static final int abc_alert_dialog_button_bar_height=0x7f0a0000;
+        public static final int abc_button_inset_horizontal_material=0x7f0a0028;
+        public static final int abc_button_inset_vertical_material=0x7f0a0029;
+        public static final int abc_button_padding_horizontal_material=0x7f0a002a;
+        public static final int abc_button_padding_vertical_material=0x7f0a002b;
+        public static final int abc_cascading_menus_min_smallest_width=0x7f0a002c;
+        public static final int abc_config_prefDialogWidth=0x7f0a0005;
+        public static final int abc_control_corner_material=0x7f0a002d;
+        public static final int abc_control_inset_material=0x7f0a002e;
+        public static final int abc_control_padding_material=0x7f0a002f;
+        public static final int abc_dialog_fixed_height_major=0x7f0a0006;
+        public static final int abc_dialog_fixed_height_minor=0x7f0a0007;
+        public static final int abc_dialog_fixed_width_major=0x7f0a0008;
+        public static final int abc_dialog_fixed_width_minor=0x7f0a0009;
+        public static final int abc_dialog_list_padding_bottom_no_buttons=0x7f0a0030;
+        public static final int abc_dialog_list_padding_top_no_title=0x7f0a0031;
+        public static final int abc_dialog_min_width_major=0x7f0a000a;
+        public static final int abc_dialog_min_width_minor=0x7f0a000b;
+        public static final int abc_dialog_padding_material=0x7f0a0032;
+        public static final int abc_dialog_padding_top_material=0x7f0a0033;
+        public static final int abc_dialog_title_divider_material=0x7f0a0034;
+        public static final int abc_disabled_alpha_material_dark=0x7f0a0035;
+        public static final int abc_disabled_alpha_material_light=0x7f0a0036;
+        public static final int abc_dropdownitem_icon_width=0x7f0a0037;
+        public static final int abc_dropdownitem_text_padding_left=0x7f0a0038;
+        public static final int abc_dropdownitem_text_padding_right=0x7f0a0039;
+        public static final int abc_edit_text_inset_bottom_material=0x7f0a003a;
+        public static final int abc_edit_text_inset_horizontal_material=0x7f0a003b;
+        public static final int abc_edit_text_inset_top_material=0x7f0a003c;
+        public static final int abc_floating_window_z=0x7f0a003d;
+        public static final int abc_list_item_padding_horizontal_material=0x7f0a003e;
+        public static final int abc_panel_menu_list_width=0x7f0a003f;
+        public static final int abc_progress_bar_height_material=0x7f0a0040;
+        public static final int abc_search_view_preferred_height=0x7f0a0041;
+        public static final int abc_search_view_preferred_width=0x7f0a0042;
+        public static final int abc_seekbar_track_background_height_material=0x7f0a0043;
+        public static final int abc_seekbar_track_progress_height_material=0x7f0a0044;
+        public static final int abc_select_dialog_padding_start_material=0x7f0a0045;
+        public static final int abc_switch_padding=0x7f0a0019;
+        public static final int abc_text_size_body_1_material=0x7f0a0046;
+        public static final int abc_text_size_body_2_material=0x7f0a0047;
+        public static final int abc_text_size_button_material=0x7f0a0048;
+        public static final int abc_text_size_caption_material=0x7f0a0049;
+        public static final int abc_text_size_display_1_material=0x7f0a004a;
+        public static final int abc_text_size_display_2_material=0x7f0a004b;
+        public static final int abc_text_size_display_3_material=0x7f0a004c;
+        public static final int abc_text_size_display_4_material=0x7f0a004d;
+        public static final int abc_text_size_headline_material=0x7f0a004e;
+        public static final int abc_text_size_large_material=0x7f0a004f;
+        public static final int abc_text_size_medium_material=0x7f0a0050;
+        public static final int abc_text_size_menu_header_material=0x7f0a0051;
+        public static final int abc_text_size_menu_material=0x7f0a0052;
+        public static final int abc_text_size_small_material=0x7f0a0053;
+        public static final int abc_text_size_subhead_material=0x7f0a0054;
+        public static final int abc_text_size_subtitle_material_toolbar=0x7f0a0003;
+        public static final int abc_text_size_title_material=0x7f0a0055;
+        public static final int abc_text_size_title_material_toolbar=0x7f0a0004;
+        public static final int cardview_compat_inset_shadow=0x7f0a0056;
+        public static final int cardview_default_elevation=0x7f0a0057;
+        public static final int cardview_default_radius=0x7f0a0058;
+        public static final int design_appbar_elevation=0x7f0a0059;
+        public static final int design_bottom_navigation_active_item_max_width=0x7f0a005a;
+        public static final int design_bottom_navigation_active_text_size=0x7f0a005b;
+        public static final int design_bottom_navigation_elevation=0x7f0a005c;
+        public static final int design_bottom_navigation_height=0x7f0a005d;
+        public static final int design_bottom_navigation_item_max_width=0x7f0a005e;
+        public static final int design_bottom_navigation_item_min_width=0x7f0a005f;
+        public static final int design_bottom_navigation_margin=0x7f0a0060;
+        public static final int design_bottom_navigation_shadow_height=0x7f0a0061;
+        public static final int design_bottom_navigation_text_size=0x7f0a0062;
+        public static final int design_bottom_sheet_modal_elevation=0x7f0a0063;
+        public static final int design_bottom_sheet_peek_height_min=0x7f0a0064;
+        public static final int design_fab_border_width=0x7f0a0065;
+        public static final int design_fab_elevation=0x7f0a0066;
+        public static final int design_fab_image_size=0x7f0a0067;
+        public static final int design_fab_size_mini=0x7f0a0068;
+        public static final int design_fab_size_normal=0x7f0a0069;
+        public static final int design_fab_translation_z_pressed=0x7f0a006a;
+        public static final int design_navigation_elevation=0x7f0a006b;
+        public static final int design_navigation_icon_padding=0x7f0a006c;
+        public static final int design_navigation_icon_size=0x7f0a006d;
+        public static final int design_navigation_max_width=0x7f0a0010;
+        public static final int design_navigation_padding_bottom=0x7f0a006e;
+        public static final int design_navigation_separator_vertical_padding=0x7f0a006f;
+        public static final int design_snackbar_action_inline_max_width=0x7f0a0011;
+        public static final int design_snackbar_background_corner_radius=0x7f0a0012;
+        public static final int design_snackbar_elevation=0x7f0a0070;
+        public static final int design_snackbar_extra_spacing_horizontal=0x7f0a0013;
+        public static final int design_snackbar_max_width=0x7f0a0014;
+        public static final int design_snackbar_min_width=0x7f0a0015;
+        public static final int design_snackbar_padding_horizontal=0x7f0a0071;
+        public static final int design_snackbar_padding_vertical=0x7f0a0072;
+        public static final int design_snackbar_padding_vertical_2lines=0x7f0a0016;
+        public static final int design_snackbar_text_size=0x7f0a0073;
+        public static final int design_tab_max_width=0x7f0a0074;
+        public static final int design_tab_scrollable_min_width=0x7f0a0017;
+        public static final int design_tab_text_size=0x7f0a0075;
+        public static final int design_tab_text_size_2line=0x7f0a0076;
+        public static final int disabled_alpha_material_dark=0x7f0a0077;
+        public static final int disabled_alpha_material_light=0x7f0a0078;
+        public static final int highlight_alpha_material_colored=0x7f0a0079;
+        public static final int highlight_alpha_material_dark=0x7f0a007a;
+        public static final int highlight_alpha_material_light=0x7f0a007b;
+        public static final int hint_alpha_material_dark=0x7f0a007c;
+        public static final int hint_alpha_material_light=0x7f0a007d;
+        public static final int hint_pressed_alpha_material_dark=0x7f0a007e;
+        public static final int hint_pressed_alpha_material_light=0x7f0a007f;
+        public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f0a0080;
+        public static final int item_touch_helper_swipe_escape_max_velocity=0x7f0a0081;
+        public static final int item_touch_helper_swipe_escape_velocity=0x7f0a0082;
+        public static final int notification_action_icon_size=0x7f0a0083;
+        public static final int notification_action_text_size=0x7f0a0084;
+        public static final int notification_big_circle_margin=0x7f0a0085;
+        public static final int notification_content_margin_start=0x7f0a001a;
+        public static final int notification_large_icon_height=0x7f0a0086;
+        public static final int notification_large_icon_width=0x7f0a0087;
+        public static final int notification_main_column_padding_top=0x7f0a001b;
+        public static final int notification_media_narrow_margin=0x7f0a001c;
+        public static final int notification_right_icon_size=0x7f0a0088;
+        public static final int notification_right_side_padding_top=0x7f0a0018;
+        public static final int notification_small_icon_background_padding=0x7f0a0089;
+        public static final int notification_small_icon_size_as_large=0x7f0a008a;
+        public static final int notification_subtext_size=0x7f0a008b;
+        public static final int notification_top_pad=0x7f0a008c;
+        public static final int notification_top_pad_large_text=0x7f0a008d;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
@@ -1799,1250 +2746,1355 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020050;
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
-        public static final int grid_selector=0x7f020053;
-        public static final int ic_action_accelerometer=0x7f020054;
-        public static final int ic_action_accelerometer_active=0x7f020055;
-        public static final int ic_action_add_plugin=0x7f020056;
-        public static final int ic_action_applications=0x7f020057;
-        public static final int ic_action_applications_active=0x7f020058;
-        public static final int ic_action_aware_plugins=0x7f020059;
-        public static final int ic_action_aware_sensors=0x7f02005a;
-        public static final int ic_action_aware_stream=0x7f02005b;
-        public static final int ic_action_aware_studies=0x7f02005c;
-        public static final int ic_action_barometer=0x7f02005d;
-        public static final int ic_action_barometer_active=0x7f02005e;
-        public static final int ic_action_battery=0x7f02005f;
-        public static final int ic_action_battery_active=0x7f020060;
-        public static final int ic_action_bluetooth=0x7f020061;
-        public static final int ic_action_bluetooth_active=0x7f020062;
-        public static final int ic_action_communication=0x7f020063;
-        public static final int ic_action_communication_active=0x7f020064;
-        public static final int ic_action_esm=0x7f020065;
-        public static final int ic_action_esm_active=0x7f020066;
-        public static final int ic_action_gravity=0x7f020067;
-        public static final int ic_action_gravity_active=0x7f020068;
-        public static final int ic_action_gyroscope=0x7f020069;
-        public static final int ic_action_gyroscope_active=0x7f02006a;
-        public static final int ic_action_light=0x7f02006b;
-        public static final int ic_action_light_active=0x7f02006c;
-        public static final int ic_action_linear_acceleration=0x7f02006d;
-        public static final int ic_action_linear_acceleration_active=0x7f02006e;
-        public static final int ic_action_locations=0x7f02006f;
-        public static final int ic_action_locations_active=0x7f020070;
-        public static final int ic_action_magnetometer=0x7f020071;
-        public static final int ic_action_magnetometer_active=0x7f020072;
-        public static final int ic_action_mqtt=0x7f020073;
-        public static final int ic_action_mqtt_active=0x7f020074;
-        public static final int ic_action_network=0x7f020075;
-        public static final int ic_action_network_active=0x7f020076;
-        public static final int ic_action_plugin_settings=0x7f020077;
-        public static final int ic_action_processor=0x7f020078;
-        public static final int ic_action_processor_active=0x7f020079;
-        public static final int ic_action_proximity=0x7f02007a;
-        public static final int ic_action_proximity_active=0x7f02007b;
-        public static final int ic_action_qrcode=0x7f02007c;
-        public static final int ic_action_rotation=0x7f02007d;
-        public static final int ic_action_rotation_active=0x7f02007e;
-        public static final int ic_action_screen=0x7f02007f;
-        public static final int ic_action_screen_active=0x7f020080;
-        public static final int ic_action_study=0x7f020081;
-        public static final int ic_action_study_active=0x7f020082;
-        public static final int ic_action_telephony=0x7f020083;
-        public static final int ic_action_telephony_active=0x7f020084;
-        public static final int ic_action_temperature=0x7f020085;
-        public static final int ic_action_temperature_active=0x7f020086;
-        public static final int ic_action_timezone=0x7f020087;
-        public static final int ic_action_timezone_active=0x7f020088;
-        public static final int ic_action_wifi=0x7f020089;
-        public static final int ic_action_wifi_active=0x7f02008a;
-        public static final int ic_launcher=0x7f02008b;
-        public static final int ic_launcher_aware=0x7f02008c;
-        public static final int ic_launcher_settings=0x7f02008d;
-        public static final int ic_stat_allow=0x7f02008e;
-        public static final int ic_stat_aware_accessibility=0x7f02008f;
-        public static final int ic_stat_aware_esm=0x7f020090;
-        public static final int ic_stat_aware_plugin_dependency=0x7f020091;
-        public static final int ic_stat_aware_sync=0x7f020092;
-        public static final int ic_stat_aware_update=0x7f020093;
-        public static final int ic_stat_deny=0x7f020094;
-        public static final int notification_action_background=0x7f020095;
-        public static final int notification_bg=0x7f020096;
-        public static final int notification_bg_low=0x7f020097;
-        public static final int notification_bg_low_normal=0x7f020098;
-        public static final int notification_bg_low_pressed=0x7f020099;
-        public static final int notification_bg_normal=0x7f02009a;
-        public static final int notification_bg_normal_pressed=0x7f02009b;
-        public static final int notification_icon_background=0x7f02009c;
-        public static final int notification_template_icon_bg=0x7f0200a0;
-        public static final int notification_template_icon_low_bg=0x7f0200a1;
-        public static final int notification_tile_bg=0x7f02009d;
-        public static final int notify_panel_notification_icon_bg=0x7f02009e;
-        public static final int square=0x7f02009f;
+        public static final int design_bottom_navigation_item_background=0x7f020053;
+        public static final int design_fab_background=0x7f020054;
+        public static final int design_ic_visibility=0x7f020055;
+        public static final int design_snackbar_background=0x7f020056;
+        public static final int grid_selector=0x7f020057;
+        public static final int ic_action_accelerometer=0x7f020058;
+        public static final int ic_action_accelerometer_active=0x7f020059;
+        public static final int ic_action_add_plugin=0x7f02005a;
+        public static final int ic_action_applications=0x7f02005b;
+        public static final int ic_action_applications_active=0x7f02005c;
+        public static final int ic_action_aware_plugins=0x7f02005d;
+        public static final int ic_action_aware_sensors=0x7f02005e;
+        public static final int ic_action_aware_stream=0x7f02005f;
+        public static final int ic_action_aware_studies=0x7f020060;
+        public static final int ic_action_barometer=0x7f020061;
+        public static final int ic_action_barometer_active=0x7f020062;
+        public static final int ic_action_battery=0x7f020063;
+        public static final int ic_action_battery_active=0x7f020064;
+        public static final int ic_action_bluetooth=0x7f020065;
+        public static final int ic_action_bluetooth_active=0x7f020066;
+        public static final int ic_action_communication=0x7f020067;
+        public static final int ic_action_communication_active=0x7f020068;
+        public static final int ic_action_esm=0x7f020069;
+        public static final int ic_action_esm_active=0x7f02006a;
+        public static final int ic_action_gravity=0x7f02006b;
+        public static final int ic_action_gravity_active=0x7f02006c;
+        public static final int ic_action_gyroscope=0x7f02006d;
+        public static final int ic_action_gyroscope_active=0x7f02006e;
+        public static final int ic_action_light=0x7f02006f;
+        public static final int ic_action_light_active=0x7f020070;
+        public static final int ic_action_linear_acceleration=0x7f020071;
+        public static final int ic_action_linear_acceleration_active=0x7f020072;
+        public static final int ic_action_locations=0x7f020073;
+        public static final int ic_action_locations_active=0x7f020074;
+        public static final int ic_action_magnetometer=0x7f020075;
+        public static final int ic_action_magnetometer_active=0x7f020076;
+        public static final int ic_action_mqtt=0x7f020077;
+        public static final int ic_action_mqtt_active=0x7f020078;
+        public static final int ic_action_network=0x7f020079;
+        public static final int ic_action_network_active=0x7f02007a;
+        public static final int ic_action_plugin_settings=0x7f02007b;
+        public static final int ic_action_processor=0x7f02007c;
+        public static final int ic_action_processor_active=0x7f02007d;
+        public static final int ic_action_proximity=0x7f02007e;
+        public static final int ic_action_proximity_active=0x7f02007f;
+        public static final int ic_action_qrcode=0x7f020080;
+        public static final int ic_action_rotation=0x7f020081;
+        public static final int ic_action_rotation_active=0x7f020082;
+        public static final int ic_action_screen=0x7f020083;
+        public static final int ic_action_screen_active=0x7f020084;
+        public static final int ic_action_study=0x7f020085;
+        public static final int ic_action_study_active=0x7f020086;
+        public static final int ic_action_telephony=0x7f020087;
+        public static final int ic_action_telephony_active=0x7f020088;
+        public static final int ic_action_temperature=0x7f020089;
+        public static final int ic_action_temperature_active=0x7f02008a;
+        public static final int ic_action_timezone=0x7f02008b;
+        public static final int ic_action_timezone_active=0x7f02008c;
+        public static final int ic_action_wifi=0x7f02008d;
+        public static final int ic_action_wifi_active=0x7f02008e;
+        public static final int ic_launcher=0x7f02008f;
+        public static final int ic_launcher_aware=0x7f020090;
+        public static final int ic_launcher_settings=0x7f020091;
+        public static final int ic_stat_allow=0x7f020092;
+        public static final int ic_stat_aware_accessibility=0x7f020093;
+        public static final int ic_stat_aware_esm=0x7f020094;
+        public static final int ic_stat_aware_plugin_dependency=0x7f020095;
+        public static final int ic_stat_aware_sync=0x7f020096;
+        public static final int ic_stat_aware_update=0x7f020097;
+        public static final int ic_stat_deny=0x7f020098;
+        public static final int navigation_empty_icon=0x7f020099;
+        public static final int notification_action_background=0x7f02009a;
+        public static final int notification_bg=0x7f02009b;
+        public static final int notification_bg_low=0x7f02009c;
+        public static final int notification_bg_low_normal=0x7f02009d;
+        public static final int notification_bg_low_pressed=0x7f02009e;
+        public static final int notification_bg_normal=0x7f02009f;
+        public static final int notification_bg_normal_pressed=0x7f0200a0;
+        public static final int notification_icon_background=0x7f0200a1;
+        public static final int notification_template_icon_bg=0x7f0200a5;
+        public static final int notification_template_icon_low_bg=0x7f0200a6;
+        public static final int notification_tile_bg=0x7f0200a2;
+        public static final int notify_panel_notification_icon_bg=0x7f0200a3;
+        public static final int square=0x7f0200a4;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f0e005f;
-        public static final int action0=0x7f0e0088;
-        public static final int action_bar=0x7f0e0045;
-        public static final int action_bar_activity_content=0x7f0e0000;
-        public static final int action_bar_container=0x7f0e0044;
-        public static final int action_bar_root=0x7f0e0040;
-        public static final int action_bar_spinner=0x7f0e0001;
-        public static final int action_bar_subtitle=0x7f0e0025;
-        public static final int action_bar_title=0x7f0e0024;
-        public static final int action_container=0x7f0e0085;
-        public static final int action_context_bar=0x7f0e0046;
-        public static final int action_divider=0x7f0e008c;
-        public static final int action_image=0x7f0e0086;
-        public static final int action_menu_divider=0x7f0e0002;
-        public static final int action_menu_presenter=0x7f0e0003;
-        public static final int action_mode_bar=0x7f0e0042;
-        public static final int action_mode_bar_stub=0x7f0e0041;
-        public static final int action_mode_close_button=0x7f0e0026;
-        public static final int action_text=0x7f0e0087;
-        public static final int actions=0x7f0e0095;
-        public static final int activity_chooser_view_content=0x7f0e0027;
-        public static final int add=0x7f0e0013;
-        public static final int alertTitle=0x7f0e0033;
-        public static final int always=0x7f0e001d;
-        public static final int beginning=0x7f0e001a;
-        public static final int bottom=0x7f0e0022;
-        public static final int button=0x7f0e005a;
-        public static final int button2=0x7f0e005b;
-        public static final int button3=0x7f0e005c;
-        public static final int buttonPanel=0x7f0e002e;
-        public static final int cancel_action=0x7f0e0089;
-        public static final int check_Activity=0x7f0e0055;
-        public static final int check_HR=0x7f0e0056;
-        public static final int check_Sleep=0x7f0e0057;
-        public static final int checkbox=0x7f0e003c;
-        public static final int checkbox_container=0x7f0e0062;
-        public static final int chronometer=0x7f0e0091;
-        public static final int collapseActionView=0x7f0e001e;
-        public static final int contentPanel=0x7f0e0034;
-        public static final int custom=0x7f0e003a;
-        public static final int customPanel=0x7f0e0039;
-        public static final int datePicker=0x7f0e0069;
-        public static final int datetimepager=0x7f0e0067;
-        public static final int datetimepagerstrip=0x7f0e0068;
-        public static final int decor_content_parent=0x7f0e0043;
-        public static final int default_activity_button=0x7f0e002a;
-        public static final int disableHome=0x7f0e000c;
-        public static final int edit_query=0x7f0e0047;
-        public static final int end=0x7f0e001b;
-        public static final int end_padder=0x7f0e009b;
-        public static final int esm_answers=0x7f0e0080;
-        public static final int esm_buttons_controls=0x7f0e0064;
-        public static final int esm_cancel=0x7f0e0065;
-        public static final int esm_checkboxes=0x7f0e0063;
-        public static final int esm_feedback=0x7f0e006e;
-        public static final int esm_instructions=0x7f0e0061;
-        public static final int esm_likert=0x7f0e006b;
-        public static final int esm_max=0x7f0e006d;
-        public static final int esm_min=0x7f0e006c;
-        public static final int esm_pam=0x7f0e006f;
-        public static final int esm_radio=0x7f0e0082;
-        public static final int esm_scale=0x7f0e0084;
-        public static final int esm_slider_value=0x7f0e0083;
-        public static final int esm_submit=0x7f0e0066;
-        public static final int esm_title=0x7f0e0060;
-        public static final int expand_activities_button=0x7f0e0028;
-        public static final int expanded_menu=0x7f0e003b;
-        public static final int home=0x7f0e0004;
-        public static final int homeAsUp=0x7f0e000d;
-        public static final int icon=0x7f0e002c;
-        public static final int icon_group=0x7f0e0096;
-        public static final int ifRoom=0x7f0e001f;
-        public static final int image=0x7f0e0029;
-        public static final int info=0x7f0e0092;
-        public static final int line1=0x7f0e0097;
-        public static final int line3=0x7f0e0099;
-        public static final int listMode=0x7f0e0009;
-        public static final int list_item=0x7f0e002b;
-        public static final int media_actions=0x7f0e008b;
-        public static final int middle=0x7f0e001c;
-        public static final int multiply=0x7f0e0014;
-        public static final int never=0x7f0e0020;
-        public static final int none=0x7f0e000e;
-        public static final int normal=0x7f0e000a;
-        public static final int notification_background=0x7f0e0094;
-        public static final int notification_main_column=0x7f0e008e;
-        public static final int notification_main_column_container=0x7f0e008d;
-        public static final int parentPanel=0x7f0e0030;
-        public static final int pos1=0x7f0e0070;
-        public static final int pos10=0x7f0e0079;
-        public static final int pos11=0x7f0e007a;
-        public static final int pos12=0x7f0e007b;
-        public static final int pos13=0x7f0e007c;
-        public static final int pos14=0x7f0e007d;
-        public static final int pos15=0x7f0e007e;
-        public static final int pos16=0x7f0e007f;
-        public static final int pos2=0x7f0e0071;
-        public static final int pos3=0x7f0e0072;
-        public static final int pos4=0x7f0e0073;
-        public static final int pos5=0x7f0e0074;
-        public static final int pos6=0x7f0e0075;
-        public static final int pos7=0x7f0e0076;
-        public static final int pos8=0x7f0e0077;
-        public static final int pos9=0x7f0e0078;
-        public static final int progress_circular=0x7f0e0005;
-        public static final int progress_horizontal=0x7f0e0006;
-        public static final int radio=0x7f0e003e;
-        public static final int radios_container=0x7f0e0081;
-        public static final int right_icon=0x7f0e0093;
-        public static final int right_side=0x7f0e008f;
-        public static final int screen=0x7f0e0015;
-        public static final int scrollIndicatorDown=0x7f0e0038;
-        public static final int scrollIndicatorUp=0x7f0e0035;
-        public static final int scrollView=0x7f0e0036;
-        public static final int search_badge=0x7f0e0049;
-        public static final int search_bar=0x7f0e0048;
-        public static final int search_button=0x7f0e004a;
-        public static final int search_close_btn=0x7f0e004f;
-        public static final int search_edit_frame=0x7f0e004b;
-        public static final int search_go_btn=0x7f0e0051;
-        public static final int search_mag_icon=0x7f0e004c;
-        public static final int search_plate=0x7f0e004d;
-        public static final int search_src_text=0x7f0e004e;
-        public static final int search_voice_btn=0x7f0e0052;
-        public static final int select_dialog_listview=0x7f0e0053;
-        public static final int shortcut=0x7f0e003d;
-        public static final int showCustom=0x7f0e000f;
-        public static final int showHome=0x7f0e0010;
-        public static final int showTitle=0x7f0e0011;
-        public static final int spacer=0x7f0e002f;
-        public static final int spinner_Unit=0x7f0e0059;
-        public static final int split_action_bar=0x7f0e0007;
-        public static final int src_atop=0x7f0e0016;
-        public static final int src_in=0x7f0e0017;
-        public static final int src_over=0x7f0e0018;
-        public static final int status_bar_latest_event_content=0x7f0e008a;
-        public static final int submenuarrow=0x7f0e003f;
-        public static final int submit_area=0x7f0e0050;
-        public static final int tabMode=0x7f0e000b;
-        public static final int text=0x7f0e009a;
-        public static final int text2=0x7f0e0098;
-        public static final int textSpacerNoButtons=0x7f0e0037;
-        public static final int textView=0x7f0e005d;
-        public static final int textView2=0x7f0e0058;
-        public static final int textView3=0x7f0e0054;
-        public static final int textView4=0x7f0e005e;
-        public static final int time=0x7f0e0090;
-        public static final int timePicker=0x7f0e006a;
-        public static final int title=0x7f0e002d;
-        public static final int title_template=0x7f0e0032;
-        public static final int top=0x7f0e0023;
-        public static final int topPanel=0x7f0e0031;
-        public static final int up=0x7f0e0008;
-        public static final int useLogo=0x7f0e0012;
-        public static final int withText=0x7f0e0021;
-        public static final int wrap_content=0x7f0e0019;
+        public static final int LinearLayout1=0x7f100088;
+        public static final int action0=0x7f1000b1;
+        public static final int action_bar=0x7f100062;
+        public static final int action_bar_activity_content=0x7f100000;
+        public static final int action_bar_container=0x7f100061;
+        public static final int action_bar_root=0x7f10005d;
+        public static final int action_bar_spinner=0x7f100001;
+        public static final int action_bar_subtitle=0x7f100040;
+        public static final int action_bar_title=0x7f10003f;
+        public static final int action_container=0x7f1000ae;
+        public static final int action_context_bar=0x7f100063;
+        public static final int action_divider=0x7f1000b5;
+        public static final int action_image=0x7f1000af;
+        public static final int action_menu_divider=0x7f100002;
+        public static final int action_menu_presenter=0x7f100003;
+        public static final int action_mode_bar=0x7f10005f;
+        public static final int action_mode_bar_stub=0x7f10005e;
+        public static final int action_mode_close_button=0x7f100041;
+        public static final int action_text=0x7f1000b0;
+        public static final int actions=0x7f1000be;
+        public static final int activity_chooser_view_content=0x7f100042;
+        public static final int add=0x7f10001c;
+        public static final int alertTitle=0x7f100056;
+        public static final int all=0x7f100034;
+        public static final int always=0x7f100038;
+        public static final int auto=0x7f100023;
+        public static final int beginning=0x7f100036;
+        public static final int bottom=0x7f100024;
+        public static final int button=0x7f100077;
+        public static final int button2=0x7f100078;
+        public static final int button3=0x7f100079;
+        public static final int buttonPanel=0x7f100049;
+        public static final int cancel_action=0x7f1000b2;
+        public static final int center=0x7f100025;
+        public static final int center_horizontal=0x7f100026;
+        public static final int center_vertical=0x7f100027;
+        public static final int check_Activity=0x7f100072;
+        public static final int check_HR=0x7f100073;
+        public static final int check_Sleep=0x7f100074;
+        public static final int checkbox=0x7f100059;
+        public static final int checkbox_container=0x7f10008b;
+        public static final int chronometer=0x7f1000ba;
+        public static final int clip_horizontal=0x7f100030;
+        public static final int clip_vertical=0x7f100031;
+        public static final int collapseActionView=0x7f100039;
+        public static final int contentPanel=0x7f10004c;
+        public static final int custom=0x7f100053;
+        public static final int customPanel=0x7f100052;
+        public static final int datePicker=0x7f100092;
+        public static final int datetimepager=0x7f100090;
+        public static final int datetimepagerstrip=0x7f100091;
+        public static final int decor_content_parent=0x7f100060;
+        public static final int default_activity_button=0x7f100045;
+        public static final int design_bottom_sheet=0x7f10007f;
+        public static final int design_menu_item_action_area=0x7f100086;
+        public static final int design_menu_item_action_area_stub=0x7f100085;
+        public static final int design_menu_item_text=0x7f100084;
+        public static final int design_navigation_view=0x7f100083;
+        public static final int disableHome=0x7f100010;
+        public static final int edit_query=0x7f100064;
+        public static final int end=0x7f100028;
+        public static final int end_padder=0x7f1000c4;
+        public static final int enterAlways=0x7f100017;
+        public static final int enterAlwaysCollapsed=0x7f100018;
+        public static final int esm_answers=0x7f1000a9;
+        public static final int esm_buttons_controls=0x7f10008d;
+        public static final int esm_cancel=0x7f10008e;
+        public static final int esm_checkboxes=0x7f10008c;
+        public static final int esm_feedback=0x7f100097;
+        public static final int esm_instructions=0x7f10008a;
+        public static final int esm_likert=0x7f100094;
+        public static final int esm_max=0x7f100096;
+        public static final int esm_min=0x7f100095;
+        public static final int esm_pam=0x7f100098;
+        public static final int esm_radio=0x7f1000ab;
+        public static final int esm_scale=0x7f1000ad;
+        public static final int esm_slider_value=0x7f1000ac;
+        public static final int esm_submit=0x7f10008f;
+        public static final int esm_title=0x7f100089;
+        public static final int exitUntilCollapsed=0x7f100019;
+        public static final int expand_activities_button=0x7f100043;
+        public static final int expanded_menu=0x7f100058;
+        public static final int fill=0x7f100032;
+        public static final int fill_horizontal=0x7f100033;
+        public static final int fill_vertical=0x7f100029;
+        public static final int fixed=0x7f10003d;
+        public static final int home=0x7f100004;
+        public static final int homeAsUp=0x7f100011;
+        public static final int icon=0x7f100047;
+        public static final int icon_group=0x7f1000bf;
+        public static final int ifRoom=0x7f10003a;
+        public static final int image=0x7f100044;
+        public static final int info=0x7f1000bb;
+        public static final int item_touch_helper_previous_elevation=0x7f100005;
+        public static final int largeLabel=0x7f10007d;
+        public static final int left=0x7f10002a;
+        public static final int line1=0x7f1000c0;
+        public static final int line3=0x7f1000c2;
+        public static final int listMode=0x7f10000d;
+        public static final int list_item=0x7f100046;
+        public static final int media_actions=0x7f1000b4;
+        public static final int middle=0x7f100037;
+        public static final int mini=0x7f100035;
+        public static final int multiply=0x7f10001d;
+        public static final int navigation_header_container=0x7f100082;
+        public static final int never=0x7f10003b;
+        public static final int none=0x7f100012;
+        public static final int normal=0x7f10000e;
+        public static final int notification_background=0x7f1000bd;
+        public static final int notification_main_column=0x7f1000b7;
+        public static final int notification_main_column_container=0x7f1000b6;
+        public static final int parallax=0x7f10002e;
+        public static final int parentPanel=0x7f10004b;
+        public static final int pin=0x7f10002f;
+        public static final int pos1=0x7f100099;
+        public static final int pos10=0x7f1000a2;
+        public static final int pos11=0x7f1000a3;
+        public static final int pos12=0x7f1000a4;
+        public static final int pos13=0x7f1000a5;
+        public static final int pos14=0x7f1000a6;
+        public static final int pos15=0x7f1000a7;
+        public static final int pos16=0x7f1000a8;
+        public static final int pos2=0x7f10009a;
+        public static final int pos3=0x7f10009b;
+        public static final int pos4=0x7f10009c;
+        public static final int pos5=0x7f10009d;
+        public static final int pos6=0x7f10009e;
+        public static final int pos7=0x7f10009f;
+        public static final int pos8=0x7f1000a0;
+        public static final int pos9=0x7f1000a1;
+        public static final int progress_circular=0x7f100006;
+        public static final int progress_horizontal=0x7f100007;
+        public static final int radio=0x7f10005b;
+        public static final int radios_container=0x7f1000aa;
+        public static final int right=0x7f10002b;
+        public static final int right_icon=0x7f1000bc;
+        public static final int right_side=0x7f1000b8;
+        public static final int screen=0x7f10001e;
+        public static final int scroll=0x7f10001a;
+        public static final int scrollIndicatorDown=0x7f100051;
+        public static final int scrollIndicatorUp=0x7f10004d;
+        public static final int scrollView=0x7f10004e;
+        public static final int scrollable=0x7f10003e;
+        public static final int search_badge=0x7f100066;
+        public static final int search_bar=0x7f100065;
+        public static final int search_button=0x7f100067;
+        public static final int search_close_btn=0x7f10006c;
+        public static final int search_edit_frame=0x7f100068;
+        public static final int search_go_btn=0x7f10006e;
+        public static final int search_mag_icon=0x7f100069;
+        public static final int search_plate=0x7f10006a;
+        public static final int search_src_text=0x7f10006b;
+        public static final int search_voice_btn=0x7f10006f;
+        public static final int select_dialog_listview=0x7f100070;
+        public static final int shortcut=0x7f10005a;
+        public static final int showCustom=0x7f100013;
+        public static final int showHome=0x7f100014;
+        public static final int showTitle=0x7f100015;
+        public static final int smallLabel=0x7f10007c;
+        public static final int snackbar_action=0x7f100081;
+        public static final int snackbar_text=0x7f100080;
+        public static final int snap=0x7f10001b;
+        public static final int spacer=0x7f10004a;
+        public static final int spinner_Unit=0x7f100076;
+        public static final int split_action_bar=0x7f100008;
+        public static final int src_atop=0x7f10001f;
+        public static final int src_in=0x7f100020;
+        public static final int src_over=0x7f100021;
+        public static final int start=0x7f10002c;
+        public static final int status_bar_latest_event_content=0x7f1000b3;
+        public static final int submenuarrow=0x7f10005c;
+        public static final int submit_area=0x7f10006d;
+        public static final int tabMode=0x7f10000f;
+        public static final int text=0x7f1000c3;
+        public static final int text2=0x7f1000c1;
+        public static final int textSpacerNoButtons=0x7f100050;
+        public static final int textSpacerNoTitle=0x7f10004f;
+        public static final int textView=0x7f10007a;
+        public static final int textView2=0x7f100075;
+        public static final int textView3=0x7f100071;
+        public static final int textView4=0x7f10007b;
+        public static final int text_input_password_toggle=0x7f100087;
+        public static final int time=0x7f1000b9;
+        public static final int timePicker=0x7f100093;
+        public static final int title=0x7f100048;
+        public static final int titleDividerNoCustom=0x7f100057;
+        public static final int title_template=0x7f100055;
+        public static final int top=0x7f10002d;
+        public static final int topPanel=0x7f100054;
+        public static final int touch_outside=0x7f10007e;
+        public static final int transition_current_scene=0x7f100009;
+        public static final int transition_scene_layoutid_cache=0x7f10000a;
+        public static final int up=0x7f10000b;
+        public static final int useLogo=0x7f100016;
+        public static final int view_offset_helper=0x7f10000c;
+        public static final int withText=0x7f10003c;
+        public static final int wrap_content=0x7f100022;
     }
     public static final class integer {
-        public static final int abc_config_activityDefaultDur=0x7f0f0000;
-        public static final int abc_config_activityShortDur=0x7f0f0001;
-        public static final int cancel_button_image_alpha=0x7f0f0002;
-        public static final int status_bar_notification_info_maxnum=0x7f0f0003;
+        public static final int abc_config_activityDefaultDur=0x7f0d0001;
+        public static final int abc_config_activityShortDur=0x7f0d0002;
+        public static final int app_bar_elevation_anim_duration=0x7f0d0003;
+        public static final int bottom_sheet_slide_duration=0x7f0d0004;
+        public static final int cancel_button_image_alpha=0x7f0d0005;
+        public static final int design_snackbar_text_max_lines=0x7f0d0000;
+        public static final int status_bar_notification_info_maxnum=0x7f0d0006;
     }
     public static final class layout {
-        public static final int abc_action_bar_title_item=0x7f030000;
-        public static final int abc_action_bar_up_container=0x7f030001;
-        public static final int abc_action_bar_view_list_nav_layout=0x7f030002;
-        public static final int abc_action_menu_item_layout=0x7f030003;
-        public static final int abc_action_menu_layout=0x7f030004;
-        public static final int abc_action_mode_bar=0x7f030005;
-        public static final int abc_action_mode_close_item_material=0x7f030006;
-        public static final int abc_activity_chooser_view=0x7f030007;
-        public static final int abc_activity_chooser_view_list_item=0x7f030008;
-        public static final int abc_alert_dialog_button_bar_material=0x7f030009;
-        public static final int abc_alert_dialog_material=0x7f03000a;
-        public static final int abc_dialog_title_material=0x7f03000b;
-        public static final int abc_expanded_menu_layout=0x7f03000c;
-        public static final int abc_list_menu_item_checkbox=0x7f03000d;
-        public static final int abc_list_menu_item_icon=0x7f03000e;
-        public static final int abc_list_menu_item_layout=0x7f03000f;
-        public static final int abc_list_menu_item_radio=0x7f030010;
-        public static final int abc_popup_menu_header_item_layout=0x7f030011;
-        public static final int abc_popup_menu_item_layout=0x7f030012;
-        public static final int abc_screen_content_include=0x7f030013;
-        public static final int abc_screen_simple=0x7f030014;
-        public static final int abc_screen_simple_overlay_action_mode=0x7f030015;
-        public static final int abc_screen_toolbar=0x7f030016;
-        public static final int abc_search_dropdown_item_icons_2line=0x7f030017;
-        public static final int abc_search_view=0x7f030018;
-        public static final int abc_select_dialog_material=0x7f030019;
-        public static final int card=0x7f03001a;
-        public static final int esm_checkbox=0x7f03001b;
-        public static final int esm_datetime=0x7f03001c;
-        public static final int esm_datetime_date=0x7f03001d;
-        public static final int esm_datetime_time=0x7f03001e;
-        public static final int esm_likert=0x7f03001f;
-        public static final int esm_number=0x7f030020;
-        public static final int esm_pam=0x7f030021;
-        public static final int esm_quick=0x7f030022;
-        public static final int esm_radio=0x7f030023;
-        public static final int esm_scale=0x7f030024;
-        public static final int esm_text=0x7f030025;
-        public static final int notification_action=0x7f030026;
-        public static final int notification_action_tombstone=0x7f030027;
-        public static final int notification_media_action=0x7f030028;
-        public static final int notification_media_cancel_action=0x7f030029;
-        public static final int notification_template_big_media=0x7f03002a;
-        public static final int notification_template_big_media_custom=0x7f03002b;
-        public static final int notification_template_big_media_narrow=0x7f03002c;
-        public static final int notification_template_big_media_narrow_custom=0x7f03002d;
-        public static final int notification_template_custom_big=0x7f03002e;
-        public static final int notification_template_icon_group=0x7f03002f;
-        public static final int notification_template_lines_media=0x7f030030;
-        public static final int notification_template_media=0x7f030031;
-        public static final int notification_template_media_custom=0x7f030032;
-        public static final int notification_template_part_chronometer=0x7f030033;
-        public static final int notification_template_part_time=0x7f030034;
-        public static final int select_dialog_item_material=0x7f030035;
-        public static final int select_dialog_multichoice_material=0x7f030036;
-        public static final int select_dialog_singlechoice_material=0x7f030037;
-        public static final int support_simple_spinner_dropdown_item=0x7f030038;
+        public static final int abc_action_bar_title_item=0x7f040000;
+        public static final int abc_action_bar_up_container=0x7f040001;
+        public static final int abc_action_bar_view_list_nav_layout=0x7f040002;
+        public static final int abc_action_menu_item_layout=0x7f040003;
+        public static final int abc_action_menu_layout=0x7f040004;
+        public static final int abc_action_mode_bar=0x7f040005;
+        public static final int abc_action_mode_close_item_material=0x7f040006;
+        public static final int abc_activity_chooser_view=0x7f040007;
+        public static final int abc_activity_chooser_view_list_item=0x7f040008;
+        public static final int abc_alert_dialog_button_bar_material=0x7f040009;
+        public static final int abc_alert_dialog_material=0x7f04000a;
+        public static final int abc_alert_dialog_title_material=0x7f04000b;
+        public static final int abc_dialog_title_material=0x7f04000c;
+        public static final int abc_expanded_menu_layout=0x7f04000d;
+        public static final int abc_list_menu_item_checkbox=0x7f04000e;
+        public static final int abc_list_menu_item_icon=0x7f04000f;
+        public static final int abc_list_menu_item_layout=0x7f040010;
+        public static final int abc_list_menu_item_radio=0x7f040011;
+        public static final int abc_popup_menu_header_item_layout=0x7f040012;
+        public static final int abc_popup_menu_item_layout=0x7f040013;
+        public static final int abc_screen_content_include=0x7f040014;
+        public static final int abc_screen_simple=0x7f040015;
+        public static final int abc_screen_simple_overlay_action_mode=0x7f040016;
+        public static final int abc_screen_toolbar=0x7f040017;
+        public static final int abc_search_dropdown_item_icons_2line=0x7f040018;
+        public static final int abc_search_view=0x7f040019;
+        public static final int abc_select_dialog_material=0x7f04001a;
+        public static final int card=0x7f04001b;
+        public static final int design_bottom_navigation_item=0x7f04001c;
+        public static final int design_bottom_sheet_dialog=0x7f04001d;
+        public static final int design_layout_snackbar=0x7f04001e;
+        public static final int design_layout_snackbar_include=0x7f04001f;
+        public static final int design_layout_tab_icon=0x7f040020;
+        public static final int design_layout_tab_text=0x7f040021;
+        public static final int design_menu_item_action_area=0x7f040022;
+        public static final int design_navigation_item=0x7f040023;
+        public static final int design_navigation_item_header=0x7f040024;
+        public static final int design_navigation_item_separator=0x7f040025;
+        public static final int design_navigation_item_subheader=0x7f040026;
+        public static final int design_navigation_menu=0x7f040027;
+        public static final int design_navigation_menu_item=0x7f040028;
+        public static final int design_text_input_password_icon=0x7f040029;
+        public static final int esm_checkbox=0x7f04002a;
+        public static final int esm_datetime=0x7f04002b;
+        public static final int esm_datetime_date=0x7f04002c;
+        public static final int esm_datetime_time=0x7f04002d;
+        public static final int esm_likert=0x7f04002e;
+        public static final int esm_number=0x7f04002f;
+        public static final int esm_pam=0x7f040030;
+        public static final int esm_quick=0x7f040031;
+        public static final int esm_radio=0x7f040032;
+        public static final int esm_scale=0x7f040033;
+        public static final int esm_text=0x7f040034;
+        public static final int notification_action=0x7f040035;
+        public static final int notification_action_tombstone=0x7f040036;
+        public static final int notification_media_action=0x7f040037;
+        public static final int notification_media_cancel_action=0x7f040038;
+        public static final int notification_template_big_media=0x7f040039;
+        public static final int notification_template_big_media_custom=0x7f04003a;
+        public static final int notification_template_big_media_narrow=0x7f04003b;
+        public static final int notification_template_big_media_narrow_custom=0x7f04003c;
+        public static final int notification_template_custom_big=0x7f04003d;
+        public static final int notification_template_icon_group=0x7f04003e;
+        public static final int notification_template_lines_media=0x7f04003f;
+        public static final int notification_template_media=0x7f040040;
+        public static final int notification_template_media_custom=0x7f040041;
+        public static final int notification_template_part_chronometer=0x7f040042;
+        public static final int notification_template_part_time=0x7f040043;
+        public static final int select_dialog_item_material=0x7f040044;
+        public static final int select_dialog_multichoice_material=0x7f040045;
+        public static final int select_dialog_singlechoice_material=0x7f040046;
+        public static final int support_simple_spinner_dropdown_item=0x7f040047;
+    }
+    public static final class mipmap {
+        public static final int ic_launcher=0x7f030000;
     }
     public static final class plurals {
-        public static final int joda_time_android_abbrev_in_num_days=0x7f070000;
-        public static final int joda_time_android_abbrev_in_num_hours=0x7f070001;
-        public static final int joda_time_android_abbrev_in_num_minutes=0x7f070002;
-        public static final int joda_time_android_abbrev_in_num_seconds=0x7f070003;
-        public static final int joda_time_android_abbrev_num_days_ago=0x7f070004;
-        public static final int joda_time_android_abbrev_num_hours_ago=0x7f070005;
-        public static final int joda_time_android_abbrev_num_minutes_ago=0x7f070006;
-        public static final int joda_time_android_abbrev_num_seconds_ago=0x7f070007;
-        public static final int joda_time_android_duration_hours=0x7f070008;
-        public static final int joda_time_android_duration_minutes=0x7f070009;
-        public static final int joda_time_android_duration_seconds=0x7f07000a;
-        public static final int joda_time_android_in_num_days=0x7f07000b;
-        public static final int joda_time_android_in_num_hours=0x7f07000c;
-        public static final int joda_time_android_in_num_minutes=0x7f07000d;
-        public static final int joda_time_android_in_num_seconds=0x7f07000e;
-        public static final int joda_time_android_num_days_ago=0x7f07000f;
-        public static final int joda_time_android_num_hours_ago=0x7f070010;
-        public static final int joda_time_android_num_minutes_ago=0x7f070011;
-        public static final int joda_time_android_num_seconds_ago=0x7f070012;
+        public static final int joda_time_android_abbrev_in_num_days=0x7f080000;
+        public static final int joda_time_android_abbrev_in_num_hours=0x7f080001;
+        public static final int joda_time_android_abbrev_in_num_minutes=0x7f080002;
+        public static final int joda_time_android_abbrev_in_num_seconds=0x7f080003;
+        public static final int joda_time_android_abbrev_num_days_ago=0x7f080004;
+        public static final int joda_time_android_abbrev_num_hours_ago=0x7f080005;
+        public static final int joda_time_android_abbrev_num_minutes_ago=0x7f080006;
+        public static final int joda_time_android_abbrev_num_seconds_ago=0x7f080007;
+        public static final int joda_time_android_duration_hours=0x7f080008;
+        public static final int joda_time_android_duration_minutes=0x7f080009;
+        public static final int joda_time_android_duration_seconds=0x7f08000a;
+        public static final int joda_time_android_in_num_days=0x7f08000b;
+        public static final int joda_time_android_in_num_hours=0x7f08000c;
+        public static final int joda_time_android_in_num_minutes=0x7f08000d;
+        public static final int joda_time_android_in_num_seconds=0x7f08000e;
+        public static final int joda_time_android_num_days_ago=0x7f08000f;
+        public static final int joda_time_android_num_hours_ago=0x7f080010;
+        public static final int joda_time_android_num_minutes_ago=0x7f080011;
+        public static final int joda_time_android_num_seconds_ago=0x7f080012;
     }
     public static final class raw {
-        public static final int joda_africa_abidjan=0x7f060000;
-        public static final int joda_africa_accra=0x7f060001;
-        public static final int joda_africa_addis_ababa=0x7f060002;
-        public static final int joda_africa_algiers=0x7f060003;
-        public static final int joda_africa_asmara=0x7f060004;
-        public static final int joda_africa_asmera=0x7f060005;
-        public static final int joda_africa_bamako=0x7f060006;
-        public static final int joda_africa_bangui=0x7f060007;
-        public static final int joda_africa_banjul=0x7f060008;
-        public static final int joda_africa_bissau=0x7f060009;
-        public static final int joda_africa_blantyre=0x7f06000a;
-        public static final int joda_africa_brazzaville=0x7f06000b;
-        public static final int joda_africa_bujumbura=0x7f06000c;
-        public static final int joda_africa_cairo=0x7f06000d;
-        public static final int joda_africa_casablanca=0x7f06000e;
-        public static final int joda_africa_ceuta=0x7f06000f;
-        public static final int joda_africa_conakry=0x7f060010;
-        public static final int joda_africa_dakar=0x7f060011;
-        public static final int joda_africa_dar_es_salaam=0x7f060012;
-        public static final int joda_africa_djibouti=0x7f060013;
-        public static final int joda_africa_douala=0x7f060014;
-        public static final int joda_africa_el_aaiun=0x7f060015;
-        public static final int joda_africa_freetown=0x7f060016;
-        public static final int joda_africa_gaborone=0x7f060017;
-        public static final int joda_africa_harare=0x7f060018;
-        public static final int joda_africa_johannesburg=0x7f060019;
-        public static final int joda_africa_juba=0x7f06001a;
-        public static final int joda_africa_kampala=0x7f06001b;
-        public static final int joda_africa_khartoum=0x7f06001c;
-        public static final int joda_africa_kigali=0x7f06001d;
-        public static final int joda_africa_kinshasa=0x7f06001e;
-        public static final int joda_africa_lagos=0x7f06001f;
-        public static final int joda_africa_libreville=0x7f060020;
-        public static final int joda_africa_lome=0x7f060021;
-        public static final int joda_africa_luanda=0x7f060022;
-        public static final int joda_africa_lubumbashi=0x7f060023;
-        public static final int joda_africa_lusaka=0x7f060024;
-        public static final int joda_africa_malabo=0x7f060025;
-        public static final int joda_africa_maputo=0x7f060026;
-        public static final int joda_africa_maseru=0x7f060027;
-        public static final int joda_africa_mbabane=0x7f060028;
-        public static final int joda_africa_mogadishu=0x7f060029;
-        public static final int joda_africa_monrovia=0x7f06002a;
-        public static final int joda_africa_nairobi=0x7f06002b;
-        public static final int joda_africa_ndjamena=0x7f06002c;
-        public static final int joda_africa_niamey=0x7f06002d;
-        public static final int joda_africa_nouakchott=0x7f06002e;
-        public static final int joda_africa_ouagadougou=0x7f06002f;
-        public static final int joda_africa_porto_novo=0x7f060030;
-        public static final int joda_africa_sao_tome=0x7f060031;
-        public static final int joda_africa_timbuktu=0x7f060032;
-        public static final int joda_africa_tripoli=0x7f060033;
-        public static final int joda_africa_tunis=0x7f060034;
-        public static final int joda_africa_windhoek=0x7f060035;
-        public static final int joda_america_adak=0x7f060036;
-        public static final int joda_america_anchorage=0x7f060037;
-        public static final int joda_america_anguilla=0x7f060038;
-        public static final int joda_america_antigua=0x7f060039;
-        public static final int joda_america_araguaina=0x7f06003a;
-        public static final int joda_america_argentina_buenos_aires=0x7f06003b;
-        public static final int joda_america_argentina_catamarca=0x7f06003c;
-        public static final int joda_america_argentina_comodrivadavia=0x7f06003d;
-        public static final int joda_america_argentina_cordoba=0x7f06003e;
-        public static final int joda_america_argentina_jujuy=0x7f06003f;
-        public static final int joda_america_argentina_la_rioja=0x7f060040;
-        public static final int joda_america_argentina_mendoza=0x7f060041;
-        public static final int joda_america_argentina_rio_gallegos=0x7f060042;
-        public static final int joda_america_argentina_salta=0x7f060043;
-        public static final int joda_america_argentina_san_juan=0x7f060044;
-        public static final int joda_america_argentina_san_luis=0x7f060045;
-        public static final int joda_america_argentina_tucuman=0x7f060046;
-        public static final int joda_america_argentina_ushuaia=0x7f060047;
-        public static final int joda_america_aruba=0x7f060048;
-        public static final int joda_america_asuncion=0x7f060049;
-        public static final int joda_america_atikokan=0x7f06004a;
-        public static final int joda_america_bahia=0x7f06004b;
-        public static final int joda_america_bahia_banderas=0x7f06004c;
-        public static final int joda_america_barbados=0x7f06004d;
-        public static final int joda_america_belem=0x7f06004e;
-        public static final int joda_america_belize=0x7f06004f;
-        public static final int joda_america_blanc_sablon=0x7f060050;
-        public static final int joda_america_boa_vista=0x7f060051;
-        public static final int joda_america_bogota=0x7f060052;
-        public static final int joda_america_boise=0x7f060053;
-        public static final int joda_america_cambridge_bay=0x7f060054;
-        public static final int joda_america_campo_grande=0x7f060055;
-        public static final int joda_america_cancun=0x7f060056;
-        public static final int joda_america_caracas=0x7f060057;
-        public static final int joda_america_cayenne=0x7f060058;
-        public static final int joda_america_cayman=0x7f060059;
-        public static final int joda_america_chicago=0x7f06005a;
-        public static final int joda_america_chihuahua=0x7f06005b;
-        public static final int joda_america_coral_harbour=0x7f06005c;
-        public static final int joda_america_costa_rica=0x7f06005d;
-        public static final int joda_america_creston=0x7f06005e;
-        public static final int joda_america_cuiaba=0x7f06005f;
-        public static final int joda_america_curacao=0x7f060060;
-        public static final int joda_america_danmarkshavn=0x7f060061;
-        public static final int joda_america_dawson=0x7f060062;
-        public static final int joda_america_dawson_creek=0x7f060063;
-        public static final int joda_america_denver=0x7f060064;
-        public static final int joda_america_detroit=0x7f060065;
-        public static final int joda_america_dominica=0x7f060066;
-        public static final int joda_america_edmonton=0x7f060067;
-        public static final int joda_america_eirunepe=0x7f060068;
-        public static final int joda_america_el_salvador=0x7f060069;
-        public static final int joda_america_ensenada=0x7f06006a;
-        public static final int joda_america_fort_nelson=0x7f06006b;
-        public static final int joda_america_fortaleza=0x7f06006c;
-        public static final int joda_america_glace_bay=0x7f06006d;
-        public static final int joda_america_godthab=0x7f06006e;
-        public static final int joda_america_goose_bay=0x7f06006f;
-        public static final int joda_america_grand_turk=0x7f060070;
-        public static final int joda_america_grenada=0x7f060071;
-        public static final int joda_america_guadeloupe=0x7f060072;
-        public static final int joda_america_guatemala=0x7f060073;
-        public static final int joda_america_guayaquil=0x7f060074;
-        public static final int joda_america_guyana=0x7f060075;
-        public static final int joda_america_halifax=0x7f060076;
-        public static final int joda_america_havana=0x7f060077;
-        public static final int joda_america_hermosillo=0x7f060078;
-        public static final int joda_america_indiana_indianapolis=0x7f060079;
-        public static final int joda_america_indiana_knox=0x7f06007a;
-        public static final int joda_america_indiana_marengo=0x7f06007b;
-        public static final int joda_america_indiana_petersburg=0x7f06007c;
-        public static final int joda_america_indiana_tell_city=0x7f06007d;
-        public static final int joda_america_indiana_vevay=0x7f06007e;
-        public static final int joda_america_indiana_vincennes=0x7f06007f;
-        public static final int joda_america_indiana_winamac=0x7f060080;
-        public static final int joda_america_inuvik=0x7f060081;
-        public static final int joda_america_iqaluit=0x7f060082;
-        public static final int joda_america_jamaica=0x7f060083;
-        public static final int joda_america_juneau=0x7f060084;
-        public static final int joda_america_kentucky_louisville=0x7f060085;
-        public static final int joda_america_kentucky_monticello=0x7f060086;
-        public static final int joda_america_kralendijk=0x7f060087;
-        public static final int joda_america_la_paz=0x7f060088;
-        public static final int joda_america_lima=0x7f060089;
-        public static final int joda_america_los_angeles=0x7f06008a;
-        public static final int joda_america_lower_princes=0x7f06008b;
-        public static final int joda_america_maceio=0x7f06008c;
-        public static final int joda_america_managua=0x7f06008d;
-        public static final int joda_america_manaus=0x7f06008e;
-        public static final int joda_america_marigot=0x7f06008f;
-        public static final int joda_america_martinique=0x7f060090;
-        public static final int joda_america_matamoros=0x7f060091;
-        public static final int joda_america_mazatlan=0x7f060092;
-        public static final int joda_america_menominee=0x7f060093;
-        public static final int joda_america_merida=0x7f060094;
-        public static final int joda_america_metlakatla=0x7f060095;
-        public static final int joda_america_mexico_city=0x7f060096;
-        public static final int joda_america_miquelon=0x7f060097;
-        public static final int joda_america_moncton=0x7f060098;
-        public static final int joda_america_monterrey=0x7f060099;
-        public static final int joda_america_montevideo=0x7f06009a;
-        public static final int joda_america_montreal=0x7f06009b;
-        public static final int joda_america_montserrat=0x7f06009c;
-        public static final int joda_america_nassau=0x7f06009d;
-        public static final int joda_america_new_york=0x7f06009e;
-        public static final int joda_america_nipigon=0x7f06009f;
-        public static final int joda_america_nome=0x7f0600a0;
-        public static final int joda_america_noronha=0x7f0600a1;
-        public static final int joda_america_north_dakota_beulah=0x7f0600a2;
-        public static final int joda_america_north_dakota_center=0x7f0600a3;
-        public static final int joda_america_north_dakota_new_salem=0x7f0600a4;
-        public static final int joda_america_ojinaga=0x7f0600a5;
-        public static final int joda_america_panama=0x7f0600a6;
-        public static final int joda_america_pangnirtung=0x7f0600a7;
-        public static final int joda_america_paramaribo=0x7f0600a8;
-        public static final int joda_america_phoenix=0x7f0600a9;
-        public static final int joda_america_port_au_prince=0x7f0600aa;
-        public static final int joda_america_port_of_spain=0x7f0600ab;
-        public static final int joda_america_porto_velho=0x7f0600ac;
-        public static final int joda_america_puerto_rico=0x7f0600ad;
-        public static final int joda_america_rainy_river=0x7f0600ae;
-        public static final int joda_america_rankin_inlet=0x7f0600af;
-        public static final int joda_america_recife=0x7f0600b0;
-        public static final int joda_america_regina=0x7f0600b1;
-        public static final int joda_america_resolute=0x7f0600b2;
-        public static final int joda_america_rio_branco=0x7f0600b3;
-        public static final int joda_america_rosario=0x7f0600b4;
-        public static final int joda_america_santarem=0x7f0600b5;
-        public static final int joda_america_santiago=0x7f0600b6;
-        public static final int joda_america_santo_domingo=0x7f0600b7;
-        public static final int joda_america_sao_paulo=0x7f0600b8;
-        public static final int joda_america_scoresbysund=0x7f0600b9;
-        public static final int joda_america_sitka=0x7f0600ba;
-        public static final int joda_america_st_barthelemy=0x7f0600bb;
-        public static final int joda_america_st_johns=0x7f0600bc;
-        public static final int joda_america_st_kitts=0x7f0600bd;
-        public static final int joda_america_st_lucia=0x7f0600be;
-        public static final int joda_america_st_thomas=0x7f0600bf;
-        public static final int joda_america_st_vincent=0x7f0600c0;
-        public static final int joda_america_swift_current=0x7f0600c1;
-        public static final int joda_america_tegucigalpa=0x7f0600c2;
-        public static final int joda_america_thule=0x7f0600c3;
-        public static final int joda_america_thunder_bay=0x7f0600c4;
-        public static final int joda_america_tijuana=0x7f0600c5;
-        public static final int joda_america_toronto=0x7f0600c6;
-        public static final int joda_america_tortola=0x7f0600c7;
-        public static final int joda_america_vancouver=0x7f0600c8;
-        public static final int joda_america_whitehorse=0x7f0600c9;
-        public static final int joda_america_winnipeg=0x7f0600ca;
-        public static final int joda_america_yakutat=0x7f0600cb;
-        public static final int joda_america_yellowknife=0x7f0600cc;
-        public static final int joda_antarctica_casey=0x7f0600cd;
-        public static final int joda_antarctica_davis=0x7f0600ce;
-        public static final int joda_antarctica_dumontdurville=0x7f0600cf;
-        public static final int joda_antarctica_macquarie=0x7f0600d0;
-        public static final int joda_antarctica_mawson=0x7f0600d1;
-        public static final int joda_antarctica_mcmurdo=0x7f0600d2;
-        public static final int joda_antarctica_palmer=0x7f0600d3;
-        public static final int joda_antarctica_rothera=0x7f0600d4;
-        public static final int joda_antarctica_south_pole=0x7f0600d5;
-        public static final int joda_antarctica_syowa=0x7f0600d6;
-        public static final int joda_antarctica_troll=0x7f0600d7;
-        public static final int joda_antarctica_vostok=0x7f0600d8;
-        public static final int joda_arctic_longyearbyen=0x7f0600d9;
-        public static final int joda_asia_aden=0x7f0600da;
-        public static final int joda_asia_almaty=0x7f0600db;
-        public static final int joda_asia_amman=0x7f0600dc;
-        public static final int joda_asia_anadyr=0x7f0600dd;
-        public static final int joda_asia_aqtau=0x7f0600de;
-        public static final int joda_asia_aqtobe=0x7f0600df;
-        public static final int joda_asia_ashgabat=0x7f0600e0;
-        public static final int joda_asia_atyrau=0x7f0600e1;
-        public static final int joda_asia_baghdad=0x7f0600e2;
-        public static final int joda_asia_bahrain=0x7f0600e3;
-        public static final int joda_asia_baku=0x7f0600e4;
-        public static final int joda_asia_bangkok=0x7f0600e5;
-        public static final int joda_asia_barnaul=0x7f0600e6;
-        public static final int joda_asia_beirut=0x7f0600e7;
-        public static final int joda_asia_bishkek=0x7f0600e8;
-        public static final int joda_asia_brunei=0x7f0600e9;
-        public static final int joda_asia_chita=0x7f0600ea;
-        public static final int joda_asia_choibalsan=0x7f0600eb;
-        public static final int joda_asia_chongqing=0x7f0600ec;
-        public static final int joda_asia_chungking=0x7f0600ed;
-        public static final int joda_asia_colombo=0x7f0600ee;
-        public static final int joda_asia_damascus=0x7f0600ef;
-        public static final int joda_asia_dhaka=0x7f0600f0;
-        public static final int joda_asia_dili=0x7f0600f1;
-        public static final int joda_asia_dubai=0x7f0600f2;
-        public static final int joda_asia_dushanbe=0x7f0600f3;
-        public static final int joda_asia_famagusta=0x7f0600f4;
-        public static final int joda_asia_gaza=0x7f0600f5;
-        public static final int joda_asia_hanoi=0x7f0600f6;
-        public static final int joda_asia_harbin=0x7f0600f7;
-        public static final int joda_asia_hebron=0x7f0600f8;
-        public static final int joda_asia_ho_chi_minh=0x7f0600f9;
-        public static final int joda_asia_hong_kong=0x7f0600fa;
-        public static final int joda_asia_hovd=0x7f0600fb;
-        public static final int joda_asia_irkutsk=0x7f0600fc;
-        public static final int joda_asia_istanbul=0x7f0600fd;
-        public static final int joda_asia_jakarta=0x7f0600fe;
-        public static final int joda_asia_jayapura=0x7f0600ff;
-        public static final int joda_asia_jerusalem=0x7f060100;
-        public static final int joda_asia_kabul=0x7f060101;
-        public static final int joda_asia_kamchatka=0x7f060102;
-        public static final int joda_asia_karachi=0x7f060103;
-        public static final int joda_asia_kashgar=0x7f060104;
-        public static final int joda_asia_kathmandu=0x7f060105;
-        public static final int joda_asia_khandyga=0x7f060106;
-        public static final int joda_asia_kolkata=0x7f060107;
-        public static final int joda_asia_krasnoyarsk=0x7f060108;
-        public static final int joda_asia_kuala_lumpur=0x7f060109;
-        public static final int joda_asia_kuching=0x7f06010a;
-        public static final int joda_asia_kuwait=0x7f06010b;
-        public static final int joda_asia_macau=0x7f06010c;
-        public static final int joda_asia_magadan=0x7f06010d;
-        public static final int joda_asia_makassar=0x7f06010e;
-        public static final int joda_asia_manila=0x7f06010f;
-        public static final int joda_asia_muscat=0x7f060110;
-        public static final int joda_asia_nicosia=0x7f060111;
-        public static final int joda_asia_novokuznetsk=0x7f060112;
-        public static final int joda_asia_novosibirsk=0x7f060113;
-        public static final int joda_asia_omsk=0x7f060114;
-        public static final int joda_asia_oral=0x7f060115;
-        public static final int joda_asia_phnom_penh=0x7f060116;
-        public static final int joda_asia_pontianak=0x7f060117;
-        public static final int joda_asia_pyongyang=0x7f060118;
-        public static final int joda_asia_qatar=0x7f060119;
-        public static final int joda_asia_qyzylorda=0x7f06011a;
-        public static final int joda_asia_riyadh=0x7f06011b;
-        public static final int joda_asia_sakhalin=0x7f06011c;
-        public static final int joda_asia_samarkand=0x7f06011d;
-        public static final int joda_asia_seoul=0x7f06011e;
-        public static final int joda_asia_shanghai=0x7f06011f;
-        public static final int joda_asia_singapore=0x7f060120;
-        public static final int joda_asia_srednekolymsk=0x7f060121;
-        public static final int joda_asia_taipei=0x7f060122;
-        public static final int joda_asia_tashkent=0x7f060123;
-        public static final int joda_asia_tbilisi=0x7f060124;
-        public static final int joda_asia_tehran=0x7f060125;
-        public static final int joda_asia_tel_aviv=0x7f060126;
-        public static final int joda_asia_thimphu=0x7f060127;
-        public static final int joda_asia_tokyo=0x7f060128;
-        public static final int joda_asia_tomsk=0x7f060129;
-        public static final int joda_asia_ulaanbaatar=0x7f06012a;
-        public static final int joda_asia_urumqi=0x7f06012b;
-        public static final int joda_asia_ust_nera=0x7f06012c;
-        public static final int joda_asia_vientiane=0x7f06012d;
-        public static final int joda_asia_vladivostok=0x7f06012e;
-        public static final int joda_asia_yakutsk=0x7f06012f;
-        public static final int joda_asia_yangon=0x7f060130;
-        public static final int joda_asia_yekaterinburg=0x7f060131;
-        public static final int joda_asia_yerevan=0x7f060132;
-        public static final int joda_atlantic_azores=0x7f060133;
-        public static final int joda_atlantic_bermuda=0x7f060134;
-        public static final int joda_atlantic_canary=0x7f060135;
-        public static final int joda_atlantic_cape_verde=0x7f060136;
-        public static final int joda_atlantic_faroe=0x7f060137;
-        public static final int joda_atlantic_jan_mayen=0x7f060138;
-        public static final int joda_atlantic_madeira=0x7f060139;
-        public static final int joda_atlantic_reykjavik=0x7f06013a;
-        public static final int joda_atlantic_south_georgia=0x7f06013b;
-        public static final int joda_atlantic_st_helena=0x7f06013c;
-        public static final int joda_atlantic_stanley=0x7f06013d;
-        public static final int joda_australia_adelaide=0x7f06013e;
-        public static final int joda_australia_brisbane=0x7f06013f;
-        public static final int joda_australia_broken_hill=0x7f060140;
-        public static final int joda_australia_currie=0x7f060141;
-        public static final int joda_australia_darwin=0x7f060142;
-        public static final int joda_australia_eucla=0x7f060143;
-        public static final int joda_australia_hobart=0x7f060144;
-        public static final int joda_australia_lindeman=0x7f060145;
-        public static final int joda_australia_lord_howe=0x7f060146;
-        public static final int joda_australia_melbourne=0x7f060147;
-        public static final int joda_australia_perth=0x7f060148;
-        public static final int joda_australia_sydney=0x7f060149;
-        public static final int joda_cet=0x7f06014a;
-        public static final int joda_cst6cdt=0x7f06014b;
-        public static final int joda_eet=0x7f06014c;
-        public static final int joda_est=0x7f06014d;
-        public static final int joda_est5edt=0x7f06014e;
-        public static final int joda_etc_gmt=0x7f06014f;
-        public static final int joda_etc_gmt_1=0x7f060150;
-        public static final int joda_etc_gmt_10=0x7f060151;
-        public static final int joda_etc_gmt_11=0x7f060152;
-        public static final int joda_etc_gmt_12=0x7f060153;
-        public static final int joda_etc_gmt_13=0x7f060154;
-        public static final int joda_etc_gmt_14=0x7f060155;
-        public static final int joda_etc_gmt_2=0x7f060156;
-        public static final int joda_etc_gmt_3=0x7f060157;
-        public static final int joda_etc_gmt_4=0x7f060158;
-        public static final int joda_etc_gmt_5=0x7f060159;
-        public static final int joda_etc_gmt_6=0x7f06015a;
-        public static final int joda_etc_gmt_7=0x7f06015b;
-        public static final int joda_etc_gmt_8=0x7f06015c;
-        public static final int joda_etc_gmt_9=0x7f06015d;
-        public static final int joda_etc_gmtplus1=0x7f06015e;
-        public static final int joda_etc_gmtplus10=0x7f06015f;
-        public static final int joda_etc_gmtplus11=0x7f060160;
-        public static final int joda_etc_gmtplus12=0x7f060161;
-        public static final int joda_etc_gmtplus2=0x7f060162;
-        public static final int joda_etc_gmtplus3=0x7f060163;
-        public static final int joda_etc_gmtplus4=0x7f060164;
-        public static final int joda_etc_gmtplus5=0x7f060165;
-        public static final int joda_etc_gmtplus6=0x7f060166;
-        public static final int joda_etc_gmtplus7=0x7f060167;
-        public static final int joda_etc_gmtplus8=0x7f060168;
-        public static final int joda_etc_gmtplus9=0x7f060169;
-        public static final int joda_etc_uct=0x7f06016a;
-        public static final int joda_etc_utc=0x7f06016b;
-        public static final int joda_europe_amsterdam=0x7f06016c;
-        public static final int joda_europe_andorra=0x7f06016d;
-        public static final int joda_europe_astrakhan=0x7f06016e;
-        public static final int joda_europe_athens=0x7f06016f;
-        public static final int joda_europe_belfast=0x7f060170;
-        public static final int joda_europe_belgrade=0x7f060171;
-        public static final int joda_europe_berlin=0x7f060172;
-        public static final int joda_europe_bratislava=0x7f060173;
-        public static final int joda_europe_brussels=0x7f060174;
-        public static final int joda_europe_bucharest=0x7f060175;
-        public static final int joda_europe_budapest=0x7f060176;
-        public static final int joda_europe_busingen=0x7f060177;
-        public static final int joda_europe_chisinau=0x7f060178;
-        public static final int joda_europe_copenhagen=0x7f060179;
-        public static final int joda_europe_dublin=0x7f06017a;
-        public static final int joda_europe_gibraltar=0x7f06017b;
-        public static final int joda_europe_guernsey=0x7f06017c;
-        public static final int joda_europe_helsinki=0x7f06017d;
-        public static final int joda_europe_isle_of_man=0x7f06017e;
-        public static final int joda_europe_istanbul=0x7f06017f;
-        public static final int joda_europe_jersey=0x7f060180;
-        public static final int joda_europe_kaliningrad=0x7f060181;
-        public static final int joda_europe_kiev=0x7f060182;
-        public static final int joda_europe_kirov=0x7f060183;
-        public static final int joda_europe_lisbon=0x7f060184;
-        public static final int joda_europe_ljubljana=0x7f060185;
-        public static final int joda_europe_london=0x7f060186;
-        public static final int joda_europe_luxembourg=0x7f060187;
-        public static final int joda_europe_madrid=0x7f060188;
-        public static final int joda_europe_malta=0x7f060189;
-        public static final int joda_europe_mariehamn=0x7f06018a;
-        public static final int joda_europe_minsk=0x7f06018b;
-        public static final int joda_europe_monaco=0x7f06018c;
-        public static final int joda_europe_moscow=0x7f06018d;
-        public static final int joda_europe_nicosia=0x7f06018e;
-        public static final int joda_europe_oslo=0x7f06018f;
-        public static final int joda_europe_paris=0x7f060190;
-        public static final int joda_europe_podgorica=0x7f060191;
-        public static final int joda_europe_prague=0x7f060192;
-        public static final int joda_europe_riga=0x7f060193;
-        public static final int joda_europe_rome=0x7f060194;
-        public static final int joda_europe_samara=0x7f060195;
-        public static final int joda_europe_san_marino=0x7f060196;
-        public static final int joda_europe_sarajevo=0x7f060197;
-        public static final int joda_europe_saratov=0x7f060198;
-        public static final int joda_europe_simferopol=0x7f060199;
-        public static final int joda_europe_skopje=0x7f06019a;
-        public static final int joda_europe_sofia=0x7f06019b;
-        public static final int joda_europe_stockholm=0x7f06019c;
-        public static final int joda_europe_tallinn=0x7f06019d;
-        public static final int joda_europe_tirane=0x7f06019e;
-        public static final int joda_europe_tiraspol=0x7f06019f;
-        public static final int joda_europe_ulyanovsk=0x7f0601a0;
-        public static final int joda_europe_uzhgorod=0x7f0601a1;
-        public static final int joda_europe_vaduz=0x7f0601a2;
-        public static final int joda_europe_vatican=0x7f0601a3;
-        public static final int joda_europe_vienna=0x7f0601a4;
-        public static final int joda_europe_vilnius=0x7f0601a5;
-        public static final int joda_europe_volgograd=0x7f0601a6;
-        public static final int joda_europe_warsaw=0x7f0601a7;
-        public static final int joda_europe_zagreb=0x7f0601a8;
-        public static final int joda_europe_zaporozhye=0x7f0601a9;
-        public static final int joda_europe_zurich=0x7f0601aa;
-        public static final int joda_hst=0x7f0601ab;
-        public static final int joda_indian_antananarivo=0x7f0601ac;
-        public static final int joda_indian_chagos=0x7f0601ad;
-        public static final int joda_indian_christmas=0x7f0601ae;
-        public static final int joda_indian_cocos=0x7f0601af;
-        public static final int joda_indian_comoro=0x7f0601b0;
-        public static final int joda_indian_kerguelen=0x7f0601b1;
-        public static final int joda_indian_mahe=0x7f0601b2;
-        public static final int joda_indian_maldives=0x7f0601b3;
-        public static final int joda_indian_mauritius=0x7f0601b4;
-        public static final int joda_indian_mayotte=0x7f0601b5;
-        public static final int joda_indian_reunion=0x7f0601b6;
-        public static final int joda_keep=0x7f0601b7;
-        public static final int joda_met=0x7f0601b8;
-        public static final int joda_mst=0x7f0601b9;
-        public static final int joda_mst7mdt=0x7f0601ba;
-        public static final int joda_pacific_apia=0x7f0601bb;
-        public static final int joda_pacific_auckland=0x7f0601bc;
-        public static final int joda_pacific_bougainville=0x7f0601bd;
-        public static final int joda_pacific_chatham=0x7f0601be;
-        public static final int joda_pacific_chuuk=0x7f0601bf;
-        public static final int joda_pacific_easter=0x7f0601c0;
-        public static final int joda_pacific_efate=0x7f0601c1;
-        public static final int joda_pacific_enderbury=0x7f0601c2;
-        public static final int joda_pacific_fakaofo=0x7f0601c3;
-        public static final int joda_pacific_fiji=0x7f0601c4;
-        public static final int joda_pacific_funafuti=0x7f0601c5;
-        public static final int joda_pacific_galapagos=0x7f0601c6;
-        public static final int joda_pacific_gambier=0x7f0601c7;
-        public static final int joda_pacific_guadalcanal=0x7f0601c8;
-        public static final int joda_pacific_guam=0x7f0601c9;
-        public static final int joda_pacific_honolulu=0x7f0601ca;
-        public static final int joda_pacific_johnston=0x7f0601cb;
-        public static final int joda_pacific_kiritimati=0x7f0601cc;
-        public static final int joda_pacific_kosrae=0x7f0601cd;
-        public static final int joda_pacific_kwajalein=0x7f0601ce;
-        public static final int joda_pacific_majuro=0x7f0601cf;
-        public static final int joda_pacific_marquesas=0x7f0601d0;
-        public static final int joda_pacific_midway=0x7f0601d1;
-        public static final int joda_pacific_nauru=0x7f0601d2;
-        public static final int joda_pacific_niue=0x7f0601d3;
-        public static final int joda_pacific_norfolk=0x7f0601d4;
-        public static final int joda_pacific_noumea=0x7f0601d5;
-        public static final int joda_pacific_pago_pago=0x7f0601d6;
-        public static final int joda_pacific_palau=0x7f0601d7;
-        public static final int joda_pacific_pitcairn=0x7f0601d8;
-        public static final int joda_pacific_pohnpei=0x7f0601d9;
-        public static final int joda_pacific_port_moresby=0x7f0601da;
-        public static final int joda_pacific_rarotonga=0x7f0601db;
-        public static final int joda_pacific_saipan=0x7f0601dc;
-        public static final int joda_pacific_tahiti=0x7f0601dd;
-        public static final int joda_pacific_tarawa=0x7f0601de;
-        public static final int joda_pacific_tongatapu=0x7f0601df;
-        public static final int joda_pacific_wake=0x7f0601e0;
-        public static final int joda_pacific_wallis=0x7f0601e1;
-        public static final int joda_pst8pdt=0x7f0601e2;
-        public static final int joda_wet=0x7f0601e3;
-        public static final int joda_zoneinfomap=0x7f0601e4;
+        public static final int joda_africa_abidjan=0x7f070000;
+        public static final int joda_africa_accra=0x7f070001;
+        public static final int joda_africa_addis_ababa=0x7f070002;
+        public static final int joda_africa_algiers=0x7f070003;
+        public static final int joda_africa_asmara=0x7f070004;
+        public static final int joda_africa_asmera=0x7f070005;
+        public static final int joda_africa_bamako=0x7f070006;
+        public static final int joda_africa_bangui=0x7f070007;
+        public static final int joda_africa_banjul=0x7f070008;
+        public static final int joda_africa_bissau=0x7f070009;
+        public static final int joda_africa_blantyre=0x7f07000a;
+        public static final int joda_africa_brazzaville=0x7f07000b;
+        public static final int joda_africa_bujumbura=0x7f07000c;
+        public static final int joda_africa_cairo=0x7f07000d;
+        public static final int joda_africa_casablanca=0x7f07000e;
+        public static final int joda_africa_ceuta=0x7f07000f;
+        public static final int joda_africa_conakry=0x7f070010;
+        public static final int joda_africa_dakar=0x7f070011;
+        public static final int joda_africa_dar_es_salaam=0x7f070012;
+        public static final int joda_africa_djibouti=0x7f070013;
+        public static final int joda_africa_douala=0x7f070014;
+        public static final int joda_africa_el_aaiun=0x7f070015;
+        public static final int joda_africa_freetown=0x7f070016;
+        public static final int joda_africa_gaborone=0x7f070017;
+        public static final int joda_africa_harare=0x7f070018;
+        public static final int joda_africa_johannesburg=0x7f070019;
+        public static final int joda_africa_juba=0x7f07001a;
+        public static final int joda_africa_kampala=0x7f07001b;
+        public static final int joda_africa_khartoum=0x7f07001c;
+        public static final int joda_africa_kigali=0x7f07001d;
+        public static final int joda_africa_kinshasa=0x7f07001e;
+        public static final int joda_africa_lagos=0x7f07001f;
+        public static final int joda_africa_libreville=0x7f070020;
+        public static final int joda_africa_lome=0x7f070021;
+        public static final int joda_africa_luanda=0x7f070022;
+        public static final int joda_africa_lubumbashi=0x7f070023;
+        public static final int joda_africa_lusaka=0x7f070024;
+        public static final int joda_africa_malabo=0x7f070025;
+        public static final int joda_africa_maputo=0x7f070026;
+        public static final int joda_africa_maseru=0x7f070027;
+        public static final int joda_africa_mbabane=0x7f070028;
+        public static final int joda_africa_mogadishu=0x7f070029;
+        public static final int joda_africa_monrovia=0x7f07002a;
+        public static final int joda_africa_nairobi=0x7f07002b;
+        public static final int joda_africa_ndjamena=0x7f07002c;
+        public static final int joda_africa_niamey=0x7f07002d;
+        public static final int joda_africa_nouakchott=0x7f07002e;
+        public static final int joda_africa_ouagadougou=0x7f07002f;
+        public static final int joda_africa_porto_novo=0x7f070030;
+        public static final int joda_africa_sao_tome=0x7f070031;
+        public static final int joda_africa_timbuktu=0x7f070032;
+        public static final int joda_africa_tripoli=0x7f070033;
+        public static final int joda_africa_tunis=0x7f070034;
+        public static final int joda_africa_windhoek=0x7f070035;
+        public static final int joda_america_adak=0x7f070036;
+        public static final int joda_america_anchorage=0x7f070037;
+        public static final int joda_america_anguilla=0x7f070038;
+        public static final int joda_america_antigua=0x7f070039;
+        public static final int joda_america_araguaina=0x7f07003a;
+        public static final int joda_america_argentina_buenos_aires=0x7f07003b;
+        public static final int joda_america_argentina_catamarca=0x7f07003c;
+        public static final int joda_america_argentina_comodrivadavia=0x7f07003d;
+        public static final int joda_america_argentina_cordoba=0x7f07003e;
+        public static final int joda_america_argentina_jujuy=0x7f07003f;
+        public static final int joda_america_argentina_la_rioja=0x7f070040;
+        public static final int joda_america_argentina_mendoza=0x7f070041;
+        public static final int joda_america_argentina_rio_gallegos=0x7f070042;
+        public static final int joda_america_argentina_salta=0x7f070043;
+        public static final int joda_america_argentina_san_juan=0x7f070044;
+        public static final int joda_america_argentina_san_luis=0x7f070045;
+        public static final int joda_america_argentina_tucuman=0x7f070046;
+        public static final int joda_america_argentina_ushuaia=0x7f070047;
+        public static final int joda_america_aruba=0x7f070048;
+        public static final int joda_america_asuncion=0x7f070049;
+        public static final int joda_america_atikokan=0x7f07004a;
+        public static final int joda_america_bahia=0x7f07004b;
+        public static final int joda_america_bahia_banderas=0x7f07004c;
+        public static final int joda_america_barbados=0x7f07004d;
+        public static final int joda_america_belem=0x7f07004e;
+        public static final int joda_america_belize=0x7f07004f;
+        public static final int joda_america_blanc_sablon=0x7f070050;
+        public static final int joda_america_boa_vista=0x7f070051;
+        public static final int joda_america_bogota=0x7f070052;
+        public static final int joda_america_boise=0x7f070053;
+        public static final int joda_america_cambridge_bay=0x7f070054;
+        public static final int joda_america_campo_grande=0x7f070055;
+        public static final int joda_america_cancun=0x7f070056;
+        public static final int joda_america_caracas=0x7f070057;
+        public static final int joda_america_cayenne=0x7f070058;
+        public static final int joda_america_cayman=0x7f070059;
+        public static final int joda_america_chicago=0x7f07005a;
+        public static final int joda_america_chihuahua=0x7f07005b;
+        public static final int joda_america_coral_harbour=0x7f07005c;
+        public static final int joda_america_costa_rica=0x7f07005d;
+        public static final int joda_america_creston=0x7f07005e;
+        public static final int joda_america_cuiaba=0x7f07005f;
+        public static final int joda_america_curacao=0x7f070060;
+        public static final int joda_america_danmarkshavn=0x7f070061;
+        public static final int joda_america_dawson=0x7f070062;
+        public static final int joda_america_dawson_creek=0x7f070063;
+        public static final int joda_america_denver=0x7f070064;
+        public static final int joda_america_detroit=0x7f070065;
+        public static final int joda_america_dominica=0x7f070066;
+        public static final int joda_america_edmonton=0x7f070067;
+        public static final int joda_america_eirunepe=0x7f070068;
+        public static final int joda_america_el_salvador=0x7f070069;
+        public static final int joda_america_ensenada=0x7f07006a;
+        public static final int joda_america_fort_nelson=0x7f07006b;
+        public static final int joda_america_fortaleza=0x7f07006c;
+        public static final int joda_america_glace_bay=0x7f07006d;
+        public static final int joda_america_godthab=0x7f07006e;
+        public static final int joda_america_goose_bay=0x7f07006f;
+        public static final int joda_america_grand_turk=0x7f070070;
+        public static final int joda_america_grenada=0x7f070071;
+        public static final int joda_america_guadeloupe=0x7f070072;
+        public static final int joda_america_guatemala=0x7f070073;
+        public static final int joda_america_guayaquil=0x7f070074;
+        public static final int joda_america_guyana=0x7f070075;
+        public static final int joda_america_halifax=0x7f070076;
+        public static final int joda_america_havana=0x7f070077;
+        public static final int joda_america_hermosillo=0x7f070078;
+        public static final int joda_america_indiana_indianapolis=0x7f070079;
+        public static final int joda_america_indiana_knox=0x7f07007a;
+        public static final int joda_america_indiana_marengo=0x7f07007b;
+        public static final int joda_america_indiana_petersburg=0x7f07007c;
+        public static final int joda_america_indiana_tell_city=0x7f07007d;
+        public static final int joda_america_indiana_vevay=0x7f07007e;
+        public static final int joda_america_indiana_vincennes=0x7f07007f;
+        public static final int joda_america_indiana_winamac=0x7f070080;
+        public static final int joda_america_inuvik=0x7f070081;
+        public static final int joda_america_iqaluit=0x7f070082;
+        public static final int joda_america_jamaica=0x7f070083;
+        public static final int joda_america_juneau=0x7f070084;
+        public static final int joda_america_kentucky_louisville=0x7f070085;
+        public static final int joda_america_kentucky_monticello=0x7f070086;
+        public static final int joda_america_kralendijk=0x7f070087;
+        public static final int joda_america_la_paz=0x7f070088;
+        public static final int joda_america_lima=0x7f070089;
+        public static final int joda_america_los_angeles=0x7f07008a;
+        public static final int joda_america_lower_princes=0x7f07008b;
+        public static final int joda_america_maceio=0x7f07008c;
+        public static final int joda_america_managua=0x7f07008d;
+        public static final int joda_america_manaus=0x7f07008e;
+        public static final int joda_america_marigot=0x7f07008f;
+        public static final int joda_america_martinique=0x7f070090;
+        public static final int joda_america_matamoros=0x7f070091;
+        public static final int joda_america_mazatlan=0x7f070092;
+        public static final int joda_america_menominee=0x7f070093;
+        public static final int joda_america_merida=0x7f070094;
+        public static final int joda_america_metlakatla=0x7f070095;
+        public static final int joda_america_mexico_city=0x7f070096;
+        public static final int joda_america_miquelon=0x7f070097;
+        public static final int joda_america_moncton=0x7f070098;
+        public static final int joda_america_monterrey=0x7f070099;
+        public static final int joda_america_montevideo=0x7f07009a;
+        public static final int joda_america_montreal=0x7f07009b;
+        public static final int joda_america_montserrat=0x7f07009c;
+        public static final int joda_america_nassau=0x7f07009d;
+        public static final int joda_america_new_york=0x7f07009e;
+        public static final int joda_america_nipigon=0x7f07009f;
+        public static final int joda_america_nome=0x7f0700a0;
+        public static final int joda_america_noronha=0x7f0700a1;
+        public static final int joda_america_north_dakota_beulah=0x7f0700a2;
+        public static final int joda_america_north_dakota_center=0x7f0700a3;
+        public static final int joda_america_north_dakota_new_salem=0x7f0700a4;
+        public static final int joda_america_ojinaga=0x7f0700a5;
+        public static final int joda_america_panama=0x7f0700a6;
+        public static final int joda_america_pangnirtung=0x7f0700a7;
+        public static final int joda_america_paramaribo=0x7f0700a8;
+        public static final int joda_america_phoenix=0x7f0700a9;
+        public static final int joda_america_port_au_prince=0x7f0700aa;
+        public static final int joda_america_port_of_spain=0x7f0700ab;
+        public static final int joda_america_porto_velho=0x7f0700ac;
+        public static final int joda_america_puerto_rico=0x7f0700ad;
+        public static final int joda_america_rainy_river=0x7f0700ae;
+        public static final int joda_america_rankin_inlet=0x7f0700af;
+        public static final int joda_america_recife=0x7f0700b0;
+        public static final int joda_america_regina=0x7f0700b1;
+        public static final int joda_america_resolute=0x7f0700b2;
+        public static final int joda_america_rio_branco=0x7f0700b3;
+        public static final int joda_america_rosario=0x7f0700b4;
+        public static final int joda_america_santarem=0x7f0700b5;
+        public static final int joda_america_santiago=0x7f0700b6;
+        public static final int joda_america_santo_domingo=0x7f0700b7;
+        public static final int joda_america_sao_paulo=0x7f0700b8;
+        public static final int joda_america_scoresbysund=0x7f0700b9;
+        public static final int joda_america_sitka=0x7f0700ba;
+        public static final int joda_america_st_barthelemy=0x7f0700bb;
+        public static final int joda_america_st_johns=0x7f0700bc;
+        public static final int joda_america_st_kitts=0x7f0700bd;
+        public static final int joda_america_st_lucia=0x7f0700be;
+        public static final int joda_america_st_thomas=0x7f0700bf;
+        public static final int joda_america_st_vincent=0x7f0700c0;
+        public static final int joda_america_swift_current=0x7f0700c1;
+        public static final int joda_america_tegucigalpa=0x7f0700c2;
+        public static final int joda_america_thule=0x7f0700c3;
+        public static final int joda_america_thunder_bay=0x7f0700c4;
+        public static final int joda_america_tijuana=0x7f0700c5;
+        public static final int joda_america_toronto=0x7f0700c6;
+        public static final int joda_america_tortola=0x7f0700c7;
+        public static final int joda_america_vancouver=0x7f0700c8;
+        public static final int joda_america_whitehorse=0x7f0700c9;
+        public static final int joda_america_winnipeg=0x7f0700ca;
+        public static final int joda_america_yakutat=0x7f0700cb;
+        public static final int joda_america_yellowknife=0x7f0700cc;
+        public static final int joda_antarctica_casey=0x7f0700cd;
+        public static final int joda_antarctica_davis=0x7f0700ce;
+        public static final int joda_antarctica_dumontdurville=0x7f0700cf;
+        public static final int joda_antarctica_macquarie=0x7f0700d0;
+        public static final int joda_antarctica_mawson=0x7f0700d1;
+        public static final int joda_antarctica_mcmurdo=0x7f0700d2;
+        public static final int joda_antarctica_palmer=0x7f0700d3;
+        public static final int joda_antarctica_rothera=0x7f0700d4;
+        public static final int joda_antarctica_south_pole=0x7f0700d5;
+        public static final int joda_antarctica_syowa=0x7f0700d6;
+        public static final int joda_antarctica_troll=0x7f0700d7;
+        public static final int joda_antarctica_vostok=0x7f0700d8;
+        public static final int joda_arctic_longyearbyen=0x7f0700d9;
+        public static final int joda_asia_aden=0x7f0700da;
+        public static final int joda_asia_almaty=0x7f0700db;
+        public static final int joda_asia_amman=0x7f0700dc;
+        public static final int joda_asia_anadyr=0x7f0700dd;
+        public static final int joda_asia_aqtau=0x7f0700de;
+        public static final int joda_asia_aqtobe=0x7f0700df;
+        public static final int joda_asia_ashgabat=0x7f0700e0;
+        public static final int joda_asia_atyrau=0x7f0700e1;
+        public static final int joda_asia_baghdad=0x7f0700e2;
+        public static final int joda_asia_bahrain=0x7f0700e3;
+        public static final int joda_asia_baku=0x7f0700e4;
+        public static final int joda_asia_bangkok=0x7f0700e5;
+        public static final int joda_asia_barnaul=0x7f0700e6;
+        public static final int joda_asia_beirut=0x7f0700e7;
+        public static final int joda_asia_bishkek=0x7f0700e8;
+        public static final int joda_asia_brunei=0x7f0700e9;
+        public static final int joda_asia_chita=0x7f0700ea;
+        public static final int joda_asia_choibalsan=0x7f0700eb;
+        public static final int joda_asia_chongqing=0x7f0700ec;
+        public static final int joda_asia_chungking=0x7f0700ed;
+        public static final int joda_asia_colombo=0x7f0700ee;
+        public static final int joda_asia_damascus=0x7f0700ef;
+        public static final int joda_asia_dhaka=0x7f0700f0;
+        public static final int joda_asia_dili=0x7f0700f1;
+        public static final int joda_asia_dubai=0x7f0700f2;
+        public static final int joda_asia_dushanbe=0x7f0700f3;
+        public static final int joda_asia_famagusta=0x7f0700f4;
+        public static final int joda_asia_gaza=0x7f0700f5;
+        public static final int joda_asia_hanoi=0x7f0700f6;
+        public static final int joda_asia_harbin=0x7f0700f7;
+        public static final int joda_asia_hebron=0x7f0700f8;
+        public static final int joda_asia_ho_chi_minh=0x7f0700f9;
+        public static final int joda_asia_hong_kong=0x7f0700fa;
+        public static final int joda_asia_hovd=0x7f0700fb;
+        public static final int joda_asia_irkutsk=0x7f0700fc;
+        public static final int joda_asia_istanbul=0x7f0700fd;
+        public static final int joda_asia_jakarta=0x7f0700fe;
+        public static final int joda_asia_jayapura=0x7f0700ff;
+        public static final int joda_asia_jerusalem=0x7f070100;
+        public static final int joda_asia_kabul=0x7f070101;
+        public static final int joda_asia_kamchatka=0x7f070102;
+        public static final int joda_asia_karachi=0x7f070103;
+        public static final int joda_asia_kashgar=0x7f070104;
+        public static final int joda_asia_kathmandu=0x7f070105;
+        public static final int joda_asia_khandyga=0x7f070106;
+        public static final int joda_asia_kolkata=0x7f070107;
+        public static final int joda_asia_krasnoyarsk=0x7f070108;
+        public static final int joda_asia_kuala_lumpur=0x7f070109;
+        public static final int joda_asia_kuching=0x7f07010a;
+        public static final int joda_asia_kuwait=0x7f07010b;
+        public static final int joda_asia_macau=0x7f07010c;
+        public static final int joda_asia_magadan=0x7f07010d;
+        public static final int joda_asia_makassar=0x7f07010e;
+        public static final int joda_asia_manila=0x7f07010f;
+        public static final int joda_asia_muscat=0x7f070110;
+        public static final int joda_asia_nicosia=0x7f070111;
+        public static final int joda_asia_novokuznetsk=0x7f070112;
+        public static final int joda_asia_novosibirsk=0x7f070113;
+        public static final int joda_asia_omsk=0x7f070114;
+        public static final int joda_asia_oral=0x7f070115;
+        public static final int joda_asia_phnom_penh=0x7f070116;
+        public static final int joda_asia_pontianak=0x7f070117;
+        public static final int joda_asia_pyongyang=0x7f070118;
+        public static final int joda_asia_qatar=0x7f070119;
+        public static final int joda_asia_qyzylorda=0x7f07011a;
+        public static final int joda_asia_riyadh=0x7f07011b;
+        public static final int joda_asia_sakhalin=0x7f07011c;
+        public static final int joda_asia_samarkand=0x7f07011d;
+        public static final int joda_asia_seoul=0x7f07011e;
+        public static final int joda_asia_shanghai=0x7f07011f;
+        public static final int joda_asia_singapore=0x7f070120;
+        public static final int joda_asia_srednekolymsk=0x7f070121;
+        public static final int joda_asia_taipei=0x7f070122;
+        public static final int joda_asia_tashkent=0x7f070123;
+        public static final int joda_asia_tbilisi=0x7f070124;
+        public static final int joda_asia_tehran=0x7f070125;
+        public static final int joda_asia_tel_aviv=0x7f070126;
+        public static final int joda_asia_thimphu=0x7f070127;
+        public static final int joda_asia_tokyo=0x7f070128;
+        public static final int joda_asia_tomsk=0x7f070129;
+        public static final int joda_asia_ulaanbaatar=0x7f07012a;
+        public static final int joda_asia_urumqi=0x7f07012b;
+        public static final int joda_asia_ust_nera=0x7f07012c;
+        public static final int joda_asia_vientiane=0x7f07012d;
+        public static final int joda_asia_vladivostok=0x7f07012e;
+        public static final int joda_asia_yakutsk=0x7f07012f;
+        public static final int joda_asia_yangon=0x7f070130;
+        public static final int joda_asia_yekaterinburg=0x7f070131;
+        public static final int joda_asia_yerevan=0x7f070132;
+        public static final int joda_atlantic_azores=0x7f070133;
+        public static final int joda_atlantic_bermuda=0x7f070134;
+        public static final int joda_atlantic_canary=0x7f070135;
+        public static final int joda_atlantic_cape_verde=0x7f070136;
+        public static final int joda_atlantic_faroe=0x7f070137;
+        public static final int joda_atlantic_jan_mayen=0x7f070138;
+        public static final int joda_atlantic_madeira=0x7f070139;
+        public static final int joda_atlantic_reykjavik=0x7f07013a;
+        public static final int joda_atlantic_south_georgia=0x7f07013b;
+        public static final int joda_atlantic_st_helena=0x7f07013c;
+        public static final int joda_atlantic_stanley=0x7f07013d;
+        public static final int joda_australia_adelaide=0x7f07013e;
+        public static final int joda_australia_brisbane=0x7f07013f;
+        public static final int joda_australia_broken_hill=0x7f070140;
+        public static final int joda_australia_currie=0x7f070141;
+        public static final int joda_australia_darwin=0x7f070142;
+        public static final int joda_australia_eucla=0x7f070143;
+        public static final int joda_australia_hobart=0x7f070144;
+        public static final int joda_australia_lindeman=0x7f070145;
+        public static final int joda_australia_lord_howe=0x7f070146;
+        public static final int joda_australia_melbourne=0x7f070147;
+        public static final int joda_australia_perth=0x7f070148;
+        public static final int joda_australia_sydney=0x7f070149;
+        public static final int joda_cet=0x7f07014a;
+        public static final int joda_cst6cdt=0x7f07014b;
+        public static final int joda_eet=0x7f07014c;
+        public static final int joda_est=0x7f07014d;
+        public static final int joda_est5edt=0x7f07014e;
+        public static final int joda_etc_gmt=0x7f07014f;
+        public static final int joda_etc_gmt_1=0x7f070150;
+        public static final int joda_etc_gmt_10=0x7f070151;
+        public static final int joda_etc_gmt_11=0x7f070152;
+        public static final int joda_etc_gmt_12=0x7f070153;
+        public static final int joda_etc_gmt_13=0x7f070154;
+        public static final int joda_etc_gmt_14=0x7f070155;
+        public static final int joda_etc_gmt_2=0x7f070156;
+        public static final int joda_etc_gmt_3=0x7f070157;
+        public static final int joda_etc_gmt_4=0x7f070158;
+        public static final int joda_etc_gmt_5=0x7f070159;
+        public static final int joda_etc_gmt_6=0x7f07015a;
+        public static final int joda_etc_gmt_7=0x7f07015b;
+        public static final int joda_etc_gmt_8=0x7f07015c;
+        public static final int joda_etc_gmt_9=0x7f07015d;
+        public static final int joda_etc_gmtplus1=0x7f07015e;
+        public static final int joda_etc_gmtplus10=0x7f07015f;
+        public static final int joda_etc_gmtplus11=0x7f070160;
+        public static final int joda_etc_gmtplus12=0x7f070161;
+        public static final int joda_etc_gmtplus2=0x7f070162;
+        public static final int joda_etc_gmtplus3=0x7f070163;
+        public static final int joda_etc_gmtplus4=0x7f070164;
+        public static final int joda_etc_gmtplus5=0x7f070165;
+        public static final int joda_etc_gmtplus6=0x7f070166;
+        public static final int joda_etc_gmtplus7=0x7f070167;
+        public static final int joda_etc_gmtplus8=0x7f070168;
+        public static final int joda_etc_gmtplus9=0x7f070169;
+        public static final int joda_etc_uct=0x7f07016a;
+        public static final int joda_etc_utc=0x7f07016b;
+        public static final int joda_europe_amsterdam=0x7f07016c;
+        public static final int joda_europe_andorra=0x7f07016d;
+        public static final int joda_europe_astrakhan=0x7f07016e;
+        public static final int joda_europe_athens=0x7f07016f;
+        public static final int joda_europe_belfast=0x7f070170;
+        public static final int joda_europe_belgrade=0x7f070171;
+        public static final int joda_europe_berlin=0x7f070172;
+        public static final int joda_europe_bratislava=0x7f070173;
+        public static final int joda_europe_brussels=0x7f070174;
+        public static final int joda_europe_bucharest=0x7f070175;
+        public static final int joda_europe_budapest=0x7f070176;
+        public static final int joda_europe_busingen=0x7f070177;
+        public static final int joda_europe_chisinau=0x7f070178;
+        public static final int joda_europe_copenhagen=0x7f070179;
+        public static final int joda_europe_dublin=0x7f07017a;
+        public static final int joda_europe_gibraltar=0x7f07017b;
+        public static final int joda_europe_guernsey=0x7f07017c;
+        public static final int joda_europe_helsinki=0x7f07017d;
+        public static final int joda_europe_isle_of_man=0x7f07017e;
+        public static final int joda_europe_istanbul=0x7f07017f;
+        public static final int joda_europe_jersey=0x7f070180;
+        public static final int joda_europe_kaliningrad=0x7f070181;
+        public static final int joda_europe_kiev=0x7f070182;
+        public static final int joda_europe_kirov=0x7f070183;
+        public static final int joda_europe_lisbon=0x7f070184;
+        public static final int joda_europe_ljubljana=0x7f070185;
+        public static final int joda_europe_london=0x7f070186;
+        public static final int joda_europe_luxembourg=0x7f070187;
+        public static final int joda_europe_madrid=0x7f070188;
+        public static final int joda_europe_malta=0x7f070189;
+        public static final int joda_europe_mariehamn=0x7f07018a;
+        public static final int joda_europe_minsk=0x7f07018b;
+        public static final int joda_europe_monaco=0x7f07018c;
+        public static final int joda_europe_moscow=0x7f07018d;
+        public static final int joda_europe_nicosia=0x7f07018e;
+        public static final int joda_europe_oslo=0x7f07018f;
+        public static final int joda_europe_paris=0x7f070190;
+        public static final int joda_europe_podgorica=0x7f070191;
+        public static final int joda_europe_prague=0x7f070192;
+        public static final int joda_europe_riga=0x7f070193;
+        public static final int joda_europe_rome=0x7f070194;
+        public static final int joda_europe_samara=0x7f070195;
+        public static final int joda_europe_san_marino=0x7f070196;
+        public static final int joda_europe_sarajevo=0x7f070197;
+        public static final int joda_europe_saratov=0x7f070198;
+        public static final int joda_europe_simferopol=0x7f070199;
+        public static final int joda_europe_skopje=0x7f07019a;
+        public static final int joda_europe_sofia=0x7f07019b;
+        public static final int joda_europe_stockholm=0x7f07019c;
+        public static final int joda_europe_tallinn=0x7f07019d;
+        public static final int joda_europe_tirane=0x7f07019e;
+        public static final int joda_europe_tiraspol=0x7f07019f;
+        public static final int joda_europe_ulyanovsk=0x7f0701a0;
+        public static final int joda_europe_uzhgorod=0x7f0701a1;
+        public static final int joda_europe_vaduz=0x7f0701a2;
+        public static final int joda_europe_vatican=0x7f0701a3;
+        public static final int joda_europe_vienna=0x7f0701a4;
+        public static final int joda_europe_vilnius=0x7f0701a5;
+        public static final int joda_europe_volgograd=0x7f0701a6;
+        public static final int joda_europe_warsaw=0x7f0701a7;
+        public static final int joda_europe_zagreb=0x7f0701a8;
+        public static final int joda_europe_zaporozhye=0x7f0701a9;
+        public static final int joda_europe_zurich=0x7f0701aa;
+        public static final int joda_hst=0x7f0701ab;
+        public static final int joda_indian_antananarivo=0x7f0701ac;
+        public static final int joda_indian_chagos=0x7f0701ad;
+        public static final int joda_indian_christmas=0x7f0701ae;
+        public static final int joda_indian_cocos=0x7f0701af;
+        public static final int joda_indian_comoro=0x7f0701b0;
+        public static final int joda_indian_kerguelen=0x7f0701b1;
+        public static final int joda_indian_mahe=0x7f0701b2;
+        public static final int joda_indian_maldives=0x7f0701b3;
+        public static final int joda_indian_mauritius=0x7f0701b4;
+        public static final int joda_indian_mayotte=0x7f0701b5;
+        public static final int joda_indian_reunion=0x7f0701b6;
+        public static final int joda_keep=0x7f0701b7;
+        public static final int joda_met=0x7f0701b8;
+        public static final int joda_mst=0x7f0701b9;
+        public static final int joda_mst7mdt=0x7f0701ba;
+        public static final int joda_pacific_apia=0x7f0701bb;
+        public static final int joda_pacific_auckland=0x7f0701bc;
+        public static final int joda_pacific_bougainville=0x7f0701bd;
+        public static final int joda_pacific_chatham=0x7f0701be;
+        public static final int joda_pacific_chuuk=0x7f0701bf;
+        public static final int joda_pacific_easter=0x7f0701c0;
+        public static final int joda_pacific_efate=0x7f0701c1;
+        public static final int joda_pacific_enderbury=0x7f0701c2;
+        public static final int joda_pacific_fakaofo=0x7f0701c3;
+        public static final int joda_pacific_fiji=0x7f0701c4;
+        public static final int joda_pacific_funafuti=0x7f0701c5;
+        public static final int joda_pacific_galapagos=0x7f0701c6;
+        public static final int joda_pacific_gambier=0x7f0701c7;
+        public static final int joda_pacific_guadalcanal=0x7f0701c8;
+        public static final int joda_pacific_guam=0x7f0701c9;
+        public static final int joda_pacific_honolulu=0x7f0701ca;
+        public static final int joda_pacific_johnston=0x7f0701cb;
+        public static final int joda_pacific_kiritimati=0x7f0701cc;
+        public static final int joda_pacific_kosrae=0x7f0701cd;
+        public static final int joda_pacific_kwajalein=0x7f0701ce;
+        public static final int joda_pacific_majuro=0x7f0701cf;
+        public static final int joda_pacific_marquesas=0x7f0701d0;
+        public static final int joda_pacific_midway=0x7f0701d1;
+        public static final int joda_pacific_nauru=0x7f0701d2;
+        public static final int joda_pacific_niue=0x7f0701d3;
+        public static final int joda_pacific_norfolk=0x7f0701d4;
+        public static final int joda_pacific_noumea=0x7f0701d5;
+        public static final int joda_pacific_pago_pago=0x7f0701d6;
+        public static final int joda_pacific_palau=0x7f0701d7;
+        public static final int joda_pacific_pitcairn=0x7f0701d8;
+        public static final int joda_pacific_pohnpei=0x7f0701d9;
+        public static final int joda_pacific_port_moresby=0x7f0701da;
+        public static final int joda_pacific_rarotonga=0x7f0701db;
+        public static final int joda_pacific_saipan=0x7f0701dc;
+        public static final int joda_pacific_tahiti=0x7f0701dd;
+        public static final int joda_pacific_tarawa=0x7f0701de;
+        public static final int joda_pacific_tongatapu=0x7f0701df;
+        public static final int joda_pacific_wake=0x7f0701e0;
+        public static final int joda_pacific_wallis=0x7f0701e1;
+        public static final int joda_pst8pdt=0x7f0701e2;
+        public static final int joda_wet=0x7f0701e3;
+        public static final int joda_zoneinfomap=0x7f0701e4;
     }
     public static final class string {
-        public static final int abc_action_bar_home_description=0x7f080000;
-        public static final int abc_action_bar_home_description_format=0x7f080001;
-        public static final int abc_action_bar_home_subtitle_description_format=0x7f080002;
-        public static final int abc_action_bar_up_description=0x7f080003;
-        public static final int abc_action_menu_overflow_description=0x7f080004;
-        public static final int abc_action_mode_done=0x7f080005;
-        public static final int abc_activity_chooser_view_see_all=0x7f080006;
-        public static final int abc_activitychooserview_choose_application=0x7f080007;
-        public static final int abc_capital_off=0x7f080008;
-        public static final int abc_capital_on=0x7f080009;
-        public static final int abc_font_family_body_1_material=0x7f080019;
-        public static final int abc_font_family_body_2_material=0x7f08001a;
-        public static final int abc_font_family_button_material=0x7f08001b;
-        public static final int abc_font_family_caption_material=0x7f08001c;
-        public static final int abc_font_family_display_1_material=0x7f08001d;
-        public static final int abc_font_family_display_2_material=0x7f08001e;
-        public static final int abc_font_family_display_3_material=0x7f08001f;
-        public static final int abc_font_family_display_4_material=0x7f080020;
-        public static final int abc_font_family_headline_material=0x7f080021;
-        public static final int abc_font_family_menu_material=0x7f080022;
-        public static final int abc_font_family_subhead_material=0x7f080023;
-        public static final int abc_font_family_title_material=0x7f080024;
-        public static final int abc_search_hint=0x7f08000a;
-        public static final int abc_searchview_description_clear=0x7f08000b;
-        public static final int abc_searchview_description_query=0x7f08000c;
-        public static final int abc_searchview_description_search=0x7f08000d;
-        public static final int abc_searchview_description_submit=0x7f08000e;
-        public static final int abc_searchview_description_voice=0x7f08000f;
-        public static final int abc_shareactionprovider_share_with=0x7f080010;
-        public static final int abc_shareactionprovider_share_with_application=0x7f080011;
-        public static final int abc_toolbar_collapse_description=0x7f080012;
-        public static final int app_name=0x7f080025;
-        public static final int aware_activate_accessibility=0x7f080026;
-        public static final int aware_auto_update_version=0x7f080027;
-        public static final int aware_camera_scan=0x7f080028;
-        public static final int aware_debug_summary=0x7f080029;
-        public static final int aware_debug_tag=0x7f08002a;
-        public static final int aware_debug_tag_summary=0x7f08002b;
-        public static final int aware_debug_title=0x7f08002c;
-        public static final int aware_description=0x7f08002d;
-        public static final int aware_developer=0x7f08002e;
-        public static final int aware_device_id=0x7f08002f;
-        public static final int aware_device_label=0x7f080030;
-        public static final int aware_dirty=0x7f080031;
-        public static final int aware_esm_other=0x7f080032;
-        public static final int aware_esm_other_follow=0x7f080033;
-        public static final int aware_esm_questions=0x7f080034;
-        public static final int aware_esm_questions_title=0x7f080035;
-        public static final int aware_plugins=0x7f080036;
-        public static final int aware_qrcode=0x7f080037;
-        public static final int aware_sensors=0x7f080038;
-        public static final int aware_stream=0x7f080039;
-        public static final int aware_studies=0x7f08003a;
-        public static final int aware_study=0x7f08003b;
-        public static final int aware_sync=0x7f08003c;
-        public static final int aware_team=0x7f08003d;
-        public static final int aware_version=0x7f08003e;
-        public static final int drawer_close=0x7f08003f;
-        public static final int drawer_open=0x7f080040;
-        public static final int install=0x7f080041;
-        public static final int joda_time_android_date_time=0x7f080013;
-        public static final int joda_time_android_preposition_for_date=0x7f080014;
-        public static final int joda_time_android_preposition_for_time=0x7f080015;
-        public static final int joda_time_android_relative_time=0x7f080016;
-        public static final int plugins_required=0x7f080042;
-        public static final int read_permission=0x7f080043;
-        public static final int search_menu_title=0x7f080017;
-        public static final int sign_up=0x7f080044;
-        public static final int status_bar_notification_info_overflow=0x7f080018;
-        public static final int write_permission=0x7f080045;
+        public static final int abc_action_bar_home_description=0x7f090000;
+        public static final int abc_action_bar_home_description_format=0x7f090001;
+        public static final int abc_action_bar_home_subtitle_description_format=0x7f090002;
+        public static final int abc_action_bar_up_description=0x7f090003;
+        public static final int abc_action_menu_overflow_description=0x7f090004;
+        public static final int abc_action_mode_done=0x7f090005;
+        public static final int abc_activity_chooser_view_see_all=0x7f090006;
+        public static final int abc_activitychooserview_choose_application=0x7f090007;
+        public static final int abc_capital_off=0x7f090008;
+        public static final int abc_capital_on=0x7f090009;
+        public static final int abc_font_family_body_1_material=0x7f090019;
+        public static final int abc_font_family_body_2_material=0x7f09001a;
+        public static final int abc_font_family_button_material=0x7f09001b;
+        public static final int abc_font_family_caption_material=0x7f09001c;
+        public static final int abc_font_family_display_1_material=0x7f09001d;
+        public static final int abc_font_family_display_2_material=0x7f09001e;
+        public static final int abc_font_family_display_3_material=0x7f09001f;
+        public static final int abc_font_family_display_4_material=0x7f090020;
+        public static final int abc_font_family_headline_material=0x7f090021;
+        public static final int abc_font_family_menu_material=0x7f090022;
+        public static final int abc_font_family_subhead_material=0x7f090023;
+        public static final int abc_font_family_title_material=0x7f090024;
+        public static final int abc_search_hint=0x7f09000a;
+        public static final int abc_searchview_description_clear=0x7f09000b;
+        public static final int abc_searchview_description_query=0x7f09000c;
+        public static final int abc_searchview_description_search=0x7f09000d;
+        public static final int abc_searchview_description_submit=0x7f09000e;
+        public static final int abc_searchview_description_voice=0x7f09000f;
+        public static final int abc_shareactionprovider_share_with=0x7f090010;
+        public static final int abc_shareactionprovider_share_with_application=0x7f090011;
+        public static final int abc_toolbar_collapse_description=0x7f090012;
+        public static final int app_name=0x7f090025;
+        public static final int appbar_scrolling_view_behavior=0x7f090026;
+        public static final int aware_activate_accessibility=0x7f090027;
+        public static final int aware_auto_update_version=0x7f090028;
+        public static final int aware_camera_scan=0x7f090029;
+        public static final int aware_debug_summary=0x7f09002a;
+        public static final int aware_debug_tag=0x7f09002b;
+        public static final int aware_debug_tag_summary=0x7f09002c;
+        public static final int aware_debug_title=0x7f09002d;
+        public static final int aware_description=0x7f09002e;
+        public static final int aware_developer=0x7f09002f;
+        public static final int aware_device_id=0x7f090030;
+        public static final int aware_device_label=0x7f090031;
+        public static final int aware_dirty=0x7f090032;
+        public static final int aware_esm_other=0x7f090033;
+        public static final int aware_esm_other_follow=0x7f090034;
+        public static final int aware_esm_questions=0x7f090035;
+        public static final int aware_esm_questions_title=0x7f090036;
+        public static final int aware_plugins=0x7f090037;
+        public static final int aware_qrcode=0x7f090038;
+        public static final int aware_sensors=0x7f090039;
+        public static final int aware_stream=0x7f09003a;
+        public static final int aware_studies=0x7f09003b;
+        public static final int aware_study=0x7f09003c;
+        public static final int aware_sync=0x7f09003d;
+        public static final int aware_team=0x7f09003e;
+        public static final int aware_version=0x7f09003f;
+        public static final int bottom_sheet_behavior=0x7f090040;
+        public static final int character_counter_pattern=0x7f090041;
+        public static final int drawer_close=0x7f090042;
+        public static final int drawer_open=0x7f090043;
+        public static final int install=0x7f090044;
+        public static final int joda_time_android_date_time=0x7f090013;
+        public static final int joda_time_android_preposition_for_date=0x7f090014;
+        public static final int joda_time_android_preposition_for_time=0x7f090015;
+        public static final int joda_time_android_relative_time=0x7f090016;
+        public static final int plugins_required=0x7f090045;
+        public static final int read_permission=0x7f090046;
+        public static final int search_menu_title=0x7f090017;
+        public static final int sign_up=0x7f090047;
+        public static final int status_bar_notification_info_overflow=0x7f090018;
+        public static final int write_permission=0x7f090048;
     }
     public static final class style {
-        public static final int AlertDialog_AppCompat=0x7f0a0098;
-        public static final int AlertDialog_AppCompat_Light=0x7f0a0099;
-        public static final int Animation_AppCompat_Dialog=0x7f0a009a;
-        public static final int Animation_AppCompat_DropDownUp=0x7f0a009b;
+        public static final int AlertDialog_AppCompat=0x7f0b00a2;
+        public static final int AlertDialog_AppCompat_Light=0x7f0b00a3;
+        public static final int Animation_AppCompat_Dialog=0x7f0b00a4;
+        public static final int Animation_AppCompat_DropDownUp=0x7f0b00a5;
+        public static final int Animation_Design_BottomSheetDialog=0x7f0b00a6;
         /**  Customize your theme here. 
          */
-        public static final int AppTheme=0x7f0a009c;
-        public static final int Aware_Toolbar=0x7f0a009d;
-        public static final int Base_AlertDialog_AppCompat=0x7f0a009e;
-        public static final int Base_AlertDialog_AppCompat_Light=0x7f0a009f;
-        public static final int Base_Animation_AppCompat_Dialog=0x7f0a00a0;
-        public static final int Base_Animation_AppCompat_DropDownUp=0x7f0a00a1;
-        public static final int Base_DialogWindowTitle_AppCompat=0x7f0a00a2;
-        public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0a00a3;
-        public static final int Base_TextAppearance_AppCompat=0x7f0a003a;
-        public static final int Base_TextAppearance_AppCompat_Body1=0x7f0a003b;
-        public static final int Base_TextAppearance_AppCompat_Body2=0x7f0a003c;
-        public static final int Base_TextAppearance_AppCompat_Button=0x7f0a0022;
-        public static final int Base_TextAppearance_AppCompat_Caption=0x7f0a003d;
-        public static final int Base_TextAppearance_AppCompat_Display1=0x7f0a003e;
-        public static final int Base_TextAppearance_AppCompat_Display2=0x7f0a003f;
-        public static final int Base_TextAppearance_AppCompat_Display3=0x7f0a0040;
-        public static final int Base_TextAppearance_AppCompat_Display4=0x7f0a0041;
-        public static final int Base_TextAppearance_AppCompat_Headline=0x7f0a0042;
-        public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0a000b;
-        public static final int Base_TextAppearance_AppCompat_Large=0x7f0a0043;
-        public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0a000c;
-        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0a0044;
-        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0a0045;
-        public static final int Base_TextAppearance_AppCompat_Medium=0x7f0a0046;
-        public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0a000d;
-        public static final int Base_TextAppearance_AppCompat_Menu=0x7f0a0047;
-        public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0a00a4;
-        public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0a0048;
-        public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0a0049;
-        public static final int Base_TextAppearance_AppCompat_Small=0x7f0a004a;
-        public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0a000e;
-        public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0a004b;
-        public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0a000f;
-        public static final int Base_TextAppearance_AppCompat_Title=0x7f0a004c;
-        public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0a0010;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0a008f;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0a004d;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0a004e;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0a004f;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0a0050;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0a0051;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0a0052;
-        public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0a0053;
-        public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0a0090;
-        public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0a00a5;
-        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0a0054;
-        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0a0055;
-        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0a0056;
-        public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0a0057;
-        public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0a0058;
-        public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0a00a6;
-        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0a0059;
-        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0a005a;
-        public static final int Base_Theme_AppCompat=0x7f0a005b;
-        public static final int Base_Theme_AppCompat_CompactMenu=0x7f0a00a7;
-        public static final int Base_Theme_AppCompat_Dialog=0x7f0a0011;
-        public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0a00a8;
-        public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0a00a9;
-        public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0a00aa;
-        public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0a0001;
-        public static final int Base_Theme_AppCompat_Light=0x7f0a005c;
-        public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0a00ab;
-        public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0a0012;
-        public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0a00ac;
-        public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0a00ad;
-        public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0a00ae;
-        public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0a0002;
-        public static final int Base_ThemeOverlay_AppCompat=0x7f0a00af;
-        public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0a00b0;
-        public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0a00b1;
-        public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0a00b2;
-        public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0a0013;
-        public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0a00b3;
-        public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0a00b4;
-        public static final int Base_V11_Theme_AppCompat_Dialog=0x7f0a0014;
-        public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0a0015;
-        public static final int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f0a0016;
-        public static final int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f0a001e;
-        public static final int Base_V12_Widget_AppCompat_EditText=0x7f0a001f;
-        public static final int Base_V21_Theme_AppCompat=0x7f0a005d;
-        public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0a005e;
-        public static final int Base_V21_Theme_AppCompat_Light=0x7f0a005f;
-        public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0a0060;
-        public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0a0061;
-        public static final int Base_V22_Theme_AppCompat=0x7f0a008d;
-        public static final int Base_V22_Theme_AppCompat_Light=0x7f0a008e;
-        public static final int Base_V23_Theme_AppCompat=0x7f0a0091;
-        public static final int Base_V23_Theme_AppCompat_Light=0x7f0a0092;
-        public static final int Base_V7_Theme_AppCompat=0x7f0a00b5;
-        public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0a00b6;
-        public static final int Base_V7_Theme_AppCompat_Light=0x7f0a00b7;
-        public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0a00b8;
-        public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0a00b9;
-        public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0a00ba;
-        public static final int Base_V7_Widget_AppCompat_EditText=0x7f0a00bb;
-        public static final int Base_Widget_AppCompat_ActionBar=0x7f0a00bc;
-        public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0a00bd;
-        public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0a00be;
-        public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0a0062;
-        public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0a0063;
-        public static final int Base_Widget_AppCompat_ActionButton=0x7f0a0064;
-        public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0a0065;
-        public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0a0066;
-        public static final int Base_Widget_AppCompat_ActionMode=0x7f0a00bf;
-        public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0a00c0;
-        public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0a0020;
-        public static final int Base_Widget_AppCompat_Button=0x7f0a0067;
-        public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0a0068;
-        public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0a0069;
-        public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0a00c1;
-        public static final int Base_Widget_AppCompat_Button_Colored=0x7f0a0093;
-        public static final int Base_Widget_AppCompat_Button_Small=0x7f0a006a;
-        public static final int Base_Widget_AppCompat_ButtonBar=0x7f0a006b;
-        public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0a00c2;
-        public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0a006c;
-        public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0a006d;
-        public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0a00c3;
-        public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0a0000;
-        public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0a00c4;
-        public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0a006e;
-        public static final int Base_Widget_AppCompat_EditText=0x7f0a0021;
-        public static final int Base_Widget_AppCompat_ImageButton=0x7f0a006f;
-        public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0a00c5;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0a00c6;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0a00c7;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0a0070;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0a0071;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0a0072;
-        public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0a0073;
-        public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0a0074;
-        public static final int Base_Widget_AppCompat_ListMenuView=0x7f0a00c8;
-        public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0a0075;
-        public static final int Base_Widget_AppCompat_ListView=0x7f0a0076;
-        public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0a0077;
-        public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0a0078;
-        public static final int Base_Widget_AppCompat_PopupMenu=0x7f0a0079;
-        public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0a007a;
-        public static final int Base_Widget_AppCompat_PopupWindow=0x7f0a00c9;
-        public static final int Base_Widget_AppCompat_ProgressBar=0x7f0a0017;
-        public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0a0018;
-        public static final int Base_Widget_AppCompat_RatingBar=0x7f0a007b;
-        public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0a0094;
-        public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0a0095;
-        public static final int Base_Widget_AppCompat_SearchView=0x7f0a00ca;
-        public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0a00cb;
-        public static final int Base_Widget_AppCompat_SeekBar=0x7f0a007c;
-        public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0a00cc;
-        public static final int Base_Widget_AppCompat_Spinner=0x7f0a007d;
-        public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0a0003;
-        public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0a007e;
-        public static final int Base_Widget_AppCompat_Toolbar=0x7f0a00cd;
-        public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0a007f;
-        public static final int Platform_AppCompat=0x7f0a0019;
-        public static final int Platform_AppCompat_Light=0x7f0a001a;
-        public static final int Platform_ThemeOverlay_AppCompat=0x7f0a0080;
-        public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0a0081;
-        public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0a0082;
-        public static final int Platform_V11_AppCompat=0x7f0a001b;
-        public static final int Platform_V11_AppCompat_Light=0x7f0a001c;
-        public static final int Platform_V14_AppCompat=0x7f0a0023;
-        public static final int Platform_V14_AppCompat_Light=0x7f0a0024;
-        public static final int Platform_V21_AppCompat=0x7f0a0083;
-        public static final int Platform_V21_AppCompat_Light=0x7f0a0084;
-        public static final int Platform_V25_AppCompat=0x7f0a0096;
-        public static final int Platform_V25_AppCompat_Light=0x7f0a0097;
-        public static final int Platform_Widget_AppCompat_Spinner=0x7f0a001d;
-        public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0a002c;
-        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0a002d;
-        public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0a002e;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0a002f;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0a0030;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0a0031;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0a0032;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0a0033;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0a0034;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0a0035;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0a0036;
-        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0a0037;
-        public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0a0038;
-        public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0a0039;
-        public static final int TextAppearance_AppCompat=0x7f0a00ce;
-        public static final int TextAppearance_AppCompat_Body1=0x7f0a00cf;
-        public static final int TextAppearance_AppCompat_Body2=0x7f0a00d0;
-        public static final int TextAppearance_AppCompat_Button=0x7f0a00d1;
-        public static final int TextAppearance_AppCompat_Caption=0x7f0a00d2;
-        public static final int TextAppearance_AppCompat_Display1=0x7f0a00d3;
-        public static final int TextAppearance_AppCompat_Display2=0x7f0a00d4;
-        public static final int TextAppearance_AppCompat_Display3=0x7f0a00d5;
-        public static final int TextAppearance_AppCompat_Display4=0x7f0a00d6;
-        public static final int TextAppearance_AppCompat_Headline=0x7f0a00d7;
-        public static final int TextAppearance_AppCompat_Inverse=0x7f0a00d8;
-        public static final int TextAppearance_AppCompat_Large=0x7f0a00d9;
-        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0a00da;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0a00db;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0a00dc;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0a00dd;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0a00de;
-        public static final int TextAppearance_AppCompat_Medium=0x7f0a00df;
-        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0a00e0;
-        public static final int TextAppearance_AppCompat_Menu=0x7f0a00e1;
-        public static final int TextAppearance_AppCompat_Notification=0x7f0a0025;
-        public static final int TextAppearance_AppCompat_Notification_Info=0x7f0a0085;
-        public static final int TextAppearance_AppCompat_Notification_Info_Media=0x7f0a0086;
-        public static final int TextAppearance_AppCompat_Notification_Line2=0x7f0a00e2;
-        public static final int TextAppearance_AppCompat_Notification_Line2_Media=0x7f0a00e3;
-        public static final int TextAppearance_AppCompat_Notification_Media=0x7f0a0087;
-        public static final int TextAppearance_AppCompat_Notification_Time=0x7f0a0088;
-        public static final int TextAppearance_AppCompat_Notification_Time_Media=0x7f0a0089;
-        public static final int TextAppearance_AppCompat_Notification_Title=0x7f0a0026;
-        public static final int TextAppearance_AppCompat_Notification_Title_Media=0x7f0a008a;
-        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0a00e4;
-        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0a00e5;
-        public static final int TextAppearance_AppCompat_Small=0x7f0a00e6;
-        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0a00e7;
-        public static final int TextAppearance_AppCompat_Subhead=0x7f0a00e8;
-        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0a00e9;
-        public static final int TextAppearance_AppCompat_Title=0x7f0a00ea;
-        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0a00eb;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0a00ec;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0a00ed;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0a00ee;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0a00ef;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0a00f0;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0a00f1;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0a00f2;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0a00f3;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0a00f4;
-        public static final int TextAppearance_AppCompat_Widget_Button=0x7f0a00f5;
-        public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0a00f6;
-        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0a00f7;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0a00f8;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0a00f9;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0a00fa;
-        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0a00fb;
-        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0a00fc;
-        public static final int TextAppearance_StatusBar_EventContent=0x7f0a0027;
-        public static final int TextAppearance_StatusBar_EventContent_Info=0x7f0a0028;
-        public static final int TextAppearance_StatusBar_EventContent_Line2=0x7f0a0029;
-        public static final int TextAppearance_StatusBar_EventContent_Time=0x7f0a002a;
-        public static final int TextAppearance_StatusBar_EventContent_Title=0x7f0a002b;
-        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0a00fd;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0a00fe;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0a00ff;
-        public static final int Theme_AppCompat=0x7f0a0100;
-        public static final int Theme_AppCompat_CompactMenu=0x7f0a0101;
-        public static final int Theme_AppCompat_DayNight=0x7f0a0004;
-        public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0a0005;
-        public static final int Theme_AppCompat_DayNight_Dialog=0x7f0a0006;
-        public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0a0007;
-        public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0a0008;
-        public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0a0009;
-        public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0a000a;
-        public static final int Theme_AppCompat_Dialog=0x7f0a0102;
-        public static final int Theme_AppCompat_Dialog_Alert=0x7f0a0103;
-        public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0a0104;
-        public static final int Theme_AppCompat_DialogWhenLarge=0x7f0a0105;
-        public static final int Theme_AppCompat_Light=0x7f0a0106;
-        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0a0107;
-        public static final int Theme_AppCompat_Light_Dialog=0x7f0a0108;
-        public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0a0109;
-        public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0a010a;
-        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0a010b;
-        public static final int Theme_AppCompat_Light_NoActionBar=0x7f0a010c;
-        public static final int Theme_AppCompat_NoActionBar=0x7f0a010d;
-        public static final int Theme_AppCompat_Translucent=0x7f0a010e;
-        public static final int Theme_Aware=0x7f0a010f;
-        public static final int ThemeOverlay_AppCompat=0x7f0a0110;
-        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0a0111;
-        public static final int ThemeOverlay_AppCompat_Dark=0x7f0a0112;
-        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0a0113;
-        public static final int ThemeOverlay_AppCompat_Dialog=0x7f0a0114;
-        public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0a0115;
-        public static final int ThemeOverlay_AppCompat_Light=0x7f0a0116;
-        public static final int Widget_AppCompat_ActionBar=0x7f0a0117;
-        public static final int Widget_AppCompat_ActionBar_Solid=0x7f0a0118;
-        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0a0119;
-        public static final int Widget_AppCompat_ActionBar_TabText=0x7f0a011a;
-        public static final int Widget_AppCompat_ActionBar_TabView=0x7f0a011b;
-        public static final int Widget_AppCompat_ActionButton=0x7f0a011c;
-        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0a011d;
-        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0a011e;
-        public static final int Widget_AppCompat_ActionMode=0x7f0a011f;
-        public static final int Widget_AppCompat_ActivityChooserView=0x7f0a0120;
-        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0a0121;
-        public static final int Widget_AppCompat_Button=0x7f0a0122;
-        public static final int Widget_AppCompat_Button_Borderless=0x7f0a0123;
-        public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0a0124;
-        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0a0125;
-        public static final int Widget_AppCompat_Button_Colored=0x7f0a0126;
-        public static final int Widget_AppCompat_Button_Small=0x7f0a0127;
-        public static final int Widget_AppCompat_ButtonBar=0x7f0a0128;
-        public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0a0129;
-        public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0a012a;
-        public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0a012b;
-        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0a012c;
-        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0a012d;
-        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0a012e;
-        public static final int Widget_AppCompat_EditText=0x7f0a012f;
-        public static final int Widget_AppCompat_ImageButton=0x7f0a0130;
-        public static final int Widget_AppCompat_Light_ActionBar=0x7f0a0131;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0a0132;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0a0133;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0a0134;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0a0135;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0a0136;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0a0137;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0a0138;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0a0139;
-        public static final int Widget_AppCompat_Light_ActionButton=0x7f0a013a;
-        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0a013b;
-        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0a013c;
-        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0a013d;
-        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0a013e;
-        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0a013f;
-        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0a0140;
-        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0a0141;
-        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0a0142;
-        public static final int Widget_AppCompat_Light_PopupMenu=0x7f0a0143;
-        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0a0144;
-        public static final int Widget_AppCompat_Light_SearchView=0x7f0a0145;
-        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0a0146;
-        public static final int Widget_AppCompat_ListMenuView=0x7f0a0147;
-        public static final int Widget_AppCompat_ListPopupWindow=0x7f0a0148;
-        public static final int Widget_AppCompat_ListView=0x7f0a0149;
-        public static final int Widget_AppCompat_ListView_DropDown=0x7f0a014a;
-        public static final int Widget_AppCompat_ListView_Menu=0x7f0a014b;
-        public static final int Widget_AppCompat_NotificationActionContainer=0x7f0a008b;
-        public static final int Widget_AppCompat_NotificationActionText=0x7f0a008c;
-        public static final int Widget_AppCompat_PopupMenu=0x7f0a014c;
-        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0a014d;
-        public static final int Widget_AppCompat_PopupWindow=0x7f0a014e;
-        public static final int Widget_AppCompat_ProgressBar=0x7f0a014f;
-        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0a0150;
-        public static final int Widget_AppCompat_RatingBar=0x7f0a0151;
-        public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0a0152;
-        public static final int Widget_AppCompat_RatingBar_Small=0x7f0a0153;
-        public static final int Widget_AppCompat_SearchView=0x7f0a0154;
-        public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0a0155;
-        public static final int Widget_AppCompat_SeekBar=0x7f0a0156;
-        public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0a0157;
-        public static final int Widget_AppCompat_Spinner=0x7f0a0158;
-        public static final int Widget_AppCompat_Spinner_DropDown=0x7f0a0159;
-        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0a015a;
-        public static final int Widget_AppCompat_Spinner_Underlined=0x7f0a015b;
-        public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0a015c;
-        public static final int Widget_AppCompat_Toolbar=0x7f0a015d;
-        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0a015e;
+        public static final int AppTheme=0x7f0b00a7;
+        public static final int Aware_Toolbar=0x7f0b00a8;
+        public static final int Base_AlertDialog_AppCompat=0x7f0b00a9;
+        public static final int Base_AlertDialog_AppCompat_Light=0x7f0b00aa;
+        public static final int Base_Animation_AppCompat_Dialog=0x7f0b00ab;
+        public static final int Base_Animation_AppCompat_DropDownUp=0x7f0b00ac;
+        public static final int Base_CardView=0x7f0b00ad;
+        public static final int Base_DialogWindowTitle_AppCompat=0x7f0b00ae;
+        public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0b00af;
+        public static final int Base_TextAppearance_AppCompat=0x7f0b0040;
+        public static final int Base_TextAppearance_AppCompat_Body1=0x7f0b0041;
+        public static final int Base_TextAppearance_AppCompat_Body2=0x7f0b0042;
+        public static final int Base_TextAppearance_AppCompat_Button=0x7f0b0028;
+        public static final int Base_TextAppearance_AppCompat_Caption=0x7f0b0043;
+        public static final int Base_TextAppearance_AppCompat_Display1=0x7f0b0044;
+        public static final int Base_TextAppearance_AppCompat_Display2=0x7f0b0045;
+        public static final int Base_TextAppearance_AppCompat_Display3=0x7f0b0046;
+        public static final int Base_TextAppearance_AppCompat_Display4=0x7f0b0047;
+        public static final int Base_TextAppearance_AppCompat_Headline=0x7f0b0048;
+        public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0b000c;
+        public static final int Base_TextAppearance_AppCompat_Large=0x7f0b0049;
+        public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0b000d;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0b004a;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0b004b;
+        public static final int Base_TextAppearance_AppCompat_Medium=0x7f0b004c;
+        public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0b000e;
+        public static final int Base_TextAppearance_AppCompat_Menu=0x7f0b004d;
+        public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0b00b0;
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0b004e;
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0b004f;
+        public static final int Base_TextAppearance_AppCompat_Small=0x7f0b0050;
+        public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0b000f;
+        public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0b0051;
+        public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0b0010;
+        public static final int Base_TextAppearance_AppCompat_Title=0x7f0b0052;
+        public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0b0011;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0b0096;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0b0053;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0b0054;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0b0055;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0b0056;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0b0057;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0b0058;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0b0059;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0b009e;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0b009f;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0b0097;
+        public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0b00b1;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0b005a;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0b005b;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0b005c;
+        public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0b005d;
+        public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0b005e;
+        public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0b00b2;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0b005f;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0b0060;
+        public static final int Base_Theme_AppCompat=0x7f0b0061;
+        public static final int Base_Theme_AppCompat_CompactMenu=0x7f0b00b3;
+        public static final int Base_Theme_AppCompat_Dialog=0x7f0b0012;
+        public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0b0013;
+        public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0b00b4;
+        public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0b0014;
+        public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0b0002;
+        public static final int Base_Theme_AppCompat_Light=0x7f0b0062;
+        public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0b00b5;
+        public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0b0015;
+        public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0b0016;
+        public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0b00b6;
+        public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0b0017;
+        public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0b0003;
+        public static final int Base_ThemeOverlay_AppCompat=0x7f0b00b7;
+        public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0b00b8;
+        public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0b00b9;
+        public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0b00ba;
+        public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0b0018;
+        public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0b0019;
+        public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0b00bb;
+        public static final int Base_V11_Theme_AppCompat_Dialog=0x7f0b001a;
+        public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0b001b;
+        public static final int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f0b001c;
+        public static final int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f0b0024;
+        public static final int Base_V12_Widget_AppCompat_EditText=0x7f0b0025;
+        public static final int Base_V21_Theme_AppCompat=0x7f0b0063;
+        public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0b0064;
+        public static final int Base_V21_Theme_AppCompat_Light=0x7f0b0065;
+        public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0b0066;
+        public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0b0067;
+        public static final int Base_V22_Theme_AppCompat=0x7f0b0094;
+        public static final int Base_V22_Theme_AppCompat_Light=0x7f0b0095;
+        public static final int Base_V23_Theme_AppCompat=0x7f0b0098;
+        public static final int Base_V23_Theme_AppCompat_Light=0x7f0b0099;
+        public static final int Base_V7_Theme_AppCompat=0x7f0b00bc;
+        public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0b00bd;
+        public static final int Base_V7_Theme_AppCompat_Light=0x7f0b00be;
+        public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0b00bf;
+        public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0b00c0;
+        public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0b00c1;
+        public static final int Base_V7_Widget_AppCompat_EditText=0x7f0b00c2;
+        public static final int Base_Widget_AppCompat_ActionBar=0x7f0b00c3;
+        public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0b00c4;
+        public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0b00c5;
+        public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0b0068;
+        public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0b0069;
+        public static final int Base_Widget_AppCompat_ActionButton=0x7f0b006a;
+        public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0b006b;
+        public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0b006c;
+        public static final int Base_Widget_AppCompat_ActionMode=0x7f0b00c6;
+        public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0b00c7;
+        public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0b0026;
+        public static final int Base_Widget_AppCompat_Button=0x7f0b006d;
+        public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0b006e;
+        public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0b006f;
+        public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0b00c8;
+        public static final int Base_Widget_AppCompat_Button_Colored=0x7f0b009a;
+        public static final int Base_Widget_AppCompat_Button_Small=0x7f0b0070;
+        public static final int Base_Widget_AppCompat_ButtonBar=0x7f0b0071;
+        public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0b00c9;
+        public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0b0072;
+        public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0b0073;
+        public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0b00ca;
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0b0000;
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0b00cb;
+        public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0b0074;
+        public static final int Base_Widget_AppCompat_EditText=0x7f0b0027;
+        public static final int Base_Widget_AppCompat_ImageButton=0x7f0b0075;
+        public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0b00cc;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0b00cd;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0b00ce;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0b0076;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0b0077;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0b0078;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0b0079;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0b007a;
+        public static final int Base_Widget_AppCompat_ListMenuView=0x7f0b00cf;
+        public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0b007b;
+        public static final int Base_Widget_AppCompat_ListView=0x7f0b007c;
+        public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0b007d;
+        public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0b007e;
+        public static final int Base_Widget_AppCompat_PopupMenu=0x7f0b007f;
+        public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0b0080;
+        public static final int Base_Widget_AppCompat_PopupWindow=0x7f0b00d0;
+        public static final int Base_Widget_AppCompat_ProgressBar=0x7f0b001d;
+        public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0b001e;
+        public static final int Base_Widget_AppCompat_RatingBar=0x7f0b0081;
+        public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0b009b;
+        public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0b009c;
+        public static final int Base_Widget_AppCompat_SearchView=0x7f0b00d1;
+        public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0b00d2;
+        public static final int Base_Widget_AppCompat_SeekBar=0x7f0b0082;
+        public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0b00d3;
+        public static final int Base_Widget_AppCompat_Spinner=0x7f0b0083;
+        public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0b0004;
+        public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0b0084;
+        public static final int Base_Widget_AppCompat_Toolbar=0x7f0b00d4;
+        public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0085;
+        public static final int Base_Widget_Design_AppBarLayout=0x7f0b00d5;
+        public static final int Base_Widget_Design_TabLayout=0x7f0b00d6;
+        public static final int CardView=0x7f0b009d;
+        public static final int CardView_Dark=0x7f0b00d7;
+        public static final int CardView_Light=0x7f0b00d8;
+        public static final int Platform_AppCompat=0x7f0b001f;
+        public static final int Platform_AppCompat_Light=0x7f0b0020;
+        public static final int Platform_ThemeOverlay_AppCompat=0x7f0b0086;
+        public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0b0087;
+        public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0b0088;
+        public static final int Platform_V11_AppCompat=0x7f0b0021;
+        public static final int Platform_V11_AppCompat_Light=0x7f0b0022;
+        public static final int Platform_V14_AppCompat=0x7f0b0029;
+        public static final int Platform_V14_AppCompat_Light=0x7f0b002a;
+        public static final int Platform_V21_AppCompat=0x7f0b0089;
+        public static final int Platform_V21_AppCompat_Light=0x7f0b008a;
+        public static final int Platform_V25_AppCompat=0x7f0b00a0;
+        public static final int Platform_V25_AppCompat_Light=0x7f0b00a1;
+        public static final int Platform_Widget_AppCompat_Spinner=0x7f0b0023;
+        public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0b0032;
+        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0b0033;
+        public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0b0034;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0b0035;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0b0036;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0b0037;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0b0038;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0b0039;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0b003a;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0b003b;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0b003c;
+        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0b003d;
+        public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0b003e;
+        public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0b003f;
+        public static final int TextAppearance_AppCompat=0x7f0b00d9;
+        public static final int TextAppearance_AppCompat_Body1=0x7f0b00da;
+        public static final int TextAppearance_AppCompat_Body2=0x7f0b00db;
+        public static final int TextAppearance_AppCompat_Button=0x7f0b00dc;
+        public static final int TextAppearance_AppCompat_Caption=0x7f0b00dd;
+        public static final int TextAppearance_AppCompat_Display1=0x7f0b00de;
+        public static final int TextAppearance_AppCompat_Display2=0x7f0b00df;
+        public static final int TextAppearance_AppCompat_Display3=0x7f0b00e0;
+        public static final int TextAppearance_AppCompat_Display4=0x7f0b00e1;
+        public static final int TextAppearance_AppCompat_Headline=0x7f0b00e2;
+        public static final int TextAppearance_AppCompat_Inverse=0x7f0b00e3;
+        public static final int TextAppearance_AppCompat_Large=0x7f0b00e4;
+        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0b00e5;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0b00e6;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0b00e7;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0b00e8;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0b00e9;
+        public static final int TextAppearance_AppCompat_Medium=0x7f0b00ea;
+        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0b00eb;
+        public static final int TextAppearance_AppCompat_Menu=0x7f0b00ec;
+        public static final int TextAppearance_AppCompat_Notification=0x7f0b002b;
+        public static final int TextAppearance_AppCompat_Notification_Info=0x7f0b008b;
+        public static final int TextAppearance_AppCompat_Notification_Info_Media=0x7f0b008c;
+        public static final int TextAppearance_AppCompat_Notification_Line2=0x7f0b00ed;
+        public static final int TextAppearance_AppCompat_Notification_Line2_Media=0x7f0b00ee;
+        public static final int TextAppearance_AppCompat_Notification_Media=0x7f0b008d;
+        public static final int TextAppearance_AppCompat_Notification_Time=0x7f0b008e;
+        public static final int TextAppearance_AppCompat_Notification_Time_Media=0x7f0b008f;
+        public static final int TextAppearance_AppCompat_Notification_Title=0x7f0b002c;
+        public static final int TextAppearance_AppCompat_Notification_Title_Media=0x7f0b0090;
+        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0b00ef;
+        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0b00f0;
+        public static final int TextAppearance_AppCompat_Small=0x7f0b00f1;
+        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0b00f2;
+        public static final int TextAppearance_AppCompat_Subhead=0x7f0b00f3;
+        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0b00f4;
+        public static final int TextAppearance_AppCompat_Title=0x7f0b00f5;
+        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0b00f6;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0b00f7;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0b00f8;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0b00f9;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0b00fa;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0b00fb;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0b00fc;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0b00fd;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0b00fe;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0b00ff;
+        public static final int TextAppearance_AppCompat_Widget_Button=0x7f0b0100;
+        public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0b0101;
+        public static final int TextAppearance_AppCompat_Widget_Button_Colored=0x7f0b0102;
+        public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0b0103;
+        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0b0104;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0b0105;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0b0106;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0b0107;
+        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0b0108;
+        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0b0109;
+        public static final int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f0b010a;
+        public static final int TextAppearance_Design_Counter=0x7f0b010b;
+        public static final int TextAppearance_Design_Counter_Overflow=0x7f0b010c;
+        public static final int TextAppearance_Design_Error=0x7f0b010d;
+        public static final int TextAppearance_Design_Hint=0x7f0b010e;
+        public static final int TextAppearance_Design_Snackbar_Message=0x7f0b010f;
+        public static final int TextAppearance_Design_Tab=0x7f0b0110;
+        public static final int TextAppearance_StatusBar_EventContent=0x7f0b002d;
+        public static final int TextAppearance_StatusBar_EventContent_Info=0x7f0b002e;
+        public static final int TextAppearance_StatusBar_EventContent_Line2=0x7f0b002f;
+        public static final int TextAppearance_StatusBar_EventContent_Time=0x7f0b0030;
+        public static final int TextAppearance_StatusBar_EventContent_Title=0x7f0b0031;
+        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0b0111;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0b0112;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0b0113;
+        public static final int Theme_AppCompat=0x7f0b0114;
+        public static final int Theme_AppCompat_CompactMenu=0x7f0b0115;
+        public static final int Theme_AppCompat_DayNight=0x7f0b0005;
+        public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0b0006;
+        public static final int Theme_AppCompat_DayNight_Dialog=0x7f0b0007;
+        public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0b0008;
+        public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0b0009;
+        public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0b000a;
+        public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0b000b;
+        public static final int Theme_AppCompat_Dialog=0x7f0b0116;
+        public static final int Theme_AppCompat_Dialog_Alert=0x7f0b0117;
+        public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0b0118;
+        public static final int Theme_AppCompat_DialogWhenLarge=0x7f0b0119;
+        public static final int Theme_AppCompat_Light=0x7f0b011a;
+        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0b011b;
+        public static final int Theme_AppCompat_Light_Dialog=0x7f0b011c;
+        public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0b011d;
+        public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0b011e;
+        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0b011f;
+        public static final int Theme_AppCompat_Light_NoActionBar=0x7f0b0120;
+        public static final int Theme_AppCompat_NoActionBar=0x7f0b0121;
+        public static final int Theme_AppCompat_Translucent=0x7f0b0122;
+        public static final int Theme_Aware=0x7f0b0123;
+        public static final int Theme_Design=0x7f0b0124;
+        public static final int Theme_Design_BottomSheetDialog=0x7f0b0125;
+        public static final int Theme_Design_Light=0x7f0b0126;
+        public static final int Theme_Design_Light_BottomSheetDialog=0x7f0b0127;
+        public static final int Theme_Design_Light_NoActionBar=0x7f0b0128;
+        public static final int Theme_Design_NoActionBar=0x7f0b0129;
+        public static final int ThemeOverlay_AppCompat=0x7f0b012a;
+        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0b012b;
+        public static final int ThemeOverlay_AppCompat_Dark=0x7f0b012c;
+        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0b012d;
+        public static final int ThemeOverlay_AppCompat_Dialog=0x7f0b012e;
+        public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0b012f;
+        public static final int ThemeOverlay_AppCompat_Light=0x7f0b0130;
+        public static final int Widget_AppCompat_ActionBar=0x7f0b0131;
+        public static final int Widget_AppCompat_ActionBar_Solid=0x7f0b0132;
+        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0b0133;
+        public static final int Widget_AppCompat_ActionBar_TabText=0x7f0b0134;
+        public static final int Widget_AppCompat_ActionBar_TabView=0x7f0b0135;
+        public static final int Widget_AppCompat_ActionButton=0x7f0b0136;
+        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0b0137;
+        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0b0138;
+        public static final int Widget_AppCompat_ActionMode=0x7f0b0139;
+        public static final int Widget_AppCompat_ActivityChooserView=0x7f0b013a;
+        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0b013b;
+        public static final int Widget_AppCompat_Button=0x7f0b013c;
+        public static final int Widget_AppCompat_Button_Borderless=0x7f0b013d;
+        public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0b013e;
+        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0b013f;
+        public static final int Widget_AppCompat_Button_Colored=0x7f0b0140;
+        public static final int Widget_AppCompat_Button_Small=0x7f0b0141;
+        public static final int Widget_AppCompat_ButtonBar=0x7f0b0142;
+        public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0b0143;
+        public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0b0144;
+        public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0b0145;
+        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0b0146;
+        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0b0147;
+        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0b0148;
+        public static final int Widget_AppCompat_EditText=0x7f0b0149;
+        public static final int Widget_AppCompat_ImageButton=0x7f0b014a;
+        public static final int Widget_AppCompat_Light_ActionBar=0x7f0b014b;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0b014c;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0b014d;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0b014e;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0b014f;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0b0150;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0b0151;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0b0152;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0b0153;
+        public static final int Widget_AppCompat_Light_ActionButton=0x7f0b0154;
+        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0b0155;
+        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0b0156;
+        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0b0157;
+        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0b0158;
+        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0b0159;
+        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0b015a;
+        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0b015b;
+        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0b015c;
+        public static final int Widget_AppCompat_Light_PopupMenu=0x7f0b015d;
+        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0b015e;
+        public static final int Widget_AppCompat_Light_SearchView=0x7f0b015f;
+        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0b0160;
+        public static final int Widget_AppCompat_ListMenuView=0x7f0b0161;
+        public static final int Widget_AppCompat_ListPopupWindow=0x7f0b0162;
+        public static final int Widget_AppCompat_ListView=0x7f0b0163;
+        public static final int Widget_AppCompat_ListView_DropDown=0x7f0b0164;
+        public static final int Widget_AppCompat_ListView_Menu=0x7f0b0165;
+        public static final int Widget_AppCompat_NotificationActionContainer=0x7f0b0091;
+        public static final int Widget_AppCompat_NotificationActionText=0x7f0b0092;
+        public static final int Widget_AppCompat_PopupMenu=0x7f0b0166;
+        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0b0167;
+        public static final int Widget_AppCompat_PopupWindow=0x7f0b0168;
+        public static final int Widget_AppCompat_ProgressBar=0x7f0b0169;
+        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b016a;
+        public static final int Widget_AppCompat_RatingBar=0x7f0b016b;
+        public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0b016c;
+        public static final int Widget_AppCompat_RatingBar_Small=0x7f0b016d;
+        public static final int Widget_AppCompat_SearchView=0x7f0b016e;
+        public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0b016f;
+        public static final int Widget_AppCompat_SeekBar=0x7f0b0170;
+        public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0b0171;
+        public static final int Widget_AppCompat_Spinner=0x7f0b0172;
+        public static final int Widget_AppCompat_Spinner_DropDown=0x7f0b0173;
+        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b0174;
+        public static final int Widget_AppCompat_Spinner_Underlined=0x7f0b0175;
+        public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0b0176;
+        public static final int Widget_AppCompat_Toolbar=0x7f0b0177;
+        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0178;
+        public static final int Widget_Design_AppBarLayout=0x7f0b0093;
+        public static final int Widget_Design_BottomNavigationView=0x7f0b0179;
+        public static final int Widget_Design_BottomSheet_Modal=0x7f0b017a;
+        public static final int Widget_Design_CollapsingToolbar=0x7f0b017b;
+        public static final int Widget_Design_CoordinatorLayout=0x7f0b017c;
+        public static final int Widget_Design_FloatingActionButton=0x7f0b017d;
+        public static final int Widget_Design_NavigationView=0x7f0b017e;
+        public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f0b017f;
+        public static final int Widget_Design_Snackbar=0x7f0b0180;
+        public static final int Widget_Design_TabLayout=0x7f0b0001;
+        public static final int Widget_Design_TextInputLayout=0x7f0b0181;
     }
     public static final class xml {
-        public static final int aware_accessibility_config=0x7f050000;
-        public static final int aware_preferences=0x7f050001;
-        public static final int aware_ssl_config=0x7f050002;
-        public static final int preferences=0x7f050003;
-        public static final int provider_paths=0x7f050004;
+        public static final int aware_accessibility_config=0x7f060000;
+        public static final int aware_preferences=0x7f060001;
+        public static final int aware_ssl_config=0x7f060002;
+        public static final int preferences=0x7f060003;
+        public static final int provider_paths=0x7f060004;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -3051,35 +4103,35 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.aware.plugin.Fitbit:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.aware.plugin.Fitbit:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.aware.plugin.Fitbit:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.aware.plugin.Fitbit:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.aware.plugin.Fitbit:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.aware.plugin.Fitbit:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.aware.plugin.Fitbit:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.aware.plugin.Fitbit:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.aware.plugin.Fitbit:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.aware.plugin.Fitbit:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.aware.plugin.Fitbit:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.aware.plugin.Fitbit:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.aware.plugin.Fitbit:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.aware.plugin.Fitbit:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.aware.plugin.Fitbit:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.aware.plugin.Fitbit:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.aware.plugin.Fitbit:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.aware.plugin.Fitbit:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.aware.plugin.Fitbit:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.aware.plugin.Fitbit:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.aware.plugin.Fitbit:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.aware.plugin.Fitbit:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.aware.plugin.Fitbit:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.aware.plugin.Fitbit:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.aware.plugin.Fitbit:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.aware.plugin.Fitbit:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.aware.plugin.Fitbit:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.aware.plugin.Fitbit:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.aware.plugin.Fitbit:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.aware.plugin.fitbit:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.aware.plugin.fitbit:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.aware.plugin.fitbit:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.aware.plugin.fitbit:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.aware.plugin.fitbit:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.aware.plugin.fitbit:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.aware.plugin.fitbit:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.aware.plugin.fitbit:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.aware.plugin.fitbit:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.aware.plugin.fitbit:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.aware.plugin.fitbit:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.aware.plugin.fitbit:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.aware.plugin.fitbit:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.aware.plugin.fitbit:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.aware.plugin.fitbit:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.aware.plugin.fitbit:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.aware.plugin.fitbit:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.aware.plugin.fitbit:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.aware.plugin.fitbit:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.aware.plugin.fitbit:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.aware.plugin.fitbit:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.aware.plugin.fitbit:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.aware.plugin.fitbit:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.aware.plugin.fitbit:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.aware.plugin.fitbit:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.aware.plugin.fitbit:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.aware.plugin.fitbit:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.aware.plugin.fitbit:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.aware.plugin.fitbit:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3119,20 +4171,20 @@ containing a value of this type.
             0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015,
             0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
             0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d,
-            0x7f01005a
+            0x7f010060
         };
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#background}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:background
+          @attr name com.aware.plugin.fitbit:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3140,11 +4192,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.aware.plugin.Fitbit:backgroundSplit
+          @attr name com.aware.plugin.fitbit:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3152,11 +4204,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.aware.plugin.Fitbit:backgroundStacked
+          @attr name com.aware.plugin.fitbit:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3168,11 +4220,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetEnd
+          @attr name com.aware.plugin.fitbit:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3184,11 +4236,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetEndWithActions
+          @attr name com.aware.plugin.fitbit:contentInsetEndWithActions
         */
         public static final int ActionBar_contentInsetEndWithActions = 25;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3200,11 +4252,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetLeft
+          @attr name com.aware.plugin.fitbit:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3216,11 +4268,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetRight
+          @attr name com.aware.plugin.fitbit:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3232,11 +4284,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetStart
+          @attr name com.aware.plugin.fitbit:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3248,21 +4300,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetStartWithNavigation
+          @attr name com.aware.plugin.fitbit:contentInsetStartWithNavigation
         */
         public static final int ActionBar_contentInsetStartWithNavigation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:customNavigationLayout
+          @attr name com.aware.plugin.fitbit:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3280,21 +4332,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:displayOptions
+          @attr name com.aware.plugin.fitbit:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:divider
+          @attr name com.aware.plugin.fitbit:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3306,11 +4358,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:elevation
+          @attr name com.aware.plugin.fitbit:elevation
         */
         public static final int ActionBar_elevation = 26;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#height}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3322,11 +4374,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:height
+          @attr name com.aware.plugin.fitbit:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3336,51 +4388,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:hideOnContentScroll
+          @attr name com.aware.plugin.fitbit:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:homeAsUpIndicator
+          @attr name com.aware.plugin.fitbit:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 28;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:homeLayout
+          @attr name com.aware.plugin.fitbit:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:icon
+          @attr name com.aware.plugin.fitbit:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:indeterminateProgressStyle
+          @attr name com.aware.plugin.fitbit:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3392,21 +4444,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:itemPadding
+          @attr name com.aware.plugin.fitbit:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:logo
+          @attr name com.aware.plugin.fitbit:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3420,21 +4472,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:navigationMode
+          @attr name com.aware.plugin.fitbit:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:popupTheme
+          @attr name com.aware.plugin.fitbit:popupTheme
         */
         public static final int ActionBar_popupTheme = 27;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3446,21 +4498,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:progressBarPadding
+          @attr name com.aware.plugin.fitbit:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:progressBarStyle
+          @attr name com.aware.plugin.fitbit:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3470,21 +4522,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:subtitle
+          @attr name com.aware.plugin.fitbit:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:subtitleTextStyle
+          @attr name com.aware.plugin.fitbit:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#title}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3494,17 +4546,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:title
+          @attr name com.aware.plugin.fitbit:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:titleTextStyle
+          @attr name com.aware.plugin.fitbit:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -3556,12 +4608,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.aware.plugin.Fitbit:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.aware.plugin.Fitbit:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.aware.plugin.Fitbit:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.aware.plugin.Fitbit:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.aware.plugin.Fitbit:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.aware.plugin.Fitbit:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.aware.plugin.fitbit:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.aware.plugin.fitbit:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.aware.plugin.fitbit:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.aware.plugin.fitbit:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.aware.plugin.fitbit:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.aware.plugin.fitbit:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -3575,17 +4627,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#background}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:background
+          @attr name com.aware.plugin.fitbit:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3593,21 +4645,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.aware.plugin.Fitbit:backgroundSplit
+          @attr name com.aware.plugin.fitbit:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:closeItemLayout
+          @attr name com.aware.plugin.fitbit:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#height}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3619,27 +4671,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:height
+          @attr name com.aware.plugin.fitbit:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:subtitleTextStyle
+          @attr name com.aware.plugin.fitbit:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:titleTextStyle
+          @attr name com.aware.plugin.fitbit:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -3648,8 +4700,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.aware.plugin.Fitbit:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.aware.plugin.Fitbit:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.aware.plugin.fitbit:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.aware.plugin.fitbit:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -3658,17 +4710,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001f, 0x7f010020
         };
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:expandActivityOverflowButtonDrawable
+          @attr name com.aware.plugin.fitbit:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -3678,7 +4730,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:initialActivityCount
+          @attr name com.aware.plugin.fitbit:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -3688,22 +4740,24 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.aware.plugin.Fitbit:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout com.aware.plugin.Fitbit:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout com.aware.plugin.Fitbit:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.aware.plugin.Fitbit:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.aware.plugin.Fitbit:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.aware.plugin.fitbit:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.aware.plugin.fitbit:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.aware.plugin.fitbit:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.aware.plugin.fitbit:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_showTitle com.aware.plugin.fitbit:showTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.aware.plugin.fitbit:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
            @see #AlertDialog_listItemLayout
            @see #AlertDialog_listLayout
            @see #AlertDialog_multiChoiceItemLayout
+           @see #AlertDialog_showTitle
            @see #AlertDialog_singleChoiceItemLayout
          */
         public static final int[] AlertDialog = {
             0x010100f2, 0x7f010021, 0x7f010022, 0x7f010023,
-            0x7f010024, 0x7f010025
+            0x7f010024, 0x7f010025, 0x7f010026
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#layout}
@@ -3712,55 +4766,210 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:buttonPanelSideLayout
+          @attr name com.aware.plugin.fitbit:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:listItemLayout
+          @attr name com.aware.plugin.fitbit:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:listLayout
+          @attr name com.aware.plugin.fitbit:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:multiChoiceItemLayout
+          @attr name com.aware.plugin.fitbit:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#showTitle}
+          attribute's value can be found in the {@link #AlertDialog} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:showTitle
+        */
+        public static final int AlertDialog_showTitle = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:singleChoiceItemLayout
+          @attr name com.aware.plugin.fitbit:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
+        /** Attributes that can be used with a AppBarLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation com.aware.plugin.fitbit:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded com.aware.plugin.fitbit:expanded}</code></td><td></td></tr>
+           </table>
+           @see #AppBarLayout_android_background
+           @see #AppBarLayout_elevation
+           @see #AppBarLayout_expanded
+         */
+        public static final int[] AppBarLayout = {
+            0x010100d4, 0x7f01001c, 0x7f010027
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#background}
+          attribute's value can be found in the {@link #AppBarLayout} array.
+          @attr name android:background
+        */
+        public static final int AppBarLayout_android_background = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#elevation}
+          attribute's value can be found in the {@link #AppBarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:elevation
+        */
+        public static final int AppBarLayout_elevation = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#expanded}
+          attribute's value can be found in the {@link #AppBarLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:expanded
+        */
+        public static final int AppBarLayout_expanded = 2;
+        /** Attributes that can be used with a AppBarLayoutStates.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.aware.plugin.fitbit:state_collapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.aware.plugin.fitbit:state_collapsible}</code></td><td></td></tr>
+           </table>
+           @see #AppBarLayoutStates_state_collapsed
+           @see #AppBarLayoutStates_state_collapsible
+         */
+        public static final int[] AppBarLayoutStates = {
+            0x7f010028, 0x7f010029
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#state_collapsed}
+          attribute's value can be found in the {@link #AppBarLayoutStates} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:state_collapsed
+        */
+        public static final int AppBarLayoutStates_state_collapsed = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#state_collapsible}
+          attribute's value can be found in the {@link #AppBarLayoutStates} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:state_collapsible
+        */
+        public static final int AppBarLayoutStates_state_collapsible = 1;
+        /** Attributes that can be used with a AppBarLayout_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.aware.plugin.fitbit:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.aware.plugin.fitbit:layout_scrollInterpolator}</code></td><td></td></tr>
+           </table>
+           @see #AppBarLayout_Layout_layout_scrollFlags
+           @see #AppBarLayout_Layout_layout_scrollInterpolator
+         */
+        public static final int[] AppBarLayout_Layout = {
+            0x7f01002a, 0x7f01002b
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_scrollFlags}
+          attribute's value can be found in the {@link #AppBarLayout_Layout} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>scroll</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>exitUntilCollapsed</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>enterAlways</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:layout_scrollFlags
+        */
+        public static final int AppBarLayout_Layout_layout_scrollFlags = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_scrollInterpolator}
+          attribute's value can be found in the {@link #AppBarLayout_Layout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:layout_scrollInterpolator
+        */
+        public static final int AppBarLayout_Layout_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -3768,13 +4977,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat com.aware.plugin.Fitbit:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat com.aware.plugin.fitbit:srcCompat}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
          */
         public static final int[] AppCompatImageView = {
-            0x01010119, 0x7f010026
+            0x01010119, 0x7f01002c
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#src}
@@ -3783,13 +4992,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:srcCompat
+          @attr name com.aware.plugin.fitbit:srcCompat
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /** Attributes that can be used with a AppCompatSeekBar.
@@ -3799,9 +5008,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMark com.aware.plugin.Fitbit:tickMark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.aware.plugin.Fitbit:tickMarkTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.aware.plugin.Fitbit:tickMarkTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMark com.aware.plugin.fitbit:tickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.aware.plugin.fitbit:tickMarkTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.aware.plugin.fitbit:tickMarkTintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatSeekBar_android_thumb
            @see #AppCompatSeekBar_tickMark
@@ -3809,7 +5018,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #AppCompatSeekBar_tickMarkTintMode
          */
         public static final int[] AppCompatSeekBar = {
-            0x01010142, 0x7f010027, 0x7f010028, 0x7f010029
+            0x01010142, 0x7f01002d, 0x7f01002e, 0x7f01002f
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#thumb}
@@ -3818,17 +5027,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatSeekBar_android_thumb = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#tickMark}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tickMark}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:tickMark
+          @attr name com.aware.plugin.fitbit:tickMark
         */
         public static final int AppCompatSeekBar_tickMark = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#tickMarkTint}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tickMarkTint}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -3839,11 +5048,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:tickMarkTint
+          @attr name com.aware.plugin.fitbit:tickMarkTint
         */
         public static final int AppCompatSeekBar_tickMarkTint = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#tickMarkTintMode}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tickMarkTintMode}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -3860,7 +5069,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:tickMarkTintMode
+          @attr name com.aware.plugin.fitbit:tickMarkTintMode
         */
         public static final int AppCompatSeekBar_tickMarkTintMode = 3;
         /** Attributes that can be used with a AppCompatTextHelper.
@@ -3938,13 +5147,13 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.aware.plugin.Fitbit:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.aware.plugin.fitbit:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
          */
         public static final int[] AppCompatTextView = {
-            0x01010034, 0x7f01002a
+            0x01010034, 0x7f010030
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
@@ -3953,14 +5162,14 @@ containing a value of this type.
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.aware.plugin.Fitbit:textAllCaps
+          @attr name com.aware.plugin.fitbit:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -3969,121 +5178,121 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.aware.plugin.Fitbit:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.aware.plugin.Fitbit:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.aware.plugin.Fitbit:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize com.aware.plugin.Fitbit:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.aware.plugin.Fitbit:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.aware.plugin.Fitbit:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.aware.plugin.Fitbit:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.aware.plugin.Fitbit:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.aware.plugin.Fitbit:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.aware.plugin.Fitbit:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.aware.plugin.Fitbit:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.aware.plugin.Fitbit:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.aware.plugin.Fitbit:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.aware.plugin.Fitbit:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.aware.plugin.Fitbit:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.aware.plugin.Fitbit:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.aware.plugin.Fitbit:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.aware.plugin.Fitbit:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.aware.plugin.Fitbit:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.aware.plugin.Fitbit:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.aware.plugin.Fitbit:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.aware.plugin.Fitbit:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.aware.plugin.Fitbit:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.aware.plugin.Fitbit:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.aware.plugin.Fitbit:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.aware.plugin.Fitbit:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.aware.plugin.Fitbit:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.aware.plugin.Fitbit:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.aware.plugin.Fitbit:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.aware.plugin.Fitbit:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.aware.plugin.Fitbit:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.aware.plugin.Fitbit:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.aware.plugin.Fitbit:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.aware.plugin.Fitbit:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.aware.plugin.Fitbit:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.aware.plugin.fitbit:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.aware.plugin.fitbit:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.aware.plugin.fitbit:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize com.aware.plugin.fitbit:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.aware.plugin.fitbit:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.aware.plugin.fitbit:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.aware.plugin.fitbit:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.aware.plugin.fitbit:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.aware.plugin.fitbit:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.aware.plugin.fitbit:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.aware.plugin.fitbit:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.aware.plugin.fitbit:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.aware.plugin.fitbit:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.aware.plugin.fitbit:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.aware.plugin.fitbit:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.aware.plugin.fitbit:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.aware.plugin.fitbit:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.aware.plugin.fitbit:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.aware.plugin.fitbit:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.aware.plugin.fitbit:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.aware.plugin.fitbit:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.aware.plugin.fitbit:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.aware.plugin.fitbit:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.aware.plugin.fitbit:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.aware.plugin.fitbit:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.aware.plugin.fitbit:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.aware.plugin.fitbit:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.aware.plugin.fitbit:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.aware.plugin.fitbit:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.aware.plugin.fitbit:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.aware.plugin.fitbit:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.aware.plugin.fitbit:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.aware.plugin.fitbit:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.aware.plugin.fitbit:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.aware.plugin.fitbit:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.aware.plugin.Fitbit:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.aware.plugin.Fitbit:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.aware.plugin.Fitbit:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.aware.plugin.Fitbit:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.aware.plugin.Fitbit:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.aware.plugin.Fitbit:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.aware.plugin.Fitbit:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle com.aware.plugin.Fitbit:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.aware.plugin.Fitbit:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.aware.plugin.Fitbit:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.aware.plugin.Fitbit:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent com.aware.plugin.Fitbit:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.aware.plugin.Fitbit:colorBackgroundFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.aware.plugin.Fitbit:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.aware.plugin.Fitbit:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.aware.plugin.Fitbit:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.aware.plugin.Fitbit:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary com.aware.plugin.Fitbit:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.aware.plugin.Fitbit:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.aware.plugin.Fitbit:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground com.aware.plugin.Fitbit:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.aware.plugin.Fitbit:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme com.aware.plugin.Fitbit:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.aware.plugin.Fitbit:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical com.aware.plugin.Fitbit:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.aware.plugin.Fitbit:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.aware.plugin.Fitbit:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground com.aware.plugin.Fitbit:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor com.aware.plugin.Fitbit:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle com.aware.plugin.Fitbit:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.aware.plugin.Fitbit:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.aware.plugin.Fitbit:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.aware.plugin.Fitbit:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.aware.plugin.Fitbit:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.aware.plugin.Fitbit:listMenuViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.aware.plugin.Fitbit:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.aware.plugin.Fitbit:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.aware.plugin.Fitbit:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.aware.plugin.Fitbit:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.aware.plugin.Fitbit:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.aware.plugin.Fitbit:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground com.aware.plugin.Fitbit:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.aware.plugin.Fitbit:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.aware.plugin.Fitbit:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.aware.plugin.Fitbit:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.aware.plugin.Fitbit:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.aware.plugin.Fitbit:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.aware.plugin.Fitbit:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.aware.plugin.Fitbit:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.aware.plugin.Fitbit:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.aware.plugin.Fitbit:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.aware.plugin.Fitbit:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.aware.plugin.Fitbit:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.aware.plugin.Fitbit:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.aware.plugin.Fitbit:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.aware.plugin.Fitbit:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle com.aware.plugin.Fitbit:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.aware.plugin.Fitbit:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.aware.plugin.Fitbit:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.aware.plugin.Fitbit:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.aware.plugin.Fitbit:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.aware.plugin.Fitbit:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.aware.plugin.Fitbit:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.aware.plugin.Fitbit:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.aware.plugin.Fitbit:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.aware.plugin.Fitbit:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.aware.plugin.Fitbit:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.aware.plugin.Fitbit:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar com.aware.plugin.Fitbit:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.aware.plugin.Fitbit:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.aware.plugin.Fitbit:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.aware.plugin.Fitbit:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.aware.plugin.Fitbit:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.aware.plugin.Fitbit:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.aware.plugin.Fitbit:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.aware.plugin.Fitbit:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.aware.plugin.Fitbit:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.aware.plugin.Fitbit:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.aware.plugin.fitbit:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.aware.plugin.fitbit:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.aware.plugin.fitbit:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.aware.plugin.fitbit:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.aware.plugin.fitbit:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.aware.plugin.fitbit:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.aware.plugin.fitbit:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle com.aware.plugin.fitbit:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.aware.plugin.fitbit:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.aware.plugin.fitbit:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.aware.plugin.fitbit:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent com.aware.plugin.fitbit:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.aware.plugin.fitbit:colorBackgroundFloating}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.aware.plugin.fitbit:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.aware.plugin.fitbit:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.aware.plugin.fitbit:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.aware.plugin.fitbit:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary com.aware.plugin.fitbit:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.aware.plugin.fitbit:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.aware.plugin.fitbit:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground com.aware.plugin.fitbit:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.aware.plugin.fitbit:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme com.aware.plugin.fitbit:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.aware.plugin.fitbit:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical com.aware.plugin.fitbit:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.aware.plugin.fitbit:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.aware.plugin.fitbit:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground com.aware.plugin.fitbit:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor com.aware.plugin.fitbit:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle com.aware.plugin.fitbit:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.aware.plugin.fitbit:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.aware.plugin.fitbit:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.aware.plugin.fitbit:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.aware.plugin.fitbit:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.aware.plugin.fitbit:listMenuViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.aware.plugin.fitbit:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.aware.plugin.fitbit:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.aware.plugin.fitbit:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.aware.plugin.fitbit:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.aware.plugin.fitbit:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.aware.plugin.fitbit:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground com.aware.plugin.fitbit:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.aware.plugin.fitbit:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.aware.plugin.fitbit:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.aware.plugin.fitbit:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.aware.plugin.fitbit:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.aware.plugin.fitbit:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.aware.plugin.fitbit:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.aware.plugin.fitbit:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.aware.plugin.fitbit:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.aware.plugin.fitbit:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.aware.plugin.fitbit:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.aware.plugin.fitbit:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.aware.plugin.fitbit:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.aware.plugin.fitbit:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.aware.plugin.fitbit:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle com.aware.plugin.fitbit:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.aware.plugin.fitbit:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.aware.plugin.fitbit:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.aware.plugin.fitbit:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.aware.plugin.fitbit:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.aware.plugin.fitbit:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.aware.plugin.fitbit:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.aware.plugin.fitbit:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.aware.plugin.fitbit:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.aware.plugin.fitbit:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.aware.plugin.fitbit:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.aware.plugin.fitbit:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar com.aware.plugin.fitbit:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.aware.plugin.fitbit:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.aware.plugin.fitbit:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.aware.plugin.fitbit:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.aware.plugin.fitbit:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.aware.plugin.fitbit:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.aware.plugin.fitbit:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.aware.plugin.fitbit:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.aware.plugin.fitbit:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.aware.plugin.fitbit:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -4202,68 +5411,68 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #AppCompatTheme_windowNoTitle
          */
         public static final int[] AppCompatTheme = {
-            0x01010057, 0x010100ae, 0x7f01002b, 0x7f01002c,
-            0x7f01002d, 0x7f01002e, 0x7f01002f, 0x7f010030,
-            0x7f010031, 0x7f010032, 0x7f010033, 0x7f010034,
-            0x7f010035, 0x7f010036, 0x7f010037, 0x7f010038,
-            0x7f010039, 0x7f01003a, 0x7f01003b, 0x7f01003c,
-            0x7f01003d, 0x7f01003e, 0x7f01003f, 0x7f010040,
-            0x7f010041, 0x7f010042, 0x7f010043, 0x7f010044,
-            0x7f010045, 0x7f010046, 0x7f010047, 0x7f010048,
-            0x7f010049, 0x7f01004a, 0x7f01004b, 0x7f01004c,
-            0x7f01004d, 0x7f01004e, 0x7f01004f, 0x7f010050,
-            0x7f010051, 0x7f010052, 0x7f010053, 0x7f010054,
-            0x7f010055, 0x7f010056, 0x7f010057, 0x7f010058,
-            0x7f010059, 0x7f01005a, 0x7f01005b, 0x7f01005c,
-            0x7f01005d, 0x7f01005e, 0x7f01005f, 0x7f010060,
-            0x7f010061, 0x7f010062, 0x7f010063, 0x7f010064,
-            0x7f010065, 0x7f010066, 0x7f010067, 0x7f010068,
-            0x7f010069, 0x7f01006a, 0x7f01006b, 0x7f01006c,
-            0x7f01006d, 0x7f01006e, 0x7f01006f, 0x7f010070,
-            0x7f010071, 0x7f010072, 0x7f010073, 0x7f010074,
-            0x7f010075, 0x7f010076, 0x7f010077, 0x7f010078,
-            0x7f010079, 0x7f01007a, 0x7f01007b, 0x7f01007c,
-            0x7f01007d, 0x7f01007e, 0x7f01007f, 0x7f010080,
-            0x7f010081, 0x7f010082, 0x7f010083, 0x7f010084,
-            0x7f010085, 0x7f010086, 0x7f010087, 0x7f010088,
-            0x7f010089, 0x7f01008a, 0x7f01008b, 0x7f01008c,
-            0x7f01008d, 0x7f01008e, 0x7f01008f, 0x7f010090,
-            0x7f010091, 0x7f010092, 0x7f010093, 0x7f010094,
-            0x7f010095, 0x7f010096, 0x7f010097, 0x7f010098,
-            0x7f010099, 0x7f01009a, 0x7f01009b
+            0x01010057, 0x010100ae, 0x7f010031, 0x7f010032,
+            0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036,
+            0x7f010037, 0x7f010038, 0x7f010039, 0x7f01003a,
+            0x7f01003b, 0x7f01003c, 0x7f01003d, 0x7f01003e,
+            0x7f01003f, 0x7f010040, 0x7f010041, 0x7f010042,
+            0x7f010043, 0x7f010044, 0x7f010045, 0x7f010046,
+            0x7f010047, 0x7f010048, 0x7f010049, 0x7f01004a,
+            0x7f01004b, 0x7f01004c, 0x7f01004d, 0x7f01004e,
+            0x7f01004f, 0x7f010050, 0x7f010051, 0x7f010052,
+            0x7f010053, 0x7f010054, 0x7f010055, 0x7f010056,
+            0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a,
+            0x7f01005b, 0x7f01005c, 0x7f01005d, 0x7f01005e,
+            0x7f01005f, 0x7f010060, 0x7f010061, 0x7f010062,
+            0x7f010063, 0x7f010064, 0x7f010065, 0x7f010066,
+            0x7f010067, 0x7f010068, 0x7f010069, 0x7f01006a,
+            0x7f01006b, 0x7f01006c, 0x7f01006d, 0x7f01006e,
+            0x7f01006f, 0x7f010070, 0x7f010071, 0x7f010072,
+            0x7f010073, 0x7f010074, 0x7f010075, 0x7f010076,
+            0x7f010077, 0x7f010078, 0x7f010079, 0x7f01007a,
+            0x7f01007b, 0x7f01007c, 0x7f01007d, 0x7f01007e,
+            0x7f01007f, 0x7f010080, 0x7f010081, 0x7f010082,
+            0x7f010083, 0x7f010084, 0x7f010085, 0x7f010086,
+            0x7f010087, 0x7f010088, 0x7f010089, 0x7f01008a,
+            0x7f01008b, 0x7f01008c, 0x7f01008d, 0x7f01008e,
+            0x7f01008f, 0x7f010090, 0x7f010091, 0x7f010092,
+            0x7f010093, 0x7f010094, 0x7f010095, 0x7f010096,
+            0x7f010097, 0x7f010098, 0x7f010099, 0x7f01009a,
+            0x7f01009b, 0x7f01009c, 0x7f01009d, 0x7f01009e,
+            0x7f01009f, 0x7f0100a0, 0x7f0100a1
         };
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarDivider
+          @attr name com.aware.plugin.fitbit:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarItemBackground
+          @attr name com.aware.plugin.fitbit:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarPopupTheme
+          @attr name com.aware.plugin.fitbit:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4283,111 +5492,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:actionBarSize
+          @attr name com.aware.plugin.fitbit:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarSplitStyle
+          @attr name com.aware.plugin.fitbit:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarStyle
+          @attr name com.aware.plugin.fitbit:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarTabBarStyle
+          @attr name com.aware.plugin.fitbit:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarTabStyle
+          @attr name com.aware.plugin.fitbit:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarTabTextStyle
+          @attr name com.aware.plugin.fitbit:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarTheme
+          @attr name com.aware.plugin.fitbit:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionBarWidgetTheme
+          @attr name com.aware.plugin.fitbit:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionButtonStyle
+          @attr name com.aware.plugin.fitbit:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionDropDownStyle
+          @attr name com.aware.plugin.fitbit:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionMenuTextAppearance
+          @attr name com.aware.plugin.fitbit:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4395,181 +5604,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionMenuTextColor
+          @attr name com.aware.plugin.fitbit:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeBackground
+          @attr name com.aware.plugin.fitbit:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeCloseButtonStyle
+          @attr name com.aware.plugin.fitbit:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeCloseDrawable
+          @attr name com.aware.plugin.fitbit:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeCopyDrawable
+          @attr name com.aware.plugin.fitbit:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeCutDrawable
+          @attr name com.aware.plugin.fitbit:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeFindDrawable
+          @attr name com.aware.plugin.fitbit:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModePasteDrawable
+          @attr name com.aware.plugin.fitbit:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModePopupWindowStyle
+          @attr name com.aware.plugin.fitbit:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeSelectAllDrawable
+          @attr name com.aware.plugin.fitbit:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeShareDrawable
+          @attr name com.aware.plugin.fitbit:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeSplitBackground
+          @attr name com.aware.plugin.fitbit:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeStyle
+          @attr name com.aware.plugin.fitbit:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionModeWebSearchDrawable
+          @attr name com.aware.plugin.fitbit:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionOverflowButtonStyle
+          @attr name com.aware.plugin.fitbit:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionOverflowMenuStyle
+          @attr name com.aware.plugin.fitbit:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:activityChooserViewStyle
+          @attr name com.aware.plugin.fitbit:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:alertDialogButtonGroupStyle
+          @attr name com.aware.plugin.fitbit:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 94;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4579,27 +5788,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:alertDialogCenterButtons
+          @attr name com.aware.plugin.fitbit:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 95;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:alertDialogStyle
+          @attr name com.aware.plugin.fitbit:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 93;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:alertDialogTheme
+          @attr name com.aware.plugin.fitbit:alertDialogTheme
         */
         public static final int AppCompatTheme_alertDialogTheme = 96;
         /**
@@ -4615,117 +5824,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:autoCompleteTextViewStyle
+          @attr name com.aware.plugin.fitbit:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:borderlessButtonStyle
+          @attr name com.aware.plugin.fitbit:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:buttonBarButtonStyle
+          @attr name com.aware.plugin.fitbit:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:buttonBarNegativeButtonStyle
+          @attr name com.aware.plugin.fitbit:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:buttonBarNeutralButtonStyle
+          @attr name com.aware.plugin.fitbit:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:buttonBarPositiveButtonStyle
+          @attr name com.aware.plugin.fitbit:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:buttonBarStyle
+          @attr name com.aware.plugin.fitbit:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:buttonStyle
+          @attr name com.aware.plugin.fitbit:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:buttonStyleSmall
+          @attr name com.aware.plugin.fitbit:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 103;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:checkboxStyle
+          @attr name com.aware.plugin.fitbit:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:checkedTextViewStyle
+          @attr name com.aware.plugin.fitbit:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4736,11 +5945,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:colorAccent
+          @attr name com.aware.plugin.fitbit:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 85;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#colorBackgroundFloating}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#colorBackgroundFloating}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4751,11 +5960,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:colorBackgroundFloating
+          @attr name com.aware.plugin.fitbit:colorBackgroundFloating
         */
         public static final int AppCompatTheme_colorBackgroundFloating = 92;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4766,11 +5975,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:colorButtonNormal
+          @attr name com.aware.plugin.fitbit:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4781,11 +5990,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:colorControlActivated
+          @attr name com.aware.plugin.fitbit:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 87;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4796,11 +6005,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:colorControlHighlight
+          @attr name com.aware.plugin.fitbit:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 88;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4811,11 +6020,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:colorControlNormal
+          @attr name com.aware.plugin.fitbit:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 86;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4826,11 +6035,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:colorPrimary
+          @attr name com.aware.plugin.fitbit:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 83;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4841,11 +6050,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:colorPrimaryDark
+          @attr name com.aware.plugin.fitbit:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 84;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4856,21 +6065,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:colorSwitchThumbNormal
+          @attr name com.aware.plugin.fitbit:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 90;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:controlBackground
+          @attr name com.aware.plugin.fitbit:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 91;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4882,51 +6091,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:dialogPreferredPadding
+          @attr name com.aware.plugin.fitbit:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 44;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:dialogTheme
+          @attr name com.aware.plugin.fitbit:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 43;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:dividerHorizontal
+          @attr name com.aware.plugin.fitbit:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 57;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:dividerVertical
+          @attr name com.aware.plugin.fitbit:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 56;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:dropDownListViewStyle
+          @attr name com.aware.plugin.fitbit:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4938,21 +6147,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:dropdownListPreferredItemHeight
+          @attr name com.aware.plugin.fitbit:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 47;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:editTextBackground
+          @attr name com.aware.plugin.fitbit:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 64;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4960,81 +6169,81 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.aware.plugin.Fitbit:editTextColor
+          @attr name com.aware.plugin.fitbit:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 63;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:editTextStyle
+          @attr name com.aware.plugin.fitbit:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:homeAsUpIndicator
+          @attr name com.aware.plugin.fitbit:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 49;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:imageButtonStyle
+          @attr name com.aware.plugin.fitbit:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:listChoiceBackgroundIndicator
+          @attr name com.aware.plugin.fitbit:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 82;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:listDividerAlertDialog
+          @attr name com.aware.plugin.fitbit:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 45;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listMenuViewStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listMenuViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:listMenuViewStyle
+          @attr name com.aware.plugin.fitbit:listMenuViewStyle
         */
         public static final int AppCompatTheme_listMenuViewStyle = 114;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:listPopupWindowStyle
+          @attr name com.aware.plugin.fitbit:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 76;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5046,11 +6255,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:listPreferredItemHeight
+          @attr name com.aware.plugin.fitbit:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 70;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5062,11 +6271,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:listPreferredItemHeightLarge
+          @attr name com.aware.plugin.fitbit:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 72;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5078,11 +6287,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:listPreferredItemHeightSmall
+          @attr name com.aware.plugin.fitbit:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5094,11 +6303,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:listPreferredItemPaddingLeft
+          @attr name com.aware.plugin.fitbit:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 73;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5110,31 +6319,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:listPreferredItemPaddingRight
+          @attr name com.aware.plugin.fitbit:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 74;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:panelBackground
+          @attr name com.aware.plugin.fitbit:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 79;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:panelMenuListTheme
+          @attr name com.aware.plugin.fitbit:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 81;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5146,211 +6355,211 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:panelMenuListWidth
+          @attr name com.aware.plugin.fitbit:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 80;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:popupMenuStyle
+          @attr name com.aware.plugin.fitbit:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:popupWindowStyle
+          @attr name com.aware.plugin.fitbit:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:radioButtonStyle
+          @attr name com.aware.plugin.fitbit:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:ratingBarStyle
+          @attr name com.aware.plugin.fitbit:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:ratingBarStyleIndicator
+          @attr name com.aware.plugin.fitbit:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 109;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:ratingBarStyleSmall
+          @attr name com.aware.plugin.fitbit:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 110;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:searchViewStyle
+          @attr name com.aware.plugin.fitbit:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:seekBarStyle
+          @attr name com.aware.plugin.fitbit:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 111;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:selectableItemBackground
+          @attr name com.aware.plugin.fitbit:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 53;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:selectableItemBackgroundBorderless
+          @attr name com.aware.plugin.fitbit:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 54;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:spinnerDropDownItemStyle
+          @attr name com.aware.plugin.fitbit:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 48;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:spinnerStyle
+          @attr name com.aware.plugin.fitbit:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 112;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:switchStyle
+          @attr name com.aware.plugin.fitbit:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 113;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:textAppearanceLargePopupMenu
+          @attr name com.aware.plugin.fitbit:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:textAppearanceListItem
+          @attr name com.aware.plugin.fitbit:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 77;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:textAppearanceListItemSmall
+          @attr name com.aware.plugin.fitbit:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 78;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textAppearancePopupMenuHeader}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textAppearancePopupMenuHeader}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:textAppearancePopupMenuHeader
+          @attr name com.aware.plugin.fitbit:textAppearancePopupMenuHeader
         */
         public static final int AppCompatTheme_textAppearancePopupMenuHeader = 42;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:textAppearanceSearchResultSubtitle
+          @attr name com.aware.plugin.fitbit:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 67;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:textAppearanceSearchResultTitle
+          @attr name com.aware.plugin.fitbit:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 66;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:textAppearanceSmallPopupMenu
+          @attr name com.aware.plugin.fitbit:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5358,11 +6567,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.aware.plugin.Fitbit:textColorAlertDialogListItem
+          @attr name com.aware.plugin.fitbit:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 97;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5370,31 +6579,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.aware.plugin.Fitbit:textColorSearchUrl
+          @attr name com.aware.plugin.fitbit:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 68;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:toolbarNavigationButtonStyle
+          @attr name com.aware.plugin.fitbit:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:toolbarStyle
+          @attr name com.aware.plugin.fitbit:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5404,11 +6613,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowActionBar
+          @attr name com.aware.plugin.fitbit:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5418,11 +6627,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowActionBarOverlay
+          @attr name com.aware.plugin.fitbit:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5432,11 +6641,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowActionModeOverlay
+          @attr name com.aware.plugin.fitbit:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5451,11 +6660,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowFixedHeightMajor
+          @attr name com.aware.plugin.fitbit:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5470,11 +6679,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowFixedHeightMinor
+          @attr name com.aware.plugin.fitbit:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5489,11 +6698,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowFixedWidthMajor
+          @attr name com.aware.plugin.fitbit:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5508,11 +6717,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowFixedWidthMinor
+          @attr name com.aware.plugin.fitbit:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5527,11 +6736,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowMinWidthMajor
+          @attr name com.aware.plugin.fitbit:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5546,11 +6755,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowMinWidthMinor
+          @attr name com.aware.plugin.fitbit:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5560,24 +6769,181 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:windowNoTitle
+          @attr name com.aware.plugin.fitbit:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
+        /** Attributes that can be used with a BottomNavigationView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #BottomNavigationView_elevation com.aware.plugin.fitbit:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemBackground com.aware.plugin.fitbit:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemIconTint com.aware.plugin.fitbit:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemTextColor com.aware.plugin.fitbit:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_menu com.aware.plugin.fitbit:menu}</code></td><td></td></tr>
+           </table>
+           @see #BottomNavigationView_elevation
+           @see #BottomNavigationView_itemBackground
+           @see #BottomNavigationView_itemIconTint
+           @see #BottomNavigationView_itemTextColor
+           @see #BottomNavigationView_menu
+         */
+        public static final int[] BottomNavigationView = {
+            0x7f01001c, 0x7f0100e8, 0x7f0100e9, 0x7f0100ea,
+            0x7f0100eb
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#elevation}
+          attribute's value can be found in the {@link #BottomNavigationView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:elevation
+        */
+        public static final int BottomNavigationView_elevation = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#itemBackground}
+          attribute's value can be found in the {@link #BottomNavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:itemBackground
+        */
+        public static final int BottomNavigationView_itemBackground = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#itemIconTint}
+          attribute's value can be found in the {@link #BottomNavigationView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:itemIconTint
+        */
+        public static final int BottomNavigationView_itemIconTint = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#itemTextColor}
+          attribute's value can be found in the {@link #BottomNavigationView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:itemTextColor
+        */
+        public static final int BottomNavigationView_itemTextColor = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#menu}
+          attribute's value can be found in the {@link #BottomNavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:menu
+        */
+        public static final int BottomNavigationView_menu = 1;
+        /** Attributes that can be used with a BottomSheetBehavior_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.aware.plugin.fitbit:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.aware.plugin.fitbit:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.aware.plugin.fitbit:behavior_skipCollapsed}</code></td><td></td></tr>
+           </table>
+           @see #BottomSheetBehavior_Layout_behavior_hideable
+           @see #BottomSheetBehavior_Layout_behavior_peekHeight
+           @see #BottomSheetBehavior_Layout_behavior_skipCollapsed
+         */
+        public static final int[] BottomSheetBehavior_Layout = {
+            0x7f0100a2, 0x7f0100a3, 0x7f0100a4
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#behavior_hideable}
+          attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:behavior_hideable
+        */
+        public static final int BottomSheetBehavior_Layout_behavior_hideable = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#behavior_peekHeight}
+          attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>auto</code></td><td>-1</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:behavior_peekHeight
+        */
+        public static final int BottomSheetBehavior_Layout_behavior_peekHeight = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#behavior_skipCollapsed}
+          attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:behavior_skipCollapsed
+        */
+        public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
         /** Attributes that can be used with a ButtonBarLayout.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.aware.plugin.Fitbit:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.aware.plugin.fitbit:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
         public static final int[] ButtonBarLayout = {
-            0x7f01009c
+            0x7f0100a5
         };
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -5587,16 +6953,580 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:allowStacking
+          @attr name com.aware.plugin.fitbit:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
+        /** Attributes that can be used with a CardView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor com.aware.plugin.fitbit:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius com.aware.plugin.fitbit:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation com.aware.plugin.fitbit:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation com.aware.plugin.fitbit:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.aware.plugin.fitbit:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding com.aware.plugin.fitbit:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding com.aware.plugin.fitbit:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom com.aware.plugin.fitbit:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft com.aware.plugin.fitbit:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight com.aware.plugin.fitbit:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop com.aware.plugin.fitbit:contentPaddingTop}</code></td><td></td></tr>
+           </table>
+           @see #CardView_android_minHeight
+           @see #CardView_android_minWidth
+           @see #CardView_cardBackgroundColor
+           @see #CardView_cardCornerRadius
+           @see #CardView_cardElevation
+           @see #CardView_cardMaxElevation
+           @see #CardView_cardPreventCornerOverlap
+           @see #CardView_cardUseCompatPadding
+           @see #CardView_contentPadding
+           @see #CardView_contentPaddingBottom
+           @see #CardView_contentPaddingLeft
+           @see #CardView_contentPaddingRight
+           @see #CardView_contentPaddingTop
+         */
+        public static final int[] CardView = {
+            0x0101013f, 0x01010140, 0x7f0100a6, 0x7f0100a7,
+            0x7f0100a8, 0x7f0100a9, 0x7f0100aa, 0x7f0100ab,
+            0x7f0100ac, 0x7f0100ad, 0x7f0100ae, 0x7f0100af,
+            0x7f0100b0
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#minHeight}
+          attribute's value can be found in the {@link #CardView} array.
+          @attr name android:minHeight
+        */
+        public static final int CardView_android_minHeight = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+          attribute's value can be found in the {@link #CardView} array.
+          @attr name android:minWidth
+        */
+        public static final int CardView_android_minWidth = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#cardBackgroundColor}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:cardBackgroundColor
+        */
+        public static final int CardView_cardBackgroundColor = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#cardCornerRadius}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:cardCornerRadius
+        */
+        public static final int CardView_cardCornerRadius = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#cardElevation}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:cardElevation
+        */
+        public static final int CardView_cardElevation = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#cardMaxElevation}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:cardMaxElevation
+        */
+        public static final int CardView_cardMaxElevation = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#cardPreventCornerOverlap}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:cardPreventCornerOverlap
+        */
+        public static final int CardView_cardPreventCornerOverlap = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#cardUseCompatPadding}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:cardUseCompatPadding
+        */
+        public static final int CardView_cardUseCompatPadding = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentPadding}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:contentPadding
+        */
+        public static final int CardView_contentPadding = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentPaddingBottom}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:contentPaddingBottom
+        */
+        public static final int CardView_contentPaddingBottom = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentPaddingLeft}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:contentPaddingLeft
+        */
+        public static final int CardView_contentPaddingLeft = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentPaddingRight}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:contentPaddingRight
+        */
+        public static final int CardView_contentPaddingRight = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentPaddingTop}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:contentPaddingTop
+        */
+        public static final int CardView_contentPaddingTop = 11;
+        /** Attributes that can be used with a CollapsingToolbarLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.aware.plugin.fitbit:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.aware.plugin.fitbit:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.aware.plugin.fitbit:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.aware.plugin.fitbit:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.aware.plugin.fitbit:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.aware.plugin.fitbit:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.aware.plugin.fitbit:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.aware.plugin.fitbit:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.aware.plugin.fitbit:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.aware.plugin.fitbit:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.aware.plugin.fitbit:scrimAnimationDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.aware.plugin.fitbit:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.aware.plugin.fitbit:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title com.aware.plugin.fitbit:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.aware.plugin.fitbit:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.aware.plugin.fitbit:toolbarId}</code></td><td></td></tr>
+           </table>
+           @see #CollapsingToolbarLayout_collapsedTitleGravity
+           @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
+           @see #CollapsingToolbarLayout_contentScrim
+           @see #CollapsingToolbarLayout_expandedTitleGravity
+           @see #CollapsingToolbarLayout_expandedTitleMargin
+           @see #CollapsingToolbarLayout_expandedTitleMarginBottom
+           @see #CollapsingToolbarLayout_expandedTitleMarginEnd
+           @see #CollapsingToolbarLayout_expandedTitleMarginStart
+           @see #CollapsingToolbarLayout_expandedTitleMarginTop
+           @see #CollapsingToolbarLayout_expandedTitleTextAppearance
+           @see #CollapsingToolbarLayout_scrimAnimationDuration
+           @see #CollapsingToolbarLayout_scrimVisibleHeightTrigger
+           @see #CollapsingToolbarLayout_statusBarScrim
+           @see #CollapsingToolbarLayout_title
+           @see #CollapsingToolbarLayout_titleEnabled
+           @see #CollapsingToolbarLayout_toolbarId
+         */
+        public static final int[] CollapsingToolbarLayout = {
+            0x7f010003, 0x7f0100b1, 0x7f0100b2, 0x7f0100b3,
+            0x7f0100b4, 0x7f0100b5, 0x7f0100b6, 0x7f0100b7,
+            0x7f0100b8, 0x7f0100b9, 0x7f0100ba, 0x7f0100bb,
+            0x7f0100bc, 0x7f0100bd, 0x7f0100be, 0x7f0100bf
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#collapsedTitleGravity}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:collapsedTitleGravity
+        */
+        public static final int CollapsingToolbarLayout_collapsedTitleGravity = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#collapsedTitleTextAppearance}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:collapsedTitleTextAppearance
+        */
+        public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentScrim}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:contentScrim
+        */
+        public static final int CollapsingToolbarLayout_contentScrim = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#expandedTitleGravity}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:expandedTitleGravity
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleGravity = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#expandedTitleMargin}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:expandedTitleMargin
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#expandedTitleMarginBottom}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:expandedTitleMarginBottom
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#expandedTitleMarginEnd}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:expandedTitleMarginEnd
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#expandedTitleMarginStart}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:expandedTitleMarginStart
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#expandedTitleMarginTop}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:expandedTitleMarginTop
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#expandedTitleTextAppearance}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:expandedTitleTextAppearance
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#scrimAnimationDuration}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:scrimAnimationDuration
+        */
+        public static final int CollapsingToolbarLayout_scrimAnimationDuration = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#scrimVisibleHeightTrigger}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:scrimVisibleHeightTrigger
+        */
+        public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#statusBarScrim}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:statusBarScrim
+        */
+        public static final int CollapsingToolbarLayout_statusBarScrim = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#title}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:title
+        */
+        public static final int CollapsingToolbarLayout_title = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleEnabled}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:titleEnabled
+        */
+        public static final int CollapsingToolbarLayout_titleEnabled = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#toolbarId}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:toolbarId
+        */
+        public static final int CollapsingToolbarLayout_toolbarId = 10;
+        /** Attributes that can be used with a CollapsingToolbarLayout_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.aware.plugin.fitbit:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.aware.plugin.fitbit:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           </table>
+           @see #CollapsingToolbarLayout_Layout_layout_collapseMode
+           @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
+         */
+        public static final int[] CollapsingToolbarLayout_Layout = {
+            0x7f0100c0, 0x7f0100c1
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_collapseMode}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>pin</code></td><td>1</td><td></td></tr>
+<tr><td><code>parallax</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:layout_collapseMode
+        */
+        public static final int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_collapseParallaxMultiplier}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:layout_collapseParallaxMultiplier
+        */
+        public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a ColorStateListItem.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ColorStateListItem_alpha com.aware.plugin.Fitbit:alpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorStateListItem_alpha com.aware.plugin.fitbit:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
            </table>
@@ -5605,10 +7535,10 @@ containing a value of this type.
            @see #ColorStateListItem_android_color
          */
         public static final int[] ColorStateListItem = {
-            0x010101a5, 0x0101031f, 0x7f01009d
+            0x010101a5, 0x0101031f, 0x7f0100c2
         };
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#alpha}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#alpha}
           attribute's value can be found in the {@link #ColorStateListItem} array.
 
 
@@ -5618,7 +7548,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:alpha
+          @attr name com.aware.plugin.fitbit:alpha
         */
         public static final int ColorStateListItem_alpha = 2;
         /**
@@ -5640,15 +7570,15 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint com.aware.plugin.Fitbit:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode com.aware.plugin.Fitbit:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint com.aware.plugin.fitbit:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode com.aware.plugin.fitbit:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
            @see #CompoundButton_buttonTintMode
          */
         public static final int[] CompoundButton = {
-            0x01010107, 0x7f01009e, 0x7f01009f
+            0x01010107, 0x7f0100c3, 0x7f0100c4
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#button}
@@ -5657,7 +7587,7 @@ containing a value of this type.
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -5668,11 +7598,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:buttonTint
+          @attr name com.aware.plugin.fitbit:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -5688,23 +7618,254 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:buttonTintMode
+          @attr name com.aware.plugin.fitbit:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
+        /** Attributes that can be used with a CoordinatorLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines com.aware.plugin.fitbit:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.aware.plugin.fitbit:statusBarBackground}</code></td><td></td></tr>
+           </table>
+           @see #CoordinatorLayout_keylines
+           @see #CoordinatorLayout_statusBarBackground
+         */
+        public static final int[] CoordinatorLayout = {
+            0x7f0100c5, 0x7f0100c6
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#keylines}
+          attribute's value can be found in the {@link #CoordinatorLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:keylines
+        */
+        public static final int CoordinatorLayout_keylines = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#statusBarBackground}
+          attribute's value can be found in the {@link #CoordinatorLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:statusBarBackground
+        */
+        public static final int CoordinatorLayout_statusBarBackground = 1;
+        /** Attributes that can be used with a CoordinatorLayout_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.aware.plugin.fitbit:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.aware.plugin.fitbit:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.aware.plugin.fitbit:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.aware.plugin.fitbit:layout_dodgeInsetEdges}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.aware.plugin.fitbit:layout_insetEdge}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.aware.plugin.fitbit:layout_keyline}</code></td><td></td></tr>
+           </table>
+           @see #CoordinatorLayout_Layout_android_layout_gravity
+           @see #CoordinatorLayout_Layout_layout_anchor
+           @see #CoordinatorLayout_Layout_layout_anchorGravity
+           @see #CoordinatorLayout_Layout_layout_behavior
+           @see #CoordinatorLayout_Layout_layout_dodgeInsetEdges
+           @see #CoordinatorLayout_Layout_layout_insetEdge
+           @see #CoordinatorLayout_Layout_layout_keyline
+         */
+        public static final int[] CoordinatorLayout_Layout = {
+            0x010100b3, 0x7f0100c7, 0x7f0100c8, 0x7f0100c9,
+            0x7f0100ca, 0x7f0100cb, 0x7f0100cc
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
+          attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+          @attr name android:layout_gravity
+        */
+        public static final int CoordinatorLayout_Layout_android_layout_gravity = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_anchor}
+          attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:layout_anchor
+        */
+        public static final int CoordinatorLayout_Layout_layout_anchor = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_anchorGravity}
+          attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:layout_anchorGravity
+        */
+        public static final int CoordinatorLayout_Layout_layout_anchorGravity = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_behavior}
+          attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:layout_behavior
+        */
+        public static final int CoordinatorLayout_Layout_layout_behavior = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_dodgeInsetEdges}
+          attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+<tr><td><code>all</code></td><td>0x77</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:layout_dodgeInsetEdges
+        */
+        public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_insetEdge}
+          attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:layout_insetEdge
+        */
+        public static final int CoordinatorLayout_Layout_layout_insetEdge = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout_keyline}
+          attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:layout_keyline
+        */
+        public static final int CoordinatorLayout_Layout_layout_keyline = 3;
+        /** Attributes that can be used with a DesignTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.aware.plugin.fitbit:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.aware.plugin.fitbit:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError com.aware.plugin.fitbit:textColorError}</code></td><td></td></tr>
+           </table>
+           @see #DesignTheme_bottomSheetDialogTheme
+           @see #DesignTheme_bottomSheetStyle
+           @see #DesignTheme_textColorError
+         */
+        public static final int[] DesignTheme = {
+            0x7f0100cd, 0x7f0100ce, 0x7f0100cf
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#bottomSheetDialogTheme}
+          attribute's value can be found in the {@link #DesignTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:bottomSheetDialogTheme
+        */
+        public static final int DesignTheme_bottomSheetDialogTheme = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#bottomSheetStyle}
+          attribute's value can be found in the {@link #DesignTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:bottomSheetStyle
+        */
+        public static final int DesignTheme_bottomSheetStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textColorError}
+          attribute's value can be found in the {@link #DesignTheme} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:textColorError
+        */
+        public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.aware.plugin.Fitbit:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.aware.plugin.Fitbit:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength com.aware.plugin.Fitbit:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.aware.plugin.Fitbit:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.aware.plugin.Fitbit:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.aware.plugin.Fitbit:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.aware.plugin.Fitbit:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.aware.plugin.Fitbit:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.aware.plugin.fitbit:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.aware.plugin.fitbit:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength com.aware.plugin.fitbit:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.aware.plugin.fitbit:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.aware.plugin.fitbit:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.aware.plugin.fitbit:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.aware.plugin.fitbit:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.aware.plugin.fitbit:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -5716,11 +7877,11 @@ containing a value of this type.
            @see #DrawerArrowToggle_thickness
          */
         public static final int[] DrawerArrowToggle = {
-            0x7f0100a0, 0x7f0100a1, 0x7f0100a2, 0x7f0100a3,
-            0x7f0100a4, 0x7f0100a5, 0x7f0100a6, 0x7f0100a7
+            0x7f0100d0, 0x7f0100d1, 0x7f0100d2, 0x7f0100d3,
+            0x7f0100d4, 0x7f0100d5, 0x7f0100d6, 0x7f0100d7
         };
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -5732,11 +7893,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:arrowHeadLength
+          @attr name com.aware.plugin.fitbit:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -5748,11 +7909,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:arrowShaftLength
+          @attr name com.aware.plugin.fitbit:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#barLength}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -5764,11 +7925,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:barLength
+          @attr name com.aware.plugin.fitbit:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#color}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -5779,11 +7940,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:color
+          @attr name com.aware.plugin.fitbit:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -5795,11 +7956,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:drawableSize
+          @attr name com.aware.plugin.fitbit:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -5811,11 +7972,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:gapBetweenBars
+          @attr name com.aware.plugin.fitbit:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -5825,11 +7986,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:spinBars
+          @attr name com.aware.plugin.fitbit:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -5841,9 +8002,237 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:thickness
+          @attr name com.aware.plugin.fitbit:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
+        /** Attributes that can be used with a FloatingActionButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.aware.plugin.fitbit:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.aware.plugin.fitbit:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth com.aware.plugin.fitbit:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation com.aware.plugin.fitbit:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize com.aware.plugin.fitbit:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.aware.plugin.fitbit:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor com.aware.plugin.fitbit:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.aware.plugin.fitbit:useCompatPadding}</code></td><td></td></tr>
+           </table>
+           @see #FloatingActionButton_backgroundTint
+           @see #FloatingActionButton_backgroundTintMode
+           @see #FloatingActionButton_borderWidth
+           @see #FloatingActionButton_elevation
+           @see #FloatingActionButton_fabSize
+           @see #FloatingActionButton_pressedTranslationZ
+           @see #FloatingActionButton_rippleColor
+           @see #FloatingActionButton_useCompatPadding
+         */
+        public static final int[] FloatingActionButton = {
+            0x7f01001c, 0x7f0100d8, 0x7f0100d9, 0x7f0100da,
+            0x7f0100db, 0x7f0100dc, 0x7f010143, 0x7f010144
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#backgroundTint}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:backgroundTint
+        */
+        public static final int FloatingActionButton_backgroundTint = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#backgroundTintMode}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>src_over</code></td><td>3</td><td></td></tr>
+<tr><td><code>src_in</code></td><td>5</td><td></td></tr>
+<tr><td><code>src_atop</code></td><td>9</td><td></td></tr>
+<tr><td><code>multiply</code></td><td>14</td><td></td></tr>
+<tr><td><code>screen</code></td><td>15</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:backgroundTintMode
+        */
+        public static final int FloatingActionButton_backgroundTintMode = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#borderWidth}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:borderWidth
+        */
+        public static final int FloatingActionButton_borderWidth = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#elevation}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:elevation
+        */
+        public static final int FloatingActionButton_elevation = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#fabSize}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>auto</code></td><td>-1</td><td></td></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>mini</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:fabSize
+        */
+        public static final int FloatingActionButton_fabSize = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#pressedTranslationZ}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:pressedTranslationZ
+        */
+        public static final int FloatingActionButton_pressedTranslationZ = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#rippleColor}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:rippleColor
+        */
+        public static final int FloatingActionButton_rippleColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#useCompatPadding}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:useCompatPadding
+        */
+        public static final int FloatingActionButton_useCompatPadding = 5;
+        /** Attributes that can be used with a FloatingActionButton_Behavior_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.aware.plugin.fitbit:behavior_autoHide}</code></td><td></td></tr>
+           </table>
+           @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
+         */
+        public static final int[] FloatingActionButton_Behavior_Layout = {
+            0x7f0100dd
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#behavior_autoHide}
+          attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:behavior_autoHide
+        */
+        public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
+        /** Attributes that can be used with a ForegroundLinearLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.aware.plugin.fitbit:foregroundInsidePadding}</code></td><td></td></tr>
+           </table>
+           @see #ForegroundLinearLayout_android_foreground
+           @see #ForegroundLinearLayout_android_foregroundGravity
+           @see #ForegroundLinearLayout_foregroundInsidePadding
+         */
+        public static final int[] ForegroundLinearLayout = {
+            0x01010109, 0x01010200, 0x7f0100de
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#foreground}
+          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
+          @attr name android:foreground
+        */
+        public static final int ForegroundLinearLayout_android_foreground = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#foregroundGravity}
+          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
+          @attr name android:foregroundGravity
+        */
+        public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#foregroundInsidePadding}
+          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:foregroundInsidePadding
+        */
+        public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
            <p>Includes the following attributes:</p>
            <table>
@@ -5855,10 +8244,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.aware.plugin.Fitbit:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.aware.plugin.Fitbit:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.aware.plugin.Fitbit:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.aware.plugin.Fitbit:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.aware.plugin.fitbit:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.aware.plugin.fitbit:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.aware.plugin.fitbit:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.aware.plugin.fitbit:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -5872,8 +8261,8 @@ containing a value of this type.
          */
         public static final int[] LinearLayoutCompat = {
             0x010100af, 0x010100c4, 0x01010126, 0x01010127,
-            0x01010128, 0x7f01000b, 0x7f0100a8, 0x7f0100a9,
-            0x7f0100aa
+            0x01010128, 0x7f01000b, 0x7f0100df, 0x7f0100e0,
+            0x7f0100e1
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#baselineAligned}
@@ -5906,17 +8295,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:divider
+          @attr name com.aware.plugin.fitbit:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -5928,11 +8317,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:dividerPadding
+          @attr name com.aware.plugin.fitbit:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -5942,11 +8331,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:measureWithLargestChild
+          @attr name com.aware.plugin.fitbit:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -5961,7 +8350,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:showDividers
+          @attr name com.aware.plugin.fitbit:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -6100,9 +8489,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.aware.plugin.Fitbit:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.aware.plugin.Fitbit:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.aware.plugin.Fitbit:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.aware.plugin.fitbit:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.aware.plugin.fitbit:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.aware.plugin.fitbit:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -6116,7 +8505,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.aware.plugin.Fitbit:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.aware.plugin.fitbit:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -6140,21 +8529,21 @@ containing a value of this type.
             0x01010002, 0x0101000e, 0x010100d0, 0x01010106,
             0x01010194, 0x010101de, 0x010101df, 0x010101e1,
             0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5,
-            0x0101026f, 0x7f0100ab, 0x7f0100ac, 0x7f0100ad,
-            0x7f0100ae
+            0x0101026f, 0x7f0100e2, 0x7f0100e3, 0x7f0100e4,
+            0x7f0100e5
         };
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:actionLayout
+          @attr name com.aware.plugin.fitbit:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -6164,11 +8553,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:actionProviderClass
+          @attr name com.aware.plugin.fitbit:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -6178,7 +8567,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:actionViewClass
+          @attr name com.aware.plugin.fitbit:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -6260,7 +8649,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -6276,7 +8665,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:showAsAction
+          @attr name com.aware.plugin.fitbit:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -6292,8 +8681,8 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.aware.plugin.Fitbit:preserveIconSpacing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_subMenuArrow com.aware.plugin.Fitbit:subMenuArrow}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.aware.plugin.fitbit:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_subMenuArrow com.aware.plugin.fitbit:subMenuArrow}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -6307,8 +8696,8 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x7f0100af,
-            0x7f0100b0
+            0x0101012f, 0x01010130, 0x01010131, 0x7f0100e6,
+            0x7f0100e7
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#headerBackground}
@@ -6353,7 +8742,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -6363,19 +8752,156 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:preserveIconSpacing
+          @attr name com.aware.plugin.fitbit:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#subMenuArrow}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#subMenuArrow}
           attribute's value can be found in the {@link #MenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:subMenuArrow
+          @attr name com.aware.plugin.fitbit:subMenuArrow
         */
         public static final int MenuView_subMenuArrow = 8;
+        /** Attributes that can be used with a NavigationView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation com.aware.plugin.fitbit:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout com.aware.plugin.fitbit:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground com.aware.plugin.fitbit:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint com.aware.plugin.fitbit:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance com.aware.plugin.fitbit:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor com.aware.plugin.fitbit:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu com.aware.plugin.fitbit:menu}</code></td><td></td></tr>
+           </table>
+           @see #NavigationView_android_background
+           @see #NavigationView_android_fitsSystemWindows
+           @see #NavigationView_android_maxWidth
+           @see #NavigationView_elevation
+           @see #NavigationView_headerLayout
+           @see #NavigationView_itemBackground
+           @see #NavigationView_itemIconTint
+           @see #NavigationView_itemTextAppearance
+           @see #NavigationView_itemTextColor
+           @see #NavigationView_menu
+         */
+        public static final int[] NavigationView = {
+            0x010100d4, 0x010100dd, 0x0101011f, 0x7f01001c,
+            0x7f0100e8, 0x7f0100e9, 0x7f0100ea, 0x7f0100eb,
+            0x7f0100ec, 0x7f0100ed
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#background}
+          attribute's value can be found in the {@link #NavigationView} array.
+          @attr name android:background
+        */
+        public static final int NavigationView_android_background = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#fitsSystemWindows}
+          attribute's value can be found in the {@link #NavigationView} array.
+          @attr name android:fitsSystemWindows
+        */
+        public static final int NavigationView_android_fitsSystemWindows = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
+          attribute's value can be found in the {@link #NavigationView} array.
+          @attr name android:maxWidth
+        */
+        public static final int NavigationView_android_maxWidth = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#elevation}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:elevation
+        */
+        public static final int NavigationView_elevation = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#headerLayout}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:headerLayout
+        */
+        public static final int NavigationView_headerLayout = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#itemBackground}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:itemBackground
+        */
+        public static final int NavigationView_itemBackground = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#itemIconTint}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:itemIconTint
+        */
+        public static final int NavigationView_itemIconTint = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#itemTextAppearance}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:itemTextAppearance
+        */
+        public static final int NavigationView_itemTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#itemTextColor}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:itemTextColor
+        */
+        public static final int NavigationView_itemTextColor = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#menu}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:menu
+        */
+        public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
            <p>Includes the following attributes:</p>
            <table>
@@ -6384,14 +8910,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.aware.plugin.Fitbit:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.aware.plugin.fitbit:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupAnimationStyle
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
          */
         public static final int[] PopupWindow = {
-            0x01010176, 0x010102c9, 0x7f0100b1
+            0x01010176, 0x010102c9, 0x7f0100ee
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#popupAnimationStyle}
@@ -6406,7 +8932,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -6416,7 +8942,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:overlapAnchor
+          @attr name com.aware.plugin.fitbit:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 2;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -6425,15 +8951,15 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.aware.plugin.Fitbit:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.aware.plugin.fitbit:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
         public static final int[] PopupWindowBackgroundState = {
-            0x7f0100b2
+            0x7f0100ef
         };
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -6443,9 +8969,202 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:state_above_anchor
+          @attr name com.aware.plugin.fitbit:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
+        /** Attributes that can be used with a RecycleListView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.aware.plugin.fitbit:paddingBottomNoButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.aware.plugin.fitbit:paddingTopNoTitle}</code></td><td></td></tr>
+           </table>
+           @see #RecycleListView_paddingBottomNoButtons
+           @see #RecycleListView_paddingTopNoTitle
+         */
+        public static final int[] RecycleListView = {
+            0x7f0100f0, 0x7f0100f1
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#paddingBottomNoButtons}
+          attribute's value can be found in the {@link #RecycleListView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:paddingBottomNoButtons
+        */
+        public static final int RecycleListView_paddingBottomNoButtons = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#paddingTopNoTitle}
+          attribute's value can be found in the {@link #RecycleListView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:paddingTopNoTitle
+        */
+        public static final int RecycleListView_paddingTopNoTitle = 1;
+        /** Attributes that can be used with a RecyclerView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager com.aware.plugin.fitbit:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout com.aware.plugin.fitbit:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount com.aware.plugin.fitbit:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd com.aware.plugin.fitbit:stackFromEnd}</code></td><td></td></tr>
+           </table>
+           @see #RecyclerView_android_descendantFocusability
+           @see #RecyclerView_android_orientation
+           @see #RecyclerView_layoutManager
+           @see #RecyclerView_reverseLayout
+           @see #RecyclerView_spanCount
+           @see #RecyclerView_stackFromEnd
+         */
+        public static final int[] RecyclerView = {
+            0x010100c4, 0x010100f1, 0x7f0100f2, 0x7f0100f3,
+            0x7f0100f4, 0x7f0100f5
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#descendantFocusability}
+          attribute's value can be found in the {@link #RecyclerView} array.
+          @attr name android:descendantFocusability
+        */
+        public static final int RecyclerView_android_descendantFocusability = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#orientation}
+          attribute's value can be found in the {@link #RecyclerView} array.
+          @attr name android:orientation
+        */
+        public static final int RecyclerView_android_orientation = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layoutManager}
+          attribute's value can be found in the {@link #RecyclerView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:layoutManager
+        */
+        public static final int RecyclerView_layoutManager = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#reverseLayout}
+          attribute's value can be found in the {@link #RecyclerView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:reverseLayout
+        */
+        public static final int RecyclerView_reverseLayout = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#spanCount}
+          attribute's value can be found in the {@link #RecyclerView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:spanCount
+        */
+        public static final int RecyclerView_spanCount = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#stackFromEnd}
+          attribute's value can be found in the {@link #RecyclerView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:stackFromEnd
+        */
+        public static final int RecyclerView_stackFromEnd = 5;
+        /** Attributes that can be used with a ScrimInsetsFrameLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.aware.plugin.fitbit:insetForeground}</code></td><td></td></tr>
+           </table>
+           @see #ScrimInsetsFrameLayout_insetForeground
+         */
+        public static final int[] ScrimInsetsFrameLayout = {
+            0x7f0100f6
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#insetForeground}
+          attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name com.aware.plugin.fitbit:insetForeground
+        */
+        public static final int ScrimInsetsFrameLayout_insetForeground = 0;
+        /** Attributes that can be used with a ScrollingViewBehavior_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.aware.plugin.fitbit:behavior_overlapTop}</code></td><td></td></tr>
+           </table>
+           @see #ScrollingViewBehavior_Layout_behavior_overlapTop
+         */
+        public static final int[] ScrollingViewBehavior_Layout = {
+            0x7f0100f7
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#behavior_overlapTop}
+          attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:behavior_overlapTop
+        */
+        public static final int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
            <p>Includes the following attributes:</p>
            <table>
@@ -6456,19 +9175,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.aware.plugin.Fitbit:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.aware.plugin.Fitbit:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint com.aware.plugin.Fitbit:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.aware.plugin.Fitbit:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.aware.plugin.Fitbit:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout com.aware.plugin.Fitbit:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.aware.plugin.Fitbit:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.aware.plugin.Fitbit:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon com.aware.plugin.Fitbit:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.aware.plugin.Fitbit:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.aware.plugin.Fitbit:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.aware.plugin.Fitbit:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.aware.plugin.Fitbit:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.aware.plugin.fitbit:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.aware.plugin.fitbit:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint com.aware.plugin.fitbit:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.aware.plugin.fitbit:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.aware.plugin.fitbit:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.aware.plugin.fitbit:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.aware.plugin.fitbit:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.aware.plugin.fitbit:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.aware.plugin.fitbit:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.aware.plugin.fitbit:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.aware.plugin.fitbit:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.aware.plugin.fitbit:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.aware.plugin.fitbit:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -6490,10 +9209,10 @@ containing a value of this type.
          */
         public static final int[] SearchView = {
             0x010100da, 0x0101011f, 0x01010220, 0x01010264,
-            0x7f0100b3, 0x7f0100b4, 0x7f0100b5, 0x7f0100b6,
-            0x7f0100b7, 0x7f0100b8, 0x7f0100b9, 0x7f0100ba,
-            0x7f0100bb, 0x7f0100bc, 0x7f0100bd, 0x7f0100be,
-            0x7f0100bf
+            0x7f0100f8, 0x7f0100f9, 0x7f0100fa, 0x7f0100fb,
+            0x7f0100fc, 0x7f0100fd, 0x7f0100fe, 0x7f0100ff,
+            0x7f010100, 0x7f010101, 0x7f010102, 0x7f010103,
+            0x7f010104
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -6520,27 +9239,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:closeIcon
+          @attr name com.aware.plugin.fitbit:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:commitIcon
+          @attr name com.aware.plugin.fitbit:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -6550,21 +9269,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:defaultQueryHint
+          @attr name com.aware.plugin.fitbit:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:goIcon
+          @attr name com.aware.plugin.fitbit:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -6574,31 +9293,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:iconifiedByDefault
+          @attr name com.aware.plugin.fitbit:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:layout
+          @attr name com.aware.plugin.fitbit:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:queryBackground
+          @attr name com.aware.plugin.fitbit:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -6608,59 +9327,114 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:queryHint
+          @attr name com.aware.plugin.fitbit:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:searchHintIcon
+          @attr name com.aware.plugin.fitbit:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:searchIcon
+          @attr name com.aware.plugin.fitbit:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:submitBackground
+          @attr name com.aware.plugin.fitbit:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:suggestionRowLayout
+          @attr name com.aware.plugin.fitbit:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:voiceIcon
+          @attr name com.aware.plugin.fitbit:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
+        /** Attributes that can be used with a SnackbarLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation com.aware.plugin.fitbit:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.aware.plugin.fitbit:maxActionInlineWidth}</code></td><td></td></tr>
+           </table>
+           @see #SnackbarLayout_android_maxWidth
+           @see #SnackbarLayout_elevation
+           @see #SnackbarLayout_maxActionInlineWidth
+         */
+        public static final int[] SnackbarLayout = {
+            0x0101011f, 0x7f01001c, 0x7f010105
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
+          attribute's value can be found in the {@link #SnackbarLayout} array.
+          @attr name android:maxWidth
+        */
+        public static final int SnackbarLayout_android_maxWidth = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#elevation}
+          attribute's value can be found in the {@link #SnackbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:elevation
+        */
+        public static final int SnackbarLayout_elevation = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#maxActionInlineWidth}
+          attribute's value can be found in the {@link #SnackbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:maxActionInlineWidth
+        */
+        public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
            <p>Includes the following attributes:</p>
            <table>
@@ -6671,7 +9445,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme com.aware.plugin.Fitbit:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme com.aware.plugin.fitbit:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -6708,13 +9482,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:popupTheme
+          @attr name com.aware.plugin.fitbit:popupTheme
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -6726,17 +9500,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.aware.plugin.Fitbit:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.aware.plugin.Fitbit:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.aware.plugin.Fitbit:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.aware.plugin.Fitbit:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.aware.plugin.Fitbit:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.aware.plugin.Fitbit:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTint com.aware.plugin.Fitbit:thumbTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTintMode com.aware.plugin.Fitbit:thumbTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.aware.plugin.Fitbit:track}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTint com.aware.plugin.Fitbit:trackTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTintMode com.aware.plugin.Fitbit:trackTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.aware.plugin.fitbit:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.aware.plugin.fitbit:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.aware.plugin.fitbit:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.aware.plugin.fitbit:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.aware.plugin.fitbit:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.aware.plugin.fitbit:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTint com.aware.plugin.fitbit:thumbTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTintMode com.aware.plugin.fitbit:thumbTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.aware.plugin.fitbit:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTint com.aware.plugin.fitbit:trackTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTintMode com.aware.plugin.fitbit:trackTintMode}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -6754,10 +9528,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #SwitchCompat_trackTintMode
          */
         public static final int[] SwitchCompat = {
-            0x01010124, 0x01010125, 0x01010142, 0x7f0100c0,
-            0x7f0100c1, 0x7f0100c2, 0x7f0100c3, 0x7f0100c4,
-            0x7f0100c5, 0x7f0100c6, 0x7f0100c7, 0x7f0100c8,
-            0x7f0100c9, 0x7f0100ca
+            0x01010124, 0x01010125, 0x01010142, 0x7f010106,
+            0x7f010107, 0x7f010108, 0x7f010109, 0x7f01010a,
+            0x7f01010b, 0x7f01010c, 0x7f01010d, 0x7f01010e,
+            0x7f01010f, 0x7f010110
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#textOff}
@@ -6778,7 +9552,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6788,11 +9562,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:showText
+          @attr name com.aware.plugin.fitbit:showText
         */
         public static final int SwitchCompat_showText = 13;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6802,11 +9576,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:splitTrack
+          @attr name com.aware.plugin.fitbit:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 12;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6818,11 +9592,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:switchMinWidth
+          @attr name com.aware.plugin.fitbit:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 10;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6834,21 +9608,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:switchPadding
+          @attr name com.aware.plugin.fitbit:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 11;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:switchTextAppearance
+          @attr name com.aware.plugin.fitbit:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6860,11 +9634,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:thumbTextPadding
+          @attr name com.aware.plugin.fitbit:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#thumbTint}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#thumbTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6875,11 +9649,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:thumbTint
+          @attr name com.aware.plugin.fitbit:thumbTint
         */
         public static final int SwitchCompat_thumbTint = 3;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#thumbTintMode}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#thumbTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6896,21 +9670,21 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:thumbTintMode
+          @attr name com.aware.plugin.fitbit:thumbTintMode
         */
         public static final int SwitchCompat_thumbTintMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#track}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:track
+          @attr name com.aware.plugin.fitbit:track
         */
         public static final int SwitchCompat_track = 5;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#trackTint}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#trackTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6921,11 +9695,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:trackTint
+          @attr name com.aware.plugin.fitbit:trackTint
         */
         public static final int SwitchCompat_trackTint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#trackTintMode}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#trackTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6942,9 +9716,333 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:trackTintMode
+          @attr name com.aware.plugin.fitbit:trackTintMode
         */
         public static final int SwitchCompat_trackTintMode = 7;
+        /** Attributes that can be used with a TabItem.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TabItem_android_icon android:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabItem_android_layout android:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabItem_android_text android:text}</code></td><td></td></tr>
+           </table>
+           @see #TabItem_android_icon
+           @see #TabItem_android_layout
+           @see #TabItem_android_text
+         */
+        public static final int[] TabItem = {
+            0x01010002, 0x010100f2, 0x0101014f
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#icon}
+          attribute's value can be found in the {@link #TabItem} array.
+          @attr name android:icon
+        */
+        public static final int TabItem_android_icon = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout}
+          attribute's value can be found in the {@link #TabItem} array.
+          @attr name android:layout
+        */
+        public static final int TabItem_android_layout = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#text}
+          attribute's value can be found in the {@link #TabItem} array.
+          @attr name android:text
+        */
+        public static final int TabItem_android_text = 2;
+        /** Attributes that can be used with a TabLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground com.aware.plugin.fitbit:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart com.aware.plugin.fitbit:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity com.aware.plugin.fitbit:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.aware.plugin.fitbit:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.aware.plugin.fitbit:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth com.aware.plugin.fitbit:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth com.aware.plugin.fitbit:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode com.aware.plugin.fitbit:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding com.aware.plugin.fitbit:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.aware.plugin.fitbit:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.aware.plugin.fitbit:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart com.aware.plugin.fitbit:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop com.aware.plugin.fitbit:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.aware.plugin.fitbit:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance com.aware.plugin.fitbit:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor com.aware.plugin.fitbit:tabTextColor}</code></td><td></td></tr>
+           </table>
+           @see #TabLayout_tabBackground
+           @see #TabLayout_tabContentStart
+           @see #TabLayout_tabGravity
+           @see #TabLayout_tabIndicatorColor
+           @see #TabLayout_tabIndicatorHeight
+           @see #TabLayout_tabMaxWidth
+           @see #TabLayout_tabMinWidth
+           @see #TabLayout_tabMode
+           @see #TabLayout_tabPadding
+           @see #TabLayout_tabPaddingBottom
+           @see #TabLayout_tabPaddingEnd
+           @see #TabLayout_tabPaddingStart
+           @see #TabLayout_tabPaddingTop
+           @see #TabLayout_tabSelectedTextColor
+           @see #TabLayout_tabTextAppearance
+           @see #TabLayout_tabTextColor
+         */
+        public static final int[] TabLayout = {
+            0x7f010111, 0x7f010112, 0x7f010113, 0x7f010114,
+            0x7f010115, 0x7f010116, 0x7f010117, 0x7f010118,
+            0x7f010119, 0x7f01011a, 0x7f01011b, 0x7f01011c,
+            0x7f01011d, 0x7f01011e, 0x7f01011f, 0x7f010120
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabBackground}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:tabBackground
+        */
+        public static final int TabLayout_tabBackground = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabContentStart}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabContentStart
+        */
+        public static final int TabLayout_tabContentStart = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabGravity}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fill</code></td><td>0</td><td></td></tr>
+<tr><td><code>center</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:tabGravity
+        */
+        public static final int TabLayout_tabGravity = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabIndicatorColor}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabIndicatorColor
+        */
+        public static final int TabLayout_tabIndicatorColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabIndicatorHeight}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabIndicatorHeight
+        */
+        public static final int TabLayout_tabIndicatorHeight = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabMaxWidth}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabMaxWidth
+        */
+        public static final int TabLayout_tabMaxWidth = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabMinWidth}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabMinWidth
+        */
+        public static final int TabLayout_tabMinWidth = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabMode}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
+<tr><td><code>fixed</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:tabMode
+        */
+        public static final int TabLayout_tabMode = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabPadding}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabPadding
+        */
+        public static final int TabLayout_tabPadding = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabPaddingBottom}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabPaddingBottom
+        */
+        public static final int TabLayout_tabPaddingBottom = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabPaddingEnd}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabPaddingEnd
+        */
+        public static final int TabLayout_tabPaddingEnd = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabPaddingStart}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabPaddingStart
+        */
+        public static final int TabLayout_tabPaddingStart = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabPaddingTop}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabPaddingTop
+        */
+        public static final int TabLayout_tabPaddingTop = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabSelectedTextColor}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabSelectedTextColor
+        */
+        public static final int TabLayout_tabSelectedTextColor = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabTextAppearance}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:tabTextAppearance
+        */
+        public static final int TabLayout_tabTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#tabTextColor}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:tabTextColor
+        */
+        public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
            <p>Includes the following attributes:</p>
            <table>
@@ -6960,7 +10058,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps com.aware.plugin.Fitbit:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.aware.plugin.fitbit:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -6976,7 +10074,7 @@ containing a value of this type.
         public static final int[] TextAppearance = {
             0x01010095, 0x01010096, 0x01010097, 0x01010098,
             0x0101009a, 0x01010161, 0x01010162, 0x01010163,
-            0x01010164, 0x7f01002a
+            0x01010164, 0x7f010030
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#shadowColor}
@@ -7033,16 +10131,257 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.aware.plugin.Fitbit:textAllCaps
+          @attr name com.aware.plugin.fitbit:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 9;
+        /** Attributes that can be used with a TextInputLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled com.aware.plugin.fitbit:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.aware.plugin.fitbit:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.aware.plugin.fitbit:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.aware.plugin.fitbit:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled com.aware.plugin.fitbit:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.aware.plugin.fitbit:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.aware.plugin.fitbit:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled com.aware.plugin.fitbit:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.aware.plugin.fitbit:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.aware.plugin.fitbit:passwordToggleContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.aware.plugin.fitbit:passwordToggleDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.aware.plugin.fitbit:passwordToggleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.aware.plugin.fitbit:passwordToggleTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.aware.plugin.fitbit:passwordToggleTintMode}</code></td><td></td></tr>
+           </table>
+           @see #TextInputLayout_android_hint
+           @see #TextInputLayout_android_textColorHint
+           @see #TextInputLayout_counterEnabled
+           @see #TextInputLayout_counterMaxLength
+           @see #TextInputLayout_counterOverflowTextAppearance
+           @see #TextInputLayout_counterTextAppearance
+           @see #TextInputLayout_errorEnabled
+           @see #TextInputLayout_errorTextAppearance
+           @see #TextInputLayout_hintAnimationEnabled
+           @see #TextInputLayout_hintEnabled
+           @see #TextInputLayout_hintTextAppearance
+           @see #TextInputLayout_passwordToggleContentDescription
+           @see #TextInputLayout_passwordToggleDrawable
+           @see #TextInputLayout_passwordToggleEnabled
+           @see #TextInputLayout_passwordToggleTint
+           @see #TextInputLayout_passwordToggleTintMode
+         */
+        public static final int[] TextInputLayout = {
+            0x0101009a, 0x01010150, 0x7f010121, 0x7f010122,
+            0x7f010123, 0x7f010124, 0x7f010125, 0x7f010126,
+            0x7f010127, 0x7f010128, 0x7f010129, 0x7f01012a,
+            0x7f01012b, 0x7f01012c, 0x7f01012d, 0x7f01012e
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#hint}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+          @attr name android:hint
+        */
+        public static final int TextInputLayout_android_hint = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textColorHint}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+          @attr name android:textColorHint
+        */
+        public static final int TextInputLayout_android_textColorHint = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#counterEnabled}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:counterEnabled
+        */
+        public static final int TextInputLayout_counterEnabled = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#counterMaxLength}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:counterMaxLength
+        */
+        public static final int TextInputLayout_counterMaxLength = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#counterOverflowTextAppearance}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:counterOverflowTextAppearance
+        */
+        public static final int TextInputLayout_counterOverflowTextAppearance = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#counterTextAppearance}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:counterTextAppearance
+        */
+        public static final int TextInputLayout_counterTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#errorEnabled}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:errorEnabled
+        */
+        public static final int TextInputLayout_errorEnabled = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#errorTextAppearance}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:errorTextAppearance
+        */
+        public static final int TextInputLayout_errorTextAppearance = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#hintAnimationEnabled}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:hintAnimationEnabled
+        */
+        public static final int TextInputLayout_hintAnimationEnabled = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#hintEnabled}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:hintEnabled
+        */
+        public static final int TextInputLayout_hintEnabled = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#hintTextAppearance}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:hintTextAppearance
+        */
+        public static final int TextInputLayout_hintTextAppearance = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#passwordToggleContentDescription}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:passwordToggleContentDescription
+        */
+        public static final int TextInputLayout_passwordToggleContentDescription = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#passwordToggleDrawable}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.aware.plugin.fitbit:passwordToggleDrawable
+        */
+        public static final int TextInputLayout_passwordToggleDrawable = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#passwordToggleEnabled}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:passwordToggleEnabled
+        */
+        public static final int TextInputLayout_passwordToggleEnabled = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#passwordToggleTint}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.aware.plugin.fitbit:passwordToggleTint
+        */
+        public static final int TextInputLayout_passwordToggleTint = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#passwordToggleTintMode}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>src_over</code></td><td>3</td><td></td></tr>
+<tr><td><code>src_in</code></td><td>5</td><td></td></tr>
+<tr><td><code>src_atop</code></td><td>9</td><td></td></tr>
+<tr><td><code>multiply</code></td><td>14</td><td></td></tr>
+<tr><td><code>screen</code></td><td>15</td><td></td></tr>
+</table>
+          @attr name com.aware.plugin.fitbit:passwordToggleTintMode
+        */
+        public static final int TextInputLayout_passwordToggleTintMode = 15;
         /** Attributes that can be used with a Toolbar.
            <p>Includes the following attributes:</p>
            <table>
@@ -7051,33 +10390,33 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_buttonGravity com.aware.plugin.Fitbit:buttonGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.aware.plugin.Fitbit:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.aware.plugin.Fitbit:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.aware.plugin.Fitbit:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.aware.plugin.Fitbit:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.aware.plugin.Fitbit:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.aware.plugin.Fitbit:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.aware.plugin.Fitbit:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.aware.plugin.Fitbit:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo com.aware.plugin.Fitbit:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription com.aware.plugin.Fitbit:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.aware.plugin.Fitbit:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.aware.plugin.Fitbit:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.aware.plugin.Fitbit:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.aware.plugin.Fitbit:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.aware.plugin.Fitbit:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.aware.plugin.Fitbit:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor com.aware.plugin.Fitbit:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.aware.plugin.Fitbit:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargin com.aware.plugin.Fitbit:titleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.aware.plugin.Fitbit:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.aware.plugin.Fitbit:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.aware.plugin.Fitbit:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.aware.plugin.Fitbit:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.aware.plugin.Fitbit:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.aware.plugin.Fitbit:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor com.aware.plugin.Fitbit:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_buttonGravity com.aware.plugin.fitbit:buttonGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.aware.plugin.fitbit:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.aware.plugin.fitbit:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.aware.plugin.fitbit:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.aware.plugin.fitbit:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.aware.plugin.fitbit:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.aware.plugin.fitbit:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.aware.plugin.fitbit:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.aware.plugin.fitbit:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo com.aware.plugin.fitbit:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription com.aware.plugin.fitbit:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.aware.plugin.fitbit:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.aware.plugin.fitbit:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.aware.plugin.fitbit:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.aware.plugin.fitbit:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.aware.plugin.fitbit:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.aware.plugin.fitbit:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor com.aware.plugin.fitbit:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.aware.plugin.fitbit:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargin com.aware.plugin.fitbit:titleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.aware.plugin.fitbit:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.aware.plugin.fitbit:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.aware.plugin.fitbit:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.aware.plugin.fitbit:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.aware.plugin.fitbit:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.aware.plugin.fitbit:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor com.aware.plugin.fitbit:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -7113,11 +10452,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x010100af, 0x01010140, 0x7f010003, 0x7f010006,
             0x7f01000a, 0x7f010016, 0x7f010017, 0x7f010018,
             0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001d,
-            0x7f0100cb, 0x7f0100cc, 0x7f0100cd, 0x7f0100ce,
-            0x7f0100cf, 0x7f0100d0, 0x7f0100d1, 0x7f0100d2,
-            0x7f0100d3, 0x7f0100d4, 0x7f0100d5, 0x7f0100d6,
-            0x7f0100d7, 0x7f0100d8, 0x7f0100d9, 0x7f0100da,
-            0x7f0100db
+            0x7f01012f, 0x7f010130, 0x7f010131, 0x7f010132,
+            0x7f010133, 0x7f010134, 0x7f010135, 0x7f010136,
+            0x7f010137, 0x7f010138, 0x7f010139, 0x7f01013a,
+            0x7f01013b, 0x7f01013c, 0x7f01013d, 0x7f01013e,
+            0x7f01013f
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -7132,7 +10471,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#buttonGravity}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#buttonGravity}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7145,11 +10484,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>top</code></td><td>0x30</td><td></td></tr>
 <tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:buttonGravity
+          @attr name com.aware.plugin.fitbit:buttonGravity
         */
         public static final int Toolbar_buttonGravity = 21;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7159,21 +10498,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:collapseContentDescription
+          @attr name com.aware.plugin.fitbit:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 23;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:collapseIcon
+          @attr name com.aware.plugin.fitbit:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 22;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7185,11 +10524,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetEnd
+          @attr name com.aware.plugin.fitbit:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7201,11 +10540,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetEndWithActions
+          @attr name com.aware.plugin.fitbit:contentInsetEndWithActions
         */
         public static final int Toolbar_contentInsetEndWithActions = 10;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7217,11 +10556,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetLeft
+          @attr name com.aware.plugin.fitbit:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7233,11 +10572,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetRight
+          @attr name com.aware.plugin.fitbit:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7249,11 +10588,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetStart
+          @attr name com.aware.plugin.fitbit:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7265,21 +10604,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:contentInsetStartWithNavigation
+          @attr name com.aware.plugin.fitbit:contentInsetStartWithNavigation
         */
         public static final int Toolbar_contentInsetStartWithNavigation = 9;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:logo
+          @attr name com.aware.plugin.fitbit:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7289,11 +10628,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:logoDescription
+          @attr name com.aware.plugin.fitbit:logoDescription
         */
         public static final int Toolbar_logoDescription = 26;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7305,11 +10644,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:maxButtonHeight
+          @attr name com.aware.plugin.fitbit:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 20;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7319,31 +10658,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:navigationContentDescription
+          @attr name com.aware.plugin.fitbit:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 25;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:navigationIcon
+          @attr name com.aware.plugin.fitbit:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 24;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:popupTheme
+          @attr name com.aware.plugin.fitbit:popupTheme
         */
         public static final int Toolbar_popupTheme = 11;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7353,21 +10692,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:subtitle
+          @attr name com.aware.plugin.fitbit:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:subtitleTextAppearance
+          @attr name com.aware.plugin.fitbit:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 13;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7378,11 +10717,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:subtitleTextColor
+          @attr name com.aware.plugin.fitbit:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 28;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#title}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7392,11 +10731,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:title
+          @attr name com.aware.plugin.fitbit:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleMargin}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleMargin}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7408,11 +10747,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:titleMargin
+          @attr name com.aware.plugin.fitbit:titleMargin
         */
         public static final int Toolbar_titleMargin = 14;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7424,11 +10763,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:titleMarginBottom
+          @attr name com.aware.plugin.fitbit:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 18;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7440,11 +10779,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:titleMarginEnd
+          @attr name com.aware.plugin.fitbit:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 16;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7456,11 +10795,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:titleMarginStart
+          @attr name com.aware.plugin.fitbit:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 15;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7472,11 +10811,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:titleMarginTop
+          @attr name com.aware.plugin.fitbit:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 17;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7488,21 +10827,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:titleMargins
+          @attr name com.aware.plugin.fitbit:titleMargins
         */
         public static final int Toolbar_titleMargins = 19;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:titleTextAppearance
+          @attr name com.aware.plugin.fitbit:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 12;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7513,7 +10852,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:titleTextColor
+          @attr name com.aware.plugin.fitbit:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 27;
         /** Attributes that can be used with a View.
@@ -7524,9 +10863,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.aware.plugin.Fitbit:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.aware.plugin.Fitbit:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme com.aware.plugin.Fitbit:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.aware.plugin.fitbit:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.aware.plugin.fitbit:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme com.aware.plugin.fitbit:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -7535,8 +10874,8 @@ containing a value of this type.
            @see #View_theme
          */
         public static final int[] View = {
-            0x01010000, 0x010100da, 0x7f0100dc, 0x7f0100dd,
-            0x7f0100de
+            0x01010000, 0x010100da, 0x7f010140, 0x7f010141,
+            0x7f010142
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -7551,7 +10890,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -7563,11 +10902,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:paddingEnd
+          @attr name com.aware.plugin.fitbit:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -7579,17 +10918,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:paddingStart
+          @attr name com.aware.plugin.fitbit:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.aware.plugin.Fitbit:theme
+          @attr name com.aware.plugin.fitbit:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -7599,15 +10938,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.aware.plugin.Fitbit:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.aware.plugin.Fitbit:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.aware.plugin.fitbit:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.aware.plugin.fitbit:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
            @see #ViewBackgroundHelper_backgroundTintMode
          */
         public static final int[] ViewBackgroundHelper = {
-            0x010100d4, 0x7f0100df, 0x7f0100e0
+            0x010100d4, 0x7f010143, 0x7f010144
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#background}
@@ -7616,7 +10955,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -7627,11 +10966,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.aware.plugin.Fitbit:backgroundTint
+          @attr name com.aware.plugin.fitbit:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.aware.plugin.Fitbit.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.aware.plugin.fitbit.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -7647,7 +10986,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.aware.plugin.Fitbit:backgroundTintMode
+          @attr name com.aware.plugin.fitbit:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

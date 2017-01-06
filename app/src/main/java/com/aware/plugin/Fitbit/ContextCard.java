@@ -1,4 +1,4 @@
-package com.aware.plugin.Fitbit;
+package com.aware.plugin.fitbit;
 
 import android.content.Context;
 import android.os.Handler;

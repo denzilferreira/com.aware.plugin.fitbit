@@ -1,4 +1,4 @@
-package com.aware.plugin.Fitbit;
+package com.aware.plugin.fitbit;
 
 import com.github.scribejava.core.builder.api.DefaultApi20;
 import com.github.scribejava.core.model.OAuthConfig;

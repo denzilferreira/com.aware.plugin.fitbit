@@ -6,11 +6,11 @@ group = "com.awareframework"
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.1"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.aware.plugin.Fitbit" //EDIT ME
-        minSdkVersion 15
+        applicationId "com.aware.plugin.fitbit" //EDIT ME
+        minSdkVersion 15 //TODO: get this compatible with 10+
         targetSdkVersion 24
         versionCode version_code
         versionName version_readable
@@ -51,14 +51,14 @@ bintray {
         repo = 'com.awareframework'
         name = android.defaultConfig.applicationId
         licenses = ['Apache-2.0']
-        websiteUrl = 'https://github.com/denzilferreira/aware-plugin-Fitbit' //EDIT ME
-        issueTrackerUrl = 'https://github.com/denzilferreira/aware-plugin-Fitbit/issues' //EDIT ME
+        websiteUrl = 'https://github.com/sklakegg/aware-fitbit' //EDIT ME
+        issueTrackerUrl = 'https://github.com/sklakegg/aware-fitbit/issues' //EDIT ME
         labels = ['aar','android','framework','aware']
         publicDownloadNumbers = true
-        vcsUrl = 'https://github.com/denzilferreira/aware-plugin-Fitbit.git' //EDIT ME
-        desc = "AWARE Plugin: Template" //EDIT ME
+        vcsUrl = 'https://github.com/sklakegg/aware-fitbit.git' //EDIT ME
+        desc = "AWARE Plugin: FitBit" //EDIT ME
         userOrg = user
-        githubRepo = "denzilferreira/aware-plugin-Fitbit" //EDIT ME
+        githubRepo = "sklakegg/aware-fitbit" //EDIT ME
 
         version {
             name = "$version_readable"
@@ -69,13 +69,19 @@ bintray {
     }
 }
 
+repositories {
+    maven { url 'https://jitpack.io' } //this allows JIT library generation directly from GitHub source-code
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:appcompat-v7:25.0.1"
-    compile "com.awareframework:aware-core:${aware_libs}@aar"
-    compile "com.koushikdutta.ion:ion:2.1.6"
-    compile "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2"
-    compile 'com.android.support:customtabs:25.0.1'
+    compile "com.android.support:appcompat-v7:25.1.0"
+    compile 'com.github.denzilferreira:aware-client:development-SNAPSHOT'
+    compile 'com.android.support:customtabs:25.1.0'
     compile 'com.github.scribejava:scribejava-apis:3.3.0'
     compile 'net.danlew:android.joda:2.9.5.1'
 }

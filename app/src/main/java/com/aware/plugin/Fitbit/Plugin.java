@@ -1,4 +1,4 @@
-package com.aware.plugin.Fitbit;
+package com.aware.plugin.fitbit;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -33,10 +33,10 @@ public class Plugin extends Aware_Plugin {
         //To sync data to the server, you'll need to set this variables from your ContentProvider
         DATABASE_TABLES = Provider.DATABASE_TABLES;
         TABLES_FIELDS = Provider.TABLES_FIELDS;
-        CONTEXT_URIS = new Uri[]{ Provider.TableOne_Data.CONTENT_URI }; //this syncs dummy TableOne_Data to server
+        CONTEXT_URIS = new Uri[]{ Provider.Fitbit_Data.CONTENT_URI }; //this syncs dummy Fitbit_Data to server
 
         //Activate plugin -- do this ALWAYS as the last thing (this will restart your own plugin and apply the settings)
-        Aware.startPlugin(this, "com.aware.plugin.Fitbit");
+        Aware.startPlugin(this, "com.aware.plugin.fitbit");
     }
 
     //This function gets called every 5 minutes by AWARE to make sure this plugin is still running.
@@ -56,7 +56,7 @@ public class Plugin extends Aware_Plugin {
             DEBUG = Aware.getSetting(this, Aware_Preferences.DEBUG_FLAG).equals("true");
 
             //Initialize our plugin's settings
-            Aware.setSetting(this, Settings.STATUS_PLUGIN_TEMPLATE, true);
+            Aware.setSetting(this, Settings.STATUS_PLUGIN_FITBIT, true);
 
         } else {
             Intent permissions = new Intent(this, PermissionsHandler.class);
@@ -72,7 +72,7 @@ public class Plugin extends Aware_Plugin {
     public void onDestroy() {
         super.onDestroy();
 
-        Aware.setSetting(this, Settings.STATUS_PLUGIN_TEMPLATE, false);
+        Aware.setSetting(this, Settings.STATUS_PLUGIN_FITBIT, false);
 
         //Stop AWARE
         Aware.stopAWARE();

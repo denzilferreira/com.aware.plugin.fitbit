@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy-rAM/values-hy-rAM.xml",
+        "outputFile": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy-rAM/values-hy-rAM.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 346
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 597
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 851
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -75,7 +75,7 @@
                     "endOffset": 1106
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -96,7 +96,7 @@
                     "endOffset": 1356
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -117,7 +117,7 @@
                     "endOffset": 1614
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -138,7 +138,7 @@
                     "endOffset": 1875
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -159,7 +159,7 @@
                     "endOffset": 2136
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -180,7 +180,7 @@
                     "endOffset": 2378
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 2624
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -222,7 +222,7 @@
                     "endOffset": 2878
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -243,7 +243,7 @@
                     "endOffset": 3117
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -264,7 +264,7 @@
                     "endOffset": 3360
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
@@ -285,7 +285,7 @@
                     "endOffset": 3608
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
@@ -306,7 +306,7 @@
                     "endOffset": 3864
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -327,7 +327,7 @@
                     "endOffset": 4106
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -348,7 +348,7 @@
                     "endOffset": 4357
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 66,
                         "startColumn": 4,
@@ -369,7 +369,7 @@
                     "endOffset": 4612
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 70,
                         "startColumn": 4,
@@ -390,7 +390,7 @@
                     "endOffset": 4875
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 74,
                         "startColumn": 4,
@@ -410,7 +410,7 @@
                     "endOffset": 4978
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -429,7 +429,7 @@
                     "endOffset": 5086
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -448,7 +448,7 @@
                     "endOffset": 5209
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -467,7 +467,7 @@
                     "endOffset": 5310
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -486,7 +486,7 @@
                     "endOffset": 5420
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -501,17 +501,17 @@
                     "startLine": 83,
                     "startColumn": 4,
                     "startOffset": 5425,
-                    "endColumn": 89,
-                    "endOffset": 5510
+                    "endColumn": 88,
+                    "endOffset": 5509
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
                         "startOffset": 600,
-                        "endColumn": 89,
-                        "endOffset": 685
+                        "endColumn": 88,
+                        "endOffset": 684
                     }
                 }
             },
@@ -519,18 +519,18 @@
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 5515,
+                    "startOffset": 5514,
                     "endColumn": 105,
-                    "endOffset": 5616
+                    "endOffset": 5615
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 690,
+                        "startOffset": 689,
                         "endColumn": 105,
-                        "endOffset": 791
+                        "endOffset": 790
                     }
                 }
             },
@@ -538,18 +538,18 @@
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 5621,
+                    "startOffset": 5620,
                     "endColumn": 114,
-                    "endOffset": 5731
+                    "endOffset": 5730
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 796,
+                        "startOffset": 795,
                         "endColumn": 114,
-                        "endOffset": 906
+                        "endOffset": 905
                     }
                 }
             },
@@ -557,18 +557,18 @@
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 5736,
+                    "startOffset": 5735,
                     "endColumn": 81,
-                    "endOffset": 5813
+                    "endOffset": 5812
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 911,
+                        "startOffset": 910,
                         "endColumn": 81,
-                        "endOffset": 988
+                        "endOffset": 987
                     }
                 }
             },
@@ -576,18 +576,18 @@
                 "to": {
                     "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 5818,
+                    "startOffset": 5817,
                     "endColumn": 80,
-                    "endOffset": 5894
+                    "endOffset": 5893
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 993,
+                        "startOffset": 992,
                         "endColumn": 80,
-                        "endOffset": 1069
+                        "endOffset": 1068
                     }
                 }
             },
@@ -595,18 +595,18 @@
                 "to": {
                     "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 5899,
+                    "startOffset": 5898,
                     "endColumn": 84,
-                    "endOffset": 5979
+                    "endOffset": 5978
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1074,
+                        "startOffset": 1073,
                         "endColumn": 84,
-                        "endOffset": 1154
+                        "endOffset": 1153
                     }
                 }
             },
@@ -614,18 +614,18 @@
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 5984,
+                    "startOffset": 5983,
                     "endColumn": 106,
-                    "endOffset": 6086
+                    "endOffset": 6085
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1159,
+                        "startOffset": 1158,
                         "endColumn": 106,
-                        "endOffset": 1261
+                        "endOffset": 1260
                     }
                 }
             },
@@ -633,18 +633,18 @@
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 6091,
+                    "startOffset": 6090,
                     "endColumn": 106,
-                    "endOffset": 6193
+                    "endOffset": 6192
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1266,
+                        "startOffset": 1265,
                         "endColumn": 106,
-                        "endOffset": 1368
+                        "endOffset": 1367
                     }
                 }
             },
@@ -652,18 +652,18 @@
                 "to": {
                     "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 6198,
+                    "startOffset": 6197,
                     "endColumn": 98,
-                    "endOffset": 6292
+                    "endOffset": 6291
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1373,
+                        "startOffset": 1372,
                         "endColumn": 98,
-                        "endOffset": 1467
+                        "endOffset": 1466
                     }
                 }
             },
@@ -671,18 +671,18 @@
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 6297,
+                    "startOffset": 6296,
                     "endColumn": 109,
-                    "endOffset": 6402
+                    "endOffset": 6401
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1472,
+                        "startOffset": 1471,
                         "endColumn": 109,
-                        "endOffset": 1577
+                        "endOffset": 1576
                     }
                 }
             },
@@ -690,18 +690,18 @@
                 "to": {
                     "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 6407,
+                    "startOffset": 6406,
                     "endColumn": 106,
-                    "endOffset": 6509
+                    "endOffset": 6508
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1582,
+                        "startOffset": 1581,
                         "endColumn": 106,
-                        "endOffset": 1684
+                        "endOffset": 1683
                     }
                 }
             },
@@ -709,18 +709,18 @@
                 "to": {
                     "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 6514,
+                    "startOffset": 6513,
                     "endColumn": 99,
-                    "endOffset": 6609
+                    "endOffset": 6608
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1689,
+                        "startOffset": 1688,
                         "endColumn": 99,
-                        "endOffset": 1784
+                        "endOffset": 1783
                     }
                 }
             },
@@ -728,18 +728,18 @@
                 "to": {
                     "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 6614,
+                    "startOffset": 6613,
                     "endColumn": 124,
-                    "endOffset": 6734
+                    "endOffset": 6733
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1789,
+                        "startOffset": 1788,
                         "endColumn": 124,
-                        "endOffset": 1909
+                        "endOffset": 1908
                     }
                 }
             },
@@ -747,18 +747,18 @@
                 "to": {
                     "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 6739,
+                    "startOffset": 6738,
                     "endColumn": 98,
-                    "endOffset": 6833
+                    "endOffset": 6832
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 1914,
+                        "startOffset": 1913,
                         "endColumn": 98,
-                        "endOffset": 2008
+                        "endOffset": 2007
                     }
                 }
             },
@@ -766,12 +766,12 @@
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 6838,
+                    "startOffset": 6837,
                     "endColumn": 127,
-                    "endOffset": 6961
+                    "endOffset": 6960
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 78,
                         "startColumn": 4,
@@ -785,12 +785,12 @@
                 "to": {
                     "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 6966,
+                    "startOffset": 6965,
                     "endColumn": 132,
-                    "endOffset": 7094
+                    "endOffset": 7093
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 79,
                         "startColumn": 4,
@@ -804,12 +804,12 @@
                 "to": {
                     "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 7099,
+                    "startOffset": 7098,
                     "endColumn": 150,
-                    "endOffset": 7245
+                    "endOffset": 7244
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 80,
                         "startColumn": 4,
@@ -823,18 +823,18 @@
                 "to": {
                     "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 7250,
+                    "startOffset": 7249,
                     "endColumn": 81,
-                    "endOffset": 7327
+                    "endOffset": 7326
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 2013,
+                        "startOffset": 2012,
                         "endColumn": 81,
-                        "endOffset": 2090
+                        "endOffset": 2089
                     }
                 }
             },
@@ -842,18 +842,18 @@
                 "to": {
                     "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 7332,
+                    "startOffset": 7331,
                     "endColumn": 100,
-                    "endOffset": 7428
+                    "endOffset": 7427
                 },
                 "from": {
-                    "file": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-hy-rAM/values-hy-rAM.xml",
+                    "file": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/values-hy-rAM/values-hy-rAM.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2095,
+                        "startOffset": 2094,
                         "endColumn": 100,
-                        "endOffset": 2191
+                        "endOffset": 2190
                     }
                 }
             }

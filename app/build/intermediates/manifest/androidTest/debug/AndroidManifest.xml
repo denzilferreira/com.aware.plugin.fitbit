@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aware.plugin.Fitbit.test">
+    package="com.aware.plugin.fitbit.test">
 
     <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="24" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.aware.plugin.Fitbit"
+                     android:targetPackage="com.aware.plugin.fitbit"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.aware.plugin.Fitbit"/>
+                     android:label="Tests for com.aware.plugin.fitbit"/>
 </manifest>

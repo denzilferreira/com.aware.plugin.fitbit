@@ -1,4 +1,4 @@
-package com.aware.plugin.Fitbit;
+package com.aware.plugin.fitbit;
 
 import android.content.ContentProvider;
 import android.content.ContentResolver;
@@ -19,27 +19,24 @@ import com.aware.utils.DatabaseHelper;
 
 import java.util.HashMap;
 
-/**
- * Created by denzil on 07/04/16.
- */
 public class Provider extends ContentProvider {
 
-    public static String AUTHORITY = "com.aware.plugin.Fitbit.provider.Fitbit"; //change to package.provider.your_plugin_name
-    public static final int DATABASE_VERSION = 1; //increase this if you make changes to the database structure, i.e., rename columns, etc.
+    public static String AUTHORITY = "com.aware.plugin.fitbit.provider.fitbit"; //change to package.provider.your_plugin_name
+    public static final int DATABASE_VERSION = 2; //increase this if you make changes to the database structure, i.e., rename columns, etc.
 
-    public static Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/table_one");
-    public static final String DATABASE_NAME = "Fitbit.db"; //the database filename, use plugin_xxx for plugins.
+//    public static Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/plugin_fitbit");
+    public static final String DATABASE_NAME = "plugin_fitbit.db"; //the database filename, use plugin_xxx for plugins.
 
     //Add here your database table names, as many as you need
-    public static final String DB_TBL_TEMPLATE = "table_one";
+    public static final String DB_TBL_FITBIT = "fitbit_data";
 
     //For each table, add two indexes: DIR and ITEM. The index needs to always increment. Next one is 3, and so on.
-    private static final int TABLE_ONE_DIR = 1;
-    private static final int TABLE_ONE_ITEM = 2;
+    private static final int FITBIT_DIR = 1;
+    private static final int FITBIT_ONE_ITEM = 2;
 
     //Put tables names in this array so AWARE knows what you have on the database
     public static final String[] DATABASE_TABLES = {
-        DB_TBL_TEMPLATE
+            DB_TBL_FITBIT
     };
 
     //These are columns that we need to sync data, don't change this!
@@ -53,10 +50,10 @@ public class Provider extends ContentProvider {
      * Create one of these per database table
      * In this example, we are adding example columns
      */
-    public static final class TableOne_Data implements AWAREColumns {
-        public static final Uri CONTENT_URI = Uri.withAppendedPath(Provider.CONTENT_URI, DB_TBL_TEMPLATE);
-        public static final String CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE + "/vnd.com.aware.plugin.Fitbit.provider.table_one"; //modify me
-        public static final String CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE + "/vnd.com.aware.plugin.Fitbit.provider.table_one"; //modify me
+    public static final class Fitbit_Data implements AWAREColumns {
+        public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/" + DB_TBL_FITBIT);
+        public static final String CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE + "/vnd.com.aware.plugin.fitbit.provider.fitbit_data"; //modify me
+        public static final String CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE + "/vnd.com.aware.plugin.fitbit.provider.fitbit_data"; //modify me
 
         //Note: integers and strings don't need a type prefix_
         public static final String FITBIT_JSON = "fitbit_data";
@@ -65,11 +62,11 @@ public class Provider extends ContentProvider {
 
     //Define each database table fields
     private static final String DB_TBL_TEMPLATE_FIELDS =
-        TableOne_Data._ID + " integer primary key autoincrement," +
-        TableOne_Data.TIMESTAMP + " real default 0," +
-        TableOne_Data.DEVICE_ID + " text default ''," +
-        TableOne_Data.DATA_TYPE + " real default 0," +
-        TableOne_Data.FITBIT_JSON + " text default ''";
+        Fitbit_Data._ID + " integer primary key autoincrement," +
+        Fitbit_Data.TIMESTAMP + " real default 0," +
+        Fitbit_Data.DEVICE_ID + " text default ''," +
+        Fitbit_Data.DATA_TYPE + " integer default 0," +
+        Fitbit_Data.FITBIT_JSON + " text default ''";
 
     /**
      * Share the fields with AWARE so we can replicate the table schema on the server
@@ -84,7 +81,7 @@ public class Provider extends ContentProvider {
     private static SQLiteDatabase database;
 
     //For each table, create a hashmap needed for database queries
-    private static HashMap<String, String> tableOneHash;
+    private static HashMap<String, String> fitbitHash;
 
     /**
      * Initialise database: create the database file, update if needed, etc. DO NOT CHANGE ME
@@ -103,24 +100,20 @@ public class Provider extends ContentProvider {
     @Override
     public boolean onCreate() {
         //This is a hack to allow providers to be reusable in any application/plugin by making the authority dynamic using the package name of the parent app
-        AUTHORITY = getContext().getPackageName() + ".provider.Fitbit"; //make sure xxx matches the first string in this class
-
-        Log.d("WTF", Uri.withAppendedPath(Provider.CONTENT_URI, DB_TBL_TEMPLATE).toString());
-
-
+        AUTHORITY = getContext().getPackageName() + ".provider.fitbit"; //make sure xxx matches the first string in this class
         sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
         //For each table, add indexes DIR and ITEM
-        sUriMatcher.addURI(AUTHORITY, DATABASE_TABLES[0], TABLE_ONE_DIR);
-        sUriMatcher.addURI(AUTHORITY, DATABASE_TABLES[0] + "/#", TABLE_ONE_ITEM);
+        sUriMatcher.addURI(AUTHORITY, DATABASE_TABLES[0], FITBIT_DIR);
+        sUriMatcher.addURI(AUTHORITY, DATABASE_TABLES[0] + "/#", FITBIT_ONE_ITEM);
 
         //Create each table hashmap so Android knows how to insert data to the database. Put ALL table fields.
-        tableOneHash = new HashMap<>();
-        tableOneHash.put(TableOne_Data._ID, TableOne_Data._ID);
-        tableOneHash.put(TableOne_Data.TIMESTAMP, TableOne_Data.TIMESTAMP);
-        tableOneHash.put(TableOne_Data.DEVICE_ID, TableOne_Data.DEVICE_ID);
-        tableOneHash.put(TableOne_Data.FITBIT_JSON, TableOne_Data.FITBIT_JSON);
-        tableOneHash.put(TableOne_Data.DATA_TYPE, TableOne_Data.DATA_TYPE);
+        fitbitHash = new HashMap<>();
+        fitbitHash.put(Fitbit_Data._ID, Fitbit_Data._ID);
+        fitbitHash.put(Fitbit_Data.TIMESTAMP, Fitbit_Data.TIMESTAMP);
+        fitbitHash.put(Fitbit_Data.DEVICE_ID, Fitbit_Data.DEVICE_ID);
+        fitbitHash.put(Fitbit_Data.DATA_TYPE, Fitbit_Data.DATA_TYPE);
+        fitbitHash.put(Fitbit_Data.FITBIT_JSON, Fitbit_Data.FITBIT_JSON);
 
         return true;
     }
@@ -137,9 +130,9 @@ public class Provider extends ContentProvider {
         switch (sUriMatcher.match(uri)) {
 
             //Add all tables' DIR entries, with the right table index
-            case TABLE_ONE_DIR:
+            case FITBIT_DIR:
                 qb.setTables(DATABASE_TABLES[0]);
-                qb.setProjectionMap(tableOneHash); //the hashmap of the table
+                qb.setProjectionMap(fitbitHash); //the hashmap of the table
                 break;
 
             default:
@@ -165,10 +158,10 @@ public class Provider extends ContentProvider {
         switch (sUriMatcher.match(uri)) {
 
             //Add each table indexes DIR and ITEM
-            case TABLE_ONE_DIR:
-                return TableOne_Data.CONTENT_TYPE;
-            case TABLE_ONE_ITEM:
-                return TableOne_Data.CONTENT_ITEM_TYPE;
+            case FITBIT_DIR:
+                return Fitbit_Data.CONTENT_TYPE;
+            case FITBIT_ONE_ITEM:
+                return Fitbit_Data.CONTENT_ITEM_TYPE;
 
             default:
                 throw new IllegalArgumentException("Unknown URI " + uri);
@@ -189,10 +182,10 @@ public class Provider extends ContentProvider {
         switch (sUriMatcher.match(uri)) {
 
             //Add each table DIR case
-            case TABLE_ONE_DIR:
-                _id = database.insert(DATABASE_TABLES[0], TableOne_Data.DEVICE_ID, values);
+            case FITBIT_DIR:
+                _id = database.insert(DATABASE_TABLES[0], Fitbit_Data.DEVICE_ID, values);
                 if (_id > 0) {
-                    Uri dataUri = ContentUris.withAppendedId(TableOne_Data.CONTENT_URI, _id);
+                    Uri dataUri = ContentUris.withAppendedId(Fitbit_Data.CONTENT_URI, _id);
                     getContext().getContentResolver().notifyChange(dataUri, null);
                     return dataUri;
                 }
@@ -214,7 +207,7 @@ public class Provider extends ContentProvider {
         switch (sUriMatcher.match(uri)) {
 
             //Add each table DIR case
-            case TABLE_ONE_DIR:
+            case FITBIT_DIR:
                 count = database.delete(DATABASE_TABLES[0], selection, selectionArgs);
                 break;
 
@@ -236,7 +229,7 @@ public class Provider extends ContentProvider {
         switch (sUriMatcher.match(uri)) {
 
             //Add each table DIR case
-            case TABLE_ONE_DIR:
+            case FITBIT_DIR:
                 count = database.update(DATABASE_TABLES[0], values, selection, selectionArgs);
                 break;
 

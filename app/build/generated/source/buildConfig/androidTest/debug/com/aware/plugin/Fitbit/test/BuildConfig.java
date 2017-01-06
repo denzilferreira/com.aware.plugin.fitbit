@@ -1,11 +1,11 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package com.aware.plugin.Fitbit.test;
+package com.aware.plugin.fitbit.test;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
-  public static final String APPLICATION_ID = "com.aware.plugin.Fitbit.test";
+  public static final String APPLICATION_ID = "com.aware.plugin.fitbit.test";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
   public static final int VERSION_CODE = 400;

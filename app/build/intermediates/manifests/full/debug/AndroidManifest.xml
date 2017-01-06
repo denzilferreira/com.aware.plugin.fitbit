@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aware.plugin.Fitbit"
+    package="com.aware.plugin.fitbit"
     android:versionCode="400"
     android:versionName="4.0.400" >
 
@@ -8,34 +8,33 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="24" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.aware.READ_CONTEXT_DATA" />
     <uses-permission android:name="com.aware.WRITE_CONTEXT_DATA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions to safeguard data collection -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:networkSecurityConfig="@xml/aware_ssl_config"
-        android:theme="@style/AppTheme" >
+        android:networkSecurityConfig="@xml/aware_ssl_config" >
         <service
-            android:name="com.aware.plugin.Fitbit.Plugin"
-            android:exported="true" />
+            android:name="com.aware.plugin.fitbit.Plugin"
+            android:exported="true"
+            android:label="AWARE: Fitbit" />
 
         <activity
-            android:name="com.aware.plugin.Fitbit.Settings"
-            android:exported="true" >
-        </activity>
+            android:name="com.aware.plugin.fitbit.Settings"
+            android:exported="true" />
         <activity
-            android:name="com.aware.plugin.Fitbit.Fitbit"
+            android:name="com.aware.plugin.fitbit.Fitbit"
             android:label="Fitbit"
             android:launchMode="singleInstance" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -50,8 +49,8 @@
         </activity>
 
         <provider
-            android:name="com.aware.plugin.Fitbit.Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.Fitbit"
+            android:name="com.aware.plugin.fitbit.Provider"
+            android:authorities="com.aware.plugin.fitbit.provider.fitbit"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
@@ -69,6 +68,7 @@
             android:name="com.aware.ui.PermissionsHandler"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
+            android:launchMode="singleTask"
             android:theme="@style/Theme.AppCompat.Translucent" /> <!-- Services -->
         <service
             android:name="com.aware.Keyboard"
@@ -217,175 +217,175 @@
         </receiver> <!-- Core providers -->
         <provider
             android:name="com.aware.providers.Scheduler_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.scheduler"
+            android:authorities="com.aware.plugin.fitbit.provider.scheduler"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Bluetooth_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.bluetooth"
+            android:authorities="com.aware.plugin.fitbit.provider.bluetooth"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Applications_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.applications"
+            android:authorities="com.aware.plugin.fitbit.provider.applications"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Locations_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.locations"
+            android:authorities="com.aware.plugin.fitbit.provider.locations"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Installations_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.installations"
+            android:authorities="com.aware.plugin.fitbit.provider.installations"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.ESM_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.esm"
+            android:authorities="com.aware.plugin.fitbit.provider.esm"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Temperature_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.temperature"
+            android:authorities="com.aware.plugin.fitbit.provider.temperature"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Linear_Accelerometer_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.accelerometer.linear"
+            android:authorities="com.aware.plugin.fitbit.provider.accelerometer.linear"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Gravity_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.gravity"
+            android:authorities="com.aware.plugin.fitbit.provider.gravity"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Barometer_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.barometer"
+            android:authorities="com.aware.plugin.fitbit.provider.barometer"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Magnetometer_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.magnetometer"
+            android:authorities="com.aware.plugin.fitbit.provider.magnetometer"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Proximity_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.proximity"
+            android:authorities="com.aware.plugin.fitbit.provider.proximity"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Light_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.light"
+            android:authorities="com.aware.plugin.fitbit.provider.light"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Telephony_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.telephony"
+            android:authorities="com.aware.plugin.fitbit.provider.telephony"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Aware_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.aware"
+            android:authorities="com.aware.plugin.fitbit.provider.aware"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Rotation_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.rotation"
+            android:authorities="com.aware.plugin.fitbit.provider.rotation"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.WiFi_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.wifi"
+            android:authorities="com.aware.plugin.fitbit.provider.wifi"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Accelerometer_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.accelerometer"
+            android:authorities="com.aware.plugin.fitbit.provider.accelerometer"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Gyroscope_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.gyroscope"
+            android:authorities="com.aware.plugin.fitbit.provider.gyroscope"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Traffic_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.traffic"
+            android:authorities="com.aware.plugin.fitbit.provider.traffic"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Mqtt_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.mqtt"
+            android:authorities="com.aware.plugin.fitbit.provider.mqtt"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Processor_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.processor"
+            android:authorities="com.aware.plugin.fitbit.provider.processor"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.TimeZone_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.timezone"
+            android:authorities="com.aware.plugin.fitbit.provider.timezone"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Battery_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.battery"
+            android:authorities="com.aware.plugin.fitbit.provider.battery"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Screen_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.screen"
+            android:authorities="com.aware.plugin.fitbit.provider.screen"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Network_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.network"
+            android:authorities="com.aware.plugin.fitbit.provider.network"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Communication_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.communication"
+            android:authorities="com.aware.plugin.fitbit.provider.communication"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="com.aware.providers.Keyboard_Provider"
-            android:authorities="com.aware.plugin.Fitbit.provider.keyboard"
+            android:authorities="com.aware.plugin.fitbit.provider.keyboard"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.aware.plugin.Fitbit.provider.storage"
+            android:authorities="com.aware.plugin.fitbit.provider.storage"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
