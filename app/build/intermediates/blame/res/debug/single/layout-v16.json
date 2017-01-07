@@ -1,6 +1,6 @@
 [
     {
-        "merged": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
-        "source": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v16/notification_template_custom_big.xml"
+        "merged": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v16\\notification_template_custom_big.xml"
     }
 ]

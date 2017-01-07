@@ -12,25 +12,40 @@
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:text="Data"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:gravity="center"/>
 
     <CheckBox
         android:id="@+id/check_Activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity" />
+        android:text="Activity"
+        android:textSize="30sp" />
 
     <CheckBox
         android:id="@+id/check_HR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Heart Rate" />
+        android:text="Heart Rate"
+        android:textSize="30sp"
+        android:paddingTop="10dp" />
 
     <CheckBox
         android:id="@+id/check_Sleep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sleep" />
+        android:text="Sleep"
+        android:textSize="30sp"
+        android:paddingTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -41,41 +56,31 @@
         android:paddingTop="20dp"
         android:text="Units"
         android:textAlignment="center"
-        android:textSize="14sp" />
+        android:textSize="36sp"
+        android:gravity="center"/>
 
     <Spinner
         android:id="@+id/spinner_Unit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="40dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Authorized" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Get Data" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="GET STEPS" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Stepcount Last 3 Hours:" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Authorize"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
 
 </LinearLayout>
