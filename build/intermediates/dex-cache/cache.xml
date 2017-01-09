@@ -3,219 +3,219 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_a01a015a8b25df6af57bc40917028b63769a8a30.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\customtabs\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="73591df4ec047e55db9415034d1dfab617fa9f3c">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-customtabs-25.1.0_6ca8f237635324a4ccc2dbc32692f5030e27b889.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.github.denzilferreira\aware-client\development-SNAPSHOT\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="460f56a6140d82a8512297e48eb448cf578d12ac">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.github.denzilferreira-aware-client-development-SNAPSHOT_43a2508150580aa4538cddd8d49aec84b8d158d3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.0_4d9592568e564834d54eae223df04fd2c408fcf9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.0.1_ee35b4750d484a3bedb7728285ec3bf4aaf09ef0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\.gradle\caches\modules-2\files-2.1\com.github.scribejava\scribejava-core\3.3.0\7a3394ee3f48e9cebdc89ffda6065171e5e52421\scribejava-core-3.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7a3394ee3f48e9cebdc89ffda6065171e5e52421">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\scribejava-core-3.3.0_446700113c99cb1776c385dfd4477ad32e91d1c8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_1e363704fd204c6964b452dc714721d17eebad70.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.9.6\e380a3ea2f421f6bf6e9091a75694f04720eed2\joda-time-2.9.6-no-tzdb.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0e380a3ea2f421f6bf6e9091a75694f04720eed2">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\joda-time-2.9.6-no-tzdb_02d13412be79bf5aad59c62b9b4351b8894500ba.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.0.1_0c768a46719119f816faec32bd6bb87081e6f8e7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\.gradle\caches\modules-2\files-2.1\com.koushikdutta.async\androidasync\2.1.6\e3d5f6ab2003e31f2cf5ea61b4731a21e9517935\androidasync-2.1.6.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e3d5f6ab2003e31f2cf5ea61b4731a21e9517935">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\androidasync-2.1.6_46a1f68776464c428d07f4f614d8f88c8d8f4b31.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_04089d0f43369b46a4aee715fe8449cd586e0a7e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.1_26e19ff64f40b38b991241bff210140e2f272fe4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\.gradle\caches\modules-2\files-2.1\com.github.scribejava\scribejava-apis\3.3.0\c460fdda054a44139f0f6e1d927ef092dde36c17\scribejava-apis-3.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c460fdda054a44139f0f6e1d927ef092dde36c17">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\scribejava-apis-3.3.0_3b048780adde5f489702e3b01298b622f33932f9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\net.danlew\android.joda\2.9.5.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6c877b2c372dd26a46a0fe1c0fe07f186fb2ac26">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\net.danlew-android.joda-2.9.5.1_09311cfb807a1811fede910d50b2262eaa9feba0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.0_6b7bd239c309c6af29f85d2ef8c41ccd33b94632.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\.gradle\caches\modules-2\files-2.1\org.eclipse.paho\org.eclipse.paho.client.mqttv3\1.1.0\89d827ffa47c241f2627421ef1d6c7a8c207a341\org.eclipse.paho.client.mqttv3-1.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="89d827ffa47c241f2627421ef1d6c7a8c207a341">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\org.eclipse.paho.client.mqttv3-1.1.0_72c39dbbe7eda8367c4e4db58c06db0a36bbfe0b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\.gradle\caches\modules-2\files-2.1\com.koushikdutta.ion\ion\2.1.6\cd55ef3ba6d8b62838b658ba2507b019dffb3a08\ion-2.1.6.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cd55ef3ba6d8b62838b658ba2507b019dffb3a08">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\ion-2.1.6_f36360047bea402833de70a399335921c6905445.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_e24d1be99a1f79089a5ba79444e44d9bae203baa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.0_1f7f3e502c8ecff9436451ffdeca99f1f27e0d29.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.0.1_26672ff336872043c92254d657155d5fb387b4ab.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3\5fc52c41ef0239d1093a1eb7c3697036183677ce\gson-2.3.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\gson-2.3_1b05a30ff792f604bc5aaa20c5e6eadb8f43bdd5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_b889f178693812906f5d7c747087f69477247b29.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.0_04cc93be4b14d86842ec4ebc6440bc36fa6fd161.jar" />
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_331596cd14f51f4b2f39499f169d6848d6749006.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_3f18c8dc208358f437050b1dbe7badf341663688.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_90a4d30348db17248ef98dfe9acbe6b7cc6e2943.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_9680d6754fc5950d6b8a5d5b581e88b2047e3079.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_b7e52637ccb343cd9a83d7532c433edf90f82802.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_c4c3c74a7465db078e2ee87b8c073ba19a992f95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\Simon\Android\aware-fitbit\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_5242750861772fdc277bac0b678be74b9ba5bc7a.jar" />
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_0f3513fcdbd2fce5470692819e0b06ebfae2ab90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_00fb1774c0cd2223d4d31b9907b7c75214251141.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/.gradle/caches/modules-2/files-2.1/com.github.scribejava/scribejava-apis/3.3.0/c460fdda054a44139f0f6e1d927ef092dde36c17/scribejava-apis-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c460fdda054a44139f0f6e1d927ef092dde36c17">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/scribejava-apis-3.3.0_915e69b51ea2af4443e79a4a2b6687b04a3cda21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/.gradle/caches/modules-2/files-2.1/com.github.scribejava/scribejava-core/3.3.0/7a3394ee3f48e9cebdc89ffda6065171e5e52421/scribejava-core-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a3394ee3f48e9cebdc89ffda6065171e5e52421">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/scribejava-core-3.3.0_b07bb76db702366622252374cf357e42269b46a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.1.0/89d827ffa47c241f2627421ef1d6c7a8c207a341/org.eclipse.paho.client.mqttv3-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="89d827ffa47c241f2627421ef1d6c7a8c207a341">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/org.eclipse.paho.client.mqttv3-1.1.0_94d7eb83097b0500cc797ea22fb5a1d8816ada20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.0_5695eec00f05658f434506a24eb96d393f2a1db1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6103c860a34b8b9de9010bafc4715f9093de941c">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.github.denzilferreira-aware-client-development-SNAPSHOT_53296b87bb76debae835ba3e55a977674bb2a853.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_48cbeac76b91c0b4b8a0e2931edd442a997f59fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_32fb7902f8b7fd7228ec198a57b43b3902a37dd7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.6/e380a3ea2f421f6bf6e9091a75694f04720eed2/joda-time-2.9.6-no-tzdb.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0e380a3ea2f421f6bf6e9091a75694f04720eed2">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/joda-time-2.9.6-no-tzdb_7d5d21bf57254b6dadfde2ae8cfc46501002fc1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/net.danlew/android.joda/2.9.5.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c877b2c372dd26a46a0fe1c0fe07f186fb2ac26">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/net.danlew-android.joda-2.9.5.1_050cdc40dfdd8b8c36ec6476ac4b6b3dde29799c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/.gradle/caches/modules-2/files-2.1/com.koushikdutta.ion/ion/2.1.6/cd55ef3ba6d8b62838b658ba2507b019dffb3a08/ion-2.1.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd55ef3ba6d8b62838b658ba2507b019dffb3a08">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/ion-2.1.6_16d9195b1c704d028d2288d0bc7ecb7acbc38c7f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/.gradle/caches/modules-2/files-2.1/com.koushikdutta.async/androidasync/2.1.6/e3d5f6ab2003e31f2cf5ea61b4731a21e9517935/androidasync-2.1.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e3d5f6ab2003e31f2cf5ea61b4731a21e9517935">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/androidasync-2.1.6_3ff9751d0911cb12902816ef270e4a6d74c6d0a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/gson-2.3_80cb0b7bb01615572460afa93cc29cc0402d96e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.1_314f1f2bf6d8f07f06eebc4478d6887b4f6e67e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_9fcc23893dda9d5b8ab2f5761125dbc384efc9fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_3e308d6f522c44b976fd3cda8c0dda62c75d100c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="73591df4ec047e55db9415034d1dfab617fa9f3c">
+        <dex dex="/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-25.1.0_ce3bea8d6fa8b8f058851c3badeb7c21603a4da4.jar" />
     </item>
 
 </items>

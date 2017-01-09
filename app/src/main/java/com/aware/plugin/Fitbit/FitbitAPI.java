@@ -14,27 +14,24 @@ import java.util.Map;
 
 public class FitbitAPI extends DefaultApi20 {
 
-    protected FitbitAPI() {
+    private FitbitAPI() {
     }
 
     private static class InstanceHolder {
         private static final FitbitAPI INSTANCE = new FitbitAPI();
     }
 
-    public static FitbitAPI instance() {
-
+    static FitbitAPI instance() {
         return InstanceHolder.INSTANCE;
     }
 
     @Override
     public String getAccessTokenEndpoint() {
-
         return "https://api.fitbit.com/oauth2/token";
     }
 
     @Override
     protected String getAuthorizationBaseUrl() {
-
         return "https://www.fitbit.com/oauth2/authorize";
     }
 
@@ -42,7 +39,6 @@ public class FitbitAPI extends DefaultApi20 {
     public OAuth20Service createService(OAuthConfig config) {
         return new FitbitOAuthServiceImpl(this, config);
     }
-
 
     // Add custom parameters to authorization URL.
     @Override

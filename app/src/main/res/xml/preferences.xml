@@ -9,4 +9,66 @@
         android:persistent="true"
         android:summary="Activate/deactivate plugin" />
 
+    <CheckBoxPreference
+        android:key="plugin_fitbit_activity"
+        android:defaultValue="false"
+        android:persistent="true"
+        android:summary="Log activities (e.g., steps, pace, activity level, ...)"
+        android:title="Physical activity" />
+
+    <CheckBoxPreference
+        android:key="plugin_fitbit_heart_rate"
+        android:defaultValue="false"
+        android:persistent="true"
+        android:summary="Log heart rate"
+        android:title="Heart rate" />
+
+    <CheckBoxPreference
+        android:key="plugin_fitbit_sleep"
+        android:defaultValue="false"
+        android:persistent="true"
+        android:summary="Log sleep"
+        android:title="Sleep" />
+
+    <ListPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="metric"
+        android:entries="@array/units_labels"
+        android:entryValues="@array/units_values"
+        android:key="units_plugin_fitbit"
+        android:persistent="true"
+        android:title="Measurement unit"
+        android:dependency="status_plugin_fitbit" />
+
+    <EditTextPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="5"
+        android:key="plugin_fitbit_frequency"
+        android:persistent="true"
+        android:summary="Every 5 minute(s)"
+        android:title="Update frequency"
+        android:dependency="status_plugin_fitbit" />
+
+    <EditTextPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="227YG3"
+        android:key="api_key_plugin_fitbit"
+        android:persistent="true"
+        android:summary="API Key from developer.fitbit.com"
+        android:title="API Key"
+        android:dependency="status_plugin_fitbit" />
+
+    <EditTextPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="033ed2a3710c0cde04343d073c09e378"
+        android:key="api_secret_plugin_fitbit"
+        android:persistent="true"
+        android:summary="API Secret from developer.fitbit.com"
+        android:title="API Secret"
+        android:dependency="status_plugin_fitbit" />
+
 </PreferenceScreen>

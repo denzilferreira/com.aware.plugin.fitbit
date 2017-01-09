@@ -10,10 +10,9 @@ import com.github.scribejava.core.oauth.OAuth20Service;
  * Created by sklakegg on 12/12/16.
  * No custom changed so far.
  */
+class FitbitOAuthServiceImpl extends OAuth20Service {
 
-public class FitbitOAuthServiceImpl extends OAuth20Service {
-
-    public FitbitOAuthServiceImpl(DefaultApi20 api, OAuthConfig config) {
+    FitbitOAuthServiceImpl(DefaultApi20 api, OAuthConfig config) {
         super(api, config);
     }
 

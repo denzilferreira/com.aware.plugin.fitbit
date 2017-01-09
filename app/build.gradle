@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId "com.aware.plugin.fitbit" //EDIT ME
         minSdkVersion 15 //TODO: get this compatible with 10+
-        targetSdkVersion 24
+        targetSdkVersion 25
         versionCode version_code
         versionName version_readable
     }

@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/aware-fitbit.iml" filepath="$PROJECT_DIR$/aware-fitbit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/com.aware.plugin.fitbit.iml" filepath="$PROJECT_DIR$/com.aware.plugin.fitbit.iml" />
     </modules>
   </component>
 </project>
