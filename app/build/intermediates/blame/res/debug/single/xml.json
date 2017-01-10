@@ -1,5 +1,13 @@
 [
     {
+        "merged": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/res/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/res/merged/debug/xml/aware_preferences.xml",
+        "source": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/res/xml/aware_preferences.xml"
+    },
+    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/xml/aware_accessibility_config.xml",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/res/xml/aware_accessibility_config.xml"
     },
@@ -28,6 +36,10 @@
         "source": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\src\\main\\res\\xml\\preferences.xml"
     },
     {
+        "merged": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/res/merged/debug/xml/aware_accessibility_config.xml",
+        "source": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/res/xml/aware_accessibility_config.xml"
+    },
+    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/xml/preferences.xml",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/src/main/res/xml/preferences.xml"
     },
@@ -36,7 +48,15 @@
         "source": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.github.denzilferreira\\aware-client\\development-SNAPSHOT\\res\\xml\\aware_ssl_config.xml"
     },
     {
+        "merged": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/src/main/res/xml/preferences.xml"
+    },
+    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/xml/aware_preferences.xml",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/res/xml/aware_preferences.xml"
+    },
+    {
+        "merged": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/res/merged/debug/xml/aware_ssl_config.xml",
+        "source": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/res/xml/aware_ssl_config.xml"
     }
 ]

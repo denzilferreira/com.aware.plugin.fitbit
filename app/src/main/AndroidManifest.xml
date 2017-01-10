@@ -4,8 +4,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:label="@string/app_name">
 
         <service
             android:name="com.aware.plugin.fitbit.Plugin"
@@ -18,42 +17,24 @@
             android:theme="@style/Theme.AppCompat.Dialog" />
 
         <activity
-            android:name="com.aware.plugin.fitbit.Settings"
+            android:name="com.aware.plugin.fitbit.FitbitAuth"
             android:exported="true"
             android:label="@string/app_name"
-            android:launchMode="singleInstance">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data
                     android:host="logincallback"
                     android:scheme="fitbit" />
             </intent-filter>
         </activity>
 
-        <!--<activity-->
-        <!--android:name="com.aware.plugin.fitbit.Fitbit"-->
-        <!--android:label="Fitbit Login"-->
-        <!--android:launchMode="singleInstance">-->
-        <!--<intent-filter>-->
-        <!--<action android:name="android.intent.action.MAIN" />-->
-        <!--<category android:name="android.intent.category.LAUNCHER" />-->
-        <!--</intent-filter>-->
-
-        <!--<intent-filter>-->
-        <!--<action android:name="android.intent.action.VIEW" />-->
-        <!--<category android:name="android.intent.category.DEFAULT" />-->
-        <!--<category android:name="android.intent.category.BROWSABLE" />-->
-        <!--<data android:host="logincallback" android:scheme="fitbit" />-->
-        <!--</intent-filter>-->
-        <!--</activity>-->
+        <activity
+            android:name="com.aware.plugin.fitbit.Settings"
+            android:exported="true" />
 
         <provider
             android:name="com.aware.plugin.fitbit.Provider"

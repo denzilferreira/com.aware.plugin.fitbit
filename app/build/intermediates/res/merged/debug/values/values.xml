@@ -732,6 +732,7 @@
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="drawer_close">Close</string>
     <string name="drawer_open">Open</string>
+    <string name="fitbit_authenticate">Tap to authenticate to Fitbit</string>
     <string name="install">Install</string>
     <string name="joda_time_android_date_time">%1$s, %2$s</string>
     <string name="joda_time_android_preposition_for_date">on <ns1:g example="May 29" id="date">%s</ns1:g></string>
