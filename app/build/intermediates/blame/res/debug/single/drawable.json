@@ -124,12 +124,12 @@
         "source": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/res/drawable/ic_action_barometer.png"
     },
     {
-        "merged": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_esm_active.png",
-        "source": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/res/drawable/ic_action_esm_active.png"
-    },
-    {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "/Users/researcher/Documents/Android/aware-fitbit/C:\\Users\\Simon\\Android\\aware-fitbit\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_esm_active.png",
+        "source": "/Users/denzil/AndroidStudio/com.aware.plugin.fitbit/app/build/intermediates/exploded-aar/com.github.denzilferreira/aware-client/development-SNAPSHOT/res/drawable/ic_action_esm_active.png"
     },
     {
         "merged": "/Users/researcher/Documents/Android/aware-fitbit/app/build/intermediates/res/merged/debug/drawable/ic_action_light.png",

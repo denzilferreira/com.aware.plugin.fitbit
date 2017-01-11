@@ -43,8 +43,6 @@ public class FitbitAuth extends AppCompatActivity {
             Uri URL_Fragment = intent.getData();
             String URL_Fragment_String = URL_Fragment.toString();
 
-            Log.d(Plugin.TAG, "ANSWER:" + URL_Fragment_String);
-
             // Retrieve information about access token.
             String access_Token = URL_Fragment_String.substring(URL_Fragment_String.indexOf("access_token=") + 13, URL_Fragment_String.indexOf("&user_id"));
             String data_scope = URL_Fragment_String.substring(URL_Fragment_String.indexOf("scope=") + 6, URL_Fragment_String.indexOf("&token_type"));
@@ -75,9 +73,7 @@ public class FitbitAuth extends AppCompatActivity {
                     "null",
                     Aware.getSetting(this, Settings.OAUTH_SCOPES),
                     "null");
-
-            //Ask the user to pick the Fitbit they will use
-            new Plugin.FitbitDevicesPicker(getApplicationContext()).execute();
-        }
+        } else
+            finish();
     }
 }
