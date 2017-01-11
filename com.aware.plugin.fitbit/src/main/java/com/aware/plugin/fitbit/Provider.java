@@ -22,7 +22,7 @@ import java.util.HashMap;
 public class Provider extends ContentProvider {
 
     public static String AUTHORITY = "com.aware.plugin.fitbit.provider.fitbit"; //change to package.provider.your_plugin_name
-    public static final int DATABASE_VERSION = 3; //increase this if you make changes to the database structure, i.e., rename columns, etc.
+    public static final int DATABASE_VERSION = 4; //increase this if you make changes to the database structure, i.e., rename columns, etc.
 
     //    public static Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/plugin_fitbit");
     public static final String DATABASE_NAME = "plugin_fitbit.db"; //the database filename, use plugin_xxx for plugins.
@@ -81,7 +81,7 @@ public class Provider extends ContentProvider {
                     Fitbit_Data.TIMESTAMP + " real default 0," +
                     Fitbit_Data.DEVICE_ID + " text default ''," +
                     Fitbit_Data.FITBIT_ID + " text default ''," +
-                    Fitbit_Data.DATA_TYPE + " text default 0," +
+                    Fitbit_Data.DATA_TYPE + " text default ''," +
                     Fitbit_Data.FITBIT_JSON + " text default ''";
 
     private static final String DB_TBL_FITBIT_DEVICES_FIELDS =
@@ -89,8 +89,8 @@ public class Provider extends ContentProvider {
                     Fitbit_Devices.TIMESTAMP + " real default 0," +
                     Fitbit_Devices.DEVICE_ID + " text default ''," +
                     Fitbit_Devices.FITBIT_ID + " text default ''," +
-                    Fitbit_Devices.FITBIT_VERSION + " text default 0," +
-                    Fitbit_Devices.FITBIT_BATTERY + " text default 0," +
+                    Fitbit_Devices.FITBIT_VERSION + " text default ''," +
+                    Fitbit_Devices.FITBIT_BATTERY + " text default ''," +
                     Fitbit_Devices.LAST_SYNC + " text default ''";
 
     /**

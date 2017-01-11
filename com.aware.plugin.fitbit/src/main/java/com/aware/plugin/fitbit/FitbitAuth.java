@@ -2,10 +2,7 @@ package com.aware.plugin.fitbit;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.aware.Aware;
@@ -26,7 +23,7 @@ public class FitbitAuth extends AppCompatActivity {
 
         if (Aware.getSetting(this, Settings.OAUTH_TOKEN).length() == 0) {
             try {
-                Plugin.AuthorizeFitbit(this);
+                FitbitAPI.authorizeFitbit(this);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -58,6 +55,7 @@ public class FitbitAuth extends AppCompatActivity {
                 data_scopes.put("activity", data_scope.toLowerCase().contains("activity".toLowerCase()));
                 data_scopes.put("heartrate", data_scope.toLowerCase().contains("heartrate".toLowerCase()));
                 data_scopes.put("sleep", data_scope.toLowerCase().contains("sleep".toLowerCase()));
+                data_scopes.put("settings", data_scope.toLowerCase().contains("settings".toLowerCase()));
 
                 //the ones the user has accepted to share
                 Aware.setSetting(this, Settings.OAUTH_SCOPES, data_scopes.toString());

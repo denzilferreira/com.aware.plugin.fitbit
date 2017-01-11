@@ -1,10 +1,13 @@
 package com.aware.plugin.fitbit;
 
 import android.content.ContentValues;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.text.BoringLayout;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
@@ -32,6 +35,7 @@ public class DevicePicker extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.device_picker);
+        getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 
         LinearLayout device_container = (LinearLayout) findViewById(R.id.device_picker);
 
@@ -47,7 +51,6 @@ public class DevicePicker extends AppCompatActivity {
                     RadioButton rDevice = new RadioButton(this);
                     rDevice.setText(device.getString("deviceVersion"));
                     rDevice.setTag(device.getString("id"));
-
                     singleChoice.addView(rDevice);
                 }
             } catch (JSONException e) {
@@ -87,6 +90,32 @@ public class DevicePicker extends AppCompatActivity {
                         device.put(Provider.Fitbit_Devices.FITBIT_VERSION, selected.getString("deviceVersion"));
                         device.put(Provider.Fitbit_Devices.LAST_SYNC, selected.getString("lastSyncTime"));
                         getContentResolver().insert(Provider.Fitbit_Devices.CONTENT_URI, device);
+
+                        JSONArray activities = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/activities/date/" + selected.getString("lastSyncTime").split("T")[0] + ".json"));
+                        JSONArray hr = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/heart/date/" + selected.getString("lastSyncTime").split("T")[0] + ".json"));
+                        JSONArray sleep = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/date/" + selected.getString("lastSyncTime").split("T")[0] + ".json"));
+
+                        ContentValues activityData = new ContentValues();
+                        activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
+                        activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
+                        activityData.put(Provider.Fitbit_Data.DATA_TYPE, "activities");
+                        activityData.put(Provider.Fitbit_Data.FITBIT_JSON, activities.toString());
+                        getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, activityData);
+
+                        ContentValues heartRateData = new ContentValues();
+                        activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
+                        activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
+                        activityData.put(Provider.Fitbit_Data.DATA_TYPE, "heartrate");
+                        activityData.put(Provider.Fitbit_Data.FITBIT_JSON, hr.toString());
+                        getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, heartRateData);
+
+                        ContentValues sleepData = new ContentValues();
+                        activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
+                        activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
+                        activityData.put(Provider.Fitbit_Data.DATA_TYPE, "sleep");
+                        activityData.put(Provider.Fitbit_Data.FITBIT_JSON, sleep.toString());
+                        getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, sleepData);
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
