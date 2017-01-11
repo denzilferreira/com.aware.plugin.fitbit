@@ -105,6 +105,11 @@ public class Plugin extends Aware_Plugin {
                 Aware.setSetting(getApplicationContext(), Settings.API_SECRET_PLUGIN_FITBIT, "033ed2a3710c0cde04343d073c09e378");
 
             if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0) {
+
+                //TODO device picker
+                //Ask the user to pick the Fitbit they will use
+                new Plugin.FitbitDevicesPicker(getApplicationContext()).execute();
+
                 try {
                     Scheduler.Schedule fitbitFetcher = Scheduler.getSchedule(this, SCHEDULER_PLUGIN_FITBIT);
                     if (fitbitFetcher == null) {
