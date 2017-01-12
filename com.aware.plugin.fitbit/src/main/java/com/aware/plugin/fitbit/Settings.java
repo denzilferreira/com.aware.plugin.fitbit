@@ -1,5 +1,7 @@
 package com.aware.plugin.fitbit;
 
+import android.app.ActionBar;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
@@ -8,6 +10,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.widget.Toast;
 
 import com.aware.Aware;
 
@@ -20,6 +23,7 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
     public static final String API_KEY_PLUGIN_FITBIT = "api_key_plugin_fitbit";
     public static final String API_SECRET_PLUGIN_FITBIT = "api_secret_plugin_fitbit";
     private final String FITBIT_RESET = "fitbit_reset";
+    private final String FITBIT_SYNC = "fitbit_sync";
 
     public static final String OAUTH_TOKEN = "oauth_token";
     public static final String OAUTH_SCOPES = "oauth_scopes";
@@ -30,7 +34,7 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
     private static CheckBoxPreference status;
     private static EditTextPreference frequency, apiKey, apiSecret;
     private static ListPreference units;
-    private static Preference clear;
+    private static Preference clear, sync;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +61,7 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
 
         frequency = (EditTextPreference) findPreference(PLUGIN_FITBIT_FREQUENCY);
         if (Aware.getSetting(this, PLUGIN_FITBIT_FREQUENCY).length() == 0)
-            Aware.setSetting(this, PLUGIN_FITBIT_FREQUENCY, 5);
+            Aware.setSetting(this, PLUGIN_FITBIT_FREQUENCY, 15);
         frequency.setText(Aware.getSetting(this, PLUGIN_FITBIT_FREQUENCY));
         frequency.setSummary("Every " + Aware.getSetting(this, PLUGIN_FITBIT_FREQUENCY) + " minute(s)");
 
@@ -78,8 +82,26 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
             @Override
             public boolean onPreferenceClick(Preference preference) {
                 Aware.setSetting(getApplicationContext(), OAUTH_TOKEN, "");
+                getContentResolver().delete(Provider.Fitbit_Data.CONTENT_URI, null, null);
+                getContentResolver().delete(Provider.Fitbit_Devices.CONTENT_URI, null, null);
                 Aware.stopPlugin(getApplicationContext(), "com.aware.plugin.fitbit");
+
+                Toast.makeText(getApplicationContext(), "Data and account removed!", Toast.LENGTH_SHORT).show();
+
                 finish();
+                return true;
+            }
+        });
+
+        sync = (Preference) findPreference(FITBIT_SYNC);
+        sync.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                Intent fetchdata = new Intent(getApplicationContext(), Plugin.class);
+                fetchdata.setAction(Plugin.ACTION_AWARE_PLUGIN_FITBIT_SYNC);
+                startService(fetchdata);
+
+                Toast.makeText(getApplicationContext(), "Synching!", Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
@@ -99,7 +121,7 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
         }
 
         if (preference.getKey().equals(PLUGIN_FITBIT_FREQUENCY)) {
-            Aware.setSetting(getApplicationContext(), key, sharedPreferences.getString(key, "5"));
+            Aware.setSetting(getApplicationContext(), key, sharedPreferences.getString(key, "15"));
             preference.setSummary("Every " + Aware.getSetting(this, PLUGIN_FITBIT_FREQUENCY) + " minute(s)");
         }
 

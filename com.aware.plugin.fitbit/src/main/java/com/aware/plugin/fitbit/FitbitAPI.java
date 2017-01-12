@@ -24,6 +24,7 @@ import java.util.Map;
 
 /**
  * Created by sklakegg on 02/12/16.
+ * Edited by denzilferreira on 11.1.2016
  */
 
 public class FitbitAPI extends DefaultApi20 {
@@ -78,94 +79,5 @@ public class FitbitAPI extends DefaultApi20 {
         }
 
         return parameters.appendTo(getAuthorizationBaseUrl());
-    }
-
-    /**
-     * Get data from a resource URL endpoint
-     * @param context
-     * @param resource_url
-     * @return
-     */
-    public static String fetchData(Context context, String resource_url) {
-        if (Plugin.fitbitAPI == null || Plugin.fitbitOAUTHToken == null) {
-            try {
-                restoreFitbitAPI(context);
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
-
-        OAuthRequest request = new OAuthRequest(Verb.GET, resource_url, Plugin.fitbitAPI);
-        request.addHeader("Authorization", " " + Aware.getSetting(context, Settings.OAUTH_TOKEN_TYPE) + " " + Aware.getSetting(context, Settings.OAUTH_TOKEN));
-
-        String metric = "";
-        if (Aware.getSetting(context, Settings.UNITS_PLUGIN_FITBIT).equalsIgnoreCase("metric")) metric = "Metric";
-        if (Aware.getSetting(context, Settings.UNITS_PLUGIN_FITBIT).equalsIgnoreCase("imperial")) metric = "en_US";
-        request.addHeader("Accept-Language", metric);
-
-        Plugin.fitbitAPI.signRequest(Plugin.fitbitOAUTHToken, request);
-        Response response = request.send();
-
-        if (response.isSuccessful()) {
-            try {
-                return response.getBody();
-            } catch (IOException e) {
-                e.printStackTrace();
-                return null;
-            }
-        }
-        return null;
-    }
-
-    /**
-     * Restore connection to the Fitbit API endpoints
-     * @param context
-     * @throws JSONException
-     */
-    public static void restoreFitbitAPI(Context context) throws JSONException {
-        if (Aware.getSetting(context, Settings.OAUTH_TOKEN).length() == 0) return;
-
-        Plugin.fitbitOAUTHToken = new OAuth2AccessToken(Aware.getSetting(context, Settings.OAUTH_TOKEN),
-                Aware.getSetting(context, Settings.OAUTH_TOKEN_TYPE),
-                Integer.valueOf(Aware.getSetting(context, Settings.OAUTH_VALIDITY)),
-                "null",
-                Aware.getSetting(context, Settings.OAUTH_SCOPES),
-                "null");
-
-        JSONObject scopes = new JSONObject(Aware.getSetting(context, Settings.OAUTH_SCOPES));
-
-        String scopes_str = (scopes.getBoolean("activity"))?"activity":"";
-        scopes_str += (scopes.getBoolean("heartrate"))?" heartrate":"";
-        scopes_str += (scopes.getBoolean("sleep"))?" sleep":"";
-        scopes_str += (scopes.getBoolean("settings"))?" settings":"";
-
-        Plugin.fitbitAPI = new ServiceBuilder()
-                .apiKey(Aware.getSetting(context, Settings.API_KEY_PLUGIN_FITBIT))
-                .scope(scopes_str)
-                .responseType("token")
-                .callback("fitbit://logincallback")
-                .apiSecret(Aware.getSetting(context, Settings.API_SECRET_PLUGIN_FITBIT))
-                .build(FitbitAPI.instance());
-    }
-
-    /**
-     * Initiate authorization flow with Fitbit API on the browser
-     *
-     * @param context
-     * @throws JSONException
-     */
-    public static void authorizeFitbit(Context context) throws JSONException {
-        String scopes = "activity heartrate sleep settings";
-
-        Plugin.fitbitAPI = new ServiceBuilder()
-                .apiKey(Aware.getSetting(context, Settings.API_KEY_PLUGIN_FITBIT))
-                .scope(scopes)
-                .responseType("token")
-                .callback("fitbit://logincallback")
-                .apiSecret(Aware.getSetting(context, Settings.API_SECRET_PLUGIN_FITBIT))
-                .build(FitbitAPI.instance());
-
-        CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder().build();
-        customTabsIntent.launchUrl(context, Uri.parse(Plugin.fitbitAPI.getAuthorizationUrl()));
     }
 }

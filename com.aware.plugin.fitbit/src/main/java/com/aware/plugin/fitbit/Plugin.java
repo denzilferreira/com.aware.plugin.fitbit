@@ -28,6 +28,8 @@ import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
 import com.github.scribejava.core.oauth.OAuth20Service;
 
+import net.danlew.android.joda.JodaTimeAndroid;
+
 import org.joda.time.DateTime;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,25 +40,29 @@ import java.util.Hashtable;
 
 public class Plugin extends Aware_Plugin {
 
+    /**
+     * Broadcasted when we have new data on the database
+     */
     public static final String ACTION_AWARE_PLUGIN_FITBIT = "ACTION_AWARE_PLUGIN_FITBIT";
 
+    /**
+     * Request the plugin to check for new data at Fitbit.
+     * NOTE: Fitbit API limit of 150 times per hour per device
+     */
+    public static final String ACTION_AWARE_PLUGIN_FITBIT_SYNC = "ACTION_AWARE_PLUGIN_FITBIT_SYNC";
+
     private static final String SCHEDULER_PLUGIN_FITBIT = "SCHEDULER_PLUGIN_FITBIT";
-    private static final String ACTION_AWARE_PLUGIN_FITBIT_SYNC = "ACTION_AWARE_PLUGIN_FITBIT_SYNC";
 
     public static OAuth20Service fitbitAPI;
     public static OAuth2AccessToken fitbitOAUTHToken;
 
     private static final int FITBIT_NOTIFICATION_ID = 54321;
 
-    private NotificationManager notManager;
-
     @Override
     public void onCreate() {
         super.onCreate();
 
         TAG = getResources().getString(R.string.app_name);
-
-        notManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
         //Any active plugin/sensor shares its overall context using broadcasts
         CONTEXT_PRODUCER = new ContextProducer() {
@@ -78,84 +84,6 @@ public class Plugin extends Aware_Plugin {
     //This function gets called every 5 minutes by AWARE to make sure this plugin is still running.
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase(ACTION_AWARE_PLUGIN_FITBIT_SYNC)) {
-            if (Plugin.fitbitOAUTHToken == null || Plugin.fitbitAPI == null) {
-                try {
-                    FitbitAPI.restoreFitbitAPI(getApplicationContext());
-
-                    //Get data now that we have authenticated with Fitbit
-                    JSONArray devices_fitbit = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/devices.json"));
-                    for (int i = 0; i < devices_fitbit.length(); i++) {
-                        JSONObject fit = devices_fitbit.getJSONObject(i);
-                        Cursor device = getContentResolver().query(Provider.Fitbit_Devices.CONTENT_URI, null, null, null, null);
-                        if (device != null && device.moveToFirst()) {
-                            if (fit.getString("id").equalsIgnoreCase(device.getString(device.getColumnIndex(Provider.Fitbit_Devices.FITBIT_ID)))) {
-
-                                DateTime localSync = DateTime.parse(device.getString(device.getColumnIndex(Provider.Fitbit_Devices.LAST_SYNC)));
-                                DateTime serverSync = DateTime.parse(fit.getString("lastSyncTime"));
-
-                                //new data exists
-                                if ( !localSync.isEqual(serverSync)) {
-                                    String localSyncDate = device.getString(device.getColumnIndex(Provider.Fitbit_Devices.LAST_SYNC)).split("T")[0];
-                                    String serverSyncDate = fit.getString("lastSyncTime").split("T")[0];
-
-                                    //Fetch latest data we don't have yet
-                                    JSONArray activities = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/activities/date/" + localSyncDate + "/" + serverSyncDate + ".json"));
-                                    JSONArray hr = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/heart/date/" + localSyncDate + "/" + serverSyncDate + ".json"));
-                                    JSONArray sleep = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/date/" + localSyncDate + "/" + serverSyncDate + ".json"));
-
-                                    ContentValues activityData = new ContentValues();
-                                    activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
-                                    activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
-                                    activityData.put(Provider.Fitbit_Data.DATA_TYPE, "activities");
-                                    activityData.put(Provider.Fitbit_Data.FITBIT_JSON, activities.toString());
-                                    getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, activityData);
-
-                                    if (Plugin.DEBUG)
-                                        Log.d(Plugin.TAG, "New activities: " + activities.toString(5));
-
-                                    ContentValues heartRateData = new ContentValues();
-                                    activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
-                                    activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
-                                    activityData.put(Provider.Fitbit_Data.DATA_TYPE, "heartrate");
-                                    activityData.put(Provider.Fitbit_Data.FITBIT_JSON, hr.toString());
-                                    getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, heartRateData);
-
-                                    if (Plugin.DEBUG)
-                                        Log.d(Plugin.TAG, "New heartrate: " + hr.toString(5));
-
-                                    ContentValues sleepData = new ContentValues();
-                                    activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
-                                    activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
-                                    activityData.put(Provider.Fitbit_Data.DATA_TYPE, "sleep");
-                                    activityData.put(Provider.Fitbit_Data.FITBIT_JSON, sleep.toString());
-                                    getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, sleepData);
-
-                                    if (Plugin.DEBUG)
-                                        Log.d(Plugin.TAG, "New sleep: " + sleep.toString(5));
-
-                                    //Update to the latest sync time
-                                    ContentValues latestData = new ContentValues();
-                                    latestData.put(Provider.Fitbit_Devices.FITBIT_BATTERY, fit.getString("battery"));
-                                    latestData.put(Provider.Fitbit_Devices.LAST_SYNC, fit.getString("lastSyncTime"));
-
-                                    getContentResolver().update(
-                                            Provider.Fitbit_Devices.CONTENT_URI, latestData,
-                                            Provider.Fitbit_Devices._ID + "=" + device.getInt(device.getColumnIndex(Provider.Fitbit_Devices._ID)),
-                                            null);
-
-                                    CONTEXT_PRODUCER.onContext();
-                                }
-                            }
-                        }
-                        if (device != null && ! device.isClosed()) device.close();
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
         boolean permissions_ok = true;
         for (String p : REQUIRED_PERMISSIONS) {
             if (ContextCompat.checkSelfPermission(this, p) != PackageManager.PERMISSION_GRANTED) {
@@ -176,7 +104,7 @@ public class Plugin extends Aware_Plugin {
                 Aware.setSetting(getApplicationContext(), Settings.UNITS_PLUGIN_FITBIT, "metric");
 
             if (Aware.getSetting(getApplicationContext(), Settings.PLUGIN_FITBIT_FREQUENCY).length() == 0)
-                Aware.setSetting(getApplicationContext(), Settings.PLUGIN_FITBIT_FREQUENCY, 5);
+                Aware.setSetting(getApplicationContext(), Settings.PLUGIN_FITBIT_FREQUENCY, 15);
 
             if (Aware.getSetting(getApplicationContext(), Settings.API_KEY_PLUGIN_FITBIT).length() == 0)
                 Aware.setSetting(getApplicationContext(), Settings.API_KEY_PLUGIN_FITBIT, "227YG3");
@@ -185,10 +113,11 @@ public class Plugin extends Aware_Plugin {
                 Aware.setSetting(getApplicationContext(), Settings.API_SECRET_PLUGIN_FITBIT, "033ed2a3710c0cde04343d073c09e378");
 
             if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0 && fitbitAPI != null && fitbitOAUTHToken != null) {
+
                 Cursor devices = getContentResolver().query(Provider.Fitbit_Devices.CONTENT_URI, null, null, null, Provider.Fitbit_Devices.TIMESTAMP + " ASC");
+                //Ask the user to pick the Fitbit they will use if not set
                 if (devices == null || devices.getCount() == 0) {
-                    //Ask the user to pick the Fitbit they will use
-                    new Plugin.FitbitDevicesPicker(getApplicationContext()).execute();
+                    new FitbitDevicesPicker().execute();
                 }
                 if (devices != null && !devices.isClosed()) devices.close();
 
@@ -206,6 +135,13 @@ public class Plugin extends Aware_Plugin {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+
+                if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase(ACTION_AWARE_PLUGIN_FITBIT_SYNC)) {
+                    if (Plugin.fitbitOAUTHToken != null && Plugin.fitbitAPI != null) {
+                        new FibitDataSync().execute();
+                    }
+                }
+
             } else {
                 if (Aware.getSetting(this, Settings.OAUTH_TOKEN).length() == 0) {
                     Intent fitbitAuth = new Intent(this, FitbitAuth.class);
@@ -221,10 +157,12 @@ public class Plugin extends Aware_Plugin {
 
                     Notification notification = notBuilder.build();
                     notification.flags |= Notification.FLAG_NO_CLEAR;
+
+                    NotificationManager notManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
                     notManager.notify(FITBIT_NOTIFICATION_ID, notification);
                 } else {
                     try {
-                        FitbitAPI.restoreFitbitAPI(getApplicationContext());
+                        restoreFitbitAPI(getApplicationContext());
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -240,37 +178,197 @@ public class Plugin extends Aware_Plugin {
         return super.onStartCommand(intent, flags, startId);
     }
 
+    private class FibitDataSync extends AsyncTask<Void, Void, Void> {
 
+        @Override
+        protected Void doInBackground(Void... params) {
+
+            try {
+                restoreFitbitAPI(getApplicationContext());
+
+                String devices = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/devices.json");
+                if (devices == null) {
+                    if (Plugin.DEBUG)
+                        Log.d(Plugin.TAG, "Unable to fetch user's devices status information");
+
+                    return null;
+                }
+
+                //Get data now that we have authenticated with Fitbit
+                JSONArray devices_fitbit = new JSONArray(devices);
+                if (Plugin.DEBUG)
+                    Log.d(Plugin.TAG, "Latest info on server (devices): " + devices_fitbit.toString(5));
+
+                for (int i = 0; i < devices_fitbit.length(); i++) {
+
+                    JSONObject fit = devices_fitbit.getJSONObject(i);
+
+                    Cursor device = getContentResolver().query(Provider.Fitbit_Devices.CONTENT_URI, null, Provider.Fitbit_Devices.FITBIT_ID + " LIKE '" + fit.getString("id") + "'", null, Provider.Fitbit_Devices.TIMESTAMP + " DESC LIMIT 1");
+                    if (device != null && device.moveToFirst()) {
+
+                        JodaTimeAndroid.init(getApplicationContext());
+                        DateTime localSync = DateTime.parse(device.getString(device.getColumnIndex(Provider.Fitbit_Devices.LAST_SYNC)));
+                        DateTime serverSync = DateTime.parse(fit.getString("lastSyncTime"));
+
+                        if (!localSync.isEqual(serverSync)) {
+                            String localSyncDate = device.getString(device.getColumnIndex(Provider.Fitbit_Devices.LAST_SYNC)).split("T")[0];
+                            String serverSyncDate = fit.getString("lastSyncTime").split("T")[0];
+
+                            String steps = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/activities/steps/date/" + localSyncDate + "/" + serverSyncDate + "/15min.json");
+                            if (steps == null) {
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "No steps for this device.");
+                            } else {
+                                JSONObject steps_data = new JSONObject(steps);
+                                ContentValues activityData = new ContentValues();
+                                activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
+                                activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
+                                activityData.put(Provider.Fitbit_Data.DATA_TYPE, "steps");
+                                activityData.put(Provider.Fitbit_Data.FITBIT_JSON, steps_data.toString());
+                                getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, activityData);
+
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "New steps: " + steps_data.toString(5));
+                            }
+
+                            String calories = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/activities/calories/date/" + localSyncDate + "/" + serverSyncDate + "/15min.json");
+                            if (calories == null) {
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "No steps for this device.");
+                            } else {
+                                JSONObject calories_data = new JSONObject(calories);
+                                ContentValues activityData = new ContentValues();
+                                activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
+                                activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
+                                activityData.put(Provider.Fitbit_Data.DATA_TYPE, "calories");
+                                activityData.put(Provider.Fitbit_Data.FITBIT_JSON, calories_data.toString());
+                                getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, activityData);
+
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "New calories: " + calories_data.toString(5));
+                            }
+
+                            String heartrate = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/activities/heart/date/" + localSyncDate + "/" + serverSyncDate + "/1min.json");
+                            if (heartrate == null) {
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "No heartrate for this device.");
+                            } else {
+                                JSONObject heartrate_data = new JSONObject(heartrate);
+                                ContentValues heartRateData = new ContentValues();
+                                heartRateData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
+                                heartRateData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
+                                heartRateData.put(Provider.Fitbit_Data.DATA_TYPE, "heartrate");
+                                heartRateData.put(Provider.Fitbit_Data.FITBIT_JSON, heartrate_data.toString());
+                                getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, heartRateData);
+
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "New heartrate: " + heartrate_data.toString(5));
+                            }
+
+                            //will have all the sleep related data
+                            JSONArray sleep = new JSONArray();
+
+                            String sleep_efficiency = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/efficiency/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            if (sleep_efficiency == null) {
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "No sleep efficiency for this device.");
+                            } else {
+                                JSONObject efficiency_data = new JSONObject(sleep_efficiency);
+                                sleep.put(efficiency_data);
+                            }
+
+                            String sleep_time_in_bed = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/timeInBed/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            if (sleep_time_in_bed == null) {
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "No sleep time to bed for this device.");
+                            } else {
+                                JSONObject time_to_bed_data = new JSONObject(sleep_time_in_bed);
+                                sleep.put(time_to_bed_data);
+                            }
+
+                            String sleep_minutes_awake = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/minutesAwake/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            if (sleep_minutes_awake == null) {
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "No sleep minutes awake for this device.");
+                            } else {
+                                JSONObject minutes_awake_data = new JSONObject(sleep_minutes_awake);
+                                sleep.put(minutes_awake_data);
+                            }
+
+                            String sleep_minutes_to_sleep = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/minutesToFallAsleep/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            if (sleep_minutes_to_sleep == null) {
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "No sleep minutes to sleep for this device.");
+                            } else {
+                                JSONObject minutes_to_sleep_data = new JSONObject(sleep_minutes_to_sleep);
+                                sleep.put(minutes_to_sleep_data);
+                            }
+
+                            String sleep_awake_count = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/awakeCount/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            if (sleep_awake_count == null) {
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "No sleep awake count for this device.");
+                            } else {
+                                JSONObject awake_count_data = new JSONObject(sleep_awake_count);
+                                sleep.put(awake_count_data);
+                            }
+
+                            if (sleep.length() > 0) {
+                                ContentValues sleepData = new ContentValues();
+                                sleepData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
+                                sleepData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
+                                sleepData.put(Provider.Fitbit_Data.DATA_TYPE, "sleep");
+                                sleepData.put(Provider.Fitbit_Data.FITBIT_JSON, sleep.toString());
+                                getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, sleepData);
+
+                                if (Plugin.DEBUG)
+                                    Log.d(Plugin.TAG, "New sleep: " + sleep.toString(5));
+                            }
+
+                            //Update to the latest sync time
+                            ContentValues latestData = new ContentValues();
+                            latestData.put(Provider.Fitbit_Devices.FITBIT_BATTERY, fit.getString("battery"));
+                            latestData.put(Provider.Fitbit_Devices.LAST_SYNC, fit.getString("lastSyncTime"));
+                            getContentResolver().insert(Provider.Fitbit_Devices.CONTENT_URI, latestData);
+
+                            if (CONTEXT_PRODUCER != null)
+                                CONTEXT_PRODUCER.onContext();
+                        }
+                    }
+                    if (device != null && !device.isClosed()) device.close();
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+    }
 
     /**
      * Ask the user to choose which Fitbit will be used with the plugin
      */
-    public static class FitbitDevicesPicker extends AsyncTask<Void, Void, Boolean> {
-        private Context mContext;
-
-        FitbitDevicesPicker(Context context) {
-            mContext = context;
-        }
-
+    public class FitbitDevicesPicker extends AsyncTask<Void, Void, Boolean> {
         @Override
         protected Boolean doInBackground(Void... params) {
 
-            if (Aware.getSetting(mContext, Settings.OAUTH_TOKEN).length() == 0 || Plugin.fitbitAPI == null || Plugin.fitbitOAUTHToken == null) return false;
+            if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() == 0 || Plugin.fitbitAPI == null || Plugin.fitbitOAUTHToken == null)
+                return false;
 
             OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/devices.json", Plugin.fitbitAPI);
             request.addHeader("Authorization",
-                    " " + Aware.getSetting(mContext, Settings.OAUTH_TOKEN_TYPE) +
-                            " " + Aware.getSetting(mContext, Settings.OAUTH_TOKEN));
+                    " " + Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN_TYPE) +
+                            " " + Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN));
 
             Plugin.fitbitAPI.signRequest(Plugin.fitbitOAUTHToken, request);
             Response response = request.send();
 
             if (response.isSuccessful()) {
                 try {
-                    Intent devicePicker = new Intent(mContext, DevicePicker.class);
+                    Intent devicePicker = new Intent(getApplicationContext(), DevicePicker.class);
                     devicePicker.putExtra(DevicePicker.DEVICES_JSON, response.getBody());
                     devicePicker.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    mContext.startActivity(devicePicker);
+                    startActivity(devicePicker);
                 } catch (IOException e) {
                     return false;
                 }
@@ -284,9 +382,9 @@ public class Plugin extends Aware_Plugin {
             super.onPostExecute(result);
 
             if (!result) {
-                Toast.makeText(mContext, "Failed to load available devices. Try authenticating again.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Failed to load available devices. Try authenticating again.", Toast.LENGTH_SHORT).show();
                 try {
-                    FitbitAPI.authorizeFitbit(mContext);
+                    authorizeFitbit(getApplicationContext());
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -294,11 +392,105 @@ public class Plugin extends Aware_Plugin {
         }
     }
 
+    /**
+     * Get data from a resource URL endpoint
+     *
+     * @param context
+     * @param resource_url
+     * @return
+     */
+    public String fetchData(Context context, String resource_url) {
+        if (Plugin.fitbitAPI == null || Plugin.fitbitOAUTHToken == null) {
+            try {
+                restoreFitbitAPI(context);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        OAuthRequest request = new OAuthRequest(Verb.GET, resource_url, Plugin.fitbitAPI);
+        request.addHeader("Authorization", " " + Aware.getSetting(context, Settings.OAUTH_TOKEN_TYPE) + " " + Aware.getSetting(context, Settings.OAUTH_TOKEN));
+
+        String metric = "";
+        if (Aware.getSetting(context, Settings.UNITS_PLUGIN_FITBIT).equalsIgnoreCase("metric"))
+            metric = "Metric";
+        if (Aware.getSetting(context, Settings.UNITS_PLUGIN_FITBIT).equalsIgnoreCase("imperial"))
+            metric = "en_US";
+        request.addHeader("Accept-Language", metric);
+
+        Plugin.fitbitAPI.signRequest(Plugin.fitbitOAUTHToken, request);
+        Response response = request.send();
+
+        if (response.isSuccessful()) {
+            try {
+                return response.getBody();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return null;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Restore connection to the Fitbit API endpoints
+     *
+     * @param context
+     * @throws JSONException
+     */
+    public void restoreFitbitAPI(Context context) throws JSONException {
+        if (Aware.getSetting(context, Settings.OAUTH_TOKEN).length() == 0) return;
+
+        Plugin.fitbitOAUTHToken = new OAuth2AccessToken(Aware.getSetting(context, Settings.OAUTH_TOKEN),
+                Aware.getSetting(context, Settings.OAUTH_TOKEN_TYPE),
+                Integer.valueOf(Aware.getSetting(context, Settings.OAUTH_VALIDITY)),
+                "null",
+                Aware.getSetting(context, Settings.OAUTH_SCOPES),
+                "null");
+
+        JSONObject scopes = new JSONObject(Aware.getSetting(context, Settings.OAUTH_SCOPES));
+
+        String scopes_str = (scopes.getBoolean("activity")) ? "activity" : "";
+        scopes_str += (scopes.getBoolean("heartrate")) ? " heartrate" : "";
+        scopes_str += (scopes.getBoolean("sleep")) ? " sleep" : "";
+        scopes_str += (scopes.getBoolean("settings")) ? " settings" : "";
+
+        Plugin.fitbitAPI = new ServiceBuilder()
+                .apiKey(Aware.getSetting(context, Settings.API_KEY_PLUGIN_FITBIT))
+                .scope(scopes_str)
+                .responseType("token")
+                .callback("fitbit://logincallback")
+                .apiSecret(Aware.getSetting(context, Settings.API_SECRET_PLUGIN_FITBIT))
+                .build(FitbitAPI.instance());
+    }
+
+    /**
+     * Initiate authorization flow with Fitbit API on the browser
+     *
+     * @param context
+     * @throws JSONException
+     */
+    public void authorizeFitbit(Context context) throws JSONException {
+        String scopes = "activity heartrate sleep settings";
+
+        Plugin.fitbitAPI = new ServiceBuilder()
+                .apiKey(Aware.getSetting(context, Settings.API_KEY_PLUGIN_FITBIT))
+                .scope(scopes)
+                .responseType("token")
+                .callback("fitbit://logincallback")
+                .apiSecret(Aware.getSetting(context, Settings.API_SECRET_PLUGIN_FITBIT))
+                .build(FitbitAPI.instance());
+
+        CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder().build();
+        customTabsIntent.launchUrl(context, Uri.parse(Plugin.fitbitAPI.getAuthorizationUrl()));
+    }
+
     @Override
     public void onDestroy() {
         super.onDestroy();
 
         Aware.setSetting(this, Settings.STATUS_PLUGIN_FITBIT, false);
+        Scheduler.removeSchedule(this, SCHEDULER_PLUGIN_FITBIT);
 
         //Stop AWARE
         Aware.stopAWARE(this);

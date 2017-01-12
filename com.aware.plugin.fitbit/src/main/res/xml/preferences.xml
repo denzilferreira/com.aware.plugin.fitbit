@@ -4,57 +4,62 @@
     android:title="@string/app_name">
 
     <CheckBoxPreference
-        android:key="status_plugin_fitbit"
         android:defaultValue="false"
+        android:key="status_plugin_fitbit"
         android:persistent="true"
         android:summary="Activate/deactivate plugin" />
+
+    <Preference
+        android:dependency="status_plugin_fitbit"
+        android:key="fitbit_sync"
+        android:summary="Tap to sync data now."
+        android:title="Sync Fitbit data" />
 
     <ListPreference
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:defaultValue="metric"
+        android:dependency="status_plugin_fitbit"
         android:entries="@array/units_labels"
         android:entryValues="@array/units_values"
         android:key="units_plugin_fitbit"
         android:persistent="true"
-        android:title="Measurement unit"
-        android:dependency="status_plugin_fitbit" />
+        android:title="Measurement unit" />
 
     <EditTextPreference
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:defaultValue="5"
+        android:defaultValue="15"
+        android:dependency="status_plugin_fitbit"
         android:key="plugin_fitbit_frequency"
         android:persistent="true"
-        android:summary="Every 5 minute(s)"
-        android:title="Update frequency"
-        android:dependency="status_plugin_fitbit" />
+        android:summary="Every 15 minute(s)"
+        android:title="Update frequency" />
 
     <EditTextPreference
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:defaultValue="227YG3"
+        android:dependency="status_plugin_fitbit"
         android:key="api_key_plugin_fitbit"
         android:persistent="true"
         android:summary="API Key from developer.fitbit.com"
-        android:title="API Key"
-        android:dependency="status_plugin_fitbit" />
+        android:title="API Key" />
 
     <EditTextPreference
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:defaultValue="033ed2a3710c0cde04343d073c09e378"
+        android:dependency="status_plugin_fitbit"
         android:key="api_secret_plugin_fitbit"
         android:persistent="true"
         android:summary="API Secret from developer.fitbit.com"
-        android:title="API Secret"
-        android:dependency="status_plugin_fitbit" />
+        android:title="API Secret" />
 
     <Preference
-        android:title="Clear Fitbit account"
+        android:dependency="status_plugin_fitbit"
         android:key="fitbit_reset"
         android:summary="Tap to remove account."
-        android:dependency="status_plugin_fitbit"
-        />
+        android:title="Clear Fitbit account" />
 
 </PreferenceScreen>

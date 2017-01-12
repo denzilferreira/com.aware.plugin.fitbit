@@ -22,7 +22,7 @@ import java.util.HashMap;
 public class Provider extends ContentProvider {
 
     public static String AUTHORITY = "com.aware.plugin.fitbit.provider.fitbit"; //change to package.provider.your_plugin_name
-    public static final int DATABASE_VERSION = 4; //increase this if you make changes to the database structure, i.e., rename columns, etc.
+    public static final int DATABASE_VERSION = 5; //increase this if you make changes to the database structure, i.e., rename columns, etc.
 
     //    public static Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/plugin_fitbit");
     public static final String DATABASE_NAME = "plugin_fitbit.db"; //the database filename, use plugin_xxx for plugins.
@@ -72,6 +72,7 @@ public class Provider extends ContentProvider {
         public static final String FITBIT_ID = "fitbit_id";
         public static final String FITBIT_VERSION = "fitbit_version";
         public static final String FITBIT_BATTERY = "fitbit_battery";
+        public static final String FITBIT_MAC = "fitbit_mac";
         public static final String LAST_SYNC = "fitbit_last_sync";
     }
 
@@ -91,6 +92,7 @@ public class Provider extends ContentProvider {
                     Fitbit_Devices.FITBIT_ID + " text default ''," +
                     Fitbit_Devices.FITBIT_VERSION + " text default ''," +
                     Fitbit_Devices.FITBIT_BATTERY + " text default ''," +
+                    Fitbit_Devices.FITBIT_MAC + " text default ''," +
                     Fitbit_Devices.LAST_SYNC + " text default ''";
 
     /**
@@ -153,6 +155,7 @@ public class Provider extends ContentProvider {
         fitbitDevicesHash.put(Fitbit_Devices.FITBIT_ID, Fitbit_Devices.FITBIT_ID);
         fitbitDevicesHash.put(Fitbit_Devices.FITBIT_VERSION, Fitbit_Devices.FITBIT_VERSION);
         fitbitDevicesHash.put(Fitbit_Devices.FITBIT_BATTERY, Fitbit_Devices.FITBIT_BATTERY);
+        fitbitDevicesHash.put(Fitbit_Devices.FITBIT_MAC, Fitbit_Devices.FITBIT_MAC);
         fitbitDevicesHash.put(Fitbit_Devices.LAST_SYNC, Fitbit_Devices.LAST_SYNC);
 
         return true;

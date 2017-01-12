@@ -1,6 +1,7 @@
 package com.aware.plugin.fitbit;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -88,33 +89,11 @@ public class DevicePicker extends AppCompatActivity {
                         device.put(Provider.Fitbit_Devices.FITBIT_ID, selected.getString("id"));
                         device.put(Provider.Fitbit_Devices.FITBIT_BATTERY, selected.getString("battery"));
                         device.put(Provider.Fitbit_Devices.FITBIT_VERSION, selected.getString("deviceVersion"));
+                        device.put(Provider.Fitbit_Devices.FITBIT_MAC, selected.optString("mac", ""));
                         device.put(Provider.Fitbit_Devices.LAST_SYNC, selected.getString("lastSyncTime"));
                         getContentResolver().insert(Provider.Fitbit_Devices.CONTENT_URI, device);
 
-                        JSONArray activities = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/activities/date/" + selected.getString("lastSyncTime").split("T")[0] + ".json"));
-                        JSONArray hr = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/heart/date/" + selected.getString("lastSyncTime").split("T")[0] + ".json"));
-                        JSONArray sleep = new JSONArray(FitbitAPI.fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/date/" + selected.getString("lastSyncTime").split("T")[0] + ".json"));
-
-                        ContentValues activityData = new ContentValues();
-                        activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
-                        activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
-                        activityData.put(Provider.Fitbit_Data.DATA_TYPE, "activities");
-                        activityData.put(Provider.Fitbit_Data.FITBIT_JSON, activities.toString());
-                        getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, activityData);
-
-                        ContentValues heartRateData = new ContentValues();
-                        activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
-                        activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
-                        activityData.put(Provider.Fitbit_Data.DATA_TYPE, "heartrate");
-                        activityData.put(Provider.Fitbit_Data.FITBIT_JSON, hr.toString());
-                        getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, heartRateData);
-
-                        ContentValues sleepData = new ContentValues();
-                        activityData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
-                        activityData.put(Provider.Fitbit_Data.DEVICE_ID, Aware.getSetting(getApplicationContext(), Aware_Preferences.DEVICE_ID));
-                        activityData.put(Provider.Fitbit_Data.DATA_TYPE, "sleep");
-                        activityData.put(Provider.Fitbit_Data.FITBIT_JSON, sleep.toString());
-                        getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, sleepData);
+                        sendBroadcast(new Intent(Plugin.ACTION_AWARE_PLUGIN_FITBIT_SYNC));
 
                     } catch (JSONException e) {
                         e.printStackTrace();

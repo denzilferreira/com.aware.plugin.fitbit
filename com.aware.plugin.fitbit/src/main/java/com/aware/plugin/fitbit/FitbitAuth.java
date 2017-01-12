@@ -23,7 +23,7 @@ public class FitbitAuth extends AppCompatActivity {
 
         if (Aware.getSetting(this, Settings.OAUTH_TOKEN).length() == 0) {
             try {
-                FitbitAPI.authorizeFitbit(this);
+                new Plugin().authorizeFitbit(this);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
