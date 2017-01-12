@@ -1,25 +1,11 @@
 package com.aware.plugin.fitbit;
 
-import android.content.Context;
-import android.net.Uri;
-import android.support.customtabs.CustomTabsIntent;
-
-import com.aware.Aware;
-import com.github.scribejava.core.builder.ServiceBuilder;
 import com.github.scribejava.core.builder.api.DefaultApi20;
-import com.github.scribejava.core.model.OAuth2AccessToken;
 import com.github.scribejava.core.model.OAuthConfig;
 import com.github.scribejava.core.model.OAuthConstants;
-import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.ParameterList;
-import com.github.scribejava.core.model.Response;
-import com.github.scribejava.core.model.Verb;
 import com.github.scribejava.core.oauth.OAuth20Service;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
 import java.util.Map;
 
 /**

@@ -2,10 +2,14 @@ package com.aware.plugin.fitbit;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
+import android.provider.Browser;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.aware.Aware;
+import com.github.scribejava.core.builder.ServiceBuilder;
 import com.github.scribejava.core.model.OAuth2AccessToken;
 
 import org.json.JSONException;
@@ -18,20 +22,38 @@ import org.json.JSONObject;
 public class FitbitAuth extends AppCompatActivity {
 
     @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        authorizeFitbit();
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
 
-        if (Aware.getSetting(this, Settings.OAUTH_TOKEN).length() == 0) {
-            try {
-                new Plugin().authorizeFitbit(this);
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        } else {
+        if (Plugin.fitbitOAUTHToken != null) {
             Toast.makeText(getApplicationContext(), "Authentication OK!", Toast.LENGTH_SHORT).show();
             Aware.startPlugin(getApplicationContext(), "com.aware.plugin.fitbit");
             finish();
         }
+    }
+
+    public void authorizeFitbit() {
+        String scopes = "activity heartrate sleep settings";
+
+        Plugin.fitbitAPI = new ServiceBuilder()
+                .apiKey(Aware.getSetting(getApplicationContext(), Settings.API_KEY_PLUGIN_FITBIT))
+                .scope(scopes)
+                .responseType("token")
+                .callback("fitbit://logincallback")
+                .apiSecret(Aware.getSetting(getApplicationContext(), Settings.API_SECRET_PLUGIN_FITBIT))
+                .build(FitbitAPI.instance());
+
+        Intent auth = new Intent(Intent.ACTION_VIEW);
+        auth.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        auth.setData(Uri.parse(Plugin.fitbitAPI.getAuthorizationUrl()));
+        auth.putExtra(Browser.EXTRA_APPLICATION_ID, getPackageName());
+        startActivity(auth);
     }
 
     @Override
@@ -73,6 +95,8 @@ public class FitbitAuth extends AppCompatActivity {
                     "null",
                     Aware.getSetting(this, Settings.OAUTH_SCOPES),
                     "null");
-        } else finish();
+
+        } else
+            finish();
     }
 }
