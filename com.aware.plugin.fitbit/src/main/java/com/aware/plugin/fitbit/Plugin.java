@@ -30,6 +30,7 @@ import com.github.scribejava.core.oauth.OAuth20Service;
 import net.danlew.android.joda.JodaTimeAndroid;
 
 import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -110,8 +111,7 @@ public class Plugin extends Aware_Plugin {
             if (Aware.getSetting(getApplicationContext(), Settings.API_SECRET_PLUGIN_FITBIT).length() == 0)
                 Aware.setSetting(getApplicationContext(), Settings.API_SECRET_PLUGIN_FITBIT, "033ed2a3710c0cde04343d073c09e378");
 
-            if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0 && fitbitAPI != null && fitbitOAUTHToken != null) {
-
+            if (fitbitAPI != null) {
                 Cursor devices = getContentResolver().query(Provider.Fitbit_Devices.CONTENT_URI, null, null, null, Provider.Fitbit_Devices.TIMESTAMP + " ASC");
                 //Ask the user to pick the Fitbit they will use if not set
                 if (devices == null || devices.getCount() == 0) {
@@ -133,13 +133,6 @@ public class Plugin extends Aware_Plugin {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
-                if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase(ACTION_AWARE_PLUGIN_FITBIT_SYNC)) {
-                    if (Plugin.fitbitOAUTHToken != null && Plugin.fitbitAPI != null) {
-                        new FibitDataSync().execute();
-                    }
-                }
-
             } else {
                 if (Aware.getSetting(this, Settings.OAUTH_TOKEN).length() == 0) {
                     Intent fitbitAuth = new Intent(this, FitbitAuth.class);
@@ -167,6 +160,11 @@ public class Plugin extends Aware_Plugin {
                     }
                 }
             }
+
+            if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase(ACTION_AWARE_PLUGIN_FITBIT_SYNC)) {
+                new FibitDataSync().execute();
+            }
+
         } else {
             Intent permissions = new Intent(this, PermissionsHandler.class);
             permissions.putExtra(PermissionsHandler.EXTRA_REQUIRED_PERMISSIONS, REQUIRED_PERMISSIONS);
@@ -270,10 +268,11 @@ public class Plugin extends Aware_Plugin {
                                     Log.d(Plugin.TAG, "New heartrate: " + heartrate_data.toString(5));
                             }
 
-                            //will have all the sleep related data
+                            //will have all the sleep related data from yesterday until today
                             JSONArray sleep = new JSONArray();
+                            localSync = localSync.minusDays(1);
 
-                            String sleep_efficiency = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/efficiency/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            String sleep_efficiency = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/efficiency/date/" + localSync.toString(DateTimeFormat.forPattern("yyyy-MM-dd")) + "/" + serverSyncDate + ".json");
                             if (sleep_efficiency == null) {
                                 if (Plugin.DEBUG)
                                     Log.d(Plugin.TAG, "No sleep efficiency for this device.");
@@ -282,7 +281,7 @@ public class Plugin extends Aware_Plugin {
                                 sleep.put(efficiency_data);
                             }
 
-                            String sleep_time_in_bed = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/timeInBed/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            String sleep_time_in_bed = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/timeInBed/date/" + localSync.toString(DateTimeFormat.forPattern("yyyy-MM-dd")) + "/" + serverSyncDate + ".json");
                             if (sleep_time_in_bed == null) {
                                 if (Plugin.DEBUG)
                                     Log.d(Plugin.TAG, "No sleep time to bed for this device.");
@@ -291,7 +290,7 @@ public class Plugin extends Aware_Plugin {
                                 sleep.put(time_to_bed_data);
                             }
 
-                            String sleep_minutes_awake = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/minutesAwake/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            String sleep_minutes_awake = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/minutesAwake/date/" + localSync.toString(DateTimeFormat.forPattern("yyyy-MM-dd")) + "/" + serverSyncDate + ".json");
                             if (sleep_minutes_awake == null) {
                                 if (Plugin.DEBUG)
                                     Log.d(Plugin.TAG, "No sleep minutes awake for this device.");
@@ -300,7 +299,7 @@ public class Plugin extends Aware_Plugin {
                                 sleep.put(minutes_awake_data);
                             }
 
-                            String sleep_minutes_to_sleep = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/minutesToFallAsleep/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            String sleep_minutes_to_sleep = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/minutesToFallAsleep/date/" + localSync.toString(DateTimeFormat.forPattern("yyyy-MM-dd")) + "/" + serverSyncDate + ".json");
                             if (sleep_minutes_to_sleep == null) {
                                 if (Plugin.DEBUG)
                                     Log.d(Plugin.TAG, "No sleep minutes to sleep for this device.");
@@ -309,7 +308,7 @@ public class Plugin extends Aware_Plugin {
                                 sleep.put(minutes_to_sleep_data);
                             }
 
-                            String sleep_awake_count = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/awakeCount/date/" + localSyncDate + "/" + serverSyncDate + ".json");
+                            String sleep_awake_count = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/awakeningsCount/date/" + localSync.toString(DateTimeFormat.forPattern("yyyy-MM-dd")) + "/" + serverSyncDate + ".json");
                             if (sleep_awake_count == null) {
                                 if (Plugin.DEBUG)
                                     Log.d(Plugin.TAG, "No sleep awake count for this device.");
@@ -345,7 +344,7 @@ public class Plugin extends Aware_Plugin {
                             if (CONTEXT_PRODUCER != null)
                                 CONTEXT_PRODUCER.onContext();
                         }
-                        if (localData != null && ! localData.isClosed()) localData.close();
+                        if (localData != null && !localData.isClosed()) localData.close();
                     }
                     if (device != null && !device.isClosed()) device.close();
                 }
@@ -370,7 +369,7 @@ public class Plugin extends Aware_Plugin {
             OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/devices.json", Plugin.fitbitAPI);
             request.addHeader("Authorization",
                     " " + Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN_TYPE) +
-                    " " + Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN));
+                            " " + Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN));
 
             Plugin.fitbitAPI.signRequest(Plugin.fitbitOAUTHToken, request);
             Response response = request.send();
