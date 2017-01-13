@@ -1,6 +1,5 @@
 package com.aware.plugin.fitbit;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -20,21 +19,24 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
     public static final String STATUS_PLUGIN_FITBIT = "status_plugin_fitbit";
     public static final String UNITS_PLUGIN_FITBIT = "units_plugin_fitbit";
     public static final String PLUGIN_FITBIT_FREQUENCY = "plugin_fitbit_frequency";
+    public static final String FITBIT_GRANULARITY = "fitbit_granularity";
+    public static final String FITBIT_HR_GRANULARITY = "fitbit_hr_granularity";
     public static final String API_KEY_PLUGIN_FITBIT = "api_key_plugin_fitbit";
     public static final String API_SECRET_PLUGIN_FITBIT = "api_secret_plugin_fitbit";
-    private final String FITBIT_RESET = "fitbit_reset";
-    private final String FITBIT_SYNC = "fitbit_sync";
-
     public static final String OAUTH_TOKEN = "oauth_token";
+
     public static final String OAUTH_SCOPES = "oauth_scopes";
     public static final String OAUTH_VALIDITY = "oauth_validity";
     public static final String OAUTH_TOKEN_TYPE = "oauth_token_type";
 
+    private final String FITBIT_RESET = "fitbit_reset";
+    private final String FITBIT_SYNC = "fitbit_sync";
+
     //Plugin settings UI elements
-    private static CheckBoxPreference status;
-    private static EditTextPreference frequency, apiKey, apiSecret;
-    private static ListPreference units;
-    private static Preference clear, sync;
+    private CheckBoxPreference status;
+    private EditTextPreference frequency, apiKey, apiSecret;
+    private ListPreference units, fitbit_granularity, hr_granularity;
+    private Preference clear, sync;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,16 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
         if (Aware.getSetting(this, UNITS_PLUGIN_FITBIT).length() == 0)
             Aware.setSetting(this, UNITS_PLUGIN_FITBIT, "metric");
         units.setSummary(Aware.getSetting(this, UNITS_PLUGIN_FITBIT));
+
+        fitbit_granularity = (ListPreference) findPreference(FITBIT_GRANULARITY);
+        if (Aware.getSetting(this, FITBIT_GRANULARITY).length() == 0)
+            Aware.setSetting(this, FITBIT_GRANULARITY, "15min");
+        fitbit_granularity.setSummary(Aware.getSetting(this, FITBIT_GRANULARITY));
+
+        hr_granularity = (ListPreference) findPreference(FITBIT_HR_GRANULARITY);
+        if (Aware.getSetting(this, FITBIT_HR_GRANULARITY).length() == 0)
+            Aware.setSetting(this, FITBIT_HR_GRANULARITY, "1sec");
+        hr_granularity.setSummary(Aware.getSetting(this, FITBIT_HR_GRANULARITY));
 
         frequency = (EditTextPreference) findPreference(PLUGIN_FITBIT_FREQUENCY);
         if (Aware.getSetting(this, PLUGIN_FITBIT_FREQUENCY).length() == 0)
@@ -118,6 +130,16 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
         if (preference.getKey().equals(UNITS_PLUGIN_FITBIT)) {
             Aware.setSetting(getApplicationContext(), key, sharedPreferences.getString(key, "metric"));
             preference.setSummary(Aware.getSetting(this, UNITS_PLUGIN_FITBIT));
+        }
+
+        if (preference.getKey().equals(FITBIT_GRANULARITY)) {
+            Aware.setSetting(getApplicationContext(), key, sharedPreferences.getString(key, "15min"));
+            preference.setSummary(Aware.getSetting(this, FITBIT_GRANULARITY));
+        }
+
+        if (preference.getKey().equals(FITBIT_HR_GRANULARITY)) {
+            Aware.setSetting(getApplicationContext(), key, sharedPreferences.getString(key, "1sec"));
+            preference.setSummary(Aware.getSetting(this, FITBIT_HR_GRANULARITY));
         }
 
         if (preference.getKey().equals(PLUGIN_FITBIT_FREQUENCY)) {

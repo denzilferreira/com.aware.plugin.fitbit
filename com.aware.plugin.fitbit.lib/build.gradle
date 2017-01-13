@@ -84,4 +84,5 @@ dependencies {
     compile 'com.android.support:customtabs:25.1.0'
     compile 'com.github.scribejava:scribejava-apis:3.3.0'
     compile 'net.danlew:android.joda:2.9.5.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
 }

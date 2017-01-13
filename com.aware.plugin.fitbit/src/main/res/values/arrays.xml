@@ -8,4 +8,22 @@
         <item>metric</item>
         <item>imperial</item>
     </string-array>
+    <string-array name="granularity_labels">
+        <item>Daily summary</item>
+        <item>15 minutes</item>
+        <item>1 minute</item>
+    </string-array>
+    <string-array name="granularity_values">
+        <item>1d</item>
+        <item>15min</item>
+        <item>1min</item>
+    </string-array>
+    <string-array name="hr_granularity_labels">
+        <item>Every minute</item>
+        <item>Every second</item>
+    </string-array>
+    <string-array name="hr_granularity_values">
+        <item>1min</item>
+        <item>1sec</item>
+    </string-array>
 </resources>

@@ -93,7 +93,9 @@ public class DevicePicker extends AppCompatActivity {
                         device.put(Provider.Fitbit_Devices.LAST_SYNC, selected.getString("lastSyncTime"));
                         getContentResolver().insert(Provider.Fitbit_Devices.CONTENT_URI, device);
 
-                        sendBroadcast(new Intent(Plugin.ACTION_AWARE_PLUGIN_FITBIT_SYNC));
+                        Intent startSync = new Intent(getApplicationContext(), Plugin.class);
+                        startSync.setAction(Plugin.ACTION_AWARE_PLUGIN_FITBIT_SYNC);
+                        startService(startSync);
 
                     } catch (JSONException e) {
                         e.printStackTrace();

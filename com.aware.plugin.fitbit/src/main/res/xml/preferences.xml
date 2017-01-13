@@ -24,12 +24,38 @@
         android:entryValues="@array/units_values"
         android:key="units_plugin_fitbit"
         android:persistent="true"
-        android:title="Measurement unit" />
+        android:summary="Metric"
+        android:title="Measurement units" />
+
+    <ListPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="15min"
+        android:dependency="status_plugin_fitbit"
+        android:entries="@array/granularity_labels"
+        android:entryValues="@array/granularity_values"
+        android:key="fitbit_granularity"
+        android:summary="Every 15 minutes"
+        android:persistent="true"
+        android:title="Fitbit intraday granularity" />
+
+    <ListPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="1sec"
+        android:dependency="status_plugin_fitbit"
+        android:entries="@array/hr_granularity_labels"
+        android:entryValues="@array/hr_granularity_values"
+        android:key="fitbit_hr_granularity"
+        android:summary="Every second"
+        android:persistent="true"
+        android:title="Heart rate granularity" />
 
     <EditTextPreference
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:defaultValue="15"
+        android:inputType="numberDecimal"
         android:dependency="status_plugin_fitbit"
         android:key="plugin_fitbit_frequency"
         android:persistent="true"
