@@ -105,7 +105,7 @@ public class Provider extends ContentProvider {
 
     //Helper variables for ContentProvider - don't change me
     private static UriMatcher sUriMatcher;
-    private static DatabaseHelper dbHelper;
+    private DatabaseHelper dbHelper;
     private static SQLiteDatabase database;
 
     //For each table, create a hashmap needed for database queries
@@ -149,8 +149,6 @@ public class Provider extends ContentProvider {
         fitbitDevicesHash.put(Fitbit_Devices.FITBIT_BATTERY, Fitbit_Devices.FITBIT_BATTERY);
         fitbitDevicesHash.put(Fitbit_Devices.FITBIT_MAC, Fitbit_Devices.FITBIT_MAC);
         fitbitDevicesHash.put(Fitbit_Devices.LAST_SYNC, Fitbit_Devices.LAST_SYNC);
-
-        initialiseDatabase();
 
         return true;
     }
