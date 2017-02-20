@@ -125,8 +125,6 @@ public class Plugin extends Aware_Plugin {
         DATABASE_TABLES = Provider.DATABASE_TABLES;
         TABLES_FIELDS = Provider.TABLES_FIELDS;
         CONTEXT_URIS = new Uri[]{Provider.Fitbit_Data.CONTENT_URI, Provider.Fitbit_Devices.CONTENT_URI};
-
-        Aware.startPlugin(this, "com.aware.plugin.fitbit");
     }
 
     //This function gets called every 5 minutes by AWARE to make sure this plugin is still running.
