@@ -219,11 +219,32 @@ public class Plugin extends Aware_Plugin {
                 new FibitDataSync().execute();
             }
 
+            Aware.startAWARE(this);
+
         } else {
             Intent permissions = new Intent(this, PermissionsHandler.class);
             permissions.putExtra(PermissionsHandler.EXTRA_REQUIRED_PERMISSIONS, REQUIRED_PERMISSIONS);
             permissions.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(permissions);
+
+            //Sign-in to Fitbit?
+            Intent fitbitAuth = new Intent(this, FitbitAuth.class);
+            fitbitAuth.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, fitbitAuth, PendingIntent.FLAG_ONE_SHOT);
+
+            NotificationCompat.Builder notBuilder = new NotificationCompat.Builder(this);
+            notBuilder.setSmallIcon(R.drawable.ic_stat_fitbit)
+                    .setContentTitle(getString(R.string.app_name))
+                    .setContentText(getString(R.string.fitbit_authenticate))
+                    .setAutoCancel(true)
+                    .setOnlyAlertOnce(true)
+                    .setContentIntent(pendingIntent);
+
+            Notification notification = notBuilder.build();
+            notification.flags |= Notification.FLAG_NO_CLEAR;
+
+            NotificationManager notManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            notManager.notify(FITBIT_NOTIFICATION_ID, notification);
         }
 
         return super.onStartCommand(intent, flags, startId);
