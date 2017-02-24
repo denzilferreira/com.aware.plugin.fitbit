@@ -125,20 +125,16 @@ public class Plugin extends Aware_Plugin {
         DATABASE_TABLES = Provider.DATABASE_TABLES;
         TABLES_FIELDS = Provider.TABLES_FIELDS;
         CONTEXT_URIS = new Uri[]{Provider.Fitbit_Data.CONTENT_URI, Provider.Fitbit_Devices.CONTENT_URI};
+
+        Aware.startAWARE(this);
     }
 
     //This function gets called every 5 minutes by AWARE to make sure this plugin is still running.
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        boolean permissions_ok = true;
-        for (String p : REQUIRED_PERMISSIONS) {
-            if (ContextCompat.checkSelfPermission(this, p) != PackageManager.PERMISSION_GRANTED) {
-                permissions_ok = false;
-                break;
-            }
-        }
+        super.onStartCommand(intent, flags, startId);
 
-        if (permissions_ok) {
+        if (PERMISSIONS_OK) {
             //Check if the user has toggled the debug messages
             DEBUG = Aware.getSetting(this, Aware_Preferences.DEBUG_FLAG).equals("true");
 
@@ -218,36 +214,9 @@ public class Plugin extends Aware_Plugin {
             if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase(ACTION_AWARE_PLUGIN_FITBIT_SYNC)) {
                 new FibitDataSync().execute();
             }
-
-            Aware.startAWARE(this);
-
-        } else {
-            Intent permissions = new Intent(this, PermissionsHandler.class);
-            permissions.putExtra(PermissionsHandler.EXTRA_REQUIRED_PERMISSIONS, REQUIRED_PERMISSIONS);
-            permissions.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(permissions);
-
-            //Sign-in to Fitbit?
-            Intent fitbitAuth = new Intent(this, FitbitAuth.class);
-            fitbitAuth.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, fitbitAuth, PendingIntent.FLAG_ONE_SHOT);
-
-            NotificationCompat.Builder notBuilder = new NotificationCompat.Builder(this);
-            notBuilder.setSmallIcon(R.drawable.ic_stat_fitbit)
-                    .setContentTitle(getString(R.string.app_name))
-                    .setContentText(getString(R.string.fitbit_authenticate))
-                    .setAutoCancel(true)
-                    .setOnlyAlertOnce(true)
-                    .setContentIntent(pendingIntent);
-
-            Notification notification = notBuilder.build();
-            notification.flags |= Notification.FLAG_NO_CLEAR;
-
-            NotificationManager notManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-            notManager.notify(FITBIT_NOTIFICATION_ID, notification);
         }
 
-        return super.onStartCommand(intent, flags, startId);
+        return START_STICKY;
     }
 
     private class FibitDataSync extends AsyncTask<Void, Void, Void> {
