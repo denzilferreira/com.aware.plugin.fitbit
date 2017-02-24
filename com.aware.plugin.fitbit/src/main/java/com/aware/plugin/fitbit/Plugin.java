@@ -6,18 +6,15 @@ import android.app.PendingIntent;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.aware.Aware;
 import com.aware.Aware_Preferences;
-import com.aware.ui.PermissionsHandler;
 import com.aware.utils.Aware_Plugin;
 import com.aware.utils.Scheduler;
 import com.github.scribejava.core.builder.ServiceBuilder;
@@ -64,6 +61,8 @@ public class Plugin extends Aware_Plugin {
     public static OAuth2AccessToken fitbitOAUTHToken;
 
     private static final int FITBIT_NOTIFICATION_ID = 54321;
+
+    private Intent aware;
 
     @Override
     public void onCreate() {
@@ -126,7 +125,8 @@ public class Plugin extends Aware_Plugin {
         TABLES_FIELDS = Provider.TABLES_FIELDS;
         CONTEXT_URIS = new Uri[]{Provider.Fitbit_Data.CONTENT_URI, Provider.Fitbit_Devices.CONTENT_URI};
 
-        Aware.startAWARE(this);
+        aware = new Intent(this, Aware.class);
+        startService(aware);
     }
 
     //This function gets called every 5 minutes by AWARE to make sure this plugin is still running.
@@ -531,7 +531,6 @@ public class Plugin extends Aware_Plugin {
         NotificationManager notManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         notManager.cancel(FITBIT_NOTIFICATION_ID);
 
-        //Stop AWARE
-        Aware.stopAWARE(this);
+        stopService(aware);
     }
 }
