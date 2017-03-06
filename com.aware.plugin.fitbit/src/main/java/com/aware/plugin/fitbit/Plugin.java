@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.aware.Aware;
 import com.aware.Aware_Preferences;
 import com.aware.utils.Aware_Plugin;
+import com.aware.utils.PluginsManager;
 import com.aware.utils.Scheduler;
 import com.github.scribejava.core.builder.ServiceBuilder;
 import com.github.scribejava.core.model.OAuth2AccessToken;
@@ -61,8 +62,6 @@ public class Plugin extends Aware_Plugin {
     public static OAuth2AccessToken fitbitOAUTHToken;
 
     private static final int FITBIT_NOTIFICATION_ID = 54321;
-
-    private Intent aware;
 
     @Override
     public void onCreate() {
@@ -124,9 +123,6 @@ public class Plugin extends Aware_Plugin {
         DATABASE_TABLES = Provider.DATABASE_TABLES;
         TABLES_FIELDS = Provider.TABLES_FIELDS;
         CONTEXT_URIS = new Uri[]{Provider.Fitbit_Data.CONTENT_URI, Provider.Fitbit_Devices.CONTENT_URI};
-
-        aware = new Intent(this, Aware.class);
-        startService(aware);
     }
 
     //This function gets called every 5 minutes by AWARE to make sure this plugin is still running.
@@ -135,6 +131,9 @@ public class Plugin extends Aware_Plugin {
         super.onStartCommand(intent, flags, startId);
 
         if (PERMISSIONS_OK) {
+
+            PluginsManager.enablePlugin(this, "com.aware.plugin.fitbit");
+
             //Check if the user has toggled the debug messages
             DEBUG = Aware.getSetting(this, Aware_Preferences.DEBUG_FLAG).equals("true");
 
@@ -214,6 +213,8 @@ public class Plugin extends Aware_Plugin {
             if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase(ACTION_AWARE_PLUGIN_FITBIT_SYNC)) {
                 new FibitDataSync().execute();
             }
+
+            Aware.startAWARE(this);
         }
 
         return START_STICKY;
@@ -531,6 +532,6 @@ public class Plugin extends Aware_Plugin {
         NotificationManager notManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         notManager.cancel(FITBIT_NOTIFICATION_ID);
 
-        stopService(aware);
+        Aware.stopAWARE(this);
     }
 }
