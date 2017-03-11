@@ -33,7 +33,6 @@ public class FitbitAuth extends AppCompatActivity {
 
         if (Plugin.fitbitOAUTHToken != null) {
             Toast.makeText(getApplicationContext(), "Authentication OK!", Toast.LENGTH_SHORT).show();
-            Aware.startPlugin(getApplicationContext(), "com.aware.plugin.fitbit");
             finish();
         }
     }

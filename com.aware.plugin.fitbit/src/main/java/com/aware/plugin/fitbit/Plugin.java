@@ -157,30 +157,6 @@ public class Plugin extends Aware_Plugin {
             if (Aware.getSetting(getApplicationContext(), Settings.API_SECRET_PLUGIN_FITBIT).length() == 0)
                 Aware.setSetting(getApplicationContext(), Settings.API_SECRET_PLUGIN_FITBIT, "033ed2a3710c0cde04343d073c09e378");
 
-            if (Plugin.fitbitAPI != null) {
-                Cursor devices = getContentResolver().query(Provider.Fitbit_Devices.CONTENT_URI, null, null, null, Provider.Fitbit_Devices.TIMESTAMP + " ASC");
-                //Ask the user to pick the Fitbit they will use if not set
-                if (devices == null || devices.getCount() == 0) {
-                    new FitbitDevicesPicker().execute();
-                }
-                if (devices != null && !devices.isClosed()) devices.close();
-
-                try {
-                    Scheduler.Schedule fitbitFetcher = Scheduler.getSchedule(this, SCHEDULER_PLUGIN_FITBIT);
-                    if (fitbitFetcher == null || fitbitFetcher.getInterval() != Long.valueOf(Aware.getSetting(this, Settings.PLUGIN_FITBIT_FREQUENCY))) {
-                        fitbitFetcher = new Scheduler.Schedule(SCHEDULER_PLUGIN_FITBIT);
-                        fitbitFetcher.setInterval(Long.valueOf(Aware.getSetting(this, Settings.PLUGIN_FITBIT_FREQUENCY)))
-                                .setActionType(Scheduler.ACTION_TYPE_SERVICE)
-                                .setActionClass(getPackageName() + "/" + getClass().getName())
-                                .setActionIntentAction(ACTION_AWARE_PLUGIN_FITBIT_SYNC);
-
-                        Scheduler.saveSchedule(this, fitbitFetcher);
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-
             if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() == 0) { //not authenticated yet
                 Intent fitbitAuth = new Intent(this, FitbitAuth.class);
                 fitbitAuth.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -199,13 +175,36 @@ public class Plugin extends Aware_Plugin {
 
                 NotificationManager notManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
                 notManager.notify(FITBIT_NOTIFICATION_ID, notification);
-            }
+            } else {
+                if (Plugin.fitbitAPI != null) {
+                    Cursor devices = getContentResolver().query(Provider.Fitbit_Devices.CONTENT_URI, null, null, null, Provider.Fitbit_Devices.TIMESTAMP + " ASC");
+                    //Ask the user to pick the Fitbit they will use if not set
+                    if (devices == null || devices.getCount() == 0) {
+                        new FitbitDevicesPicker().execute();
+                    }
+                    if (devices != null && !devices.isClosed()) devices.close();
 
-            try {
-                if (Plugin.fitbitAPI == null && Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0)
-                    restoreFitbitAPI(getApplicationContext());
-            } catch (JSONException e) {
-                e.printStackTrace();
+                    try {
+                        Scheduler.Schedule fitbitFetcher = Scheduler.getSchedule(this, SCHEDULER_PLUGIN_FITBIT);
+                        if (fitbitFetcher == null || fitbitFetcher.getInterval() != Long.valueOf(Aware.getSetting(this, Settings.PLUGIN_FITBIT_FREQUENCY))) {
+                            fitbitFetcher = new Scheduler.Schedule(SCHEDULER_PLUGIN_FITBIT);
+                            fitbitFetcher.setInterval(Long.valueOf(Aware.getSetting(this, Settings.PLUGIN_FITBIT_FREQUENCY)))
+                                    .setActionType(Scheduler.ACTION_TYPE_SERVICE)
+                                    .setActionClass(getPackageName() + "/" + getClass().getName())
+                                    .setActionIntentAction(ACTION_AWARE_PLUGIN_FITBIT_SYNC);
+
+                            Scheduler.saveSchedule(this, fitbitFetcher);
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    try {
+                        if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0) restoreFitbitAPI(getApplicationContext());
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
 
             if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase(ACTION_AWARE_PLUGIN_FITBIT_SYNC)) {
