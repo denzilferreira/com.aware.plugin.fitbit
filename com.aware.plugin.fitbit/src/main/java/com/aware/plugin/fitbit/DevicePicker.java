@@ -101,6 +101,8 @@ public class DevicePicker extends AppCompatActivity {
                         e.printStackTrace();
                     }
 
+                    Plugin.devicesPicker = null;
+
                     finish();
                 }
             });
