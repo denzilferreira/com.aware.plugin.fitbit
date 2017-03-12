@@ -61,6 +61,8 @@ public class Plugin extends Aware_Plugin {
     public static OAuth20Service fitbitAPI;
     public static OAuth2AccessToken fitbitOAUTHToken;
 
+    private static FitbitDevicesPicker devicesPicker = null;
+
     private static final int FITBIT_NOTIFICATION_ID = 54321;
 
     @Override
@@ -180,7 +182,10 @@ public class Plugin extends Aware_Plugin {
                     Cursor devices = getContentResolver().query(Provider.Fitbit_Devices.CONTENT_URI, null, null, null, Provider.Fitbit_Devices.TIMESTAMP + " ASC");
                     //Ask the user to pick the Fitbit they will use if not set
                     if (devices == null || devices.getCount() == 0) {
-                        new FitbitDevicesPicker().execute();
+                        if (devicesPicker == null) {
+                            devicesPicker = new FitbitDevicesPicker();
+                            devicesPicker.execute();
+                        }
                     }
                     if (devices != null && !devices.isClosed()) devices.close();
 
@@ -444,6 +449,8 @@ public class Plugin extends Aware_Plugin {
             if (!result) {
                 Toast.makeText(getApplicationContext(), "Failed to load available devices. Try authenticating again.", Toast.LENGTH_SHORT).show();
             }
+
+            devicesPicker = null;
         }
     }
 
