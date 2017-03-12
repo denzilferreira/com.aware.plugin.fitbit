@@ -61,7 +61,7 @@ public class Plugin extends Aware_Plugin {
     public static OAuth20Service fitbitAPI;
     public static OAuth2AccessToken fitbitOAUTHToken;
 
-    private static FitbitDevicesPicker devicesPicker = null;
+    public static FitbitDevicesPicker devicesPicker = null; //avoid repeated select device pickers
 
     private static final int FITBIT_NOTIFICATION_ID = 54321;
 
@@ -449,8 +449,6 @@ public class Plugin extends Aware_Plugin {
             if (!result) {
                 Toast.makeText(getApplicationContext(), "Failed to load available devices. Try authenticating again.", Toast.LENGTH_SHORT).show();
             }
-
-            devicesPicker = null;
         }
     }
 
