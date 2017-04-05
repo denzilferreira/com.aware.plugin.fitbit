@@ -216,7 +216,6 @@ public class Plugin extends Aware_Plugin {
                 new FibitDataSync().execute();
             }
 
-            Aware.startPlugin(this, "com.aware.plugin.fitbit");
             Aware.startAWARE(this);
         }
 
