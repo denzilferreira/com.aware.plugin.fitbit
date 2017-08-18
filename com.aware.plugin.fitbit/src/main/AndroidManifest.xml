@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.aware.plugin.fitbit">
 
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -43,9 +45,19 @@
         <provider
             android:name="com.aware.plugin.fitbit.Provider"
             android:authorities="${applicationId}.provider.fitbit"
+            android:label="@string/plugin_fitbit"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
+
+        <service
+            android:name="com.aware.plugin.fitbit.syncadapters.Fitbit_Sync"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_fitbit" />
+        </service>
 
     </application>
 </manifest>
