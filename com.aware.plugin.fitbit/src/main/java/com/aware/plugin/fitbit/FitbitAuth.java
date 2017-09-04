@@ -93,8 +93,6 @@ public class FitbitAuth extends AppCompatActivity {
                     Aware.getSetting(this, Settings.OAUTH_SCOPES),
                     "null");
 
-            finish();
-
         } else
             finish();
     }
