@@ -132,7 +132,7 @@ public class Provider extends ContentProvider {
     @Override
     public boolean onCreate() {
         //This is a hack to allow providers to be reusable in any application/plugin by making the authority dynamic using the package name of the parent app
-        AUTHORITY = getContext().getPackageName() + ".provider.fitbit"; //make sure xxx matches the first string in this class
+        AUTHORITY = getAuthority(getContext());
         sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
         //For each table, add indexes DIR and ITEM

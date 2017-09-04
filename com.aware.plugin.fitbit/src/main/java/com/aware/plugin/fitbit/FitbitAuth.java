@@ -2,9 +2,7 @@ package com.aware.plugin.fitbit;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.provider.Browser;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
@@ -22,12 +20,6 @@ import org.json.JSONObject;
 public class FitbitAuth extends AppCompatActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        authorizeFitbit();
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
 
@@ -38,6 +30,8 @@ public class FitbitAuth extends AppCompatActivity {
             startService(fitbit);
 
             finish();
+        } else {
+            authorizeFitbit();
         }
     }
 
@@ -98,6 +92,8 @@ public class FitbitAuth extends AppCompatActivity {
                     "null",
                     Aware.getSetting(this, Settings.OAUTH_SCOPES),
                     "null");
+
+            finish();
 
         } else
             finish();
