@@ -39,6 +39,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.concurrent.ExecutionException;
 
 public class Plugin extends Aware_Plugin {
 
@@ -201,7 +202,8 @@ public class Plugin extends Aware_Plugin {
                     }
                 } else {
                     try {
-                        if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0) restoreFitbitAPI(getApplicationContext());
+                        if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0)
+                            restoreFitbitAPI(getApplicationContext());
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -426,24 +428,27 @@ public class Plugin extends Aware_Plugin {
             if (Plugin.fitbitAPI == null || Plugin.fitbitOAUTHToken == null)
                 return false;
 
-            OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/devices.json", Plugin.fitbitAPI);
+            OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/devices.json");
             request.addHeader("Authorization",
                     " " + Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN_TYPE) +
                             " " + Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN));
 
-            Plugin.fitbitAPI.signRequest(Plugin.fitbitOAUTHToken, request);
-            Response response = request.send();
-
-            if (response.isSuccessful()) {
-                try {
+            try {
+                Plugin.fitbitAPI.signRequest(Plugin.fitbitOAUTHToken, request);
+                Response response = Plugin.fitbitAPI.execute(request);
+                if (response.isSuccessful()) {
                     Intent devicePicker = new Intent(getApplicationContext(), DevicePicker.class);
                     devicePicker.putExtra(DevicePicker.DEVICES_JSON, response.getBody());
                     devicePicker.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(devicePicker);
-                } catch (IOException e) {
-                    return false;
+                    return true;
                 }
-                return true;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
             return false;
         }
@@ -451,7 +456,6 @@ public class Plugin extends Aware_Plugin {
         @Override
         protected void onPostExecute(Boolean result) {
             super.onPostExecute(result);
-
             if (!result) {
                 Toast.makeText(getApplicationContext(), "Failed to load available devices. Try authenticating again.", Toast.LENGTH_SHORT).show();
             }
@@ -477,7 +481,8 @@ public class Plugin extends Aware_Plugin {
         if (DEBUG)
             Log.d(TAG, "Requesting Fitbit URL: \n" + resource_url);
 
-        OAuthRequest request = new OAuthRequest(Verb.GET, resource_url, Plugin.fitbitAPI);
+        //OAuthRequest request = new OAuthRequest(Verb.GET, resource_url, Plugin.fitbitAPI);
+        OAuthRequest request = new OAuthRequest(Verb.GET, resource_url);
         request.addHeader("Authorization", " " + Aware.getSetting(context, Settings.OAUTH_TOKEN_TYPE) + " " + Aware.getSetting(context, Settings.OAUTH_TOKEN));
 
         String metric = "";
@@ -487,17 +492,18 @@ public class Plugin extends Aware_Plugin {
             metric = "en_US";
         request.addHeader("Accept-Language", metric);
 
-        Plugin.fitbitAPI.signRequest(Plugin.fitbitOAUTHToken, request);
-        Response response = request.send();
-
-        if (response.isSuccessful()) {
-            try {
-                return response.getBody();
-            } catch (IOException e) {
-                e.printStackTrace();
-                return null;
-            }
+        try {
+            Plugin.fitbitAPI.signRequest(Plugin.fitbitOAUTHToken, request);
+            Response response = Plugin.fitbitAPI.execute(request);
+            if (response.isSuccessful()) return response.getBody();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
         return null;
     }
 
@@ -522,7 +528,7 @@ public class Plugin extends Aware_Plugin {
         scopes_str += (scopes.getBoolean("sleep")) ? " sleep" : "";
         scopes_str += (scopes.getBoolean("settings")) ? " settings" : "";
 
-        Plugin.fitbitAPI = new ServiceBuilder()
+        Plugin.fitbitAPI = new ServiceBuilder(Aware.getSetting(context, Settings.API_KEY_PLUGIN_FITBIT))
                 .apiKey(Aware.getSetting(context, Settings.API_KEY_PLUGIN_FITBIT))
                 .scope(scopes_str)
                 .responseType("token")

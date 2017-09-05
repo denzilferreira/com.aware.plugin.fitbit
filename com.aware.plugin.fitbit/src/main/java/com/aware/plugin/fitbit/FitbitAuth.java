@@ -38,7 +38,7 @@ public class FitbitAuth extends AppCompatActivity {
     public void authorizeFitbit() {
         String scopes = "activity heartrate sleep settings";
 
-        Plugin.fitbitAPI = new ServiceBuilder()
+        Plugin.fitbitAPI = new ServiceBuilder(Aware.getSetting(getApplicationContext(), Settings.API_KEY_PLUGIN_FITBIT))
                 .apiKey(Aware.getSetting(getApplicationContext(), Settings.API_KEY_PLUGIN_FITBIT))
                 .scope(scopes)
                 .responseType("token")

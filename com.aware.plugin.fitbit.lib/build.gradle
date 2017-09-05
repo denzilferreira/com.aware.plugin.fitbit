@@ -74,7 +74,7 @@ dependencies {
     implementation "com.github.denzilferreira:aware-client:$aware_libs"
     implementation "com.android.support:gridlayout-v7:$support_libs"
     implementation "com.android.support:appcompat-v7:$support_libs"
-    implementation 'com.github.scribejava:scribejava-apis:3.3.0'
+    implementation 'com.github.scribejava:scribejava-apis:4.2.0'
     implementation 'net.danlew:android.joda:2.9.5.1'
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
 }
