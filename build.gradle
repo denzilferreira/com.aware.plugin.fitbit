@@ -9,7 +9,7 @@ project.ext {
     compile_sdk = (System.getenv("compile_sdk") as Integer ?: 26)
     target_sdk = (System.getenv("target_sdk") as Integer ?: 26)
     minimum_sdk = (System.getenv("minimum_sdk") as Integer ?: 14) //Android 4.0+
-    build_tools = (System.getenv("build_tools") ?: "26.0.0")
+    build_tools = (System.getenv("build_tools") ?: "26.0.2")
     aware_libs = (System.getenv("aware_libs") as String ?: "development-SNAPSHOT")
 }
 
@@ -23,7 +23,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-beta6'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 }
 

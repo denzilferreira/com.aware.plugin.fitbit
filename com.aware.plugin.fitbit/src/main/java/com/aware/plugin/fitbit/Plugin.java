@@ -381,6 +381,15 @@ public class Plugin extends Aware_Plugin {
                                 sleep.put(awake_count_data);
                             }
 
+                            String sleep_details = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/sleep/list/date/" + localSync.toString(DateTimeFormat.forPattern("yyyy-MM-dd")) + "/" + serverSyncDate + ".json");
+                            if (sleep_details == null) {
+                                if (DEBUG)
+                                    Log.d(TAG, "No sleep detailed list for this device.");
+                            } else {
+                                JSONObject sleep_details_data = new JSONObject(sleep_details);
+                                sleep.put(sleep_details_data);
+                            }
+
                             if (sleep.length() > 0) {
                                 ContentValues sleepData = new ContentValues();
                                 sleepData.put(Provider.Fitbit_Data.TIMESTAMP, System.currentTimeMillis());
