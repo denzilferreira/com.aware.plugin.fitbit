@@ -19,6 +19,7 @@ import com.aware.Aware_Preferences;
 import com.aware.utils.Aware_Plugin;
 import com.aware.utils.Scheduler;
 import com.github.scribejava.core.builder.ServiceBuilder;
+import com.github.scribejava.core.exceptions.OAuthException;
 import com.github.scribejava.core.model.OAuth2AccessToken;
 import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
@@ -204,8 +205,7 @@ public class Plugin extends Aware_Plugin {
                     }
                 } else {
                     try {
-                        if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0)
-                            restoreFitbitAPI(getApplicationContext());
+                        if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0) restoreFitbitAPI(getApplicationContext());
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -239,16 +239,18 @@ public class Plugin extends Aware_Plugin {
         protected Void doInBackground(Void... params) {
 
             try {
-                if (Plugin.fitbitAPI == null)
-                    restoreFitbitAPI(getApplicationContext());
+                if (Plugin.fitbitAPI == null) restoreFitbitAPI(getApplicationContext());
 
-                String devices = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/devices.json");
-                if (devices == null) {
-                    if (DEBUG)
-                        Log.d(TAG, "Unable to fetch user's devices status information");
-
-                    return null;
+                String devices;
+                try {
+                    devices = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/devices.json");
+                } catch (OAuthException e) {
+                    Toast.makeText(getApplicationContext(), "Unable to connect to api.fitbit.com. Check your internet/credentials", Toast.LENGTH_SHORT).show();
+                    if (DEBUG) Log.d(TAG, "Unable to fetch user's devices status information");
+                    devices = null;
                 }
+
+                if (devices == null) return null;
 
                 //Get data now that we have authenticated with Fitbit
                 JSONArray devices_fitbit = new JSONArray(devices);
@@ -414,8 +416,7 @@ public class Plugin extends Aware_Plugin {
                             latestData.put(Provider.Fitbit_Devices.LAST_SYNC, fit.getString("lastSyncTime"));
                             getContentResolver().insert(Provider.Fitbit_Devices.CONTENT_URI, latestData);
 
-                            if (CONTEXT_PRODUCER != null)
-                                CONTEXT_PRODUCER.onContext();
+                            if (CONTEXT_PRODUCER != null) CONTEXT_PRODUCER.onContext();
                         }
                         if (localData != null && !localData.isClosed()) localData.close();
                     }
