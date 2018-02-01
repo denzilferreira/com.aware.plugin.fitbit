@@ -23,7 +23,7 @@ public class FitbitAuth extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        if (Plugin.fitbitOAUTHToken != null) {
+        if (Plugin.fitbitOAUTHToken != null && Plugin.fitbitAPI != null) {
             Toast.makeText(getApplicationContext(), "Authentication OK!", Toast.LENGTH_SHORT).show();
 
             Intent fitbit = new Intent(this, Plugin.class);
