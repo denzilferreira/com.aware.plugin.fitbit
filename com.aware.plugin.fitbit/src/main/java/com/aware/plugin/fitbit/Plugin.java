@@ -186,6 +186,10 @@ public class Plugin extends Aware_Plugin {
                             devicesPicker = new FitbitDevicesPicker();
                             devicesPicker.execute();
                         }
+                    } else {
+                        if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase(ACTION_AWARE_PLUGIN_FITBIT_SYNC)) {
+                            new FibitDataSync().execute();
+                        }
                     }
                     if (devices != null && !devices.isClosed()) devices.close();
 
@@ -205,15 +209,12 @@ public class Plugin extends Aware_Plugin {
                     }
                 } else {
                     try {
-                        if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0) restoreFitbitAPI(getApplicationContext());
+                        if (Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN).length() > 0)
+                            restoreFitbitAPI(getApplicationContext());
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-            }
-
-            if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase(ACTION_AWARE_PLUGIN_FITBIT_SYNC)) {
-                new FibitDataSync().execute();
             }
 
             if (!Aware.isSyncEnabled(this, Provider.getAuthority(this)) && Aware.isStudy(this) && getApplicationContext().getPackageName().equalsIgnoreCase("com.aware.phone") || getApplicationContext().getResources().getBoolean(R.bool.standalone)) {
@@ -234,10 +235,8 @@ public class Plugin extends Aware_Plugin {
     }
 
     private class FibitDataSync extends AsyncTask<Void, Void, Void> {
-
         @Override
         protected Void doInBackground(Void... params) {
-
             try {
                 if (Plugin.fitbitAPI == null) restoreFitbitAPI(getApplicationContext());
 
@@ -245,17 +244,15 @@ public class Plugin extends Aware_Plugin {
                 try {
                     devices = fetchData(getApplicationContext(), "https://api.fitbit.com/1/user/-/devices.json");
                 } catch (OAuthException e) {
-                    Toast.makeText(getApplicationContext(), "Unable to connect to api.fitbit.com. Check your internet/credentials", Toast.LENGTH_SHORT).show();
-                    if (DEBUG) Log.d(TAG, "Unable to fetch user's devices status information");
+                    if (DEBUG) Log.d(TAG, "Failed to connect to the server: api.fitbit.com. Problem with your internet connection.");
+                    e.printStackTrace();
                     devices = null;
                 }
-
                 if (devices == null) return null;
 
                 //Get data now that we have authenticated with Fitbit
                 JSONArray devices_fitbit = new JSONArray(devices);
-                if (DEBUG)
-                    Log.d(TAG, "Latest info on server (devices): " + devices_fitbit.toString(5));
+                if (DEBUG) Log.d(TAG, "Latest info on server (devices): " + devices_fitbit.toString(5));
 
                 for (int i = 0; i < devices_fitbit.length(); i++) {
 
@@ -330,8 +327,7 @@ public class Plugin extends Aware_Plugin {
                                 heartRateData.put(Provider.Fitbit_Data.FITBIT_JSON, heartrate_data.toString());
                                 getContentResolver().insert(Provider.Fitbit_Data.CONTENT_URI, heartRateData);
 
-                                if (DEBUG)
-                                    Log.d(TAG, "New heartrate: " + heartrate_data.toString(5));
+                                if (DEBUG) Log.d(TAG, "New heartrate: " + heartrate_data.toString(5));
                             }
 
                             //will have all the sleep related data from yesterday until today
@@ -425,7 +421,6 @@ public class Plugin extends Aware_Plugin {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
             return null;
         }
     }
@@ -436,10 +431,6 @@ public class Plugin extends Aware_Plugin {
     public class FitbitDevicesPicker extends AsyncTask<Void, Void, Boolean> {
         @Override
         protected Boolean doInBackground(Void... params) {
-
-            if (Plugin.fitbitAPI == null || Plugin.fitbitOAUTHToken == null)
-                return false;
-
             OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.fitbit.com/1/user/-/devices.json");
             request.addHeader("Authorization",
                     " " + Aware.getSetting(getApplicationContext(), Settings.OAUTH_TOKEN_TYPE) +
@@ -455,11 +446,7 @@ public class Plugin extends Aware_Plugin {
                     startActivity(devicePicker);
                     return true;
                 }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
+            } catch (InterruptedException | ExecutionException | IOException e) {
                 e.printStackTrace();
             }
             return false;
@@ -469,7 +456,12 @@ public class Plugin extends Aware_Plugin {
         protected void onPostExecute(Boolean result) {
             super.onPostExecute(result);
             if (!result) {
-                Toast.makeText(getApplicationContext(), "Failed to load available devices. Try authenticating again.", Toast.LENGTH_SHORT).show();
+                devicesPicker = null;
+                Toast.makeText(getApplicationContext(), "Failed to load available devices. Check internet connection/credentials.", Toast.LENGTH_SHORT).show();
+                Aware.setSetting(getApplicationContext(), Settings.OAUTH_TOKEN, "");
+                getContentResolver().delete(Provider.Fitbit_Data.CONTENT_URI, null, null);
+                getContentResolver().delete(Provider.Fitbit_Devices.CONTENT_URI, null, null);
+                Aware.startPlugin(getApplicationContext(), "com.aware.plugin.fitbit"); //restarts plugin to re-authenticate
             }
         }
     }
@@ -487,13 +479,12 @@ public class Plugin extends Aware_Plugin {
                 restoreFitbitAPI(context);
             } catch (JSONException e) {
                 e.printStackTrace();
+                return "";
             }
         }
 
-        if (DEBUG)
-            Log.d(TAG, "Requesting Fitbit URL: \n" + resource_url);
+        if (DEBUG) Log.d(TAG, "Fitbit API: " + resource_url);
 
-        //OAuthRequest request = new OAuthRequest(Verb.GET, resource_url, Plugin.fitbitAPI);
         OAuthRequest request = new OAuthRequest(Verb.GET, resource_url);
         request.addHeader("Authorization", " " + Aware.getSetting(context, Settings.OAUTH_TOKEN_TYPE) + " " + Aware.getSetting(context, Settings.OAUTH_TOKEN));
 
@@ -507,7 +498,9 @@ public class Plugin extends Aware_Plugin {
         try {
             Plugin.fitbitAPI.signRequest(Plugin.fitbitOAUTHToken, request);
             Response response = Plugin.fitbitAPI.execute(request);
-            if (response.isSuccessful()) return response.getBody();
+            if (response.isSuccessful())
+                return response.getBody();
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
@@ -516,7 +509,7 @@ public class Plugin extends Aware_Plugin {
             e.printStackTrace();
         }
 
-        return null;
+        return "";
     }
 
     /**
