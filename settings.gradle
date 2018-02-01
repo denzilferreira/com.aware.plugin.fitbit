@@ -1,1 +1,2 @@
-include ':com.aware.plugin.fitbit', ':com.aware.plugin.fitbit.lib'
+include ':com.aware.plugin.fitbit'
+//, ':com.aware.plugin.fitbit.lib'
