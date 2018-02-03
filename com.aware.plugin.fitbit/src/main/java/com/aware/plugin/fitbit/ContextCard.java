@@ -160,7 +160,7 @@ public class ContextCard implements IContextCard {
 
                 JSONObject hrJSON = new JSONObject(latest_hr.getString(latest_hr.getColumnIndex(Provider.Fitbit_Data.FITBIT_JSON)));
 
-                int restingHR = hrJSON.getJSONArray("activities-heart").getJSONObject(0).getJSONObject("value").getInt("restingHeartRate"); //today's resting heart rate
+                int restingHR = hrJSON.getJSONArray("activities-heart").getJSONObject(0).getJSONObject("value").optInt("restingHeartRate", -1); //today's resting heart rate
                 JSONArray hearts = hrJSON.getJSONObject("activities-heart-intraday").getJSONArray("dataset"); //contains all of today's heart rate, every 5 seconds
 
                 ArrayList<Entry> entries = new ArrayList<>();

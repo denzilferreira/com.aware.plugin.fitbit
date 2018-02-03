@@ -10,6 +10,8 @@ android {
         targetSdkVersion target_sdk
         versionCode version_code
         versionName version_readable
+
+        resValue "string", "provider_fitbit", applicationId + ".provider.fitbit"
     }
 
     signingConfigs {
@@ -26,6 +28,14 @@ android {
 
     lintOptions {
         abortOnError false
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += '../com.aware.plugin.fitbit/src/main/java'
+            res.srcDirs += '../com.aware.plugin.fitbit/src/main/res'
+            manifest.srcFile '../com.aware.plugin.fitbit/src/main/AndroidManifest.xml'
+        }
     }
 }
 
@@ -71,9 +81,7 @@ configurations.all {
 }
 
 dependencies {
-    implementation "com.github.denzilferreira:aware-client:$aware_libs"
-    implementation "com.android.support:gridlayout-v7:$support_libs"
-    implementation "com.android.support:appcompat-v7:$support_libs"
+    api "com.github.denzilferreira:aware-client:$aware_libs"
     implementation 'com.github.scribejava:scribejava-apis:4.2.0'
     implementation 'net.danlew:android.joda:2.9.5.1'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
