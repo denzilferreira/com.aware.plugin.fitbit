@@ -45,9 +45,10 @@
         <provider
             android:name="com.aware.plugin.fitbit.Provider"
             android:authorities="${applicationId}.provider.fitbit"
-            android:label="@string/plugin_fitbit"
             android:exported="true"
+            android:label="@string/plugin_fitbit"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
+            android:syncable="true"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
 
         <service
@@ -56,7 +57,9 @@
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
             </intent-filter>
-            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_fitbit" />
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_fitbit" />
         </service>
 
     </application>

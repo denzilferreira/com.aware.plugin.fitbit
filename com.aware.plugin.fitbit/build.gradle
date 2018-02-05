@@ -5,13 +5,13 @@ android {
     buildToolsVersion build_tools
 
     defaultConfig {
-        applicationId "com.aware.plugin.fitbit" //EDIT ME
+        applicationId "com.aware.plugin.fitbit"
         minSdkVersion minimum_sdk
         targetSdkVersion target_sdk
         versionCode version_code
         versionName version_readable
 
-        resValue "string", "provider_fitbit", applicationId + ".provider.fitbit"
+        resValue "string", "provider_fitbit", android.defaultConfig.applicationId + ".provider.fitbit"
     }
 
     signingConfigs {
