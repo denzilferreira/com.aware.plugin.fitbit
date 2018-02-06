@@ -224,7 +224,7 @@ public class Plugin extends Aware_Plugin {
                 }
             }
 
-            if (!Aware.isSyncEnabled(this, Provider.getAuthority(this)) && Aware.isStudy(this) && getApplicationContext().getPackageName().equalsIgnoreCase("com.aware.phone") || getApplicationContext().getResources().getBoolean(R.bool.standalone)) {
+            if (!Aware.isSyncEnabled(this, Provider.getAuthority(this)) && Aware.isStudy(this)) {
 
                 Account aware_account = Aware.getAWAREAccount(getApplicationContext());
                 String authority = Provider.getAuthority(getApplicationContext());
