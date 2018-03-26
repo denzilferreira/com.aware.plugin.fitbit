@@ -93,12 +93,19 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
         clear.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                Aware.setSetting(getApplicationContext(), OAUTH_TOKEN, "");
+                Toast.makeText(getApplicationContext(), "Data and account removed!", Toast.LENGTH_SHORT).show();
+
+                Plugin.devicesPicker = null;
+                Aware.setSetting(getApplicationContext(), Settings.OAUTH_TOKEN, "");
+                Aware.setSetting(getApplicationContext(), Settings.OAUTH_SCOPES, "");
+                Aware.setSetting(getApplicationContext(), Settings.OAUTH_VALIDITY, "");
+                Aware.setSetting(getApplicationContext(), Settings.OAUTH_TOKEN_TYPE, "");
                 getContentResolver().delete(Provider.Fitbit_Data.CONTENT_URI, null, null);
                 getContentResolver().delete(Provider.Fitbit_Devices.CONTENT_URI, null, null);
-                Aware.stopPlugin(getApplicationContext(), "com.aware.plugin.fitbit");
+                Plugin.fitbitAPI = null;
+                Plugin.fitbitOAUTHToken = null;
 
-                Toast.makeText(getApplicationContext(), "Data and account removed!", Toast.LENGTH_SHORT).show();
+                Aware.stopPlugin(getApplicationContext(), "com.aware.plugin.fitbit");
 
                 finish();
                 return true;

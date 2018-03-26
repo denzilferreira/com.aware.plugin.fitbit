@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import com.aware.utils.IContextCard;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -20,6 +21,7 @@ import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,6 +32,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -120,7 +123,6 @@ public class ContextCard implements IContextCard {
                 XAxis bottom = chart.getXAxis();
                 bottom.setPosition(XAxis.XAxisPosition.BOTTOM);
                 bottom.setDrawGridLines(false);
-//                bottom.setValueFormatter(new HoursAxisValueFormatter());
 
                 Legend l = chart.getLegend();
                 l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.CENTER);
@@ -138,7 +140,7 @@ public class ContextCard implements IContextCard {
     }
 
     /**
-     * Get today's steps plot
+     * Get today's HR plot
      *
      * @param context
      * @param chart
@@ -158,18 +160,27 @@ public class ContextCard implements IContextCard {
 
                 JSONObject hrJSON = new JSONObject(latest_hr.getString(latest_hr.getColumnIndex(Provider.Fitbit_Data.FITBIT_JSON)));
 
-                int restingHR = hrJSON.getJSONArray("activities-heart").getJSONObject(0).getJSONObject("value").getInt("restingHeartRate"); //today's resting heart rate
-                JSONArray hrs = hrJSON.getJSONObject("activities-heart-intraday").getJSONArray("dataset"); //contains all of today's step count, per 15 minutes
+                int restingHR = hrJSON.getJSONArray("activities-heart").getJSONObject(0).getJSONObject("value").optInt("restingHeartRate", -1); //today's resting heart rate
+                JSONArray hearts = hrJSON.getJSONObject("activities-heart-intraday").getJSONArray("dataset"); //contains all of today's heart rate, every 5 seconds
 
                 ArrayList<Entry> entries = new ArrayList<>();
-                for (int i = 0; i < hrs.length(); i++) {
-                    JSONObject hr_counts = hrs.getJSONObject(i);
+                DateFormat parseTime = new SimpleDateFormat("HH:mm:ss", Locale.ENGLISH);
+
+                for (int i = 0; i < hearts.length(); i++) {
+                    JSONObject hr_counts = hearts.getJSONObject(i);
 
                     String time = hr_counts.getString("time");
+                    Date parsed = parseTime.parse(time);
+
+                    Calendar timer = Calendar.getInstance();
+                    timer.setTimeInMillis(System.currentTimeMillis());
+                    timer.set(Calendar.HOUR_OF_DAY, parsed.getHours());
+                    timer.set(Calendar.MINUTE, parsed.getMinutes());
+                    timer.set(Calendar.SECOND, parsed.getSeconds());
+
                     int hr = hr_counts.getInt("value");
 
-                    DateFormat parseTime = new SimpleDateFormat("HH:mm:ss", Locale.ENGLISH);
-                    entries.add(new Entry(parseTime.parse(time).getHours(), hr));
+                    entries.add(new Entry(timer.getTimeInMillis(), hr));
                 }
 
                 LineDataSet lineDataset = new LineDataSet(entries, "Resting Heart Rate today: " + restingHR);
@@ -208,13 +219,13 @@ public class ContextCard implements IContextCard {
                 bottom.setPosition(XAxis.XAxisPosition.BOTTOM);
                 bottom.setDrawGridLines(false);
 
-//                bottom.setValueFormatter(new HoursAxisValueFormatter());
-
                 Legend l = chart.getLegend();
                 l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.CENTER);
                 l.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
                 l.setForm(Legend.LegendForm.LINE);
                 l.setTypeface(Typeface.DEFAULT_BOLD);
+
+                chart.getXAxis().setValueFormatter(new HourAxisValueFormatter());
 
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -225,11 +236,12 @@ public class ContextCard implements IContextCard {
         if (latest_hr != null && !latest_hr.isClosed()) latest_hr.close();
     }
 
-//    private class HoursAxisValueFormatter implements IAxisValueFormatter {
-//        @Override
-//        public String getFormattedValue(float value, AxisBase axis) {
-//            Date date = new Date((long) value);
-//            return String.valueOf(date.getHours());
-//        }
-//    }
+    public class HourAxisValueFormatter implements IAxisValueFormatter {
+        @Override
+        public String getFormattedValue(float value, AxisBase axis) {
+            Calendar day = Calendar.getInstance();
+            day.setTimeInMillis((long) value);
+            return String.valueOf(day.get(Calendar.HOUR_OF_DAY));
+        }
+    }
 }

@@ -4,6 +4,7 @@ import android.content.ContentProvider;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -119,10 +120,20 @@ public class Provider extends ContentProvider {
             database = dbHelper.getWritableDatabase();
     }
 
+    /**
+     * Returns the provider authority that is dynamic
+     * @return
+     */
+    public static String getAuthority(Context context) {
+        AUTHORITY = context.getPackageName() + ".provider.fitbit";
+        return AUTHORITY;
+    }
+
     @Override
     public boolean onCreate() {
         //This is a hack to allow providers to be reusable in any application/plugin by making the authority dynamic using the package name of the parent app
-        AUTHORITY = getContext().getPackageName() + ".provider.fitbit"; //make sure xxx matches the first string in this class
+        AUTHORITY = getContext().getPackageName()+ ".provider.fitbit";
+
         sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
         //For each table, add indexes DIR and ITEM
@@ -230,7 +241,7 @@ public class Provider extends ContentProvider {
                 database.endTransaction();
                 if (_id > 0) {
                     Uri dataUri = ContentUris.withAppendedId(Fitbit_Data.CONTENT_URI, _id);
-                    getContext().getContentResolver().notifyChange(dataUri, null);
+                    getContext().getContentResolver().notifyChange(dataUri, null, false);
                     return dataUri;
                 }
                 database.endTransaction();
@@ -242,7 +253,7 @@ public class Provider extends ContentProvider {
                 database.endTransaction();
                 if (_id > 0) {
                     Uri dataUri = ContentUris.withAppendedId(Fitbit_Devices.CONTENT_URI, _id);
-                    getContext().getContentResolver().notifyChange(dataUri, null);
+                    getContext().getContentResolver().notifyChange(dataUri, null, false);
                     return dataUri;
                 }
                 database.endTransaction();
@@ -280,7 +291,7 @@ public class Provider extends ContentProvider {
         database.setTransactionSuccessful();
         database.endTransaction();
 
-        getContext().getContentResolver().notifyChange(uri, null);
+        getContext().getContentResolver().notifyChange(uri, null, false);
         return count;
     }
 
@@ -311,7 +322,7 @@ public class Provider extends ContentProvider {
         database.setTransactionSuccessful();
         database.endTransaction();
 
-        getContext().getContentResolver().notifyChange(uri, null);
+        getContext().getContentResolver().notifyChange(uri, null, false);
         return count;
     }
 }

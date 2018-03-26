@@ -2,9 +2,7 @@ package com.aware.plugin.fitbit;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.provider.Browser;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
@@ -22,29 +20,25 @@ import org.json.JSONObject;
 public class FitbitAuth extends AppCompatActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        authorizeFitbit();
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
 
-        if (Plugin.fitbitOAUTHToken != null) {
+        if (Plugin.fitbitOAUTHToken != null && Plugin.fitbitAPI != null) {
             Toast.makeText(getApplicationContext(), "Authentication OK!", Toast.LENGTH_SHORT).show();
 
             Intent fitbit = new Intent(this, Plugin.class);
             startService(fitbit);
 
             finish();
+        } else {
+            authorizeFitbit();
         }
     }
 
     public void authorizeFitbit() {
         String scopes = "activity heartrate sleep settings";
 
-        Plugin.fitbitAPI = new ServiceBuilder()
+        Plugin.fitbitAPI = new ServiceBuilder(Aware.getSetting(getApplicationContext(), Settings.API_KEY_PLUGIN_FITBIT))
                 .apiKey(Aware.getSetting(getApplicationContext(), Settings.API_KEY_PLUGIN_FITBIT))
                 .scope(scopes)
                 .responseType("token")
