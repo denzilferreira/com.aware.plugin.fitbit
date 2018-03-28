@@ -1,8 +1,7 @@
 AWARE Plugin: Fitbit
 ==========================
 
-[![Release](https://jitpack.io/v/denzilferreira/com.aware.plugin.fitbit.svg)]
-(https://jitpack.io/#denzilferreira/com.aware.plugin.fitbit)
+[![Release](https://jitpack.io/v/denzilferreira/com.aware.plugin.fitbit.svg)](https://jitpack.io/#denzilferreira/com.aware.plugin.fitbit)
 
 This plugin allows researchers to collect the data from a Fitbit device: calories, steps, heart-rate, sleep.
 
