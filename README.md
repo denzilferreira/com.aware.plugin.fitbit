@@ -1,6 +1,9 @@
 AWARE Plugin: Fitbit
 ==========================
 
+[![Release](https://jitpack.io/v/denzilferreira/com.aware.plugin.fitbit.svg)]
+(https://jitpack.io/#denzilferreira/com.aware.plugin.fitbit)
+
 This plugin allows researchers to collect the data from a Fitbit device: calories, steps, heart-rate, sleep.
 
 # Settings
@@ -20,7 +23,7 @@ Broadcasted every time we have new Fibit data, with the following extras:
 - **extra_last_3h**: (double) number of steps in the past 3h
 - **extra_last_5h**: (double) number of steps in the past 5h
 **ACTION_AWARE_PLUGIN_FITBIT_SYNC**
-Received broadcast to request the plugin to check for new data
+Received broadcast to request the plugin to check for new data on Fitbit's servers
 
 # Providers
 ##  Fitbit Devices
@@ -46,5 +49,5 @@ _id | INTEGER | primary key auto-incremented
 timestamp | REAL | unix timestamp in milliseconds of sample
 device_id | TEXT | AWARE device ID
 fitbit_id | TEXT | Fitbit device ID
-fitbit_data | TEXT | JSON as Fitbit API returns. Depends on the data type
+fitbit_data | TEXT | JSON with what Fitbit API returns. Depends on the data type
 fitbit_data_type | TEXT | one of the following: sleep, steps, calories, heartrate
