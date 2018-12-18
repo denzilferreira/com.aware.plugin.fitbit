@@ -15,7 +15,7 @@ import com.aware.Aware;
 
 public class Settings extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 
-    //Plugin settings in XML @xml/preferences
+    //Plugin settings in XML @xml/preferences_fitbit
     public static final String STATUS_PLUGIN_FITBIT = "status_plugin_fitbit";
     public static final String UNITS_PLUGIN_FITBIT = "units_plugin_fitbit";
     public static final String PLUGIN_FITBIT_FREQUENCY = "plugin_fitbit_frequency";
@@ -41,7 +41,7 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.preferences);
+        addPreferencesFromResource(R.xml.preferences_fitbit);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         prefs.registerOnSharedPreferenceChangeListener(this);
     }

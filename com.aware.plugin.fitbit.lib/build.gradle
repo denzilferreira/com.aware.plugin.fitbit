@@ -60,5 +60,5 @@ dependencies {
     api "com.github.denzilferreira:aware-client:$aware_libs"
     implementation 'com.github.scribejava:scribejava-apis:4.2.0'
     implementation 'net.danlew:android.joda:2.9.5.1'
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
 }
