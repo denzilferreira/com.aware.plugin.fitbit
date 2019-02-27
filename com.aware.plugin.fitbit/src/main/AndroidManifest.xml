@@ -36,6 +36,7 @@
 
         <activity
             android:name="com.aware.plugin.fitbit.Settings"
+            android:label="AWARE: Fitbit"
             android:exported="true" />
 
         <provider

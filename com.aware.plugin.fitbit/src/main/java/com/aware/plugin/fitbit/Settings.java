@@ -12,8 +12,9 @@ import android.preference.PreferenceManager;
 import android.widget.Toast;
 
 import com.aware.Aware;
+import com.aware.ui.AppCompatPreferenceActivity;
 
-public class Settings extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
+public class Settings extends AppCompatPreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     //Plugin settings in XML @xml/preferences_fitbit
     public static final String STATUS_PLUGIN_FITBIT = "status_plugin_fitbit";
