@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">AWARE: Fitbit</string>
     <string name="fitbit_authenticate">Tap to authenticate to Fitbit</string>
     <string name="plugin_fitbit">Plugin: Fitbit</string>
 </resources>
