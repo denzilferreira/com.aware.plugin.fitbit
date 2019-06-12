@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
-import androidx.annotation.Nullable;
+
 import com.aware.Aware;
 import com.aware.Aware_Preferences;
 import org.json.JSONArray;
@@ -25,7 +25,7 @@ public class DevicePicker extends AppCompatActivity {
     private JSONObject selected;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.device_picker);
