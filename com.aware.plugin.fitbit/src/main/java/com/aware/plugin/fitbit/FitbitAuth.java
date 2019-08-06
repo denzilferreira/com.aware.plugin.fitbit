@@ -3,13 +3,11 @@ package com.aware.plugin.fitbit;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.Browser;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
-
+import androidx.appcompat.app.AppCompatActivity;
 import com.aware.Aware;
 import com.github.scribejava.core.builder.ServiceBuilder;
 import com.github.scribejava.core.model.OAuth2AccessToken;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
