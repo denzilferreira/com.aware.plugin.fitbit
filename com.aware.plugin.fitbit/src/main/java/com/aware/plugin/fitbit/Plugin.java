@@ -165,7 +165,7 @@ public class Plugin extends Aware_Plugin {
                 fitbitAuth.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, fitbitAuth, PendingIntent.FLAG_ONE_SHOT);
 
-                NotificationCompat.Builder notBuilder = new NotificationCompat.Builder(this, Aware.AWARE_NOTIFICATION_ID);
+                NotificationCompat.Builder notBuilder = new NotificationCompat.Builder(this, Aware.AWARE_NOTIFICATION_CHANNEL_GENERAL);
                 notBuilder.setSmallIcon(R.drawable.ic_stat_fitbit)
                         .setContentTitle(getString(R.string.app_name))
                         .setContentText(getString(R.string.fitbit_authenticate))
@@ -174,8 +174,10 @@ public class Plugin extends Aware_Plugin {
                         .setContentIntent(pendingIntent)
                         .setPriority(NotificationCompat.PRIORITY_HIGH);
 
+                notBuilder = Aware.setNotificationProperties(notBuilder, Aware.AWARE_NOTIFICATION_IMPORTANCE_GENERAL);
+
                 if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-                    notBuilder.setChannelId(Aware.AWARE_NOTIFICATION_ID);
+                    notBuilder.setChannelId(Aware.AWARE_NOTIFICATION_CHANNEL_GENERAL);
 
                 Notification notification = notBuilder.build();
                 notification.flags |= Notification.FLAG_NO_CLEAR;
