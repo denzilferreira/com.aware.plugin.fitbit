@@ -137,9 +137,15 @@ public class Plugin extends Aware_Plugin {
 
             //Check if the user has toggled the debug messages
             DEBUG = Aware.getSetting(this, Aware_Preferences.DEBUG_FLAG).equals("true");
-
-            //Initialize our plugin's settings
-            Aware.setSetting(this, Settings.STATUS_PLUGIN_FITBIT, true);
+            
+            if (Aware.getSetting(getApplicationContext(), Settings.STATUS_PLUGIN_FITBIT).length() == 0) {
+                Aware.setSetting(getApplicationContext(), Settings.STATUS_PLUGIN_FITBIT, true);
+            } else {
+                if (Aware.getSetting(getApplicationContext(), Settings.STATUS_PLUGIN_FITBIT).equalsIgnoreCase("false")) {
+                    Aware.stopPlugin(getApplicationContext(), getPackageName());
+                    return START_STICKY;
+                }
+            }
 
             // Set default values for the plugin
             if (Aware.getSetting(getApplicationContext(), Settings.UNITS_PLUGIN_FITBIT).length() == 0)
