@@ -50,13 +50,4 @@ android {
     }
 }
 
-dependencies {
-    implementation 'com.github.scribejava:scribejava-apis:4.2.0'
-    implementation 'net.danlew:android.joda:2.9.5.1'
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
-
-    implementation "com.google.android.material:material:1.1.0-alpha09"
-    implementation "androidx.appcompat:appcompat:1.0.2"
-
-    api project(":aware-core")
-}
+apply from: '../dependencies.gradle'
